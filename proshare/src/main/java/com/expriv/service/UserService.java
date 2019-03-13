@@ -1,9 +1,9 @@
-package net.javaguides.springboot.springsecurity.service;
+package com.expriv.service;
 
 import org.springframework.security.core.userdetails.UserDetailsService;
 
-import net.javaguides.springboot.springsecurity.model.User;
-import net.javaguides.springboot.springsecurity.web.dto.UserRegistrationDto;
+import com.expriv.model.User;
+import com.expriv.web.dto.UserRegistrationDto;
 
 public interface UserService extends UserDetailsService {
 

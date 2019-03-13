@@ -1,4 +1,4 @@
-package net.javaguides.springboot.springsecurity.model;
+package com.expriv.model;
 
 import org.springframework.jdbc.core.RowMapper;
 

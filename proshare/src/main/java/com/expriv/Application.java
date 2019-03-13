@@ -1,4 +1,4 @@
-package net.javaguides.springboot.springsecurity;
+package com.expriv;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

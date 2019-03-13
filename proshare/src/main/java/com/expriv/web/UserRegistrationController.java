@@ -1,9 +1,5 @@
-package net.javaguides.springboot.springsecurity.web;
+package com.expriv.web;
 
-import net.javaguides.springboot.springsecurity.model.User;
-import net.javaguides.springboot.springsecurity.service.ConfigurationService;
-import net.javaguides.springboot.springsecurity.service.UserService;
-import net.javaguides.springboot.springsecurity.web.dto.UserRegistrationDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,6 +8,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.expriv.model.User;
+import com.expriv.service.ConfigurationService;
+import com.expriv.service.UserService;
+import com.expriv.web.dto.UserRegistrationDto;
 
 import javax.validation.Valid;
 import java.io.IOException;
@@ -58,8 +59,8 @@ public class UserRegistrationController {
         String command2 = "python2.7"+" "+python_root_dir+"configuration.py initialization"+" "+userDto.getEmail();
 
         try {
-            Process p = Runtime.getRuntime().exec(command1);
-            p=Runtime.getRuntime().exec(command2);
+            Runtime.getRuntime().exec(command1);
+            Runtime.getRuntime().exec(command2);
         } catch (IOException e) {
             e.printStackTrace();
         }

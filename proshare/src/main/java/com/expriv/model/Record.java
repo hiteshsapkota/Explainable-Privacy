@@ -1,4 +1,4 @@
-package net.javaguides.springboot.springsecurity.model;
+package com.expriv.model;
 
 public class Record {
     private int id;

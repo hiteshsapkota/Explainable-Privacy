@@ -1,4 +1,4 @@
-package net.javaguides.springboot.springsecurity.model;
+package com.expriv.model;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.security.core.userdetails.UserDetails;
