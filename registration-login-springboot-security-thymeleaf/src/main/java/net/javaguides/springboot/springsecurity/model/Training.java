@@ -1,20 +1,37 @@
 package net.javaguides.springboot.springsecurity.model;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.stereotype.Repository;
 
-public class Training {
+import java.util.List;
+
+
+@Repository
+public class Training{
 
 
     private String image_id;
+    private String image_path;
     private int id;
     private String sharing_type;
+    private JdbcTemplate jdbcTemplate;
+    private String username;
+
+
+    public JdbcTemplate getJdbcTemplate() {
+        return jdbcTemplate;
+    }
+
+
+    public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
+    }
 
     public String getImage_id() {
         return image_id;
     }
+
 
     public void setImage_id(String image_id) {
         this.image_id = image_id;
@@ -28,35 +45,67 @@ public class Training {
         this.id = id;
     }
 
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(Object principal) {
+
+        if (principal instanceof UserDetails) {
+            this.username = ((UserDetails)principal).getUsername();
+        } else {
+            this.username = principal.toString();
+        }
+    }
+
+    public String getImage_path() {
+        return image_path;
+    }
+
+    public void setImage_path(String image_path) {
+        this.image_path = image_path;
+    }
+
     public void readId() {
         try
         {
 
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/users_database", "root", "Physics123");
-            Statement stmt = con.createStatement();
-            ResultSet rs = stmt.executeQuery("select id, image_id from users_image_record where display_status=0 and user_name='hiteshsapkota@gmail.com';");
+            String username=this.username;
 
-            if (rs.next() == false) {
-                this.id = 0;
-                this.image_id="na";
-
-            }
-            else
-                {
-                this.id = rs.getInt(1);
-                this.image_id = rs.getString(2);
-                stmt.executeUpdate("update users_image_record set display_status = 1  where id ="+Integer.toString(this.id)+";");
-
-
-                }
+            String sql = "select * from training where display_status=0 and user_name=?";
+            //String sql = "select * from users_image_record  where display_status=0 and user_name='hiteshsapkota@gmail.com'";
+            List<Record> records=jdbcTemplate.query(sql, new Object[] { username },new RecordRowMapper());
 
 
 
 
-                con.close();
+
+             if (records.isEmpty())
+             {
+
+
+
+                 this.id=0;
+                 this.image_path="na";
+             }
+             else {
+
+                 Record record=records.get(0);
+
+                 this.id = record.getId();
+                 this.image_path = record.getImage_path();
+                 String update_query="update training set display_status = 1  where id ="+Integer.toString(this.id);
+                 jdbcTemplate.update(update_query);
+
+             }
+
+
+
+
         } catch (Exception e)
         {
+
             System.out.println(e);
         }
     }
@@ -72,29 +121,29 @@ public class Training {
     public void storeSharing_type()
     {
 
+
         try
         {
 
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/users_database", "root", "Physics123");
-            Statement stmt = con.createStatement();
-            System.out.println(sharing_type);
-            System.out.println(image_id);
+
             if (sharing_type.equals("share"))
             {
-                stmt.executeUpdate("update users_image_record set sharing_decision = 1  where id ="+Integer.toString(this.id)+";");
+
+
+                jdbcTemplate.update("update training set sharing_decision = 1  where id ="+Integer.toString(this.id)+";");
             }
             else if (sharing_type.equals("not_share"))
             {
-                stmt.executeUpdate("update users_image_record set sharing_decision = 0  where id ="+Integer.toString(this.id)+";");
+                jdbcTemplate.update("update training set sharing_decision = 0  where id ="+Integer.toString(this.id)+";");
             }
 
 
-            con.close();
+
         } catch (Exception e)
         {
             System.out.println(e);
         }
 
     }
+
 }

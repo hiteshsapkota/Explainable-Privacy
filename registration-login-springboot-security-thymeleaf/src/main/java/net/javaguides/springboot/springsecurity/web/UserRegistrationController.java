@@ -1,7 +1,9 @@
 package net.javaguides.springboot.springsecurity.web;
 
-import javax.validation.Valid;
-
+import net.javaguides.springboot.springsecurity.model.User;
+import net.javaguides.springboot.springsecurity.service.ConfigurationService;
+import net.javaguides.springboot.springsecurity.service.UserService;
+import net.javaguides.springboot.springsecurity.web.dto.UserRegistrationDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,9 +13,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import net.javaguides.springboot.springsecurity.model.User;
-import net.javaguides.springboot.springsecurity.service.UserService;
-import net.javaguides.springboot.springsecurity.web.dto.UserRegistrationDto;
+import javax.validation.Valid;
+import java.io.IOException;
 
 @Controller
 @RequestMapping("/registration")
@@ -46,6 +47,23 @@ public class UserRegistrationController {
         }
 
         userService.save(userDto);
+
+
+        ConfigurationService configurationService=new ConfigurationService();
+        configurationService.setParams();
+
+        String python_root_dir = configurationService.getPython_base_dir();
+
+        String command1="python2.7"+" "+python_root_dir+"utils.py generateImageID"+" "+userDto.getEmail()+" "+"training 1";
+        String command2 = "python2.7"+" "+python_root_dir+"configuration.py initialization"+" "+userDto.getEmail();
+
+        try {
+            Process p = Runtime.getRuntime().exec(command1);
+            p=Runtime.getRuntime().exec(command2);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         return "redirect:/registration?success";
     }
 

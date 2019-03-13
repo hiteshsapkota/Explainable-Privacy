@@ -81,7 +81,7 @@ select{
 <center><h1> Consider the following image </h1></center>
 <br>
 <div>
-<center><img th:src="@{${training.image_id}}" src = "'../'+${training.image_id}" class = "center-fit" alt="Responsive image" width="100" height="100"></center>
+<center><img th:src="@{${training.image_path}}" src = "'../'+${training.image_path}" class = "center-fit" alt="Responsive image" width="100" height="100"></center>
 </div>
 
 
@@ -111,7 +111,7 @@ select{
                   </div>
 
                 	<input type="hidden" th:field="*{id}" />
-                    <input type="hidden" th:field="*{image_id}" />
+                    <input type="hidden" th:field="*{image_path}" />
                     <br><br><br>
                     <div class="form-group">
                     					<div class="row">
