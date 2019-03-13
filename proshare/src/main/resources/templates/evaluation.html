@@ -1,0 +1,335 @@
+<!DOCTYPE HTML>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+
+    <title>Explainable Privacy: User Study</title>
+
+    <style>
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.container {
+  position: relative;
+}
+.boxed {
+
+  background-color: lightgrey;
+  width: 500px;
+  border: 25px solid green;
+  padding: 25px;
+  margin: 25px;
+
+}
+
+
+img {
+  width: 80%;
+  height: 80%;
+}
+.select{
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+label {
+    display: flex;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.box{
+        color: #000;
+        padding: 20px;
+        display: none;
+        margin-top: 20px;
+    }
+    .Disagree{ background: #ffffff; }
+
+input[type="radio"]{
+
+margin: 100px 100px;
+transform:scale(1.5);
+
+
+
+
+
+}
+
+
+label {
+  margin-left: 10px;
+}
+
+
+</style>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+$(document).ready(function(){
+  if ($(this).attr("value")==='Agree' || 'Disagree')
+  {
+    $('input[type="radio"]').click(function(){
+        var inputValue = $(this).attr("value");
+        var targetBox = $("." + inputValue);
+        $(".box").not(targetBox).hide();
+        $(targetBox).show();
+    });
+}
+});
+
+
+
+</script>
+
+
+    <link rel="stylesheet" type="text/css"
+          th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}" />
+
+</head>
+<body>
+
+
+<div class="topnav" style="position: relative; ">
+
+    <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
+
+    <div style="position: absolute; top: 0; right: 100px; width: 100px; text-align:left;">
+        <i class="glyphicon glyphicon-user" style="font-size:30px;left: 50px;color:lightblue;text-shadow:2px 2px 4px #000000;"></i>
+        <font color="white"><span sec:authentication="principal.username"></span> </font>
+    </div>
+
+
+</div>
+
+<div th:if="${evaluation.message=='train_first'}">
+    <meta http-equiv="Refresh" content="5; index" >
+    <div class="alert alert-danger">Could not generate explanation without training!!!</div>
+    <center><h4> You will be redirected to the index page in five seconds. </h4></center>
+    <center><h4> If you see this message more than 5 seconds, please <span><a href="/" th:href="@{/index}">Click here.</a></span></h4></center>
+
+
+</div>
+
+
+
+<div class="row">
+    <div class="column">
+        <center><h1> Consider the following image </h1></center>
+        <center><img th:src="@{${evaluation.image_path}}" src = "'../'+${evaluation.image_path}" class = "center-fit" alt="Responsive image" width="5" height="5"></center>
+    </div>
+    <center><div class="column">
+        <center><h2>Explanation</h2></center>
+        <center><div class="boxed">
+
+            <center><p th:text="${evaluation.explanation}" /></center>
+
+        </div></center>
+
+    </div></center>
+
+</div>
+<br>
+
+<br>
+
+
+
+
+
+</div>
+
+<center><h2>Do you agree with the explanation?</h2></center>
+
+<div class="container">
+
+<center>
+
+    <form th:action="@{/evaluation}" method="post">
+
+        <div th:if="${evaluation.feedback=='invalid'}">
+            <div class="alert alert-danger">Empty agreement type</div>
+        </div>
+<div id="feedback">
+
+
+    <input type="radio" name="feedback" value="Agree"> <label for="agree">Agree</label>&nbsp; &nbsp;
+
+    <input type="radio" name="feedback" value="Disagree"><label for="disagree">Disagree</label>
+
+</div>
+
+        <div th:if="${evaluation.disagree_type=='invalid'}">
+            <div class="alert alert-danger">Empty disagreement field</div>
+        </div>
+
+<div class="Disagree box">
+
+    <div class="row">
+        <div class="column">
+    <h3><font  color="black">Disagree with?</font></h3>
+    <div>
+
+
+
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+
+                    <select name="disagree_type" >
+                        <option value="invalid" selected>Select</option>
+                        <option value="recommendation">Recommendation</option>
+                        <option value="explanation">Explanation</option>
+                        <option value="both">Both</option>
+
+                    </select>
+
+                </div>
+                </div>
+            </div>
+
+
+
+
+    </div>
+
+
+        <div class="column">
+
+
+            <h3><font  color="black">Attributes</font></h3>
+            <div>
+                <div th:if="${evaluation.att_status==10}">
+                    <div class="alert alert-danger">At least one empty attribute field</div>
+                </div>
+
+                <h4>Attribute1</h4>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+
+                        <select name="att1" >
+                            <option value=0 selected>Select</option>
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+
+
+                        </select>
+
+                    </div>
+                </div>
+
+                <h4>Attribute2</h4>
+
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+
+                        <select name="att2" >
+                            <option value=0 selected>Select</option>
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+
+
+                        </select>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+</div>
+        <input type="hidden" th:field="*{evaluation.id}" />
+        <input type="hidden" th:field="*{evaluation.explanation}" />
+        <input type="hidden" th:field="*{evaluation.image_path}" />
+        <input type="hidden" th:field="*{evaluation.image_id}" />
+
+<br>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <input type="submit" name="next-submit" id="login-submit"
+                           class="form-control btn btn-primary" value="Next" />
+                </div>
+            </div>
+        </div>
+
+    </form>
+</center>
+</div>
+
+<script type="text/javascript"
+        th:src="@{/webjars/jquery/3.2.1/jquery.min.js/}"></script>
+<script type="text/javascript"
+        th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
+</body>
+</html>
