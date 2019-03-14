@@ -210,8 +210,6 @@ public class MainController {
                 FeedbackDto feedbackDto = evaluation.getFeedbackDto();
                 for (Feedback feedback : feedbackDto.getFeedbacks()) {
                     if (feedback.getAttributeValue() == 0) {
-                        System.out.println(feedback.getAttributeValue());
-                        System.out.println(feedback.getAttributeName());
 
 
                         evaluation.setAttributeValid(false);
@@ -221,25 +219,27 @@ public class MainController {
 
                 }
             }
-            System.out.println(evaluation.isAttributeValid());
+
 
             if (evaluation.isAttributeValid()==false)
             {
 
 
-                System.out.println("I am here");
 
                 model.addAttribute("evaluation", evaluation);
                 return "evaluation";
             }
 
                 evaluation.storeSharing_type();
+          ImageAttributeService imageAttributeService;
+            if (!evaluation.getFeedback().equals("Agree")) {
+               imageAttributeService = new ImageAttributeService();
 
-            ImageAttributeService imageAttributeService=new ImageAttributeService();
-            try {
+              try {
                 imageAttributeService.transferValues(evaluation.getFeedbackDto());
-            } catch (IOException e) {
+              } catch (IOException e) {
                 e.printStackTrace();
+              }
             }
             evaluation= new Evaluation();
                 evaluation.setJdbcTemplate(jdbcTemplate);
