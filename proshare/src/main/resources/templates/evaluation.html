@@ -169,7 +169,7 @@ $(document).ready(function(){
 </div>
 
 
-
+<div th:if="${evaluation.message!='train_first'}">
 <div class="row">
     <div class="column">
         <center><h1> Consider the following image </h1></center>
@@ -194,7 +194,7 @@ $(document).ready(function(){
 
 
 
-</div>
+
 
 <center><h2>Do you agree with the explanation?</h2></center>
 
@@ -255,46 +255,36 @@ $(document).ready(function(){
 
             <h3><font  color="black">Attributes</font></h3>
             <div>
-                <div th:if="${evaluation.att_status==10}">
+                <div th:if="${evaluation.attributeValid}==false">
                     <div class="alert alert-danger">At least one empty attribute field</div>
                 </div>
 
-                <h4>Attribute1</h4>
-                <div class="row">
-                    <div class="col-sm-6 col-sm-offset-3">
-
-                        <select name="att1" >
-                            <option value=0 selected>Select</option>
-                            <option value=1>1</option>
-                            <option value=2>2</option>
-                            <option value=3>3</option>
-                            <option value=4>4</option>
-                            <option value=5>5</option>
 
 
-                        </select>
-
-                    </div>
-                </div>
-
-                <h4>Attribute2</h4>
-
-                <div class="row">
-                    <div class="col-sm-6 col-sm-offset-3">
-
-                        <select name="att2" >
-                            <option value=0 selected>Select</option>
-                            <option value=1>1</option>
-                            <option value=2>2</option>
-                            <option value=3>3</option>
-                            <option value=4>4</option>
-                            <option value=5>5</option>
+                <tr th:each="feedback , itemStat : ${evaluation.feedbackDto.feedbacks}">
 
 
-                        </select>
+                    <h4><span th:text="${feedback.attributeName}"></span></h4>
 
-                    </div>
-                </div>
+
+
+                    <select th:field="*{evaluation.feedbackDto.feedbacks[__${itemStat.index}__].attributeValue}" >
+                        <option value=0 selected>Select</option>
+                        <option value=1>1</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5</option>
+
+
+                    </select>
+
+
+                    <td><input type="hidden" th:field="*{evaluation.feedbackDto.feedbacks[__${itemStat.index}__].attributeName}" /></td>
+
+                </tr>
+
+
 
 
 
@@ -302,7 +292,7 @@ $(document).ready(function(){
 
         </div>
 
-    </div>
+
 
 
 
@@ -314,6 +304,7 @@ $(document).ready(function(){
         <input type="hidden" th:field="*{evaluation.image_id}" />
 
 <br>
+</div>
         <div class="form-group">
             <div class="row">
                 <div class="col-sm-6 col-sm-offset-3">
@@ -325,7 +316,10 @@ $(document).ready(function(){
 
     </form>
 </center>
+</center>
 </div>
+</div>
+
 
 <script type="text/javascript"
         th:src="@{/webjars/jquery/3.2.1/jquery.min.js/}"></script>

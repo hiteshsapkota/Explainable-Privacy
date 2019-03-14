@@ -1,5 +1,11 @@
 package com.expriv.web;
 
+import com.expriv.model.Evaluation;
+import com.expriv.model.Feedback;
+import com.expriv.model.FeedbackDto;
+import com.expriv.model.Training;
+import com.expriv.service.ConfigurationService;
+import com.expriv.service.ImageAttributeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -9,201 +15,327 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.expriv.model.Evaluation;
-import com.expriv.model.Training;
-import com.expriv.service.ConfigurationService;
-
 import java.io.IOException;
+import java.util.List;
 
 @Controller
 public class MainController {
 
-  @Autowired
-  private JdbcTemplate jdbcTemplate;
+    @Autowired
+    private JdbcTemplate jdbcTemplate;
 
-  @GetMapping("/")
-  public String root() {
-    return "home";
-  }
 
-  @GetMapping("/login")
-  public String login(Model model) {
-    return "login";
-  }
 
-  @GetMapping("/user")
-  public String userIndex() {
-    return "index";
-  }
 
-  @GetMapping("/training")
-  public String trainingForm(Model model) {
+    @GetMapping("/")
+    public String root() {
+        return "home";
+    }
 
-    Training training = new Training();
+    @GetMapping("/login")
+    public String login(Model model) {
+        return "login";
+    }
 
-    Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-    training.setUsername(principal);
-    training.setJdbcTemplate(jdbcTemplate);
-    training.readId();
-    System.out.println(training.getImage_path());
-    model.addAttribute("training", training);
-    return "training";
-  }
+    @GetMapping("/user")
+    public String userIndex() {
+        return "index";
+    }
 
-  @PostMapping("/training")
-  public String trainingSubmit(@ModelAttribute Training training, Model model) {
+    @GetMapping("/training")
+    public String trainingForm(Model model) {
 
-    training.setJdbcTemplate(jdbcTemplate);
-    if (training.getSharing_type().equals("invalid")) {
 
-      model.addAttribute("training", training);
+        Training training= new Training();
 
-    } else {
-
-      training.storeSharing_type();
-      training = new Training();
-      training.setJdbcTemplate(jdbcTemplate);
-      Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-      training.setUsername(principal);
-      training.readId();
-
-      if (training.getImage_path().equals("na")) {
-        ConfigurationService configurationService = new ConfigurationService();
-        configurationService.setParams();
-        String python_root_dir = configurationService.getPython_base_dir();
-        int train_batch_size = configurationService.getTrain_batch_size();
-        int eval_batch_size = configurationService.getEval_batch_size();
-
-        try {
-          String command = "python2.7" + " " + python_root_dir + "utils.py generateImageID" + " "
-              + training.getUsername() + " " + "training" + " " + train_batch_size;
-          Runtime.getRuntime().exec(command);
-          command = "python2.7" + " " + python_root_dir + "configuration.py update";
-          Runtime.getRuntime().exec(command);
-          command = "python2.7" + " " + python_root_dir + "utils.py generateImageID" + " "
-              + training.getUsername() + " " + "evaluation" + " " + eval_batch_size;
-          Runtime.getRuntime().exec(command);
-        } catch (IOException e) {
-          e.printStackTrace();
-        }
-        return "training_complete";
-      } else {
-
+        Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        training.setUsername(principal);
+        training.setJdbcTemplate(jdbcTemplate);
+        training.readId();
+        System.out.println(training.getImage_path());
         model.addAttribute("training", training);
         return "training";
-      }
-    }
-    return "training";
-  }
-
-  @GetMapping("/evaluation")
-  public String evaluationForm(Model model) {
-    Evaluation evaluation = new Evaluation();
-    evaluation.setJdbcTemplate(jdbcTemplate);
-    Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-    evaluation.setUsername(principal);
-
-    evaluation.readId();
-    if (evaluation.getImage_id().equals("unidentified") || evaluation.getImage_id().equals("na")) {
-      evaluation.setMessage("train_first");
-      model.addAttribute("evaluation", evaluation);
-      return "evaluation";
-
     }
 
-    try {
-      evaluation.generateExplanation();
-    } catch (IOException e) {
-      e.printStackTrace();
+    @PostMapping("/training")
+    public String trainingSubmit(@ModelAttribute Training training, Model model) {
+
+        training.setJdbcTemplate(jdbcTemplate);
+        if (training.getSharing_type().equals("invalid")) {
+
+            model.addAttribute("training", training);
+
+        }
+        else {
+
+            training.storeSharing_type();
+            training = new Training();
+            training.setJdbcTemplate(jdbcTemplate);
+            Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+            training.setUsername(principal);
+            training.readId();
+
+
+            if (training.getImage_path().equals("na")) {
+                ConfigurationService configurationService=new ConfigurationService();
+                configurationService.setParams();
+                String python_root_dir=configurationService.getPython_base_dir();
+                int train_batch_size =configurationService.getTrain_batch_size();
+                int eval_batch_size = configurationService.getEval_batch_size();
+
+                 try {
+                     String command="python2.7"+" "+python_root_dir+"utils.py generateImageID"+" "+training.getUsername()+" "+"training"+" "+train_batch_size;
+                     Process p = Runtime.getRuntime().exec(command);
+                     command = "python2.7"+" "+python_root_dir+"configuration.py update";
+                     p=Runtime.getRuntime().exec(command);
+                     command="python2.7"+" "+python_root_dir+"utils.py generateImageID"+" "+training.getUsername()+" "+"evaluation"+" "+eval_batch_size;
+                     p=Runtime.getRuntime().exec(command);
+                 }
+                 catch (IOException e) {
+                     e.printStackTrace();
+                 }
+                return "training_complete";
+            }
+            else {
+
+
+                model.addAttribute("training", training);
+                return "training";
+            }
+        }
+        return "training";
     }
 
-    model.addAttribute("evaluation", evaluation);
 
-    return "evaluation";
-  }
+    @GetMapping("/evaluation")
+    public String evaluationForm(Model model)
+    {
+        Evaluation evaluation= new Evaluation();
+        evaluation.setJdbcTemplate(jdbcTemplate);
+        Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        evaluation.setUsername(principal);
 
-  @PostMapping("/evaluation")
-  public String evaluationSubmit(@ModelAttribute Evaluation evaluation, Model model) {
 
-    evaluation.setJdbcTemplate(jdbcTemplate);
+        evaluation.readId();
+        if (evaluation.getImage_id().equals("unidentified")||evaluation.getImage_id().equals("na"))
+        {
+            evaluation.setMessage("train_first");
+            evaluation.setAttributeValid(true);
+            model.addAttribute("evaluation", evaluation);
+            return "evaluation";
 
-    if (evaluation.getFeedback() == null) {
-      System.out.println(evaluation.getImage_path());
+        }
 
-      evaluation.setFeedback("invalid");
-      evaluation.setDisagree_type("na");
-      model.addAttribute("evaluation", evaluation);
-      return "evaluation";
+        try {
 
-    }
+            FeedbackDto feedbackDto=new FeedbackDto();
 
-    if (evaluation.getFeedback().equals("Agree")) {
-      evaluation.setDisagree_type("na");
-      evaluation.setAtt1(100);
-      evaluation.setAtt2(100);
+            ImageAttributeService imageAttributeService=new ImageAttributeService();
+            imageAttributeService.setImage_id(evaluation.getImage_id());
 
-    }
 
-    if (evaluation.getDisagree_type().equals("invalid")) {
-      System.out.println(evaluation.getImage_path());
-      model.addAttribute("evaluation", evaluation);
-      return "evaluation";
-    }
+                imageAttributeService.setAttributes();
+                List<String> imageAttributes = imageAttributeService.getAttributes();
+                for (String imageAttribute:imageAttributes) {
+                  Feedback feedback = new Feedback();
+                  feedback.setAttributeName(imageAttribute);
 
-    if (evaluation.getAtt1() == 0 || evaluation.getAtt2() == 0) {
 
-      System.out.println(evaluation.getImage_path());
-      evaluation.setAtt_status(10);
-      model.addAttribute("evaluation", evaluation);
-      return "evaluation";
-    }
 
-    evaluation.storeSharing_type();
 
-    evaluation = new Evaluation();
-    evaluation.setJdbcTemplate(jdbcTemplate);
-    Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-    evaluation.setUsername(principal);
+                feedbackDto.addFeedback(feedback);
 
-    evaluation.readId();
 
-    if (evaluation.getImage_id().equals("na")) {
+            }
 
-      System.out.println(evaluation.getImage_path());
-      ConfigurationService configurationService = new ConfigurationService();
-      configurationService.setParams();
-      String python_root_dir = configurationService.getPython_base_dir();
-      int eval_batch_size = configurationService.getEval_batch_size();
 
-      try {
 
-        String command = "python2.7" + " " + python_root_dir + "configuration.py update";
-        Runtime.getRuntime().exec(command);
-        command = "python2.7" + " " + python_root_dir + "utils.py generateImageID" + " "
-            + evaluation.getUsername() + " " + "evaluation" + " " + eval_batch_size;
-        Runtime.getRuntime().exec(command);
-      } catch (IOException e) {
-        e.printStackTrace();
-      }
-      return "evaluation_complete";
+            evaluation.setFeedbackDto(feedbackDto);
+
+            evaluation.generateExplanation();
+            evaluation.setAttributeValid(true);
+            model.addAttribute("evaluation", evaluation);
+
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return "evaluation";
+
 
     }
 
-    try {
+        @PostMapping("/evaluation")
+        public String evaluationSubmit(@ModelAttribute Evaluation evaluation, Model model)
+        {
 
-      evaluation.generateExplanation();
-    } catch (IOException e) {
-      e.printStackTrace();
+            evaluation.setJdbcTemplate(jdbcTemplate);
+
+            if (evaluation.getFeedback()==null)
+            {
+
+
+                evaluation.setFeedback("invalid");
+                evaluation.setDisagree_type("valid");
+                evaluation.setAttributeValid(true);
+                model.addAttribute( "evaluation", evaluation);
+                return "evaluation";
+
+
+            }
+
+
+
+
+            if (evaluation.getFeedback().equals("Agree"))
+            {
+                evaluation.setDisagree_type("valid");
+                evaluation.setAttributeValid(true);
+
+
+            }
+
+            if (evaluation.getDisagree_type().equals("invalid"))
+            {
+
+                model.addAttribute("evaluation", evaluation);
+                evaluation.setAttributeValid(true);
+                return "evaluation";
+            }
+
+            if (evaluation.isAttributeValid()!=true) {
+                evaluation.setAttributeValid(true);
+
+                FeedbackDto feedbackDto = evaluation.getFeedbackDto();
+                for (Feedback feedback : feedbackDto.getFeedbacks()) {
+                    if (feedback.getAttributeValue() == 0) {
+                        System.out.println(feedback.getAttributeValue());
+                        System.out.println(feedback.getAttributeName());
+
+
+                        evaluation.setAttributeValid(false);
+                        break;
+                    }
+
+
+                }
+            }
+            System.out.println(evaluation.isAttributeValid());
+
+            if (evaluation.isAttributeValid()==false)
+            {
+
+
+                System.out.println("I am here");
+
+                model.addAttribute("evaluation", evaluation);
+                return "evaluation";
+            }
+
+                evaluation.storeSharing_type();
+
+            ImageAttributeService imageAttributeService=new ImageAttributeService();
+            try {
+                imageAttributeService.transferValues(evaluation.getFeedbackDto());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            evaluation= new Evaluation();
+                evaluation.setJdbcTemplate(jdbcTemplate);
+                Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+                evaluation.setUsername(principal);
+
+                evaluation.readId();
+
+
+
+                if (evaluation.getImage_id().equals("na"))
+                {
+
+
+                    ConfigurationService configurationService=new ConfigurationService();
+                    configurationService.setParams();
+                    String python_root_dir=configurationService.getPython_base_dir();
+                    int eval_batch_size = configurationService.getEval_batch_size();
+
+                    try {
+
+                        String command = "python2.7"+" "+python_root_dir+"configuration.py update";
+                        Process p=Runtime.getRuntime().exec(command);
+                        command="python2.7"+" "+python_root_dir+"utils.py generateImageID"+" "+evaluation.getUsername()+" "+"evaluation"+" "+eval_batch_size;
+                        p=Runtime.getRuntime().exec(command);
+                    }
+                    catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    model.addAttribute("evaluation_complete", evaluation);
+                    return "evaluation_complete";
+
+                }
+
+
+
+
+
+            try {
+
+                FeedbackDto feedbackDto=new FeedbackDto();
+
+                imageAttributeService=new ImageAttributeService();
+                imageAttributeService.setImage_id(evaluation.getImage_id());
+
+
+                imageAttributeService.setAttributes();
+                List<String> imageAttributes = imageAttributeService.getAttributes();
+                for (String imageAttribute:imageAttributes) {
+                    Feedback feedback = new Feedback();
+                    feedback.setAttributeName(imageAttribute);
+
+
+
+
+                    feedbackDto.addFeedback(feedback);
+
+
+                }
+
+
+
+                evaluation.setFeedbackDto(feedbackDto);
+
+                evaluation.generateExplanation();
+                evaluation.setAttributeValid(true);
+                model.addAttribute("evaluation", evaluation);
+
+
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+
+
+                    model.addAttribute("evaluation", evaluation);
+                    return "evaluation";
+
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+    @PostMapping("/greeting")
+    public String greetingSubmit(Model model) {
+        return "result";
     }
-    System.out.println(evaluation.getImage_path());
-    model.addAttribute("evaluation", evaluation);
-    return "evaluation";
 
-  }
-
-  @PostMapping("/greeting")
-  public String greetingSubmit(Model model) {
-    return "result";
-  }
 
 }

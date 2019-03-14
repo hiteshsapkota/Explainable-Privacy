@@ -78,6 +78,16 @@ select{
 
     <br>
 
+<div th:if="${evaluation.message=='train_first'}">
+
+    <div class="alert alert-danger">Could not generate explanation without training!!!</div>
+    <center><h4> You will be redirected to the index page in five seconds. </h4></center>
+    <center><h4> If you see this message more than 5 seconds, please <span><a href="/" th:href="@{/index}">Click here.</a></span></h4></center>
+
+
+</div>
+
+
     <center><h1> Congratulations!!! Your evaluation phase is completed. </h1></center>
 <center><h2> You will be redirected to the index page in five seconds. </h2></center>
         <center><h2> If you see this message more than 5 seconds, please <span><a href="/" th:href="@{/index}">Click here.</a></span></h2></center>
