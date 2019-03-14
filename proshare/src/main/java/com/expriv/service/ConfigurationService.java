@@ -17,7 +17,7 @@ public class ConfigurationService {
         Properties prop = new Properties();
         try
         {
-            prop.load(new FileInputStream("config.properties"));
+            prop.load(new FileInputStream("src/main/resources/application.properties"));
         } catch (IOException e) {
             e.printStackTrace();
         }
