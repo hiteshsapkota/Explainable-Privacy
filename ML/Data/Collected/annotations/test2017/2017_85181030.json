@@ -1,0 +1,12 @@
+{
+    "id": "2017_85181030", 
+    "image_path": "images/test2017/2017_85181030.jpg", 
+    "labels": [
+        "a4_gender", 
+        "a57_culture", 
+        "a65_rel_social", 
+        "a68_rel_spectators"
+    ], 
+    "openimages_id": "4141856c5937b879", 
+    "source_url": "https://c2.staticflickr.com/8/7122/7512584738_5affc8faee_o.jpg"
+}

@@ -1,0 +1,15 @@
+{
+    "id": "2017_36701305", 
+    "image_path": "images/train2017/2017_36701305.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a57_culture", 
+        "a61_opinion_general"
+    ], 
+    "openimages_id": "a29af77b1d0d742a", 
+    "source_url": "https://c3.staticflickr.com/1/177/392342516_099c7c70e4_o.jpg"
+}

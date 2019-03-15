@@ -1,0 +1,16 @@
+{
+    "id": "2017_31321562", 
+    "image_path": "images/test2017/2017_31321562.jpg", 
+    "labels": [
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a57_culture", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "454f3b3eaf1bf1aa", 
+    "source_url": "https://c3.staticflickr.com/4/3919/14357787772_c6021cbdb3_o.jpg"
+}

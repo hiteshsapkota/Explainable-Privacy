@@ -1,0 +1,11 @@
+{
+    "id": "2017_31977062", 
+    "image_path": "images/test2017/2017_31977062.jpg", 
+    "labels": [
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a85_username"
+    ], 
+    "openimages_id": "77e916eed85327a5", 
+    "source_url": "https://farm6.staticflickr.com/4024/4412680795_6b0ff10f2c_o.jpg"
+}

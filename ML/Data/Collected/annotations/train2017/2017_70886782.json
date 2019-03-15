@@ -1,0 +1,20 @@
+{
+    "id": "2017_70886782", 
+    "image_path": "images/train2017/2017_70886782.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a23_birth_city", 
+        "a24_birth_date", 
+        "a25_nationality", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a59_sports", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "d7c6b8eff872e394", 
+    "source_url": "https://farm5.staticflickr.com/6160/6134433396_743c730053_o.jpg"
+}

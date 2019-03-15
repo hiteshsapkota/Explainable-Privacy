@@ -1,0 +1,18 @@
+{
+    "id": "2017_17316329", 
+    "image_path": "images/test2017/2017_17316329.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a27_marital_status", 
+        "a4_gender", 
+        "a55_religion", 
+        "a5_eye_color", 
+        "a65_rel_social", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "77c49904a61191de", 
+    "source_url": "https://c7.staticflickr.com/4/3153/2450384611_8f676ce57d_o.jpg"
+}

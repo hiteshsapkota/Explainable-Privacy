@@ -1,0 +1,21 @@
+{
+    "id": "2017_14890144", 
+    "image_path": "images/test2017/2017_14890144.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a57_culture", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "158b8f1ede528803", 
+    "source_url": "https://farm4.staticflickr.com/311/20182255056_a8fed96214_o.jpg"
+}

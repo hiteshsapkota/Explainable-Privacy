@@ -1,0 +1,17 @@
+{
+    "id": "2017_23680107", 
+    "image_path": "images/test2017/2017_23680107.jpg", 
+    "labels": [
+        "a12_semi_nudity", 
+        "a17_color", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a68_rel_spectators", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "89c836c1658f4471", 
+    "source_url": "https://farm2.staticflickr.com/3668/10290865885_fef94c9803_o.jpg"
+}

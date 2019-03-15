@@ -1,0 +1,18 @@
+{
+    "id": "2017_94905051", 
+    "image_path": "images/test2017/2017_94905051.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a39_disability_physical", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a57_culture", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "54573fd011badab8", 
+    "source_url": "https://c1.staticflickr.com/9/8001/7382393924_df68bf9381_o.jpg"
+}

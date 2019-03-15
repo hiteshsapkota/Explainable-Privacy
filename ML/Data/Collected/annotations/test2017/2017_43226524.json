@@ -1,0 +1,21 @@
+{
+    "id": "2017_43226524", 
+    "image_path": "images/test2017/2017_43226524.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a58_hobbies", 
+        "a5_eye_color", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "cccec95ebcfc6b04", 
+    "source_url": "https://farm5.staticflickr.com/3856/14544330303_6a8efd388e_o.jpg"
+}

@@ -1,0 +1,10 @@
+{
+    "id": "2017_44401168", 
+    "image_path": "images/train2017/2017_44401168.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a59_sports"
+    ], 
+    "openimages_id": "5880c01f87e7bd79", 
+    "source_url": "https://c2.staticflickr.com/6/5281/5362990471_6028eec6b6_o.jpg"
+}

@@ -88,8 +88,13 @@ public class MainController {
                      Process p = Runtime.getRuntime().exec(command);
                      command = "python2.7"+" "+python_root_dir+"configuration.py update";
                      p=Runtime.getRuntime().exec(command);
-                     command="python2.7"+" "+python_root_dir+"utils.py generateImageID"+" "+training.getUsername()+" "+"evaluation"+" "+eval_batch_size;
-                     p=Runtime.getRuntime().exec(command);
+                     training.setTrainingInstances();
+                     System.out.println(training.getTrainingInstances());
+                     System.out.println(configurationService.getTrainingThreshold());
+                     if (training.getTrainingInstances()>configurationService.getTrainingThreshold()) {
+                         command = "python2.7" + " " + python_root_dir + "utils.py generateImageID" + " " + training.getUsername() + " " + "evaluation" + " " + eval_batch_size;
+                         p = Runtime.getRuntime().exec(command);
+                     }
                  }
                  catch (IOException e) {
                      e.printStackTrace();
@@ -117,8 +122,9 @@ public class MainController {
 
 
         evaluation.readId();
-        if (evaluation.getImage_id().equals("unidentified")||evaluation.getImage_id().equals("na"))
+        if (evaluation.getImage_id().equals("undefined")||evaluation.getImage_id().equals("na"))
         {
+
             evaluation.setMessage("train_first");
             evaluation.setAttributeValid(true);
             model.addAttribute("evaluation", evaluation);

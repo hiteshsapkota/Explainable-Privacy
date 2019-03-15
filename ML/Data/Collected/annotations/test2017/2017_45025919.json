@@ -1,0 +1,16 @@
+{
+    "id": "2017_45025919", 
+    "image_path": "images/test2017/2017_45025919.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a26_handwriting", 
+        "a29_ausweis", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a78_address_home_complete", 
+        "a82_date_time", 
+        "a8_signature"
+    ], 
+    "openimages_id": "f308a4508f4ac403", 
+    "source_url": "https://farm4.staticflickr.com/3609/3322379320_79ed853939_o.jpg"
+}

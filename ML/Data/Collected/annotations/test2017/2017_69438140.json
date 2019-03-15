@@ -1,0 +1,18 @@
+{
+    "id": "2017_69438140", 
+    "image_path": "images/test2017/2017_69438140.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a58_hobbies", 
+        "a66_rel_professional", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "1ff0eb0efa35e81d", 
+    "source_url": "https://c6.staticflickr.com/9/8321/8009872627_9ca427a72a_o.jpg"
+}

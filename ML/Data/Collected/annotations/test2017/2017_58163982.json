@@ -1,0 +1,11 @@
+{
+    "id": "2017_58163982", 
+    "image_path": "images/test2017/2017_58163982.jpg", 
+    "labels": [
+        "a20_name_first", 
+        "a46_occupation", 
+        "a55_religion"
+    ], 
+    "openimages_id": "81af3d0e6e75b325", 
+    "source_url": "https://farm6.staticflickr.com/2765/4212185923_a843ea5313_o.jpg"
+}

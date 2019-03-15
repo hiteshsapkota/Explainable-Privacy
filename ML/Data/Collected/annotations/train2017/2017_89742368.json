@@ -1,0 +1,20 @@
+{
+    "id": "2017_89742368", 
+    "image_path": "images/train2017/2017_89742368.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a55_religion", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "53e75db1a1eac7ad", 
+    "source_url": "https://c6.staticflickr.com/4/3448/3216678043_a6445a8e34_o.jpg"
+}

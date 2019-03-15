@@ -1,0 +1,18 @@
+{
+    "id": "2017_98731123", 
+    "image_path": "images/test2017/2017_98731123.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a66_rel_professional", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "c8ce677894819ff4", 
+    "source_url": "https://farm5.staticflickr.com/5707/22373638951_e6328680af_o.jpg"
+}

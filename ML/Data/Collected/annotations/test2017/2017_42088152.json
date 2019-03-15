@@ -1,0 +1,23 @@
+{
+    "id": "2017_42088152", 
+    "image_path": "images/test2017/2017_42088152.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a23_birth_city", 
+        "a24_birth_date", 
+        "a25_nationality", 
+        "a29_ausweis", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a78_address_home_complete", 
+        "a82_date_time", 
+        "a8_signature"
+    ], 
+    "openimages_id": "a965f9b56dd7bcbc", 
+    "source_url": "https://c5.staticflickr.com/4/3488/4061529486_009575f970_o.jpg"
+}

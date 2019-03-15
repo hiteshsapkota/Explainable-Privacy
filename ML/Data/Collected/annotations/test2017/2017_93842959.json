@@ -1,0 +1,14 @@
+{
+    "id": "2017_93842959", 
+    "image_path": "images/test2017/2017_93842959.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a10_face_partial", 
+        "a17_color", 
+        "a4_gender", 
+        "a59_sports", 
+        "a67_rel_competitors"
+    ], 
+    "openimages_id": "d66036fb32204fc8", 
+    "source_url": "https://c1.staticflickr.com/4/3822/13387085773_1220236efd_o.jpg"
+}

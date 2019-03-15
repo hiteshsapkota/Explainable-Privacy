@@ -1,0 +1,19 @@
+{
+    "id": "2017_56625050", 
+    "image_path": "images/test2017/2017_56625050.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a21_name_last", 
+        "a39_disability_physical", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a61_opinion_general", 
+        "a69_rel_views", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "ee1ff5588622d28d", 
+    "source_url": "https://c6.staticflickr.com/7/6112/6879298214_57eeb9d92c_o.jpg"
+}

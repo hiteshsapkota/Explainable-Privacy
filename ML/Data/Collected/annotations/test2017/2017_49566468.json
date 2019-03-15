@@ -1,0 +1,10 @@
+{
+    "id": "2017_49566468", 
+    "image_path": "images/test2017/2017_49566468.jpg", 
+    "labels": [
+        "a37_receipt", 
+        "a8_signature"
+    ], 
+    "openimages_id": "d55f4fcdfd0d992f", 
+    "source_url": "https://c8.staticflickr.com/9/8291/7588225528_6aed44685c_o.jpg"
+}

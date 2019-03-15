@@ -1,0 +1,19 @@
+{
+    "id": "2017_70068222", 
+    "image_path": "images/test2017/2017_70068222.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a55_religion", 
+        "a61_opinion_general", 
+        "a65_rel_social", 
+        "a69_rel_views", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "774e72a712c356d5", 
+    "source_url": "https://farm6.staticflickr.com/2902/14554746544_157b4dc0b8_o.jpg"
+}

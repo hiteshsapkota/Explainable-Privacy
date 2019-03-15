@@ -1,0 +1,11 @@
+{
+    "id": "2017_55486357", 
+    "image_path": "images/train2017/2017_55486357.jpg", 
+    "labels": [
+        "a17_color", 
+        "a2_weight_approx", 
+        "a58_hobbies"
+    ], 
+    "openimages_id": "cd9c7f10d594480a", 
+    "source_url": "https://c3.staticflickr.com/1/63/173935245_d599c8ca9a_o.jpg"
+}

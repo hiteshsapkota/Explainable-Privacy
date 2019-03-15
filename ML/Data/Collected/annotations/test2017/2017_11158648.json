@@ -1,0 +1,23 @@
+{
+    "id": "2017_11158648", 
+    "image_path": "images/test2017/2017_11158648.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a25_nationality", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a66_rel_professional", 
+        "a6_hair_color", 
+        "a70_education_history", 
+        "a8_signature", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "cb8d21b7da5f8df7", 
+    "source_url": "https://farm8.staticflickr.com/6040/6351607892_38e8cdb7c1_o.jpg"
+}

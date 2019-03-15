@@ -1,0 +1,10 @@
+{
+    "id": "2017_55613512", 
+    "image_path": "images/test2017/2017_55613512.jpg", 
+    "labels": [
+        "a49_phone", 
+        "a75_address_current_partial"
+    ], 
+    "openimages_id": "32cba256539189cd", 
+    "source_url": "https://farm4.staticflickr.com/3243/4568174373_66533ffb30_o.jpg"
+}

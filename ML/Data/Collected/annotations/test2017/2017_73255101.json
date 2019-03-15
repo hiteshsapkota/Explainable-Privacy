@@ -1,0 +1,13 @@
+{
+    "id": "2017_73255101", 
+    "image_path": "images/test2017/2017_73255101.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a17_color", 
+        "a19_name_full", 
+        "a30_credit_card", 
+        "a4_gender"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

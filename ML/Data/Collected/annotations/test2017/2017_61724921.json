@@ -1,0 +1,17 @@
+{
+    "id": "2017_61724921", 
+    "image_path": "images/test2017/2017_61724921.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "7f1b54bf71b69353", 
+    "source_url": "https://farm4.staticflickr.com/3668/11031626546_2dea171c2d_o.jpg"
+}

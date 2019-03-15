@@ -1,0 +1,19 @@
+{
+    "id": "2017_60824901", 
+    "image_path": "images/test2017/2017_60824901.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a59_sports", 
+        "a67_rel_competitors", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "ee8efe654cfb88db", 
+    "source_url": "https://c4.staticflickr.com/4/3852/14776249791_82ba4791a4_o.jpg"
+}

@@ -1,0 +1,13 @@
+{
+    "id": "2017_96873343", 
+    "image_path": "images/train2017/2017_96873343.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a26_handwriting", 
+        "a37_receipt", 
+        "a82_date_time", 
+        "a8_signature"
+    ], 
+    "openimages_id": "55422d2145648d76", 
+    "source_url": "https://farm7.staticflickr.com/8005/7528367002_e875b5ce7a_o.jpg"
+}

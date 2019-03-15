@@ -1,0 +1,19 @@
+{
+    "id": "2017_89524190", 
+    "image_path": "images/test2017/2017_89524190.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a41_injury", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "a4aba97a7bf72d1e", 
+    "source_url": "https://c7.staticflickr.com/6/5175/5497196482_af74b80373_o.jpg"
+}

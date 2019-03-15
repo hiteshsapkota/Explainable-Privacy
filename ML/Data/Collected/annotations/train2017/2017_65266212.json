@@ -1,0 +1,11 @@
+{
+    "id": "2017_65266212", 
+    "image_path": "images/train2017/2017_65266212.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a70_education_history", 
+        "a8_signature"
+    ], 
+    "openimages_id": "9b72b5a9e632e6de", 
+    "source_url": "https://c7.staticflickr.com/3/2714/5790597422_3558c04a84_o.jpg"
+}

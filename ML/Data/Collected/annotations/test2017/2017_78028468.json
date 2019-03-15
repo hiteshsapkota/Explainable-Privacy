@@ -1,0 +1,17 @@
+{
+    "id": "2017_78028468", 
+    "image_path": "images/test2017/2017_78028468.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a59_sports", 
+        "a67_rel_competitors", 
+        "a68_rel_spectators", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "3a38a9bdd64a4595", 
+    "source_url": "https://farm6.staticflickr.com/7298/11160410406_2db106fc6e_o.jpg"
+}

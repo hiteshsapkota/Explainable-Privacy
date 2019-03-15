@@ -1,0 +1,17 @@
+{
+    "id": "2017_21008096", 
+    "image_path": "images/test2017/2017_21008096.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a68_rel_spectators", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "017fdb9832188995", 
+    "source_url": "https://farm6.staticflickr.com/2017/2251704392_a9478f60fe_o.jpg"
+}

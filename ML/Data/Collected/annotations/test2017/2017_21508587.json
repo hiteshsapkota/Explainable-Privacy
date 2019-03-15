@@ -1,0 +1,17 @@
+{
+    "id": "2017_21508587", 
+    "image_path": "images/test2017/2017_21508587.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a59_sports", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "fecc2cc09d0281ca", 
+    "source_url": "https://c3.staticflickr.com/4/3167/2643163913_e06284268a_o.jpg"
+}

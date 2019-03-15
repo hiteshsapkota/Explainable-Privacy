@@ -1,0 +1,12 @@
+{
+    "id": "2017_95583082", 
+    "image_path": "images/train2017/2017_95583082.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a43_medicine", 
+        "a74_address_current_complete", 
+        "a82_date_time"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

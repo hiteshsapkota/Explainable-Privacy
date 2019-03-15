@@ -1,0 +1,17 @@
+{
+    "id": "2017_78166631", 
+    "image_path": "images/test2017/2017_78166631.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a39_disability_physical", 
+        "a4_gender", 
+        "a59_sports", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "557aaeadc45162ad", 
+    "source_url": "https://c6.staticflickr.com/6/5473/12755437574_314f0c9098_o.jpg"
+}

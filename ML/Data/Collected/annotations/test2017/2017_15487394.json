@@ -1,0 +1,21 @@
+{
+    "id": "2017_15487394", 
+    "image_path": "images/test2017/2017_15487394.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "b89150a2ec98bf93", 
+    "source_url": "https://farm4.staticflickr.com/3288/2814101087_812292a4cb_o.jpg"
+}

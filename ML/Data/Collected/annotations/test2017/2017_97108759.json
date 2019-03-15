@@ -1,0 +1,17 @@
+{
+    "id": "2017_97108759", 
+    "image_path": "images/test2017/2017_97108759.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a13_full_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a58_hobbies", 
+        "a68_rel_spectators", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

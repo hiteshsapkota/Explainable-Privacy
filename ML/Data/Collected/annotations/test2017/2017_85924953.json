@@ -1,0 +1,10 @@
+{
+    "id": "2017_85924953", 
+    "image_path": "images/test2017/2017_85924953.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a75_address_current_partial"
+    ], 
+    "openimages_id": "3fa16349fa026a14", 
+    "source_url": "https://farm5.staticflickr.com/7205/7041738849_0df1bed3fb_o.jpg"
+}

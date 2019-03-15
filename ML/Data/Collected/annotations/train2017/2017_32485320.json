@@ -1,0 +1,20 @@
+{
+    "id": "2017_32485320", 
+    "image_path": "images/train2017/2017_32485320.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a26_handwriting", 
+        "a32_drivers_license", 
+        "a33_student_id", 
+        "a38_ticket", 
+        "a4_gender", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

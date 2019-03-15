@@ -1,0 +1,14 @@
+{
+    "id": "2017_13804185", 
+    "image_path": "images/train2017/2017_13804185.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a24_birth_date", 
+        "a25_nationality", 
+        "a7_fingerprint", 
+        "a82_date_time", 
+        "a8_signature"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

@@ -1,0 +1,22 @@
+{
+    "id": "2017_70348967", 
+    "image_path": "images/test2017/2017_70348967.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a24_birth_date", 
+        "a2_weight_approx", 
+        "a32_drivers_license", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a8_signature", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "8aeb9ad84ca7e1c4", 
+    "source_url": "https://farm5.staticflickr.com/7572/15817582268_313d0882ef_o.jpg"
+}

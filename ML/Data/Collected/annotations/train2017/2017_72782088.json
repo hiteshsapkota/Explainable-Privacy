@@ -1,0 +1,11 @@
+{
+    "id": "2017_72782088", 
+    "image_path": "images/train2017/2017_72782088.jpg", 
+    "labels": [
+        "a26_handwriting", 
+        "a31_passport", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "8fe253d628854bbf", 
+    "source_url": "https://c8.staticflickr.com/8/7625/16751878827_9c87dd6b72_o.jpg"
+}

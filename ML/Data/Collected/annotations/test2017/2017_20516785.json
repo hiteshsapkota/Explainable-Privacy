@@ -1,0 +1,18 @@
+{
+    "id": "2017_20516785", 
+    "image_path": "images/test2017/2017_20516785.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a27_marital_status", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a64_rel_personal", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "f71f920156802f15", 
+    "source_url": "https://farm6.staticflickr.com/3742/14287333394_bc814c0a7b_o.jpg"
+}

@@ -1,0 +1,16 @@
+{
+    "id": "2017_56366694", 
+    "image_path": "images/test2017/2017_56366694.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a57_culture", 
+        "a61_opinion_general", 
+        "a68_rel_spectators", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "14a2de628e49dcc8", 
+    "source_url": "https://c1.staticflickr.com/3/2892/9711435662_a4b867e975_o.jpg"
+}

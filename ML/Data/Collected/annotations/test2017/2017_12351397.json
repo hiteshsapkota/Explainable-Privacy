@@ -1,0 +1,18 @@
+{
+    "id": "2017_12351397", 
+    "image_path": "images/test2017/2017_12351397.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a58_hobbies", 
+        "a65_rel_social", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "6d02295f8425cea1", 
+    "source_url": "https://farm2.staticflickr.com/7259/7020482245_4699c66471_o.jpg"
+}

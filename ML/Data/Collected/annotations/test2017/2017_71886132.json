@@ -1,0 +1,12 @@
+{
+    "id": "2017_71886132", 
+    "image_path": "images/test2017/2017_71886132.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a46_occupation", 
+        "a59_sports", 
+        "a67_rel_competitors"
+    ], 
+    "openimages_id": "a3ff9a2f03ee6f85", 
+    "source_url": "https://farm6.staticflickr.com/305/20116653009_0c9ca28831_o.jpg"
+}

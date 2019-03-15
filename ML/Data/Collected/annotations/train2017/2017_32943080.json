@@ -1,0 +1,20 @@
+{
+    "id": "2017_32943080", 
+    "image_path": "images/train2017/2017_32943080.jpg", 
+    "labels": [
+        "a104_license_plate_partial", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a46_occupation", 
+        "a56_sexual_orientation", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "c5f72b97dc1544ca", 
+    "source_url": "https://c3.staticflickr.com/5/4150/4846331883_8b75c15492_o.jpg"
+}

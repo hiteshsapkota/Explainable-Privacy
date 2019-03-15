@@ -1,0 +1,19 @@
+{
+    "id": "2017_82338768", 
+    "image_path": "images/test2017/2017_82338768.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a57_culture", 
+        "a66_rel_professional", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "cce119fdbd78a71b", 
+    "source_url": "https://c4.staticflickr.com/1/58/197382571_f225f4fbc0_o.jpg"
+}

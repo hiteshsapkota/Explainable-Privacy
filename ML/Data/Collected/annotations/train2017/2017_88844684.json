@@ -1,0 +1,12 @@
+{
+    "id": "2017_88844684", 
+    "image_path": "images/train2017/2017_88844684.jpg", 
+    "labels": [
+        "a17_color", 
+        "a27_marital_status", 
+        "a59_sports", 
+        "a67_rel_competitors"
+    ], 
+    "openimages_id": "4f09c6fed2d413a6", 
+    "source_url": "https://farm7.staticflickr.com/4081/4766708083_3837bbb205_o.jpg"
+}

@@ -1,0 +1,17 @@
+{
+    "id": "2017_63932077", 
+    "image_path": "images/test2017/2017_63932077.jpg", 
+    "labels": [
+        "a104_license_plate_partial", 
+        "a10_face_partial", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a59_sports", 
+        "a67_rel_competitors"
+    ], 
+    "openimages_id": "d1facd89bfe4313e", 
+    "source_url": "https://c7.staticflickr.com/7/6070/6083785780_a91895d95b_o.jpg"
+}

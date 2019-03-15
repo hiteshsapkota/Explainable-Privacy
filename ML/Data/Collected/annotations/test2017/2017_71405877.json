@@ -1,0 +1,12 @@
+{
+    "id": "2017_71405877", 
+    "image_path": "images/test2017/2017_71405877.jpg", 
+    "labels": [
+        "a17_color", 
+        "a61_opinion_general", 
+        "a69_rel_views", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "bec566178de4ee20", 
+    "source_url": "https://farm1.staticflickr.com/2020/2192017685_60ac3c19f6_o.jpg"
+}

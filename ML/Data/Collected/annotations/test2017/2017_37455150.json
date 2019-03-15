@@ -1,0 +1,17 @@
+{
+    "id": "2017_37455150", 
+    "image_path": "images/test2017/2017_37455150.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a48_occassion_work", 
+        "a4_gender", 
+        "a66_rel_professional", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "ad39d86d0cf08e52", 
+    "source_url": "https://farm3.staticflickr.com/3784/11350998046_d75b34d8c8_o.jpg"
+}

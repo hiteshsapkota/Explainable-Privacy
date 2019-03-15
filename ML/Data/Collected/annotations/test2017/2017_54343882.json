@@ -1,0 +1,14 @@
+{
+    "id": "2017_54343882", 
+    "image_path": "images/test2017/2017_54343882.jpg", 
+    "labels": [
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a58_hobbies"
+    ], 
+    "openimages_id": "d17daf1518f94b4d", 
+    "source_url": "https://c6.staticflickr.com/4/3933/15534855735_a5a786c048_o.jpg"
+}

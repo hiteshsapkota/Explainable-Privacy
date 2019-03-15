@@ -1,0 +1,11 @@
+{
+    "id": "2017_58798310", 
+    "image_path": "images/train2017/2017_58798310.jpg", 
+    "labels": [
+        "a37_receipt", 
+        "a73_landmark", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "3c86d931127fe28d", 
+    "source_url": "https://c6.staticflickr.com/3/2922/14335436940_5057ab7340_o.jpg"
+}

@@ -1,0 +1,12 @@
+{
+    "id": "2017_24860210", 
+    "image_path": "images/train2017/2017_24860210.jpg", 
+    "labels": [
+        "a37_receipt", 
+        "a49_phone", 
+        "a73_landmark", 
+        "a74_address_current_complete"
+    ], 
+    "openimages_id": "a118a8021f41a05f", 
+    "source_url": "https://c8.staticflickr.com/6/5591/14943583645_97e82c1528_o.jpg"
+}

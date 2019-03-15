@@ -1,0 +1,11 @@
+{
+    "id": "2017_68961524", 
+    "image_path": "images/test2017/2017_68961524.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a17_color", 
+        "a46_occupation"
+    ], 
+    "openimages_id": "2b025f1a802805bb", 
+    "source_url": "https://c4.staticflickr.com/8/7104/7273442826_a66272c745_o.jpg"
+}

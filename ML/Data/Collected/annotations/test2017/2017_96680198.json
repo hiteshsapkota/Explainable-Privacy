@@ -1,0 +1,19 @@
+{
+    "id": "2017_96680198", 
+    "image_path": "images/test2017/2017_96680198.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a4_gender", 
+        "a57_culture", 
+        "a65_rel_social", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "c685c80dc2463d4f", 
+    "source_url": "https://c8.staticflickr.com/9/8682/16626738129_11b9db7d11_o.jpg"
+}

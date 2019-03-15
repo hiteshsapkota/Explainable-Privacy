@@ -1,0 +1,14 @@
+{
+    "id": "2017_40125160", 
+    "image_path": "images/test2017/2017_40125160.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "eaceb019684c3547", 
+    "source_url": "https://farm8.staticflickr.com/31/88016727_d8e5ad8b05_o.jpg"
+}

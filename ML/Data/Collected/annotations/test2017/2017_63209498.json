@@ -1,0 +1,19 @@
+{
+    "id": "2017_63209498", 
+    "image_path": "images/test2017/2017_63209498.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a48_occassion_work", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a66_rel_professional", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "1124c07a5d1ab149", 
+    "source_url": "https://c2.staticflickr.com/1/4/5765350_949114bece_o.jpg"
+}

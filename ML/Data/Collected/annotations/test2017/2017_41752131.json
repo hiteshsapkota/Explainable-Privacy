@@ -1,0 +1,16 @@
+{
+    "id": "2017_41752131", 
+    "image_path": "images/test2017/2017_41752131.jpg", 
+    "labels": [
+        "a16_race", 
+        "a20_name_first", 
+        "a24_birth_date", 
+        "a26_handwriting", 
+        "a4_gender", 
+        "a74_address_current_complete", 
+        "a7_fingerprint", 
+        "a82_date_time"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

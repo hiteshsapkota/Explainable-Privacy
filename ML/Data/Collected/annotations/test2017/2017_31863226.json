@@ -1,0 +1,13 @@
+{
+    "id": "2017_31863226", 
+    "image_path": "images/test2017/2017_31863226.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a66_rel_professional", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "3e1a5ab7ad35dbbc", 
+    "source_url": "https://c5.staticflickr.com/9/8595/16016926656_56ddbbbfbd_o.jpg"
+}

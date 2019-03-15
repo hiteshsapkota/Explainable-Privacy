@@ -55,7 +55,7 @@ public class UserRegistrationController {
 
         String python_root_dir = configurationService.getPython_base_dir();
 
-        String command1="python2.7"+" "+python_root_dir+"utils.py generateImageID"+" "+userDto.getEmail()+" "+"training 1";
+        String command1="python2.7"+" "+python_root_dir+"utils.py generateImageID"+" "+userDto.getEmail()+" "+"training"+" "+configurationService.getTrain_batch_size();
         String command2 = "python2.7"+" "+python_root_dir+"configuration.py initialization"+" "+userDto.getEmail();
 
         try {

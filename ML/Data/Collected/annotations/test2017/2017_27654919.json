@@ -1,0 +1,11 @@
+{
+    "id": "2017_27654919", 
+    "image_path": "images/test2017/2017_27654919.jpg", 
+    "labels": [
+        "a4_gender", 
+        "a68_rel_spectators", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "38c864171caf9eed", 
+    "source_url": "https://c6.staticflickr.com/4/3637/3534357674_27f351744d_o.jpg"
+}

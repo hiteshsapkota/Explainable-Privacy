@@ -1,0 +1,12 @@
+{
+    "id": "2017_61780770", 
+    "image_path": "images/train2017/2017_61780770.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a103_license_plate_complete", 
+        "a73_landmark", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "fa49aa20ed045f15", 
+    "source_url": "https://farm6.staticflickr.com/47/135353649_f385631f98_o.jpg"
+}

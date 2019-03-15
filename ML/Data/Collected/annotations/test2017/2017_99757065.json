@@ -1,0 +1,15 @@
+{
+    "id": "2017_99757065", 
+    "image_path": "images/test2017/2017_99757065.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a55_religion", 
+        "a66_rel_professional"
+    ], 
+    "openimages_id": "cb2ba38efc9d59a5", 
+    "source_url": "https://farm6.staticflickr.com/5500/10892073176_cfbfe9d8c1_o.jpg"
+}

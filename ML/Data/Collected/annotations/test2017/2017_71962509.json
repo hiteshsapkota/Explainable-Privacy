@@ -1,0 +1,17 @@
+{
+    "id": "2017_71962509", 
+    "image_path": "images/test2017/2017_71962509.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a6_hair_color", 
+        "a73_landmark"
+    ], 
+    "openimages_id": "4128657d9c264c7d", 
+    "source_url": "https://c6.staticflickr.com/6/5466/8914973522_df378e5586_o.jpg"
+}

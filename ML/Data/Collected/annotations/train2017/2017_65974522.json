@@ -1,0 +1,11 @@
+{
+    "id": "2017_65974522", 
+    "image_path": "images/train2017/2017_65974522.jpg", 
+    "labels": [
+        "a17_color", 
+        "a1_age_approx", 
+        "a64_rel_personal"
+    ], 
+    "openimages_id": "8cab2d1e4f8ec269", 
+    "source_url": "https://c2.staticflickr.com/6/5603/15213965404_f438a25868_o.jpg"
+}

@@ -1,0 +1,14 @@
+{
+    "id": "2017_26447109", 
+    "image_path": "images/test2017/2017_26447109.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "8327f836323e8bd7", 
+    "source_url": "https://farm8.staticflickr.com/4097/4919781161_c91972b561_o.jpg"
+}

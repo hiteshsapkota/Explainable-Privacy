@@ -1,0 +1,24 @@
+{
+    "id": "2017_69377787", 
+    "image_path": "images/test2017/2017_69377787.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a11_tattoo", 
+        "a12_semi_nudity", 
+        "a13_full_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a59_sports", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a74_address_current_complete", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "093860850ef0a759", 
+    "source_url": "https://c2.staticflickr.com/6/5571/14238712090_77d7082332_o.jpg"
+}

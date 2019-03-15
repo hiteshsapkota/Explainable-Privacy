@@ -1,0 +1,12 @@
+{
+    "id": "2017_36406617", 
+    "image_path": "images/test2017/2017_36406617.jpg", 
+    "labels": [
+        "a17_color", 
+        "a19_name_full", 
+        "a26_handwriting", 
+        "a75_address_current_partial"
+    ], 
+    "openimages_id": "daa6a78f21aa549b", 
+    "source_url": "https://c4.staticflickr.com/3/2167/2127054186_cf34aa8304_o.jpg"
+}

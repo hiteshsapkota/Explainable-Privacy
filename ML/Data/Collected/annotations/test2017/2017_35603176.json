@@ -1,0 +1,16 @@
+{
+    "id": "2017_35603176", 
+    "image_path": "images/test2017/2017_35603176.jpg", 
+    "labels": [
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a48_occassion_work", 
+        "a4_gender", 
+        "a6_hair_color", 
+        "a75_address_current_partial"
+    ], 
+    "openimages_id": "503ff4b68b7e6fe8", 
+    "source_url": "https://c1.staticflickr.com/1/34/68730441_1a3bdd2650_o.jpg"
+}

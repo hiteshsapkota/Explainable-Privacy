@@ -1,0 +1,18 @@
+{
+    "id": "2017_62530218", 
+    "image_path": "images/test2017/2017_62530218.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a61_opinion_general", 
+        "a68_rel_spectators", 
+        "a69_rel_views", 
+        "a7_fingerprint", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "c924fa7fcc7b3bdc", 
+    "source_url": "https://c5.staticflickr.com/3/2907/14379321174_9046183f00_o.jpg"
+}

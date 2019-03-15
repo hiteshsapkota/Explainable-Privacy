@@ -1,0 +1,17 @@
+{
+    "id": "2017_71465736", 
+    "image_path": "images/train2017/2017_71465736.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "af9ef3dbf1cc336c", 
+    "source_url": "https://c5.staticflickr.com/4/3578/3283445483_fbb128aff7_o.jpg"
+}

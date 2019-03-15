@@ -1,0 +1,13 @@
+{
+    "id": "2017_56442629", 
+    "image_path": "images/train2017/2017_56442629.jpg", 
+    "labels": [
+        "a17_color", 
+        "a27_marital_status", 
+        "a4_gender", 
+        "a60_occassion_personal", 
+        "a64_rel_personal"
+    ], 
+    "openimages_id": "ac917d946b64f5f5", 
+    "source_url": "https://farm6.staticflickr.com/1305/4703247210_39d9651753_o.jpg"
+}

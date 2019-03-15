@@ -1,0 +1,10 @@
+{
+    "id": "2017_74506169", 
+    "image_path": "images/test2017/2017_74506169.jpg", 
+    "labels": [
+        "a75_address_current_partial", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "fe3f64fb8674d08c", 
+    "source_url": "https://c5.staticflickr.com/6/5033/14487918258_28666ca57e_o.jpg"
+}

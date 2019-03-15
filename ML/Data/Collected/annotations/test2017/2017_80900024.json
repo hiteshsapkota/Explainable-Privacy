@@ -1,0 +1,18 @@
+{
+    "id": "2017_80900024", 
+    "image_path": "images/test2017/2017_80900024.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a64_rel_personal", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "67c84f3f0331c3a1", 
+    "source_url": "https://farm2.staticflickr.com/2529/3725315403_6b0d23a3a5_o.jpg"
+}

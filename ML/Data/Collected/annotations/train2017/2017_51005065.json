@@ -1,0 +1,10 @@
+{
+    "id": "2017_51005065", 
+    "image_path": "images/train2017/2017_51005065.jpg", 
+    "labels": [
+        "a3_height_approx", 
+        "a48_occassion_work"
+    ], 
+    "openimages_id": "2718a3976b18c44b", 
+    "source_url": "https://c4.staticflickr.com/6/5603/15766252311_8a069f2a84_o.jpg"
+}

@@ -1,0 +1,21 @@
+{
+    "id": "2017_42369108", 
+    "image_path": "images/test2017/2017_42369108.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a48_occassion_work", 
+        "a4_gender", 
+        "a59_sports", 
+        "a5_eye_color", 
+        "a66_rel_professional", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "47a0a0256768cfa8", 
+    "source_url": "https://c1.staticflickr.com/8/7293/9195947406_613ce6b0f6_o.jpg"
+}

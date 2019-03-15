@@ -1,0 +1,12 @@
+{
+    "id": "2017_27206695", 
+    "image_path": "images/test2017/2017_27206695.jpg", 
+    "labels": [
+        "a104_license_plate_partial", 
+        "a17_color", 
+        "a4_gender", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "7dfe4f0a5df25bfa", 
+    "source_url": "https://c3.staticflickr.com/8/7281/16716707590_ebe4cf0e19_o.jpg"
+}

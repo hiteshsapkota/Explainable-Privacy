@@ -1,0 +1,21 @@
+{
+    "id": "2017_73106483", 
+    "image_path": "images/train2017/2017_73106483.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a26_handwriting", 
+        "a29_ausweis", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a7_fingerprint", 
+        "a8_signature", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "e51fdfe1bfc10882", 
+    "source_url": "https://farm3.staticflickr.com/2151/2409776230_1734c8459b_o.jpg"
+}

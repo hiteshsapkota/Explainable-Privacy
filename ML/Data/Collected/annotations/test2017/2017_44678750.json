@@ -1,0 +1,18 @@
+{
+    "id": "2017_44678750", 
+    "image_path": "images/test2017/2017_44678750.jpg", 
+    "labels": [
+        "a104_license_plate_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "51a728887828a974", 
+    "source_url": "https://farm5.staticflickr.com/190/508253342_5b1ced7b05_o.jpg"
+}

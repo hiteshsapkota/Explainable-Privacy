@@ -1,0 +1,10 @@
+{
+    "id": "2017_26678492", 
+    "image_path": "images/train2017/2017_26678492.jpg", 
+    "labels": [
+        "a17_color", 
+        "a18_ethnic_clothing"
+    ], 
+    "openimages_id": "1228ddb1b676d7f3", 
+    "source_url": "https://farm4.staticflickr.com/3658/3348228175_b77e8dc885_o.jpg"
+}

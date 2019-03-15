@@ -1,0 +1,20 @@
+{
+    "id": "2017_40289083", 
+    "image_path": "images/test2017/2017_40289083.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a3_height_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a55_religion", 
+        "a57_culture", 
+        "a65_rel_social", 
+        "a66_rel_professional", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "75c714886935fa7e", 
+    "source_url": "https://c7.staticflickr.com/9/8731/16748960918_67db07e1f6_o.jpg"
+}

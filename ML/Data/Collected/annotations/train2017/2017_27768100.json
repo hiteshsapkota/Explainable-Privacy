@@ -1,0 +1,20 @@
+{
+    "id": "2017_27768100", 
+    "image_path": "images/train2017/2017_27768100.jpg", 
+    "labels": [
+        "a104_license_plate_partial", 
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "f520547fd1a3a9c8", 
+    "source_url": "https://c1.staticflickr.com/1/134/398172940_bba4c7e4de_o.jpg"
+}

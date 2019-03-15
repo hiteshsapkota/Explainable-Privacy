@@ -1,0 +1,17 @@
+{
+    "id": "2017_39020443", 
+    "image_path": "images/test2017/2017_39020443.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "ea4fc709e3f186e5", 
+    "source_url": "https://farm6.staticflickr.com/8022/7469443482_7bde1bca9c_o.jpg"
+}

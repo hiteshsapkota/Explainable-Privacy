@@ -1,0 +1,16 @@
+{
+    "id": "2017_91708275", 
+    "image_path": "images/test2017/2017_91708275.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a65_rel_social", 
+        "a68_rel_spectators", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "9006571c2d991fb0", 
+    "source_url": "https://farm1.staticflickr.com/7369/13075935403_c030436a6b_o.jpg"
+}

@@ -1,0 +1,15 @@
+{
+    "id": "2017_22314182", 
+    "image_path": "images/test2017/2017_22314182.jpg", 
+    "labels": [
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a41_injury", 
+        "a46_occupation", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "649a7dc191599aaa", 
+    "source_url": "https://c3.staticflickr.com/6/5057/5575933391_271cc221b8_o.jpg"
+}

@@ -1,0 +1,10 @@
+{
+    "id": "2017_71309387", 
+    "image_path": "images/train2017/2017_71309387.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a59_sports"
+    ], 
+    "openimages_id": "289bd0c6bf293500", 
+    "source_url": "https://farm1.staticflickr.com/2047/2081689404_b298f13989_o.jpg"
+}

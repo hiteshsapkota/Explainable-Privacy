@@ -1,0 +1,16 @@
+{
+    "id": "2017_92415830", 
+    "image_path": "images/test2017/2017_92415830.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a32_drivers_license", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

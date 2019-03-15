@@ -1,0 +1,14 @@
+{
+    "id": "2017_24318408", 
+    "image_path": "images/test2017/2017_24318408.jpg", 
+    "labels": [
+        "a30_credit_card", 
+        "a37_receipt", 
+        "a49_phone", 
+        "a73_landmark", 
+        "a74_address_current_complete", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "0d868b18266745ec", 
+    "source_url": "https://c5.staticflickr.com/6/5496/11469612364_efedd93b4c_o.jpg"
+}

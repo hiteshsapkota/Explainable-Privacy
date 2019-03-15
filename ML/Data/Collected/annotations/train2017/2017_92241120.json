@@ -1,0 +1,10 @@
+{
+    "id": "2017_92241120", 
+    "image_path": "images/train2017/2017_92241120.jpg", 
+    "labels": [
+        "a21_name_last", 
+        "a62_opinion_political"
+    ], 
+    "openimages_id": "fe1fdc4f472b97bb", 
+    "source_url": "https://c4.staticflickr.com/4/3295/2971982123_88f3438444_o.jpg"
+}

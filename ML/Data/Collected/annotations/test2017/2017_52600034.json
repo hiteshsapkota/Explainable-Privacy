@@ -1,0 +1,14 @@
+{
+    "id": "2017_52600034", 
+    "image_path": "images/test2017/2017_52600034.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a59_sports", 
+        "a67_rel_competitors"
+    ], 
+    "openimages_id": "587e7df85404b028", 
+    "source_url": "https://c1.staticflickr.com/4/3213/2890575359_72024262bc_o.jpg"
+}

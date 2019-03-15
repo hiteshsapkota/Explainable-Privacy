@@ -1,0 +1,12 @@
+{
+    "id": "2017_49040189", 
+    "image_path": "images/train2017/2017_49040189.jpg", 
+    "labels": [
+        "a38_ticket", 
+        "a59_sports", 
+        "a67_rel_competitors", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "66e69ea6d7acf96e", 
+    "source_url": "https://c7.staticflickr.com/1/49/170992109_50442be2a7_o.jpg"
+}

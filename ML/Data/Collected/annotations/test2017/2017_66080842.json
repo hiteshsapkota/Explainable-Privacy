@@ -1,0 +1,24 @@
+{
+    "id": "2017_66080842", 
+    "image_path": "images/test2017/2017_66080842.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a26_handwriting", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "73b76db0dcaf22fe", 
+    "source_url": "https://c7.staticflickr.com/3/2052/2536796243_d95b74f373_o.jpg"
+}

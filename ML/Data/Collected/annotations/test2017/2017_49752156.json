@@ -1,0 +1,13 @@
+{
+    "id": "2017_49752156", 
+    "image_path": "images/test2017/2017_49752156.jpg", 
+    "labels": [
+        "a17_color", 
+        "a4_gender", 
+        "a58_hobbies", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "639e79130c222a69", 
+    "source_url": "https://c2.staticflickr.com/1/60/184338294_d27f5b8f0c_o.jpg"
+}

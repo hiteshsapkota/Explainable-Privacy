@@ -1,0 +1,16 @@
+{
+    "id": "2017_12677281", 
+    "image_path": "images/train2017/2017_12677281.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a17_color", 
+        "a20_name_first", 
+        "a4_gender", 
+        "a61_opinion_general", 
+        "a69_rel_views", 
+        "a6_hair_color", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "58c310c907c9708d", 
+    "source_url": "https://c6.staticflickr.com/2/1096/5124618508_32d314919d_o.jpg"
+}

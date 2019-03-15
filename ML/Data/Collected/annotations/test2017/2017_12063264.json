@@ -1,0 +1,13 @@
+{
+    "id": "2017_12063264", 
+    "image_path": "images/test2017/2017_12063264.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a46_occupation", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a8_signature"
+    ], 
+    "openimages_id": "494244e9a3e81616", 
+    "source_url": "https://farm7.staticflickr.com/8314/8043325097_c1028a18fb_o.jpg"
+}

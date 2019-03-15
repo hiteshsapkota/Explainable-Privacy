@@ -1,0 +1,10 @@
+{
+    "id": "2017_86433361", 
+    "image_path": "images/test2017/2017_86433361.jpg", 
+    "labels": [
+        "a4_gender", 
+        "a58_hobbies"
+    ], 
+    "openimages_id": "9a17baeac32f769f", 
+    "source_url": "https://c8.staticflickr.com/6/5341/7407351484_2962bae50e_o.jpg"
+}

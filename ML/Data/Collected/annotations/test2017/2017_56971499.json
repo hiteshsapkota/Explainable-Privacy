@@ -1,0 +1,22 @@
+{
+    "id": "2017_56971499", 
+    "image_path": "images/test2017/2017_56971499.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a62_opinion_political", 
+        "a69_rel_views", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "04ba831b4b028f82", 
+    "source_url": "https://farm3.staticflickr.com/2841/10500940055_1f28e0ac6d_o.jpg"
+}

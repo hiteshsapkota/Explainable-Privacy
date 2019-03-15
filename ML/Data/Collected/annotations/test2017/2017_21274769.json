@@ -1,0 +1,10 @@
+{
+    "id": "2017_21274769", 
+    "image_path": "images/test2017/2017_21274769.jpg", 
+    "labels": [
+        "a17_color", 
+        "a27_marital_status"
+    ], 
+    "openimages_id": "246f08a9ef9dccc2", 
+    "source_url": "https://farm3.staticflickr.com/3242/3104769391_5701321b5e_o.jpg"
+}

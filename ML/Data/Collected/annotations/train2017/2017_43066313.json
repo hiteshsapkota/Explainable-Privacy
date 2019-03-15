@@ -1,0 +1,15 @@
+{
+    "id": "2017_43066313", 
+    "image_path": "images/train2017/2017_43066313.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a4_gender", 
+        "a57_culture", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "48aa7944bc478752", 
+    "source_url": "https://farm3.staticflickr.com/6060/5910705814_06350c8451_o.jpg"
+}

@@ -1,0 +1,19 @@
+{
+    "id": "2017_34670855", 
+    "image_path": "images/test2017/2017_34670855.jpg", 
+    "labels": [
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a27_marital_status", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a64_rel_personal", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "86a30d3a6e4249e4", 
+    "source_url": "https://farm5.staticflickr.com/2742/4167989146_2eb982253c_o.jpg"
+}

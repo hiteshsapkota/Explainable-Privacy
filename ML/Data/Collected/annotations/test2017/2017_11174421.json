@@ -1,0 +1,14 @@
+{
+    "id": "2017_11174421", 
+    "image_path": "images/test2017/2017_11174421.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a4_gender", 
+        "a78_address_home_complete", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

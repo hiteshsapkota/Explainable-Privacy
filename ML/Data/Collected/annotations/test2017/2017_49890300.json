@@ -1,0 +1,17 @@
+{
+    "id": "2017_49890300", 
+    "image_path": "images/test2017/2017_49890300.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "86dd5303ce4e32a4", 
+    "source_url": "https://farm5.staticflickr.com/2866/9472928069_e1748cb310_o.jpg"
+}

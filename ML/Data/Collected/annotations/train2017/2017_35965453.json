@@ -1,0 +1,14 @@
+{
+    "id": "2017_35965453", 
+    "image_path": "images/train2017/2017_35965453.jpg", 
+    "labels": [
+        "a26_handwriting", 
+        "a31_passport", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a8_signature"
+    ], 
+    "openimages_id": "ab54673cf1c083d4", 
+    "source_url": "https://farm5.staticflickr.com/3576/3407687917_eba91518d8_o.jpg"
+}

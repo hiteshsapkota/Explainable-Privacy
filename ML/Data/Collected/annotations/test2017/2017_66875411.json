@@ -1,0 +1,18 @@
+{
+    "id": "2017_66875411", 
+    "image_path": "images/test2017/2017_66875411.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a21_name_last", 
+        "a26_handwriting", 
+        "a4_gender", 
+        "a70_education_history", 
+        "a82_date_time", 
+        "a8_signature", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

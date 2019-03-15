@@ -1,0 +1,10 @@
+{
+    "id": "2017_26632346", 
+    "image_path": "images/test2017/2017_26632346.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color"
+    ], 
+    "openimages_id": "d402bf0fac9410a3", 
+    "source_url": "https://farm4.staticflickr.com/201/506854224_47b0f86397_o.jpg"
+}

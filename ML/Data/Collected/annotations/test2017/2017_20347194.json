@@ -1,0 +1,15 @@
+{
+    "id": "2017_20347194", 
+    "image_path": "images/test2017/2017_20347194.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a26_handwriting", 
+        "a35_mail", 
+        "a73_landmark", 
+        "a74_address_current_complete", 
+        "a82_date_time", 
+        "a8_signature"
+    ], 
+    "openimages_id": "e5bf30b80cda6cee", 
+    "source_url": "https://c7.staticflickr.com/3/2075/13157426333_4bf690a701_o.jpg"
+}

@@ -1,0 +1,11 @@
+{
+    "id": "2017_51290267", 
+    "image_path": "images/test2017/2017_51290267.jpg", 
+    "labels": [
+        "a20_name_first", 
+        "a7_fingerprint", 
+        "a82_date_time"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

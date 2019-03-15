@@ -1,0 +1,17 @@
+{
+    "id": "2017_35186220", 
+    "image_path": "images/test2017/2017_35186220.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "a2e1939d9d891fb8", 
+    "source_url": "https://c1.staticflickr.com/6/5069/5878976947_bc88e3e1cc_o.jpg"
+}

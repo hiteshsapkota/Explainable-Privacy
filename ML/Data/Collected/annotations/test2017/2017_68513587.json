@@ -1,0 +1,12 @@
+{
+    "id": "2017_68513587", 
+    "image_path": "images/test2017/2017_68513587.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a46_occupation", 
+        "a75_address_current_partial", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "1864d2a275948aea", 
+    "source_url": "https://c3.staticflickr.com/3/2142/2214686583_ce5712c03e_o.jpg"
+}

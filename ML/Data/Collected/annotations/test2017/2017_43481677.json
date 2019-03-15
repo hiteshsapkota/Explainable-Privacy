@@ -1,0 +1,18 @@
+{
+    "id": "2017_43481677", 
+    "image_path": "images/test2017/2017_43481677.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "38a8111f2d0e2590", 
+    "source_url": "https://farm1.staticflickr.com/3727/12606932505_f840a8ce46_o.jpg"
+}

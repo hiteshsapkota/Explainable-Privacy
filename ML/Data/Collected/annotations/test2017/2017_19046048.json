@@ -1,0 +1,18 @@
+{
+    "id": "2017_19046048", 
+    "image_path": "images/test2017/2017_19046048.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a57_culture", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "b5d9643331ac7a59", 
+    "source_url": "https://c2.staticflickr.com/1/22/29616002_0706f54951_o.jpg"
+}

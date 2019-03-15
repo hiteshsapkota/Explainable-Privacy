@@ -1,0 +1,10 @@
+{
+    "id": "2017_51652852", 
+    "image_path": "images/train2017/2017_51652852.jpg", 
+    "labels": [
+        "a17_color", 
+        "a41_injury"
+    ], 
+    "openimages_id": "07a59b746e35f7b7", 
+    "source_url": "https://farm8.staticflickr.com/5216/5503941553_843c98fb3e_o.jpg"
+}

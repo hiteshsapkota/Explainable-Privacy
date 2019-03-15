@@ -1,0 +1,20 @@
+{
+    "id": "2017_51073315", 
+    "image_path": "images/test2017/2017_51073315.jpg", 
+    "labels": [
+        "a104_license_plate_partial", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a64_rel_personal", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "4ac02c9d3bd7b816", 
+    "source_url": "https://farm7.staticflickr.com/3175/2666883773_b6469fe8c8_o.jpg"
+}

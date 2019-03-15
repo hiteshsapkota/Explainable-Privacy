@@ -1,0 +1,15 @@
+{
+    "id": "2017_28150460", 
+    "image_path": "images/train2017/2017_28150460.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a17_color", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a6_hair_color", 
+        "a75_address_current_partial"
+    ], 
+    "openimages_id": "8f8f3092dd751d0c", 
+    "source_url": "https://c5.staticflickr.com/8/7097/7381295486_28f1ac65f2_o.jpg"
+}

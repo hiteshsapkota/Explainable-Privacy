@@ -1,0 +1,12 @@
+{
+    "id": "2017_12465739", 
+    "image_path": "images/test2017/2017_12465739.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a24_birth_date", 
+        "a26_handwriting", 
+        "a27_marital_status"
+    ], 
+    "openimages_id": "d44845d486d2ec39", 
+    "source_url": "https://c2.staticflickr.com/8/7153/6678798945_88812c9197_o.jpg"
+}

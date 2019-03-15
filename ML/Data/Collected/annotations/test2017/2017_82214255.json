@@ -1,0 +1,13 @@
+{
+    "id": "2017_82214255", 
+    "image_path": "images/test2017/2017_82214255.jpg", 
+    "labels": [
+        "a104_license_plate_partial", 
+        "a17_color", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender"
+    ], 
+    "openimages_id": "7ae74768ae7b4160", 
+    "source_url": "https://farm1.staticflickr.com/2021/2465031123_149e7ac741_o.jpg"
+}

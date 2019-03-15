@@ -1,0 +1,13 @@
+{
+    "id": "2017_21339646", 
+    "image_path": "images/test2017/2017_21339646.jpg", 
+    "labels": [
+        "a17_color", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a65_rel_social"
+    ], 
+    "openimages_id": "bb998e020c32b72e", 
+    "source_url": "https://c7.staticflickr.com/6/5473/14300677884_ca992f4b43_o.jpg"
+}

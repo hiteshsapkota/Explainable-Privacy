@@ -1,0 +1,16 @@
+{
+    "id": "2017_19079174", 
+    "image_path": "images/test2017/2017_19079174.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a65_rel_social", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "a9516f07c43867f5", 
+    "source_url": "https://farm6.staticflickr.com/3839/15109202159_3a7bcf3fcf_o.jpg"
+}

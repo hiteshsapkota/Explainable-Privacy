@@ -1,0 +1,10 @@
+{
+    "id": "2017_66158708", 
+    "image_path": "images/test2017/2017_66158708.jpg", 
+    "labels": [
+        "a61_opinion_general", 
+        "a69_rel_views"
+    ], 
+    "openimages_id": "727ee4d0cc2592ef", 
+    "source_url": "https://c8.staticflickr.com/4/3505/3913465752_c160dd2f5b_o.jpg"
+}

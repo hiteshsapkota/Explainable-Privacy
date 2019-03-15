@@ -1,0 +1,21 @@
+{
+    "id": "2017_32337044", 
+    "image_path": "images/test2017/2017_32337044.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a11_tattoo", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "8b07acbbe0ff9b9b", 
+    "source_url": "https://c4.staticflickr.com/4/3138/2816371034_b5627da749_o.jpg"
+}

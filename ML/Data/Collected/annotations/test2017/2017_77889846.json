@@ -1,0 +1,11 @@
+{
+    "id": "2017_77889846", 
+    "image_path": "images/test2017/2017_77889846.jpg", 
+    "labels": [
+        "a17_color", 
+        "a37_receipt", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "90aee8c04ee9780d", 
+    "source_url": "https://c6.staticflickr.com/9/8592/16262506091_f907c3cc32_o.jpg"
+}

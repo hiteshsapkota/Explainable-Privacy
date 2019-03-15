@@ -1,0 +1,10 @@
+{
+    "id": "2017_67042084", 
+    "image_path": "images/test2017/2017_67042084.jpg", 
+    "labels": [
+        "a3_height_approx", 
+        "a4_gender"
+    ], 
+    "openimages_id": "1c00d238624d3c78", 
+    "source_url": "https://c1.staticflickr.com/3/2823/12793162313_ca5f926da3_o.jpg"
+}

@@ -1,0 +1,20 @@
+{
+    "id": "2017_79431329", 
+    "image_path": "images/train2017/2017_79431329.jpg", 
+    "labels": [
+        "a104_license_plate_partial", 
+        "a10_face_partial", 
+        "a11_tattoo", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "acf7c517e9b0ae9c", 
+    "source_url": "https://c5.staticflickr.com/4/3866/14516203906_671b0ee50e_o.jpg"
+}

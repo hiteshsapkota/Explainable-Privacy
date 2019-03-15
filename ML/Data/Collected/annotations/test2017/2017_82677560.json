@@ -1,0 +1,10 @@
+{
+    "id": "2017_82677560", 
+    "image_path": "images/test2017/2017_82677560.jpg", 
+    "labels": [
+        "a68_rel_spectators", 
+        "a73_landmark"
+    ], 
+    "openimages_id": "08f5c66a7f729702", 
+    "source_url": "https://farm3.staticflickr.com/3205/2949401008_a9639f94f4_o.jpg"
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2017_31325142", 
+    "image_path": "images/test2017/2017_31325142.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a48_occassion_work", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a66_rel_professional", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "45e8150f1d84fbef", 
+    "source_url": "https://c8.staticflickr.com/4/3718/11289910365_f4d5b08a47_o.jpg"
+}

@@ -1,0 +1,17 @@
+{
+    "id": "2017_72307138", 
+    "image_path": "images/test2017/2017_72307138.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "73b68f5db4bccc54", 
+    "source_url": "https://farm5.staticflickr.com/8079/8283460317_244308d18e_o.jpg"
+}

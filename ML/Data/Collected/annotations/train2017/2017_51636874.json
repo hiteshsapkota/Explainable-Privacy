@@ -1,0 +1,18 @@
+{
+    "id": "2017_51636874", 
+    "image_path": "images/train2017/2017_51636874.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a10_face_partial", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a59_sports", 
+        "a67_rel_competitors", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "05cb0b0f8b33e39a", 
+    "source_url": "https://c3.staticflickr.com/3/2877/9433772786_d109f4c7b9_o.jpg"
+}

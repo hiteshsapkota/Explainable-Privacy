@@ -1,0 +1,17 @@
+{
+    "id": "2017_43966324", 
+    "image_path": "images/train2017/2017_43966324.jpg", 
+    "labels": [
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a48_occassion_work", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a62_opinion_political", 
+        "a68_rel_spectators", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "5845611034e199fe", 
+    "source_url": "https://c7.staticflickr.com/4/3858/15257533281_64cfe668b8_o.jpg"
+}
