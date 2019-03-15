@@ -1,0 +1,13 @@
+{
+    "id": "2017_66691685", 
+    "image_path": "images/test2017/2017_66691685.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a23_birth_city", 
+        "a24_birth_date", 
+        "a26_handwriting", 
+        "a8_signature"
+    ], 
+    "openimages_id": "e7c3aee822927cb5", 
+    "source_url": "https://farm6.staticflickr.com/6172/6134173307_cd962b2213_o.jpg"
+}

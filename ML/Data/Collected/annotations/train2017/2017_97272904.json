@@ -1,0 +1,11 @@
+{
+    "id": "2017_97272904", 
+    "image_path": "images/train2017/2017_97272904.jpg", 
+    "labels": [
+        "a46_occupation", 
+        "a4_gender", 
+        "a66_rel_professional"
+    ], 
+    "openimages_id": "aeed1b702f5af8e7", 
+    "source_url": "https://farm8.staticflickr.com/5444/7203939118_2cfe6c13ea_o.jpg"
+}

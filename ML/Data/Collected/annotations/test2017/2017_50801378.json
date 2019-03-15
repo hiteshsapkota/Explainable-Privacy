@@ -1,0 +1,14 @@
+{
+    "id": "2017_50801378", 
+    "image_path": "images/test2017/2017_50801378.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "62ea3d600afcc82f", 
+    "source_url": "https://c8.staticflickr.com/5/4015/4311811557_8f5bae7f10_o.jpg"
+}

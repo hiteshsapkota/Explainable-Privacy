@@ -1,0 +1,10 @@
+{
+    "id": "2017_11635676", 
+    "image_path": "images/train2017/2017_11635676.jpg", 
+    "labels": [
+        "a26_handwriting", 
+        "a30_credit_card"
+    ], 
+    "openimages_id": "8a356e18b246ef05", 
+    "source_url": "https://farm6.staticflickr.com/8237/8364412525_2bd22bcc41_o.jpg"
+}

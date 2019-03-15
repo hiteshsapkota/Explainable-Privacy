@@ -1,0 +1,20 @@
+{
+    "id": "2017_29281640", 
+    "image_path": "images/test2017/2017_29281640.jpg", 
+    "labels": [
+        "a104_license_plate_partial", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a49_phone", 
+        "a4_gender", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a74_address_current_complete"
+    ], 
+    "openimages_id": "b9c2801b8ff89496", 
+    "source_url": "https://farm7.staticflickr.com/2939/13839455893_3430bdea87_o.jpg"
+}

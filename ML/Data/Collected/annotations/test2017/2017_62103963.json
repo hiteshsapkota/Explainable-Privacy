@@ -1,0 +1,16 @@
+{
+    "id": "2017_62103963", 
+    "image_path": "images/test2017/2017_62103963.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a61_opinion_general", 
+        "a69_rel_views", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "8556e09e15aaa39a", 
+    "source_url": "https://c3.staticflickr.com/9/8788/17188039649_3d5692a83f_o.jpg"
+}

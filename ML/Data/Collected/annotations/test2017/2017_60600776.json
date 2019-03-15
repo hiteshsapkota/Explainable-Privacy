@@ -1,0 +1,12 @@
+{
+    "id": "2017_60600776", 
+    "image_path": "images/test2017/2017_60600776.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a2_weight_approx", 
+        "a59_sports", 
+        "a67_rel_competitors"
+    ], 
+    "openimages_id": "90b9688f56eda94c", 
+    "source_url": "https://c5.staticflickr.com/8/7142/6727601691_d18faa8b88_o.jpg"
+}

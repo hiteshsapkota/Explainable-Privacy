@@ -1,0 +1,17 @@
+{
+    "id": "2017_36535401", 
+    "image_path": "images/test2017/2017_36535401.jpg", 
+    "labels": [
+        "a11_tattoo", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a61_opinion_general", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "db4bc5f58f8652f5", 
+    "source_url": "https://farm6.staticflickr.com/2113/2646608632_20c93c84ca_o.jpg"
+}

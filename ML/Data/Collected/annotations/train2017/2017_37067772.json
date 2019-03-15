@@ -1,0 +1,11 @@
+{
+    "id": "2017_37067772", 
+    "image_path": "images/train2017/2017_37067772.jpg", 
+    "labels": [
+        "a38_ticket", 
+        "a73_landmark", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "9131ba71b20d5532", 
+    "source_url": "https://farm3.staticflickr.com/5021/5845219100_86b721c8d4_o.jpg"
+}

@@ -1,0 +1,10 @@
+{
+    "id": "2017_58248903", 
+    "image_path": "images/test2017/2017_58248903.jpg", 
+    "labels": [
+        "a21_name_last", 
+        "a62_opinion_political"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

@@ -1,0 +1,11 @@
+{
+    "id": "2017_31775080", 
+    "image_path": "images/test2017/2017_31775080.jpg", 
+    "labels": [
+        "a17_color", 
+        "a26_handwriting", 
+        "a37_receipt"
+    ], 
+    "openimages_id": "cb629b786d75d80e", 
+    "source_url": "https://c7.staticflickr.com/4/3356/3508652032_04c3df5308_o.jpg"
+}

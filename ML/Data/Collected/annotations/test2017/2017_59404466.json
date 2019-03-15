@@ -1,0 +1,18 @@
+{
+    "id": "2017_59404466", 
+    "image_path": "images/test2017/2017_59404466.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a57_culture", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "eed2084ff1840bf1", 
+    "source_url": "https://farm2.staticflickr.com/63/183830072_905fa365cf_o.jpg"
+}

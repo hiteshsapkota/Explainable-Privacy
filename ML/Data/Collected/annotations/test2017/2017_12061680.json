@@ -1,0 +1,13 @@
+{
+    "id": "2017_12061680", 
+    "image_path": "images/test2017/2017_12061680.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a17_color", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a59_sports"
+    ], 
+    "openimages_id": "efd901cf475e49db", 
+    "source_url": "https://c4.staticflickr.com/8/7216/13170859273_459f63b81b_o.jpg"
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2017_34807345", 
+    "image_path": "images/test2017/2017_34807345.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "98635e8c7e023bbc", 
+    "source_url": "https://c5.staticflickr.com/4/3287/5870534339_d9aaf760ba_o.jpg"
+}

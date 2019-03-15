@@ -1,0 +1,16 @@
+{
+    "id": "2017_20366750", 
+    "image_path": "images/test2017/2017_20366750.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a27_marital_status", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "38c73ed7d76b21fe", 
+    "source_url": "https://c7.staticflickr.com/7/6143/5991533781_98e79b77eb_o.jpg"
+}

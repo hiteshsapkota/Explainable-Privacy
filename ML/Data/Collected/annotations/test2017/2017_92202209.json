@@ -1,0 +1,17 @@
+{
+    "id": "2017_92202209", 
+    "image_path": "images/test2017/2017_92202209.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "48c83c620e3ce56e", 
+    "source_url": "https://c7.staticflickr.com/8/7472/15947806425_1114d42ebf_o.jpg"
+}

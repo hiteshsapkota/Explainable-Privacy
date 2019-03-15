@@ -1,0 +1,18 @@
+{
+    "id": "2017_25278976", 
+    "image_path": "images/test2017/2017_25278976.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a1_age_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a55_religion", 
+        "a66_rel_professional", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "6ba0d1bd3e3f1e11", 
+    "source_url": "https://farm2.staticflickr.com/3268/3081043235_906bc13f13_o.jpg"
+}

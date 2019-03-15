@@ -1,0 +1,19 @@
+{
+    "id": "2017_38255801", 
+    "image_path": "images/test2017/2017_38255801.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a64_rel_personal", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "04063ab050e387b8", 
+    "source_url": "https://c1.staticflickr.com/8/7523/16215873181_841cf399aa_o.jpg"
+}

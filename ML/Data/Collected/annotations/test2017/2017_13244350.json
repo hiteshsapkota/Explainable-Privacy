@@ -1,0 +1,17 @@
+{
+    "id": "2017_13244350", 
+    "image_path": "images/test2017/2017_13244350.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a61_opinion_general", 
+        "a69_rel_views", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "d3245a88ddd26c12", 
+    "source_url": "https://farm3.staticflickr.com/2504/3897830116_0b607bd7d8_o.jpg"
+}

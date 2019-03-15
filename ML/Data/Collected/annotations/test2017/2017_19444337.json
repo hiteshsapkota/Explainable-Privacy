@@ -1,0 +1,24 @@
+{
+    "id": "2017_19444337", 
+    "image_path": "images/test2017/2017_19444337.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a11_tattoo", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a58_hobbies", 
+        "a64_rel_personal", 
+        "a65_rel_social", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "a0dc5b1437ba2882", 
+    "source_url": "https://farm3.staticflickr.com/321/19113473534_3c2163c756_o.jpg"
+}

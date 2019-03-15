@@ -1,0 +1,10 @@
+{
+    "id": "2017_74284666", 
+    "image_path": "images/test2017/2017_74284666.jpg", 
+    "labels": [
+        "a46_occupation", 
+        "a66_rel_professional"
+    ], 
+    "openimages_id": "c22d2686b2fb548e", 
+    "source_url": "https://c7.staticflickr.com/3/2004/2437515204_73e2feb339_o.jpg"
+}

@@ -1,0 +1,21 @@
+{
+    "id": "2017_69151905", 
+    "image_path": "images/test2017/2017_69151905.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a39_disability_physical", 
+        "a4_gender", 
+        "a59_sports", 
+        "a5_eye_color", 
+        "a67_rel_competitors", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "e816982c4d4b69d2", 
+    "source_url": "https://farm3.staticflickr.com/6140/5918820190_5958a97e4f_o.jpg"
+}

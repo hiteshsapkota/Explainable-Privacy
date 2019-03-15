@@ -1,0 +1,19 @@
+{
+    "id": "2017_58344618", 
+    "image_path": "images/test2017/2017_58344618.jpg", 
+    "labels": [
+        "a17_color", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a24_birth_date", 
+        "a26_handwriting", 
+        "a29_ausweis", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a8_signature", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "242113a6c99d5e10", 
+    "source_url": "https://farm1.staticflickr.com/181/364910131_7fb6dcf802_o.jpg"
+}

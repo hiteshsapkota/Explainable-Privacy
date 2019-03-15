@@ -1,0 +1,12 @@
+{
+    "id": "2017_99857432", 
+    "image_path": "images/test2017/2017_99857432.jpg", 
+    "labels": [
+        "a16_race", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a60_occassion_personal"
+    ], 
+    "openimages_id": "707f62fde73fbd95", 
+    "source_url": "https://farm6.staticflickr.com/1148/582080148_1b2c4674d5_o.jpg"
+}

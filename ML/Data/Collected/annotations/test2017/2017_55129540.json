@@ -1,0 +1,11 @@
+{
+    "id": "2017_55129540", 
+    "image_path": "images/test2017/2017_55129540.jpg", 
+    "labels": [
+        "a17_color", 
+        "a59_sports", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "7b2fe6df2eafc121", 
+    "source_url": "https://farm2.staticflickr.com/4066/4704509460_6e6dc3245a_o.jpg"
+}

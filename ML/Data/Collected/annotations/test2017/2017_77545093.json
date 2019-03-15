@@ -1,0 +1,19 @@
+{
+    "id": "2017_77545093", 
+    "image_path": "images/test2017/2017_77545093.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a65_rel_social", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "c9d7006951684b73", 
+    "source_url": "https://farm4.staticflickr.com/2207/1973038792_cb4f6f4591_o.jpg"
+}

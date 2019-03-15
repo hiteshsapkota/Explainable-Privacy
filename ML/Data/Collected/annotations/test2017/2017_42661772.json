@@ -1,0 +1,21 @@
+{
+    "id": "2017_42661772", 
+    "image_path": "images/test2017/2017_42661772.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a27_marital_status", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a5_eye_color", 
+        "a60_occassion_personal", 
+        "a64_rel_personal", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "c0c305802384de9b", 
+    "source_url": "https://c4.staticflickr.com/2/1133/1301088311_cf5f88a0b2_o.jpg"
+}

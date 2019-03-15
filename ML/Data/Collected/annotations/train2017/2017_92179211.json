@@ -1,0 +1,17 @@
+{
+    "id": "2017_92179211", 
+    "image_path": "images/train2017/2017_92179211.jpg", 
+    "labels": [
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a39_disability_physical", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

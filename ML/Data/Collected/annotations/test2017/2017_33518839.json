@@ -1,0 +1,10 @@
+{
+    "id": "2017_33518839", 
+    "image_path": "images/test2017/2017_33518839.jpg", 
+    "labels": [
+        "a21_name_last", 
+        "a30_credit_card"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

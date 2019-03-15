@@ -1,0 +1,16 @@
+{
+    "id": "2017_91693180", 
+    "image_path": "images/test2017/2017_91693180.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a59_sports", 
+        "a67_rel_competitors", 
+        "a68_rel_spectators", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "c44762aeb284b88b", 
+    "source_url": "https://c4.staticflickr.com/7/6202/6046168037_3370343751_o.jpg"
+}

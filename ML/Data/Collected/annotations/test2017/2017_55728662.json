@@ -1,0 +1,21 @@
+{
+    "id": "2017_55728662", 
+    "image_path": "images/test2017/2017_55728662.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a11_tattoo", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a58_hobbies", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "30065921ea8995f8", 
+    "source_url": "https://c1.staticflickr.com/9/8170/7933440176_cf4c7d52b1_o.jpg"
+}

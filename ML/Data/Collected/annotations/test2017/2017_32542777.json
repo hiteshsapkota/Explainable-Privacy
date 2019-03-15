@@ -1,0 +1,10 @@
+{
+    "id": "2017_32542777", 
+    "image_path": "images/test2017/2017_32542777.jpg", 
+    "labels": [
+        "a25_nationality", 
+        "a31_passport"
+    ], 
+    "openimages_id": "80d166174e9fe5da", 
+    "source_url": "https://c3.staticflickr.com/6/5508/9812030953_2afa475a15_o.jpg"
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2017_31735006", 
+    "image_path": "images/test2017/2017_31735006.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a27_marital_status", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a65_rel_social", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "0d1da82458880d3a", 
+    "source_url": "https://c3.staticflickr.com/2/1317/633241669_5fb3ccb986_o.jpg"
+}

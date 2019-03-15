@@ -1,0 +1,12 @@
+{
+    "id": "2017_26186021", 
+    "image_path": "images/test2017/2017_26186021.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a37_receipt", 
+        "a73_landmark", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "1e78824a9fdaa95f", 
+    "source_url": "https://c8.staticflickr.com/6/5558/14090919340_21db70eb24_o.jpg"
+}

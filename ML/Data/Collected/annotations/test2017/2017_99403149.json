@@ -1,0 +1,19 @@
+{
+    "id": "2017_99403149", 
+    "image_path": "images/test2017/2017_99403149.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a11_tattoo", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a41_injury", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "8613c725b4439d5d", 
+    "source_url": "https://c6.staticflickr.com/9/8468/8135347207_fd4cefd289_o.jpg"
+}

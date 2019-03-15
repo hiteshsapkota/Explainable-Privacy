@@ -1,0 +1,22 @@
+{
+    "id": "2017_87966744", 
+    "image_path": "images/test2017/2017_87966744.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a39_disability_physical", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a74_address_current_complete", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "03e1bb31bcfb635b", 
+    "source_url": "https://c4.staticflickr.com/8/7198/6972053919_1e5227c604_o.jpg"
+}

@@ -1,0 +1,22 @@
+{
+    "id": "2017_38801133", 
+    "image_path": "images/test2017/2017_38801133.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a11_tattoo", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a49_phone", 
+        "a4_gender", 
+        "a57_culture", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "6550f42a800b5d12", 
+    "source_url": "https://farm3.staticflickr.com/17/21802051_f8f779deea_o.jpg"
+}

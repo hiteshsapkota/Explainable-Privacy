@@ -1,0 +1,16 @@
+{
+    "id": "2017_49391256", 
+    "image_path": "images/train2017/2017_49391256.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a104_license_plate_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "a8685ac93fc74cea", 
+    "source_url": "https://c3.staticflickr.com/3/2519/3923346254_f390e4774b_o.jpg"
+}

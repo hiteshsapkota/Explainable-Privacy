@@ -1,0 +1,19 @@
+{
+    "id": "2017_83159160", 
+    "image_path": "images/test2017/2017_83159160.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "888edf1a810d60f2", 
+    "source_url": "https://farm3.staticflickr.com/7412/9174826955_e11a80990d_o.jpg"
+}

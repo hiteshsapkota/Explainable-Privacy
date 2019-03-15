@@ -1,0 +1,15 @@
+{
+    "id": "2017_71894956", 
+    "image_path": "images/train2017/2017_71894956.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a46_occupation", 
+        "a70_education_history", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a8_signature"
+    ], 
+    "openimages_id": "05dcd9164eed1957", 
+    "source_url": "https://farm8.staticflickr.com/5652/20923356182_fc4dee12f1_o.jpg"
+}

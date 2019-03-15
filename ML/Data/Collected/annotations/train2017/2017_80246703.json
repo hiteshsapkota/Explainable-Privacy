@@ -1,0 +1,18 @@
+{
+    "id": "2017_80246703", 
+    "image_path": "images/train2017/2017_80246703.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a11_tattoo", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "12d08616de27dc33", 
+    "source_url": "https://farm4.staticflickr.com/7234/7178923813_c837b7c549_o.jpg"
+}

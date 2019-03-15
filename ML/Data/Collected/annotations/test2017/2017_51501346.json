@@ -1,0 +1,16 @@
+{
+    "id": "2017_51501346", 
+    "image_path": "images/test2017/2017_51501346.jpg", 
+    "labels": [
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "1752ac8e84f07ab7", 
+    "source_url": "https://farm8.staticflickr.com/6021/5935203847_39281827b6_o.jpg"
+}

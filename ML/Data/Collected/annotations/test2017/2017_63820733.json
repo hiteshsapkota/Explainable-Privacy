@@ -1,0 +1,15 @@
+{
+    "id": "2017_63820733", 
+    "image_path": "images/test2017/2017_63820733.jpg", 
+    "labels": [
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a65_rel_social", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "671687de4fa2713e", 
+    "source_url": "https://c7.staticflickr.com/3/2805/10027346484_662b1da390_o.jpg"
+}

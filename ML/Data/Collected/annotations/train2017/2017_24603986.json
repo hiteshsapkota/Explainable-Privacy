@@ -1,0 +1,21 @@
+{
+    "id": "2017_24603986", 
+    "image_path": "images/train2017/2017_24603986.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a23_birth_city", 
+        "a24_birth_date", 
+        "a25_nationality", 
+        "a29_ausweis", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "4f60c14fc4d725b4", 
+    "source_url": "https://farm5.staticflickr.com/43/77539832_7cd728cc69_o.jpg"
+}

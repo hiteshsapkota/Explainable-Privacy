@@ -1,0 +1,13 @@
+{
+    "id": "2017_93102563", 
+    "image_path": "images/train2017/2017_93102563.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a46_occupation", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a8_signature"
+    ], 
+    "openimages_id": "4dd23bb984f4a95c", 
+    "source_url": "https://c5.staticflickr.com/4/3758/9895818496_56bb83783e_o.jpg"
+}

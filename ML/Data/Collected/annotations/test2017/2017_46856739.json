@@ -1,0 +1,17 @@
+{
+    "id": "2017_46856739", 
+    "image_path": "images/test2017/2017_46856739.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a64_rel_personal", 
+        "a69_rel_views", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a75_address_current_partial"
+    ], 
+    "openimages_id": "76179214e5a544c5", 
+    "source_url": "https://farm6.staticflickr.com/7417/10391322845_5ded92a8e4_o.jpg"
+}

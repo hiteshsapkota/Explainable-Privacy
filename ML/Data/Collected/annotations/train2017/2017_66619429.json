@@ -1,0 +1,14 @@
+{
+    "id": "2017_66619429", 
+    "image_path": "images/train2017/2017_66619429.jpg", 
+    "labels": [
+        "a17_color", 
+        "a19_name_full", 
+        "a26_handwriting", 
+        "a33_student_id", 
+        "a75_address_current_partial", 
+        "a82_date_time"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

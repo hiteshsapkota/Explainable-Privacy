@@ -1,0 +1,13 @@
+{
+    "id": "2017_29057506", 
+    "image_path": "images/test2017/2017_29057506.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a37_receipt", 
+        "a73_landmark", 
+        "a82_date_time", 
+        "a8_signature"
+    ], 
+    "openimages_id": "c55df33426fc2975", 
+    "source_url": "https://farm6.staticflickr.com/3627/3610183047_b675479305_o.jpg"
+}

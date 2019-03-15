@@ -1,0 +1,16 @@
+{
+    "id": "2017_37107536", 
+    "image_path": "images/test2017/2017_37107536.jpg", 
+    "labels": [
+        "a11_tattoo", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "ae94145e789dfdf2", 
+    "source_url": "https://farm3.staticflickr.com/2424/3919621404_6a4ca643cd_o.jpg"
+}

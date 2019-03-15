@@ -1,0 +1,13 @@
+{
+    "id": "2017_19907135", 
+    "image_path": "images/train2017/2017_19907135.jpg", 
+    "labels": [
+        "a17_color", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a58_hobbies", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "c0c675842ab0e6a9", 
+    "source_url": "https://c2.staticflickr.com/8/7727/17220784471_f0b89a4e3c_o.jpg"
+}

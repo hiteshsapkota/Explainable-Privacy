@@ -1,0 +1,21 @@
+{
+    "id": "2017_36967253", 
+    "image_path": "images/test2017/2017_36967253.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a27_marital_status", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a5_eye_color", 
+        "a60_occassion_personal", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "ea344044a8987e00", 
+    "source_url": "https://farm1.staticflickr.com/3623/3533505252_c4d67946cb_o.jpg"
+}

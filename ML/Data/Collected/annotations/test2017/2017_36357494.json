@@ -1,0 +1,24 @@
+{
+    "id": "2017_36357494", 
+    "image_path": "images/test2017/2017_36357494.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a1_age_approx", 
+        "a25_nationality", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a5_eye_color", 
+        "a61_opinion_general", 
+        "a64_rel_personal", 
+        "a69_rel_views", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "b09502b06139c2b2", 
+    "source_url": "https://farm3.staticflickr.com/5472/14103231300_57d456a24a_o.jpg"
+}

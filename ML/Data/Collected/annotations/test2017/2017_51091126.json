@@ -1,0 +1,21 @@
+{
+    "id": "2017_51091126", 
+    "image_path": "images/test2017/2017_51091126.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a39_disability_physical", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a59_sports", 
+        "a5_eye_color", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "bc3fd74f86ee3ad8", 
+    "source_url": "https://c1.staticflickr.com/6/5829/20332310838_ca5cb01f0a_o.jpg"
+}

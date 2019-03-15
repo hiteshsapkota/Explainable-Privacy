@@ -1,0 +1,11 @@
+{
+    "id": "2017_28495445", 
+    "image_path": "images/test2017/2017_28495445.jpg", 
+    "labels": [
+        "a4_gender", 
+        "a60_occassion_personal", 
+        "a65_rel_social"
+    ], 
+    "openimages_id": "b7d94a7725c5f4ac", 
+    "source_url": "https://c5.staticflickr.com/8/7412/16357450540_cf0bf4414a_o.jpg"
+}

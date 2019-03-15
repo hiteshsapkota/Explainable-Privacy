@@ -1,0 +1,17 @@
+{
+    "id": "2017_86101210", 
+    "image_path": "images/train2017/2017_86101210.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a26_handwriting", 
+        "a31_passport", 
+        "a4_gender", 
+        "a6_hair_color", 
+        "a8_signature", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "4883a71a99bd04b2", 
+    "source_url": "https://farm3.staticflickr.com/3562/3360408088_ce99c11292_o.jpg"
+}

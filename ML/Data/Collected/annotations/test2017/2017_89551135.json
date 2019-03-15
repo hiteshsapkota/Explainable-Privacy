@@ -1,0 +1,17 @@
+{
+    "id": "2017_89551135", 
+    "image_path": "images/test2017/2017_89551135.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a64_rel_personal", 
+        "a6_hair_color", 
+        "a73_landmark"
+    ], 
+    "openimages_id": "735317a7a4b7b312", 
+    "source_url": "https://farm3.staticflickr.com/8420/8925308002_0d4bb74a89_o.jpg"
+}

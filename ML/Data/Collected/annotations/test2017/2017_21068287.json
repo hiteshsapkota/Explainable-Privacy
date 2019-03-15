@@ -1,0 +1,10 @@
+{
+    "id": "2017_21068287", 
+    "image_path": "images/test2017/2017_21068287.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a104_license_plate_partial"
+    ], 
+    "openimages_id": "3ae71e25546cd9b7", 
+    "source_url": "https://farm8.staticflickr.com/6131/6008024937_a4cb40efdb_o.jpg"
+}

@@ -1,0 +1,10 @@
+{
+    "id": "2017_61321415", 
+    "image_path": "images/train2017/2017_61321415.jpg", 
+    "labels": [
+        "a35_mail", 
+        "a78_address_home_complete"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

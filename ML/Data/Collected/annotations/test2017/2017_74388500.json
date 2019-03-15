@@ -1,0 +1,17 @@
+{
+    "id": "2017_74388500", 
+    "image_path": "images/test2017/2017_74388500.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a6_hair_color", 
+        "a73_landmark"
+    ], 
+    "openimages_id": "41a9b49e3720fe20", 
+    "source_url": "https://farm1.staticflickr.com/3918/15227776676_146732a522_o.jpg"
+}

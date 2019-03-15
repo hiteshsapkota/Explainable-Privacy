@@ -1,0 +1,20 @@
+{
+    "id": "2017_33801428", 
+    "image_path": "images/train2017/2017_33801428.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a24_birth_date", 
+        "a25_nationality", 
+        "a31_passport", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "147725995856365a", 
+    "source_url": "https://c3.staticflickr.com/4/3188/2713584044_f05bb87848_o.jpg"
+}

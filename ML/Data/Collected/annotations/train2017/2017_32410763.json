@@ -1,0 +1,11 @@
+{
+    "id": "2017_32410763", 
+    "image_path": "images/train2017/2017_32410763.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a17_color", 
+        "a59_sports"
+    ], 
+    "openimages_id": "445497c3becfead9", 
+    "source_url": "https://c2.staticflickr.com/9/8422/7509107630_45c511217b_o.jpg"
+}

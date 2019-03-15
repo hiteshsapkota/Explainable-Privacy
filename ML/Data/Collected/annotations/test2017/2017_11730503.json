@@ -1,0 +1,19 @@
+{
+    "id": "2017_11730503", 
+    "image_path": "images/test2017/2017_11730503.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a48_occassion_work", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "56e24cec37455e5f", 
+    "source_url": "https://c8.staticflickr.com/4/3888/14874194169_c0de6574c6_o.jpg"
+}

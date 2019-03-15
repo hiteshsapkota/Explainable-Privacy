@@ -1,0 +1,22 @@
+{
+    "id": "2017_17580333", 
+    "image_path": "images/train2017/2017_17580333.png", 
+    "labels": [
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a82_date_time", 
+        "a85_username", 
+        "a97_online_conversation", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

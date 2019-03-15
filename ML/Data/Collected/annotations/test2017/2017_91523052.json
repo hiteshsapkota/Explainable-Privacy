@@ -1,0 +1,23 @@
+{
+    "id": "2017_91523052", 
+    "image_path": "images/test2017/2017_91523052.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a27_marital_status", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a48_occassion_work", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a62_opinion_political", 
+        "a66_rel_professional", 
+        "a69_rel_views", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "017c568f4bb7d64f", 
+    "source_url": "https://c8.staticflickr.com/9/8186/8109695555_9838b37519_o.jpg"
+}

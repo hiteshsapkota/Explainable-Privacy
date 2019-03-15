@@ -1,0 +1,21 @@
+{
+    "id": "2017_26466148", 
+    "image_path": "images/test2017/2017_26466148.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a55_religion", 
+        "a5_eye_color", 
+        "a65_rel_social", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "1764caad88042d3b", 
+    "source_url": "https://c4.staticflickr.com/6/5149/5549718459_1156190286_o.jpg"
+}

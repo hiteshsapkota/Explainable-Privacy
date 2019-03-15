@@ -1,0 +1,17 @@
+{
+    "id": "2017_77089188", 
+    "image_path": "images/test2017/2017_77089188.jpg", 
+    "labels": [
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a58_hobbies", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "3cd41d5bd8fe53ca", 
+    "source_url": "https://c3.staticflickr.com/7/6141/5972854050_e16d524fd2_o.jpg"
+}

@@ -1,0 +1,16 @@
+{
+    "id": "2017_98732314", 
+    "image_path": "images/test2017/2017_98732314.jpg", 
+    "labels": [
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a55_religion", 
+        "a73_landmark", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "a3ced829f95ca1c5", 
+    "source_url": "https://farm6.staticflickr.com/5141/5669353524_43f2a318c3_o.jpg"
+}

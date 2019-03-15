@@ -1,0 +1,10 @@
+{
+    "id": "2017_81269109", 
+    "image_path": "images/test2017/2017_81269109.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a104_license_plate_partial"
+    ], 
+    "openimages_id": "6df89daec8d6b1d9", 
+    "source_url": "https://c2.staticflickr.com/6/5614/15520594702_6784217905_o.jpg"
+}

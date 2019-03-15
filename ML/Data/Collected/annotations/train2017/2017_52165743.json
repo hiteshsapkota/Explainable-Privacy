@@ -1,0 +1,19 @@
+{
+    "id": "2017_52165743", 
+    "image_path": "images/train2017/2017_52165743.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a59_sports", 
+        "a5_eye_color", 
+        "a67_rel_competitors", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "37d69d2dddf35baa", 
+    "source_url": "https://c3.staticflickr.com/8/7680/16896859528_0b610a50c9_o.jpg"
+}

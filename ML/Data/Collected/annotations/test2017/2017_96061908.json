@@ -1,0 +1,13 @@
+{
+    "id": "2017_96061908", 
+    "image_path": "images/test2017/2017_96061908.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a26_handwriting", 
+        "a46_occupation", 
+        "a75_address_current_partial", 
+        "a90_email"
+    ], 
+    "openimages_id": "a8802db8bf0d5291", 
+    "source_url": "https://farm2.staticflickr.com/8173/8049030682_30778e1727_o.jpg"
+}

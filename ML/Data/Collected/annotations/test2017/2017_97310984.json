@@ -1,0 +1,21 @@
+{
+    "id": "2017_97310984", 
+    "image_path": "images/test2017/2017_97310984.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a49_phone", 
+        "a4_gender", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a85_username", 
+        "a97_online_conversation", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

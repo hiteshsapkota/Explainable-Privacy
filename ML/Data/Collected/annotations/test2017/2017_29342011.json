@@ -1,0 +1,20 @@
+{
+    "id": "2017_29342011", 
+    "image_path": "images/test2017/2017_29342011.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a11_tattoo", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "11a7aaa5c400bd68", 
+    "source_url": "https://c1.staticflickr.com/1/79/279383073_0278757b6a_o.jpg"
+}

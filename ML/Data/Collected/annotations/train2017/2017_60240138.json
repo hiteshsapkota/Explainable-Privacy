@@ -1,0 +1,15 @@
+{
+    "id": "2017_60240138", 
+    "image_path": "images/train2017/2017_60240138.jpg", 
+    "labels": [
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a59_sports", 
+        "a65_rel_social", 
+        "a68_rel_spectators"
+    ], 
+    "openimages_id": "4e12f2c7c7f22cf1", 
+    "source_url": "https://farm2.staticflickr.com/6067/6138649954_136a5bc03b_o.jpg"
+}

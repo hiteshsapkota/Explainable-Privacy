@@ -1,0 +1,14 @@
+{
+    "id": "2017_80840284", 
+    "image_path": "images/train2017/2017_80840284.jpg", 
+    "labels": [
+        "a17_color", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a60_occassion_personal", 
+        "a64_rel_personal", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "0cf5902840a1b2b4", 
+    "source_url": "https://farm5.staticflickr.com/7010/6397849549_e512e3fb07_o.jpg"
+}

@@ -17,6 +17,7 @@ public class Training{
     private String sharing_type;
     private JdbcTemplate jdbcTemplate;
     private String username;
+    private int trainingInstances;
 
 
     public JdbcTemplate getJdbcTemplate() {
@@ -65,6 +66,23 @@ public class Training{
 
     public void setImage_path(String image_path) {
         this.image_path = image_path;
+    }
+
+
+    public int getTrainingInstances() {
+        return trainingInstances;
+    }
+
+    public void setTrainingInstances() {
+
+        String username=this.username;
+
+        String sql = "select * from training where display_status=1 and user_name=?";
+        //String sql = "select * from users_image_record  where display_status=0 and user_name='hiteshsapkota@gmail.com'";
+        List<Record> records=jdbcTemplate.query(sql, new Object[] { username },new RecordRowMapper());
+        this.trainingInstances=records.size();
+
+        this.trainingInstances = trainingInstances;
     }
 
     public void readId() {

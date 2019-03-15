@@ -1,0 +1,13 @@
+{
+    "id": "2017_89714928", 
+    "image_path": "images/train2017/2017_89714928.jpg", 
+    "labels": [
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "ef7c58fef588a547", 
+    "source_url": "https://farm8.staticflickr.com/6093/6412592327_acb952bc78_o.jpg"
+}

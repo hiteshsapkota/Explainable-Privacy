@@ -1,0 +1,16 @@
+{
+    "id": "2017_22435836", 
+    "image_path": "images/test2017/2017_22435836.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a58_hobbies", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "01bf5ddba9eec39e", 
+    "source_url": "https://c7.staticflickr.com/9/8301/7906040034_d66621700a_o.jpg"
+}

@@ -1,0 +1,10 @@
+{
+    "id": "2017_61234531", 
+    "image_path": "images/test2017/2017_61234531.jpg", 
+    "labels": [
+        "a73_landmark", 
+        "a75_address_current_partial"
+    ], 
+    "openimages_id": "5966aebb340376a7", 
+    "source_url": "https://farm8.staticflickr.com/8123/8677947718_ab78e400ee_o.jpg"
+}

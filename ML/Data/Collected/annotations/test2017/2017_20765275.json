@@ -1,0 +1,14 @@
+{
+    "id": "2017_20765275", 
+    "image_path": "images/test2017/2017_20765275.jpg", 
+    "labels": [
+        "a21_name_last", 
+        "a26_handwriting", 
+        "a35_mail", 
+        "a55_religion", 
+        "a73_landmark", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "98e6101454fbf07d", 
+    "source_url": "https://c6.staticflickr.com/6/5463/9359131038_f342006b5b_o.jpg"
+}

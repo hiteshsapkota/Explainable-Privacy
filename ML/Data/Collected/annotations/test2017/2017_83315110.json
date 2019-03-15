@@ -1,0 +1,12 @@
+{
+    "id": "2017_83315110", 
+    "image_path": "images/test2017/2017_83315110.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a17_color", 
+        "a4_gender", 
+        "a57_culture"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

@@ -1,0 +1,19 @@
+{
+    "id": "2017_84121233", 
+    "image_path": "images/test2017/2017_84121233.jpg", 
+    "labels": [
+        "a11_tattoo", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a65_rel_social", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "dab91fccff306113", 
+    "source_url": "https://farm4.staticflickr.com/1189/613832943_88c37ecb35_o.jpg"
+}

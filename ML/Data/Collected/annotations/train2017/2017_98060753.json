@@ -1,0 +1,19 @@
+{
+    "id": "2017_98060753", 
+    "image_path": "images/train2017/2017_98060753.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a24_birth_date", 
+        "a25_nationality", 
+        "a29_ausweis", 
+        "a4_gender", 
+        "a82_date_time", 
+        "a8_signature", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

@@ -1,0 +1,23 @@
+{
+    "id": "2017_15427934", 
+    "image_path": "images/train2017/2017_15427934.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a57_culture", 
+        "a65_rel_social", 
+        "a66_rel_professional", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "77c20e2acfa547a4", 
+    "source_url": "https://farm5.staticflickr.com/3004/2704936750_350ae9af75_o.jpg"
+}

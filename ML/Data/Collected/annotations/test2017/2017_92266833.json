@@ -1,0 +1,22 @@
+{
+    "id": "2017_92266833", 
+    "image_path": "images/test2017/2017_92266833.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a99_legal_involvement", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "dd331d8417586ab8", 
+    "source_url": "https://c1.staticflickr.com/9/8509/8516010268_68c6b5fae8_o.jpg"
+}

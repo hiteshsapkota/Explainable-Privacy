@@ -1,0 +1,16 @@
+{
+    "id": "2017_57803598", 
+    "image_path": "images/train2017/2017_57803598.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a65_rel_social", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "6a98f8d99d6d4d85", 
+    "source_url": "https://farm6.staticflickr.com/7001/6827571105_7354380f76_o.jpg"
+}

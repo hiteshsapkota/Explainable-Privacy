@@ -1,0 +1,17 @@
+{
+    "id": "2017_40040422", 
+    "image_path": "images/train2017/2017_40040422.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a4_gender", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "9c4801e04ee82c68", 
+    "source_url": "https://c1.staticflickr.com/2/1431/1483780176_f969efcc7f_o.jpg"
+}

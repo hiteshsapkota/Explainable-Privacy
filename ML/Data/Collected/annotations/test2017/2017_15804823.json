@@ -1,0 +1,15 @@
+{
+    "id": "2017_15804823", 
+    "image_path": "images/test2017/2017_15804823.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a61_opinion_general", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "c010161a910b6bce", 
+    "source_url": "https://c7.staticflickr.com/4/3852/14634101412_a954f8719f_o.jpg"
+}

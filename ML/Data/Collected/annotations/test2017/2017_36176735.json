@@ -1,0 +1,18 @@
+{
+    "id": "2017_36176735", 
+    "image_path": "images/test2017/2017_36176735.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a58_hobbies", 
+        "a5_eye_color", 
+        "a65_rel_social", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "6402317e59e9cca5", 
+    "source_url": "https://farm6.staticflickr.com/723/21013743712_5952871d8b_o.jpg"
+}

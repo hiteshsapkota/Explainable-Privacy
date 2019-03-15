@@ -1,0 +1,16 @@
+{
+    "id": "2017_35882885", 
+    "image_path": "images/train2017/2017_35882885.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a11_tattoo", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a68_rel_spectators", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "9f6bc3b499789519", 
+    "source_url": "https://c2.staticflickr.com/6/5068/5895968426_8acefefabb_o.jpg"
+}

@@ -1,0 +1,19 @@
+{
+    "id": "2017_70300476", 
+    "image_path": "images/test2017/2017_70300476.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "0f863e882d580499", 
+    "source_url": "https://c2.staticflickr.com/7/6132/6016678789_e43dd62b71_o.jpg"
+}

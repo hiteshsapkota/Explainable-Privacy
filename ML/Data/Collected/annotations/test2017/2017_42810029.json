@@ -1,0 +1,11 @@
+{
+    "id": "2017_42810029", 
+    "image_path": "images/test2017/2017_42810029.jpg", 
+    "labels": [
+        "a11_tattoo", 
+        "a17_color", 
+        "a4_gender"
+    ], 
+    "openimages_id": "60854ae38aa4b07c", 
+    "source_url": "https://c5.staticflickr.com/4/3401/3670318270_2a24052a35_o.jpg"
+}

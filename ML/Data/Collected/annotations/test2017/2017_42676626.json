@@ -1,0 +1,11 @@
+{
+    "id": "2017_42676626", 
+    "image_path": "images/test2017/2017_42676626.jpg", 
+    "labels": [
+        "a26_handwriting", 
+        "a37_receipt", 
+        "a8_signature"
+    ], 
+    "openimages_id": "962401071b9648ac", 
+    "source_url": "https://c5.staticflickr.com/3/2198/2538719235_fecf5e0b03_o.jpg"
+}

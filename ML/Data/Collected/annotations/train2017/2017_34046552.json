@@ -1,0 +1,24 @@
+{
+    "id": "2017_34046552", 
+    "image_path": "images/train2017/2017_34046552.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a11_tattoo", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a49_phone", 
+        "a4_gender", 
+        "a57_culture", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a82_date_time", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "14573750a0988f7a", 
+    "source_url": "https://c3.staticflickr.com/6/5467/7411568944_3c35b905ca_o.jpg"
+}

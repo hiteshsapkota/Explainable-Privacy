@@ -1,0 +1,11 @@
+{
+    "id": "2017_95717570", 
+    "image_path": "images/test2017/2017_95717570.jpg", 
+    "labels": [
+        "a17_color", 
+        "a39_disability_physical", 
+        "a4_gender"
+    ], 
+    "openimages_id": "a8bf75e60655369b", 
+    "source_url": "https://c4.staticflickr.com/1/648/20234375864_a90be05db5_o.jpg"
+}

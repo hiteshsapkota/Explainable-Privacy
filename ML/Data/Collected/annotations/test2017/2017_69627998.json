@@ -1,0 +1,15 @@
+{
+    "id": "2017_69627998", 
+    "image_path": "images/test2017/2017_69627998.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a17_color", 
+        "a2_weight_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a58_hobbies", 
+        "a65_rel_social"
+    ], 
+    "openimages_id": "e9e8733a540813f4", 
+    "source_url": "https://farm5.staticflickr.com/6075/6088765110_54b4eddc37_o.jpg"
+}

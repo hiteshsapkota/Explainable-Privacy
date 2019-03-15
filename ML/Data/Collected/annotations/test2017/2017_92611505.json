@@ -1,0 +1,15 @@
+{
+    "id": "2017_92611505", 
+    "image_path": "images/test2017/2017_92611505.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a65_rel_social", 
+        "a6_hair_color", 
+        "a73_landmark"
+    ], 
+    "openimages_id": "286954cbfed9d91c", 
+    "source_url": "https://c5.staticflickr.com/4/3700/12212526654_96c5376cf2_o.jpg"
+}

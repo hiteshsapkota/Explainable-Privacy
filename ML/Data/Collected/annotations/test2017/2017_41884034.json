@@ -1,0 +1,10 @@
+{
+    "id": "2017_41884034", 
+    "image_path": "images/test2017/2017_41884034.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a1_age_approx"
+    ], 
+    "openimages_id": "acfccad00a997d4a", 
+    "source_url": "https://c3.staticflickr.com/8/7797/18013816589_6b36606292_o.jpg"
+}

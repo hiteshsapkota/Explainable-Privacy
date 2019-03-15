@@ -1,0 +1,19 @@
+{
+    "id": "2017_68620020", 
+    "image_path": "images/test2017/2017_68620020.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a57_culture", 
+        "a61_opinion_general", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "a359161f2a1c5a2b", 
+    "source_url": "https://c4.staticflickr.com/9/8315/7994831316_8384f804db_o.jpg"
+}

@@ -1,0 +1,12 @@
+{
+    "id": "2017_51736748", 
+    "image_path": "images/train2017/2017_51736748.jpg", 
+    "labels": [
+        "a17_color", 
+        "a4_gender", 
+        "a57_culture", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "463ccabb7885bd32", 
+    "source_url": "https://farm3.staticflickr.com/6012/5914596552_72d0365dd8_o.jpg"
+}
