@@ -1,0 +1,10 @@
+{
+    "id": "2017_64579420", 
+    "image_path": "images/test2017/2017_64579420.jpg", 
+    "labels": [
+        "a17_color", 
+        "a41_injury"
+    ], 
+    "openimages_id": "a5ee208a0e2425c5", 
+    "source_url": "https://farm6.staticflickr.com/2804/4411258876_84556277dc_o.jpg"
+}

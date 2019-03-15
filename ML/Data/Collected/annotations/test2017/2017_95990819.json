@@ -1,0 +1,12 @@
+{
+    "id": "2017_95990819", 
+    "image_path": "images/test2017/2017_95990819.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a10_face_partial", 
+        "a4_gender", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "24ce423cab634492", 
+    "source_url": "https://farm3.staticflickr.com/8196/8102757326_9d47b5830c_o.jpg"
+}

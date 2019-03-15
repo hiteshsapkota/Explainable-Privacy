@@ -1,0 +1,15 @@
+{
+    "id": "2017_24281252", 
+    "image_path": "images/test2017/2017_24281252.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a48_occassion_work", 
+        "a4_gender", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "8ee0bada8a5f3384", 
+    "source_url": "https://farm5.staticflickr.com/3309/13018730434_e2f7c61457_o.jpg"
+}

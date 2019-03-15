@@ -1,0 +1,11 @@
+{
+    "id": "2017_94544865", 
+    "image_path": "images/train2017/2017_94544865.jpg", 
+    "labels": [
+        "a26_handwriting", 
+        "a37_receipt", 
+        "a8_signature"
+    ], 
+    "openimages_id": "06b2b8e64225b6ac", 
+    "source_url": "https://c5.staticflickr.com/3/2736/4277521769_b295016b9e_o.jpg"
+}

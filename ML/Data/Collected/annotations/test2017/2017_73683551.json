@@ -1,0 +1,14 @@
+{
+    "id": "2017_73683551", 
+    "image_path": "images/test2017/2017_73683551.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a20_name_first", 
+        "a26_handwriting", 
+        "a35_mail", 
+        "a78_address_home_complete", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "454e71864a69dfa6", 
+    "source_url": "https://farm7.staticflickr.com/3739/11846055974_ae9f5bbe88_o.jpg"
+}

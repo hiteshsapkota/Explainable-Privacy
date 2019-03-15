@@ -1,0 +1,21 @@
+{
+    "id": "2017_85675825", 
+    "image_path": "images/test2017/2017_85675825.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a104_license_plate_partial", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a64_rel_personal", 
+        "a65_rel_social", 
+        "a6_hair_color", 
+        "a73_landmark"
+    ], 
+    "openimages_id": "7ef6f97d8826183c", 
+    "source_url": "https://c5.staticflickr.com/6/5540/10574197306_63e02697ae_o.jpg"
+}

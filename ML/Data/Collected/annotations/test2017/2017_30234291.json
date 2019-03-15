@@ -1,0 +1,11 @@
+{
+    "id": "2017_30234291", 
+    "image_path": "images/test2017/2017_30234291.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a73_landmark", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "701f8949e5f58a5a", 
+    "source_url": "https://c3.staticflickr.com/4/3875/14444177198_46217c828c_o.jpg"
+}

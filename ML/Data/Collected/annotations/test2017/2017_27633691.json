@@ -1,0 +1,20 @@
+{
+    "id": "2017_27633691", 
+    "image_path": "images/test2017/2017_27633691.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a33_student_id", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "04e0e4ad42133ffe", 
+    "source_url": "https://c7.staticflickr.com/4/3235/2282428758_745d230062_o.jpg"
+}

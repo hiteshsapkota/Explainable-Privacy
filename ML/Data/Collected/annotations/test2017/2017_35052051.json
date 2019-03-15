@@ -1,0 +1,20 @@
+{
+    "id": "2017_35052051", 
+    "image_path": "images/test2017/2017_35052051.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a61_opinion_general", 
+        "a69_rel_views", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "493a514e476d7b13", 
+    "source_url": "https://farm4.staticflickr.com/6003/5939896370_eeee2bfd4d_o.jpg"
+}

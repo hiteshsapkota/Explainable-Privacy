@@ -1,0 +1,16 @@
+{
+    "id": "2017_15587536", 
+    "image_path": "images/test2017/2017_15587536.jpg", 
+    "labels": [
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a41_injury", 
+        "a4_gender"
+    ], 
+    "openimages_id": "231470298e8385ff", 
+    "source_url": "https://c8.staticflickr.com/8/7161/6425100453_e3445d1e25_o.jpg"
+}

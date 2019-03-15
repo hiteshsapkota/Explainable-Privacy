@@ -1,0 +1,19 @@
+{
+    "id": "2017_15624433", 
+    "image_path": "images/test2017/2017_15624433.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a21_name_last", 
+        "a25_nationality", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "88557c9598acbf87", 
+    "source_url": "https://farm8.staticflickr.com/8679/16149293160_7392d3d3b7_o.jpg"
+}

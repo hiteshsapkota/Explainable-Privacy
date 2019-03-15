@@ -1,0 +1,13 @@
+{
+    "id": "2017_75392381", 
+    "image_path": "images/test2017/2017_75392381.jpg", 
+    "labels": [
+        "a38_ticket", 
+        "a59_sports", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "a7561ef29c8162bb", 
+    "source_url": "https://c4.staticflickr.com/3/2168/2280642640_af8ab75635_o.jpg"
+}

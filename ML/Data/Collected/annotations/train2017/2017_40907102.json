@@ -1,0 +1,18 @@
+{
+    "id": "2017_40907102", 
+    "image_path": "images/train2017/2017_40907102.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "7179fde43f488eb6", 
+    "source_url": "https://farm7.staticflickr.com/2904/14318200027_a82fd2d652_o.jpg"
+}

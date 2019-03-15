@@ -1,0 +1,10 @@
+{
+    "id": "2017_41698707", 
+    "image_path": "images/test2017/2017_41698707.jpg", 
+    "labels": [
+        "a46_occupation", 
+        "a4_gender"
+    ], 
+    "openimages_id": "e953679845d7d3d5", 
+    "source_url": "https://farm6.staticflickr.com/6217/7002385007_df03a7436a_o.jpg"
+}

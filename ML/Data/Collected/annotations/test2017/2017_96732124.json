@@ -1,0 +1,13 @@
+{
+    "id": "2017_96732124", 
+    "image_path": "images/test2017/2017_96732124.jpg", 
+    "labels": [
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a56_sexual_orientation"
+    ], 
+    "openimages_id": "b4548a23430f3b7c", 
+    "source_url": "https://c5.staticflickr.com/6/5109/5566702622_e6cb9a3b49_o.jpg"
+}

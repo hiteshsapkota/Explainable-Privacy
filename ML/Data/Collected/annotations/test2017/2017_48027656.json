@@ -1,0 +1,13 @@
+{
+    "id": "2017_48027656", 
+    "image_path": "images/test2017/2017_48027656.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "54c1aa6e58bfda8d", 
+    "source_url": "https://c6.staticflickr.com/5/4041/4297215818_e9b52ee3a3_o.jpg"
+}

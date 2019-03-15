@@ -1,0 +1,18 @@
+{
+    "id": "2017_72067474", 
+    "image_path": "images/test2017/2017_72067474.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a39_disability_physical", 
+        "a4_gender", 
+        "a59_sports", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "a8a27b1995eb4275", 
+    "source_url": "https://farm6.staticflickr.com/4048/4493064667_3d6da9af65_o.jpg"
+}

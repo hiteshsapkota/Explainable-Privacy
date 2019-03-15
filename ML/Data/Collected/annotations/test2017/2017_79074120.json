@@ -1,0 +1,14 @@
+{
+    "id": "2017_79074120", 
+    "image_path": "images/test2017/2017_79074120.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a17_color", 
+        "a48_occassion_work", 
+        "a4_gender", 
+        "a66_rel_professional", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "7036f364951044d0", 
+    "source_url": "https://farm1.staticflickr.com/58/204382214_ee1d075827_o.jpg"
+}

@@ -1,0 +1,16 @@
+{
+    "id": "2017_11831141", 
+    "image_path": "images/test2017/2017_11831141.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a55_religion", 
+        "a64_rel_personal", 
+        "a68_rel_spectators", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "bd027d13e1a32bb9", 
+    "source_url": "https://c2.staticflickr.com/4/3272/2973881335_5255e82924_o.jpg"
+}

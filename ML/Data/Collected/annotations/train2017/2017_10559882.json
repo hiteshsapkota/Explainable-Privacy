@@ -1,0 +1,21 @@
+{
+    "id": "2017_10559882", 
+    "image_path": "images/train2017/2017_10559882.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a33_student_id", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a8_signature", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "a6e37683b83c6b00", 
+    "source_url": "https://farm1.staticflickr.com/2288/2213745629_90497bd06c_o.jpg"
+}

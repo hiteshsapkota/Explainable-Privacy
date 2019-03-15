@@ -1,0 +1,21 @@
+{
+    "id": "2017_88035102", 
+    "image_path": "images/train2017/2017_88035102.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a48_occassion_work", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a66_rel_professional", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "1765fe2d9311d0cb", 
+    "source_url": "https://c4.staticflickr.com/9/8046/8089905703_cec10494d5_o.jpg"
+}

@@ -1,0 +1,19 @@
+{
+    "id": "2017_68398559", 
+    "image_path": "images/test2017/2017_68398559.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a27_marital_status", 
+        "a2_weight_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a66_rel_professional", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "c62d41491547863b", 
+    "source_url": "https://c4.staticflickr.com/3/2598/3972407715_aebffc76ab_o.jpg"
+}

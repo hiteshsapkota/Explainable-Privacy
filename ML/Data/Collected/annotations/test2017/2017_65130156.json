@@ -1,0 +1,10 @@
+{
+    "id": "2017_65130156", 
+    "image_path": "images/test2017/2017_65130156.jpg", 
+    "labels": [
+        "a37_receipt", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "36b04df4ea2097ca", 
+    "source_url": "https://c3.staticflickr.com/2/1012/1277489967_2d9f13d603_o.jpg"
+}

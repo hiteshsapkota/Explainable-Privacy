@@ -1,0 +1,19 @@
+{
+    "id": "2017_64687057", 
+    "image_path": "images/test2017/2017_64687057.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a66_rel_professional", 
+        "a69_rel_views", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "f475b99a4e921d13", 
+    "source_url": "https://farm4.staticflickr.com/5150/5764617895_ccd34a9e15_o.jpg"
+}

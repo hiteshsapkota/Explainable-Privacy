@@ -1,0 +1,19 @@
+{
+    "id": "2017_64217328", 
+    "image_path": "images/test2017/2017_64217328.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a55_religion", 
+        "a57_culture", 
+        "a58_hobbies", 
+        "a5_eye_color", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "a1a9c62a991bded0", 
+    "source_url": "https://farm1.staticflickr.com/8708/17228634276_60b887839d_o.jpg"
+}

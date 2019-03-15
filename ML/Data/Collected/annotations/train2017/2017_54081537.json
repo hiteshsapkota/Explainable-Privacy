@@ -1,0 +1,15 @@
+{
+    "id": "2017_54081537", 
+    "image_path": "images/train2017/2017_54081537.jpg", 
+    "labels": [
+        "a1_age_approx", 
+        "a29_ausweis", 
+        "a46_occupation", 
+        "a73_landmark", 
+        "a74_address_current_complete", 
+        "a82_date_time", 
+        "a8_signature"
+    ], 
+    "openimages_id": "5adb9aa2c94299b0", 
+    "source_url": "https://farm1.staticflickr.com/3427/3792996637_e8601d9a85_o.jpg"
+}

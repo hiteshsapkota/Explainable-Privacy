@@ -1,0 +1,11 @@
+{
+    "id": "2017_96375154", 
+    "image_path": "images/test2017/2017_96375154.jpg", 
+    "labels": [
+        "a17_color", 
+        "a58_hobbies", 
+        "a82_date_time"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

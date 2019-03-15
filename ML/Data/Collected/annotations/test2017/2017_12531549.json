@@ -1,0 +1,13 @@
+{
+    "id": "2017_12531549", 
+    "image_path": "images/test2017/2017_12531549.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a41_injury", 
+        "a46_occupation"
+    ], 
+    "openimages_id": "009825a039ebf0e0", 
+    "source_url": "https://farm1.staticflickr.com/2481/4032403522_7840a2c22f_o.jpg"
+}

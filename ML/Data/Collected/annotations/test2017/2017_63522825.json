@@ -1,0 +1,21 @@
+{
+    "id": "2017_63522825", 
+    "image_path": "images/test2017/2017_63522825.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a5_eye_color", 
+        "a60_occassion_personal", 
+        "a64_rel_personal", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "2b139126a40fa2ea", 
+    "source_url": "https://c3.staticflickr.com/1/407/19134962588_eef541a45d_o.jpg"
+}

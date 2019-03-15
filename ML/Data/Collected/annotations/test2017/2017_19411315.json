@@ -1,0 +1,21 @@
+{
+    "id": "2017_19411315", 
+    "image_path": "images/test2017/2017_19411315.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a65_rel_social", 
+        "a66_rel_professional", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "397cfd980c26da54", 
+    "source_url": "https://farm5.staticflickr.com/3918/14518275448_bd406594bc_o.jpg"
+}

@@ -1,0 +1,16 @@
+{
+    "id": "2017_23619972", 
+    "image_path": "images/train2017/2017_23619972.jpg", 
+    "labels": [
+        "a20_name_first", 
+        "a21_name_last", 
+        "a26_handwriting", 
+        "a35_mail", 
+        "a64_rel_personal", 
+        "a75_address_current_partial", 
+        "a79_address_home_partial", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "b0016065e5ae17c5", 
+    "source_url": "https://farm6.staticflickr.com/5512/11701659396_d125a0ae3c_o.jpg"
+}

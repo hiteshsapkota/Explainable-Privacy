@@ -1,0 +1,15 @@
+{
+    "id": "2017_35809912", 
+    "image_path": "images/test2017/2017_35809912.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a55_religion", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "f6095a5a29ef4bb4", 
+    "source_url": "https://farm5.staticflickr.com/1330/1170422723_f410a0360f_o.jpg"
+}

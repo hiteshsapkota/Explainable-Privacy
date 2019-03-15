@@ -1,0 +1,21 @@
+{
+    "id": "2017_91163440", 
+    "image_path": "images/test2017/2017_91163440.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "65bc08fdeb0afebb", 
+    "source_url": "https://c4.staticflickr.com/9/8441/7746259874_1d65da39df_o.jpg"
+}

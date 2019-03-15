@@ -1,0 +1,12 @@
+{
+    "id": "2017_97882031", 
+    "image_path": "images/train2017/2017_97882031.jpg", 
+    "labels": [
+        "a38_ticket", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "9e6336daefa25616", 
+    "source_url": "https://farm7.staticflickr.com/8183/8365900545_062269b4af_o.jpg"
+}

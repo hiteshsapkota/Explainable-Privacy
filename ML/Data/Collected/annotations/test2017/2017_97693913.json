@@ -1,0 +1,16 @@
+{
+    "id": "2017_97693913", 
+    "image_path": "images/test2017/2017_97693913.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "0ac64c6159fc0893", 
+    "source_url": "https://farm4.staticflickr.com/1159/967329483_f3c6a5d842_o.jpg"
+}

@@ -1,0 +1,15 @@
+{
+    "id": "2017_25532620", 
+    "image_path": "images/test2017/2017_25532620.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a32_drivers_license", 
+        "a4_gender", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "8ad79774e6c82ef2", 
+    "source_url": "https://farm3.staticflickr.com/2947/15291304928_ba30c33d53_o.jpg"
+}

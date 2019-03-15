@@ -1,0 +1,12 @@
+{
+    "id": "2017_71838746", 
+    "image_path": "images/test2017/2017_71838746.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a17_color", 
+        "a2_weight_approx", 
+        "a59_sports"
+    ], 
+    "openimages_id": "0c1794cf396fa2ab", 
+    "source_url": "https://c4.staticflickr.com/3/2001/2377510431_1755389b8b_o.jpg"
+}

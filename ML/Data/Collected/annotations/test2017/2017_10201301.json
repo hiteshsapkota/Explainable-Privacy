@@ -1,0 +1,19 @@
+{
+    "id": "2017_10201301", 
+    "image_path": "images/test2017/2017_10201301.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a48_occassion_work", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a90_email", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "fcbe16ebe19cbce8", 
+    "source_url": "https://c1.staticflickr.com/3/2502/4070070936_ab800fd5c0_o.jpg"
+}

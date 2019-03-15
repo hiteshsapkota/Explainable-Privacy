@@ -1,0 +1,13 @@
+{
+    "id": "2017_89491135", 
+    "image_path": "images/test2017/2017_89491135.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a20_name_first", 
+        "a37_receipt", 
+        "a73_landmark", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "64c1b5ea5f94f487", 
+    "source_url": "https://farm8.staticflickr.com/3781/14254415686_16b1ec0ac6_o.jpg"
+}

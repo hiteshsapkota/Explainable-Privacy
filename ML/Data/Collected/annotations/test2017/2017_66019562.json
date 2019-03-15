@@ -1,0 +1,19 @@
+{
+    "id": "2017_66019562", 
+    "image_path": "images/test2017/2017_66019562.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "2bb3683ed96f9b41", 
+    "source_url": "https://farm2.staticflickr.com/457/19390539425_e3accc712e_o.jpg"
+}

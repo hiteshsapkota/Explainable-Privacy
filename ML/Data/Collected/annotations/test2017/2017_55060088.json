@@ -1,0 +1,17 @@
+{
+    "id": "2017_55060088", 
+    "image_path": "images/test2017/2017_55060088.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a66_rel_professional", 
+        "a68_rel_spectators", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "10a219b0e6c8e21d", 
+    "source_url": "https://c6.staticflickr.com/8/7236/13976107083_a968fe4cec_o.jpg"
+}

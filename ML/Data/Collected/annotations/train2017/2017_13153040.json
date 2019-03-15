@@ -1,0 +1,13 @@
+{
+    "id": "2017_13153040", 
+    "image_path": "images/train2017/2017_13153040.jpg", 
+    "labels": [
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender"
+    ], 
+    "openimages_id": "7fda69aca93add64", 
+    "source_url": "https://farm5.staticflickr.com/5474/9658465577_2f541327d8_o.jpg"
+}

@@ -1,0 +1,11 @@
+{
+    "id": "2017_83820615", 
+    "image_path": "images/test2017/2017_83820615.jpg", 
+    "labels": [
+        "a17_color", 
+        "a61_opinion_general", 
+        "a69_rel_views"
+    ], 
+    "openimages_id": "f34d026ea64f8adc", 
+    "source_url": "https://c5.staticflickr.com/7/6121/6203634380_dc52abcc8b_o.jpg"
+}

@@ -1,0 +1,11 @@
+{
+    "id": "2017_62911188", 
+    "image_path": "images/train2017/2017_62911188.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a46_occupation", 
+        "a67_rel_competitors"
+    ], 
+    "openimages_id": "1860885aedb2e220", 
+    "source_url": "https://farm1.staticflickr.com/1317/1045094079_c342510d47_o.jpg"
+}

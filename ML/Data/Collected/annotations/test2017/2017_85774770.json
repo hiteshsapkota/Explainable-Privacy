@@ -1,0 +1,20 @@
+{
+    "id": "2017_85774770", 
+    "image_path": "images/test2017/2017_85774770.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a61_opinion_general", 
+        "a69_rel_views", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "a69531b0134a1e67", 
+    "source_url": "https://farm8.staticflickr.com/3859/15309926731_60bcd4ef63_o.jpg"
+}

@@ -1,0 +1,10 @@
+{
+    "id": "2017_20651508", 
+    "image_path": "images/test2017/2017_20651508.jpg", 
+    "labels": [
+        "a17_color", 
+        "a31_passport"
+    ], 
+    "openimages_id": "5b84a43c6312dfcf", 
+    "source_url": "https://c8.staticflickr.com/4/3666/19238046213_19e7b77407_o.jpg"
+}

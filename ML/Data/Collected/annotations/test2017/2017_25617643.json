@@ -1,0 +1,17 @@
+{
+    "id": "2017_25617643", 
+    "image_path": "images/test2017/2017_25617643.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a46_occupation", 
+        "a48_occassion_work", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "def2f58e19d3b5ca", 
+    "source_url": "https://c3.staticflickr.com/8/7635/17000979798_994b6ffa29_o.jpg"
+}

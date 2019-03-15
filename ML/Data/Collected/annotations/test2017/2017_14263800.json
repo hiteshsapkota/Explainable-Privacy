@@ -1,0 +1,10 @@
+{
+    "id": "2017_14263800", 
+    "image_path": "images/test2017/2017_14263800.jpg", 
+    "labels": [
+        "a39_disability_physical", 
+        "a3_height_approx"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

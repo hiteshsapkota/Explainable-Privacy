@@ -1,0 +1,13 @@
+{
+    "id": "2017_73580373", 
+    "image_path": "images/test2017/2017_73580373.jpg", 
+    "labels": [
+        "a20_name_first", 
+        "a37_receipt", 
+        "a73_landmark", 
+        "a74_address_current_complete", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "a833c3dcc5c3894e", 
+    "source_url": "https://c7.staticflickr.com/8/7298/12595349685_8852127795_o.jpg"
+}

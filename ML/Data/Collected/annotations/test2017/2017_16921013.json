@@ -1,0 +1,17 @@
+{
+    "id": "2017_16921013", 
+    "image_path": "images/test2017/2017_16921013.jpg", 
+    "labels": [
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a67_rel_competitors", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "1a3584351dbc4964", 
+    "source_url": "https://farm5.staticflickr.com/4082/4778963671_3a80a23cf9_o.jpg"
+}

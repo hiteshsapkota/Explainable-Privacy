@@ -1,0 +1,13 @@
+{
+    "id": "2017_88712677", 
+    "image_path": "images/test2017/2017_88712677.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a31_passport", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a8_signature"
+    ], 
+    "openimages_id": "07641fce9fc13fed", 
+    "source_url": "https://c6.staticflickr.com/3/2103/2442333864_ee719b4e9b_o.jpg"
+}

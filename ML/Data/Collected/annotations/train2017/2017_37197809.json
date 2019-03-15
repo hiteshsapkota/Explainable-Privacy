@@ -1,0 +1,18 @@
+{
+    "id": "2017_37197809", 
+    "image_path": "images/train2017/2017_37197809.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a10_face_partial", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a59_sports", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "3dbf6a1f62400d92", 
+    "source_url": "https://farm3.staticflickr.com/7094/7390417216_2ed0822a5c_o.jpg"
+}

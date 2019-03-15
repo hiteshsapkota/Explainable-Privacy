@@ -1,0 +1,15 @@
+{
+    "id": "2017_24341530", 
+    "image_path": "images/test2017/2017_24341530.jpg", 
+    "labels": [
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a55_religion", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "15e23e43e78421f7", 
+    "source_url": "https://farm8.staticflickr.com/3776/8969094895_68fe87fee1_o.jpg"
+}

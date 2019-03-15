@@ -1,0 +1,18 @@
+{
+    "id": "2017_32391851", 
+    "image_path": "images/test2017/2017_32391851.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "09a1fd30b3c736fc", 
+    "source_url": "https://c5.staticflickr.com/2/1035/625876253_7aa944d754_o.jpg"
+}

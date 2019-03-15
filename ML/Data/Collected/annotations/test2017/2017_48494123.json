@@ -1,0 +1,18 @@
+{
+    "id": "2017_48494123", 
+    "image_path": "images/test2017/2017_48494123.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a65_rel_social", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "6ea2299bc7f706cc", 
+    "source_url": "https://c5.staticflickr.com/1/35/125122541_d9abec10b1_o.jpg"
+}

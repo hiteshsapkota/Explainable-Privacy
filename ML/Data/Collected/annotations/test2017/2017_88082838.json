@@ -1,0 +1,13 @@
+{
+    "id": "2017_88082838", 
+    "image_path": "images/test2017/2017_88082838.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a17_color", 
+        "a4_gender", 
+        "a65_rel_social", 
+        "a73_landmark"
+    ], 
+    "openimages_id": "2a9e640e84e8178e", 
+    "source_url": "https://c7.staticflickr.com/7/6128/6018173069_18ce9cd2ab_o.jpg"
+}

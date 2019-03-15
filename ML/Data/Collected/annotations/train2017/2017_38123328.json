@@ -1,0 +1,18 @@
+{
+    "id": "2017_38123328", 
+    "image_path": "images/train2017/2017_38123328.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a27_marital_status", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a64_rel_personal", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "e0999d73fe5a98ca", 
+    "source_url": "https://c3.staticflickr.com/7/6176/6142030478_3a4ae0ef0c_o.jpg"
+}

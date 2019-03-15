@@ -1,0 +1,19 @@
+{
+    "id": "2017_56117719", 
+    "image_path": "images/test2017/2017_56117719.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a64_rel_personal", 
+        "a65_rel_social", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a73_landmark"
+    ], 
+    "openimages_id": "a201d102f25483fb", 
+    "source_url": "https://c4.staticflickr.com/8/7567/15753147432_941ce1fc88_o.jpg"
+}

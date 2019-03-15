@@ -1,0 +1,17 @@
+{
+    "id": "2017_10888225", 
+    "image_path": "images/test2017/2017_10888225.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a41_injury", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a66_rel_professional", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "24833dfdf0efc7e3", 
+    "source_url": "https://farm4.staticflickr.com/2881/9324565318_6e4b487010_o.jpg"
+}

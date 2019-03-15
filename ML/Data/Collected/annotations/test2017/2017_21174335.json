@@ -1,0 +1,17 @@
+{
+    "id": "2017_21174335", 
+    "image_path": "images/test2017/2017_21174335.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a82_date_time", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "b09faee7e23404c1", 
+    "source_url": "https://farm2.staticflickr.com/8106/8642912020_0d991e5523_o.jpg"
+}

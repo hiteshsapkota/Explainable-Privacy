@@ -1,0 +1,19 @@
+{
+    "id": "2017_56378973", 
+    "image_path": "images/test2017/2017_56378973.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a60_occassion_personal", 
+        "a64_rel_personal", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "8abdedd3d8730a84", 
+    "source_url": "https://farm5.staticflickr.com/2748/4213410569_63dafc52b2_o.jpg"
+}

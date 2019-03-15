@@ -1,0 +1,13 @@
+{
+    "id": "2017_39928810", 
+    "image_path": "images/test2017/2017_39928810.jpg", 
+    "labels": [
+        "a25_nationality", 
+        "a31_passport", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a8_signature"
+    ], 
+    "openimages_id": "7cbbc9698cf19527", 
+    "source_url": "https://farm8.staticflickr.com/8750/16957900032_378d45f110_o.jpg"
+}

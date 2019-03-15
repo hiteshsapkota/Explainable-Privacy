@@ -1,0 +1,10 @@
+{
+    "id": "2017_86070623", 
+    "image_path": "images/test2017/2017_86070623.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a46_occupation"
+    ], 
+    "openimages_id": "fd3007fbb0c83f05", 
+    "source_url": "https://farm6.staticflickr.com/3168/2984545587_b90e25e0dd_o.jpg"
+}

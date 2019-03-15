@@ -1,0 +1,18 @@
+{
+    "id": "2017_50879028", 
+    "image_path": "images/test2017/2017_50879028.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a64_rel_personal", 
+        "a65_rel_social", 
+        "a68_rel_spectators", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "50799602713ef40f", 
+    "source_url": "https://c8.staticflickr.com/7/6009/5931724939_a328b2f03f_o.jpg"
+}

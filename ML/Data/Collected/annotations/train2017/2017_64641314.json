@@ -1,0 +1,11 @@
+{
+    "id": "2017_64641314", 
+    "image_path": "images/train2017/2017_64641314.jpg", 
+    "labels": [
+        "a26_handwriting", 
+        "a35_mail", 
+        "a75_address_current_partial"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

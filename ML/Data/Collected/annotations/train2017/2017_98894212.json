@@ -1,0 +1,13 @@
+{
+    "id": "2017_98894212", 
+    "image_path": "images/train2017/2017_98894212.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a1_age_approx", 
+        "a3_height_approx", 
+        "a46_occupation", 
+        "a4_gender"
+    ], 
+    "openimages_id": "6c084b333e4ae9a7", 
+    "source_url": "https://farm8.staticflickr.com/7103/7234955960_704648d35d_o.jpg"
+}

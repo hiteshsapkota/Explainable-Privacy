@@ -1,0 +1,16 @@
+{
+    "id": "2017_35945491", 
+    "image_path": "images/train2017/2017_35945491.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a60_occassion_personal", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "d505195dedf62cbe", 
+    "source_url": "https://c7.staticflickr.com/5/4122/4784107485_27419ace2b_o.jpg"
+}

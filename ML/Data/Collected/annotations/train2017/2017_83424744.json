@@ -1,0 +1,18 @@
+{
+    "id": "2017_83424744", 
+    "image_path": "images/train2017/2017_83424744.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a61_opinion_general", 
+        "a69_rel_views", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "b4a3d8d12b551a6b", 
+    "source_url": "https://c4.staticflickr.com/8/7101/7366091044_8edcfe4145_o.jpg"
+}

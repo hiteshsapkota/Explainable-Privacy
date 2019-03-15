@@ -1,0 +1,11 @@
+{
+    "id": "2017_84426010", 
+    "image_path": "images/test2017/2017_84426010.jpg", 
+    "labels": [
+        "a21_name_last", 
+        "a35_mail", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "48d650ef377de07c", 
+    "source_url": "https://c5.staticflickr.com/4/3129/2572602332_10e39d26aa_o.jpg"
+}

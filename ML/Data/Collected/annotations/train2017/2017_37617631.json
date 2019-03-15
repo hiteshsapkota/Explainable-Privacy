@@ -1,0 +1,14 @@
+{
+    "id": "2017_37617631", 
+    "image_path": "images/train2017/2017_37617631.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a104_license_plate_partial", 
+        "a10_face_partial", 
+        "a17_color", 
+        "a4_gender", 
+        "a73_landmark"
+    ], 
+    "openimages_id": "b3ca14bca079bd78", 
+    "source_url": "https://c1.staticflickr.com/1/60/180925066_1fda5b1df2_o.jpg"
+}

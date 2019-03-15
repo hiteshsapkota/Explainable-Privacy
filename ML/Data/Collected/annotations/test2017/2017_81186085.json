@@ -1,0 +1,15 @@
+{
+    "id": "2017_81186085", 
+    "image_path": "images/test2017/2017_81186085.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a25_nationality", 
+        "a26_handwriting", 
+        "a31_passport", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a8_signature"
+    ], 
+    "openimages_id": "a7dc8aafb30baa7e", 
+    "source_url": "https://c7.staticflickr.com/3/2435/3875338342_1a43a3e8d8_o.jpg"
+}

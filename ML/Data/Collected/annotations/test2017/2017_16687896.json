@@ -1,0 +1,18 @@
+{
+    "id": "2017_16687896", 
+    "image_path": "images/test2017/2017_16687896.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a65_rel_social", 
+        "a6_hair_color", 
+        "a73_landmark"
+    ], 
+    "openimages_id": "eb2fb34003caeca3", 
+    "source_url": "https://farm4.staticflickr.com/8061/8199896560_cd326ba049_o.jpg"
+}

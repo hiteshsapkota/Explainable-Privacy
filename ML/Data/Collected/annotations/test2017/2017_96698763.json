@@ -1,0 +1,18 @@
+{
+    "id": "2017_96698763", 
+    "image_path": "images/test2017/2017_96698763.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a11_tattoo", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a57_culture", 
+        "a68_rel_spectators", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "b8a416d3b3b08a09", 
+    "source_url": "https://c2.staticflickr.com/8/7112/7712452870_687573b405_o.jpg"
+}

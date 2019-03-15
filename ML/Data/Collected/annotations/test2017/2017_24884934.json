@@ -1,0 +1,19 @@
+{
+    "id": "2017_24884934", 
+    "image_path": "images/test2017/2017_24884934.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a11_tattoo", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a58_hobbies", 
+        "a5_eye_color", 
+        "a65_rel_social", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "17b552405df4412d", 
+    "source_url": "https://c6.staticflickr.com/4/3924/14719013733_a3093f6438_o.jpg"
+}

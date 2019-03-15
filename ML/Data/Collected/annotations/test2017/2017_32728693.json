@@ -1,0 +1,12 @@
+{
+    "id": "2017_32728693", 
+    "image_path": "images/test2017/2017_32728693.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a26_handwriting", 
+        "a31_passport", 
+        "a82_date_time"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

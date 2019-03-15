@@ -1,0 +1,15 @@
+{
+    "id": "2017_35410642", 
+    "image_path": "images/train2017/2017_35410642.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a21_name_last", 
+        "a26_handwriting", 
+        "a38_ticket", 
+        "a73_landmark", 
+        "a74_address_current_complete", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "39fb9901b3895bfa", 
+    "source_url": "https://c3.staticflickr.com/5/4053/4673444713_9df88a4dfa_o.jpg"
+}

@@ -1,0 +1,21 @@
+{
+    "id": "2017_99120177", 
+    "image_path": "images/test2017/2017_99120177.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a29_ausweis", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a7_fingerprint", 
+        "a8_signature", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "da9594d4d415f17c", 
+    "source_url": "https://c5.staticflickr.com/8/7308/9304007550_f1ddcfd23f_o.jpg"
+}

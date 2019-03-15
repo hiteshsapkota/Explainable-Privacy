@@ -1,0 +1,13 @@
+{
+    "id": "2017_45862561", 
+    "image_path": "images/test2017/2017_45862561.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a24_birth_date", 
+        "a26_handwriting", 
+        "a27_marital_status", 
+        "a64_rel_personal"
+    ], 
+    "openimages_id": "52627d8529776d85", 
+    "source_url": "https://farm6.staticflickr.com/8519/8477279472_97b8c9daec_o.jpg"
+}

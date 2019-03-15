@@ -1,0 +1,12 @@
+{
+    "id": "2017_51414649", 
+    "image_path": "images/test2017/2017_51414649.jpg", 
+    "labels": [
+        "a17_color", 
+        "a4_gender", 
+        "a55_religion", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "7fcbf366c8e5450b", 
+    "source_url": "https://c4.staticflickr.com/4/3157/2385333440_451e61b65c_o.jpg"
+}

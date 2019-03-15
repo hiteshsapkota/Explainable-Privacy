@@ -1,0 +1,15 @@
+{
+    "id": "2017_70334848", 
+    "image_path": "images/test2017/2017_70334848.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a11_tattoo", 
+        "a13_full_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "418f8a1fa6beae44", 
+    "source_url": "https://farm5.staticflickr.com/2096/2123315117_ce53078867_o.jpg"
+}

@@ -1,0 +1,10 @@
+{
+    "id": "2017_90979097", 
+    "image_path": "images/test2017/2017_90979097.jpg", 
+    "labels": [
+        "a73_landmark", 
+        "a74_address_current_complete"
+    ], 
+    "openimages_id": "72999bd7554211f4", 
+    "source_url": "https://farm5.staticflickr.com/2891/9722815683_ba85b3b3a7_o.jpg"
+}

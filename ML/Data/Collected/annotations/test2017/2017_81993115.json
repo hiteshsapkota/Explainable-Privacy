@@ -1,0 +1,13 @@
+{
+    "id": "2017_81993115", 
+    "image_path": "images/test2017/2017_81993115.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a26_handwriting", 
+        "a31_passport", 
+        "a75_address_current_partial", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "67e367b45f5bc324", 
+    "source_url": "https://farm5.staticflickr.com/3025/2595828465_0f89935199_o.jpg"
+}

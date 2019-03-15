@@ -1,0 +1,16 @@
+{
+    "id": "2017_12706979", 
+    "image_path": "images/test2017/2017_12706979.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a11_tattoo", 
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "a6f4c931d1d09082", 
+    "source_url": "https://farm3.staticflickr.com/8516/8543962353_c875c641d1_o.jpg"
+}

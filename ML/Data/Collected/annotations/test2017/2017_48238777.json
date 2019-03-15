@@ -1,0 +1,18 @@
+{
+    "id": "2017_48238777", 
+    "image_path": "images/test2017/2017_48238777.jpg", 
+    "labels": [
+        "a104_license_plate_partial", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "f7bb1bb0f00f730d", 
+    "source_url": "https://c6.staticflickr.com/4/3853/14389507911_ff2f4ce3de_o.jpg"
+}

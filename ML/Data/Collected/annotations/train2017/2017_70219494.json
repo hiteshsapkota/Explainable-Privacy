@@ -1,0 +1,12 @@
+{
+    "id": "2017_70219494", 
+    "image_path": "images/train2017/2017_70219494.jpg", 
+    "labels": [
+        "a17_color", 
+        "a59_sports", 
+        "a65_rel_social", 
+        "a73_landmark"
+    ], 
+    "openimages_id": "73a37b3f2f3cd57f", 
+    "source_url": "https://c8.staticflickr.com/8/7288/16441799961_e9b375f651_o.jpg"
+}

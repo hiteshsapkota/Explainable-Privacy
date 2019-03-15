@@ -1,0 +1,11 @@
+{
+    "id": "2017_25371087", 
+    "image_path": "images/train2017/2017_25371087.jpg", 
+    "labels": [
+        "a26_handwriting", 
+        "a75_address_current_partial", 
+        "a8_signature"
+    ], 
+    "openimages_id": "821813b07dd4cbb5", 
+    "source_url": "https://farm6.staticflickr.com/30/56054941_7d4e587744_o.jpg"
+}

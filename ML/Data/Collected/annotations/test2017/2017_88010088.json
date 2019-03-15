@@ -1,0 +1,21 @@
+{
+    "id": "2017_88010088", 
+    "image_path": "images/test2017/2017_88010088.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a48_occassion_work", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a66_rel_professional", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "5ac872c1c667e1fd", 
+    "source_url": "https://c6.staticflickr.com/7/6025/5948669009_d548ec76d2_o.jpg"
+}

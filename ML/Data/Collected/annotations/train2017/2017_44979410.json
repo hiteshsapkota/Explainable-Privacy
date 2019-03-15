@@ -1,0 +1,12 @@
+{
+    "id": "2017_44979410", 
+    "image_path": "images/train2017/2017_44979410.jpg", 
+    "labels": [
+        "a17_color", 
+        "a39_disability_physical", 
+        "a4_gender", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "fd005aa12208e3be", 
+    "source_url": "https://c7.staticflickr.com/8/7030/6489948649_e510f95149_o.jpg"
+}

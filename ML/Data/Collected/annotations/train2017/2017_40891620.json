@@ -1,0 +1,13 @@
+{
+    "id": "2017_40891620", 
+    "image_path": "images/train2017/2017_40891620.jpg", 
+    "labels": [
+        "a17_color", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a75_address_current_partial"
+    ], 
+    "openimages_id": "9d4ce36a3d9ab092", 
+    "source_url": "https://farm3.staticflickr.com/3475/3369853744_9fe10f7dfd_o.jpg"
+}

@@ -1,0 +1,20 @@
+{
+    "id": "2017_92025043", 
+    "image_path": "images/test2017/2017_92025043.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "822217350af52eeb", 
+    "source_url": "https://c4.staticflickr.com/8/7079/7294256320_5b5187b7b1_o.jpg"
+}

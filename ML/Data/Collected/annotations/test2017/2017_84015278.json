@@ -1,0 +1,16 @@
+{
+    "id": "2017_84015278", 
+    "image_path": "images/test2017/2017_84015278.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a61_opinion_general", 
+        "a69_rel_views", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "5286fdea2e6ab47d", 
+    "source_url": "https://c6.staticflickr.com/1/402/19019151994_530a533721_o.jpg"
+}

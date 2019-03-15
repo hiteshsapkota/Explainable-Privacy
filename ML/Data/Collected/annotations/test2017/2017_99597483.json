@@ -1,0 +1,11 @@
+{
+    "id": "2017_99597483", 
+    "image_path": "images/test2017/2017_99597483.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a17_color", 
+        "a19_name_full"
+    ], 
+    "openimages_id": "d93cf45e59b2ee7d", 
+    "source_url": "https://c6.staticflickr.com/6/5665/21032952590_76fd84292d_o.jpg"
+}

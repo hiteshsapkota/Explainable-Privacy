@@ -1,0 +1,19 @@
+{
+    "id": "2017_64578418", 
+    "image_path": "images/test2017/2017_64578418.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "a5fc4ea4cc58edce", 
+    "source_url": "https://c7.staticflickr.com/2/1222/1279610102_50acb5d402_o.jpg"
+}

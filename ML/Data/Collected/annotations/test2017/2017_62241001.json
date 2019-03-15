@@ -1,0 +1,20 @@
+{
+    "id": "2017_62241001", 
+    "image_path": "images/test2017/2017_62241001.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a65_rel_social", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "1fe334a7b4478b8b", 
+    "source_url": "https://c4.staticflickr.com/6/5344/9071475689_6d554f23fc_o.jpg"
+}

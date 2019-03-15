@@ -1,0 +1,18 @@
+{
+    "id": "2017_37061492", 
+    "image_path": "images/test2017/2017_37061492.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a57_culture", 
+        "a64_rel_personal", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "a564f837b6b41d59", 
+    "source_url": "https://c2.staticflickr.com/7/6189/6096500262_b41f9d0a7b_o.jpg"
+}

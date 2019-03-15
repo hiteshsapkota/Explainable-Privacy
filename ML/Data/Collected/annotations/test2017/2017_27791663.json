@@ -1,0 +1,11 @@
+{
+    "id": "2017_27791663", 
+    "image_path": "images/test2017/2017_27791663.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a30_credit_card", 
+        "a8_signature"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

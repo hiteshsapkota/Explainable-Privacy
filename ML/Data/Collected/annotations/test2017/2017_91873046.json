@@ -1,0 +1,18 @@
+{
+    "id": "2017_91873046", 
+    "image_path": "images/test2017/2017_91873046.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a48_occassion_work", 
+        "a4_gender", 
+        "a66_rel_professional", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "65fe5a2fcf7307de", 
+    "source_url": "https://c7.staticflickr.com/3/2920/14014381358_d23ee52165_o.jpg"
+}

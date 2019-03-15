@@ -1,0 +1,17 @@
+{
+    "id": "2017_56264412", 
+    "image_path": "images/train2017/2017_56264412.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a69_rel_views", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "e2a164e5a9f66df4", 
+    "source_url": "https://farm5.staticflickr.com/8146/7343402152_272c022366_o.jpg"
+}

@@ -1,0 +1,19 @@
+{
+    "id": "2017_12685055", 
+    "image_path": "images/test2017/2017_12685055.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a57_culture", 
+        "a61_opinion_general", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "8c5f2e9b051ece38", 
+    "source_url": "https://c1.staticflickr.com/9/8507/8516442732_2d86bea862_o.jpg"
+}

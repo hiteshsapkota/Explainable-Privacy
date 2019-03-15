@@ -1,0 +1,13 @@
+{
+    "id": "2017_69439359", 
+    "image_path": "images/test2017/2017_69439359.jpg", 
+    "labels": [
+        "a0_safe", 
+        "a1_age_approx", 
+        "a48_occassion_work", 
+        "a4_gender", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "4c6e2e8dfaafbd83", 
+    "source_url": "https://farm4.staticflickr.com/7656/17160876750_b89f4d9a86_o.jpg"
+}

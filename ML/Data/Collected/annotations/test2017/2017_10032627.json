@@ -1,0 +1,14 @@
+{
+    "id": "2017_10032627", 
+    "image_path": "images/test2017/2017_10032627.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "052487615850d5c1", 
+    "source_url": "https://farm2.staticflickr.com/3747/8936822318_6618fa30d8_o.jpg"
+}

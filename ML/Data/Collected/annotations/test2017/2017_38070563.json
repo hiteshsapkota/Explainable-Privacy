@@ -1,0 +1,19 @@
+{
+    "id": "2017_38070563", 
+    "image_path": "images/test2017/2017_38070563.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a59_sports", 
+        "a67_rel_competitors", 
+        "a6_hair_color", 
+        "a75_address_current_partial"
+    ], 
+    "openimages_id": "f900c5689ed4d559", 
+    "source_url": "https://c2.staticflickr.com/3/2932/13925181911_e5233b2da2_o.jpg"
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2017_86028079", 
+    "image_path": "images/test2017/2017_86028079.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a57_culture", 
+        "a68_rel_spectators", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "3f4d60a91e9e75d5", 
+    "source_url": "https://farm6.staticflickr.com/3889/14172633729_3c2bc95313_o.jpg"
+}

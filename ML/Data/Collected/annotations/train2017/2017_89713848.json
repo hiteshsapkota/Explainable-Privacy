@@ -1,0 +1,18 @@
+{
+    "id": "2017_89713848", 
+    "image_path": "images/train2017/2017_89713848.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a64_rel_personal", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "e307065c24eb42a0", 
+    "source_url": "https://farm1.staticflickr.com/3828/11308617476_83cf1e1144_o.jpg"
+}

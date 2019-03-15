@@ -1,0 +1,16 @@
+{
+    "id": "2017_14958433", 
+    "image_path": "images/test2017/2017_14958433.jpg", 
+    "labels": [
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a58_hobbies", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "056829d5f25aade2", 
+    "source_url": "https://farm3.staticflickr.com/3893/14362469733_ebe41911c3_o.jpg"
+}

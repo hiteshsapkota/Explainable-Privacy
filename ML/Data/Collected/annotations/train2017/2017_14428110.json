@@ -1,0 +1,12 @@
+{
+    "id": "2017_14428110", 
+    "image_path": "images/train2017/2017_14428110.jpg", 
+    "labels": [
+        "a20_name_first", 
+        "a26_handwriting", 
+        "a29_ausweis", 
+        "a8_signature"
+    ], 
+    "openimages_id": "cc3d5a5e0a15baed", 
+    "source_url": "https://c6.staticflickr.com/3/2882/10740864836_87254920b0_o.jpg"
+}

@@ -1,0 +1,16 @@
+{
+    "id": "2017_85106133", 
+    "image_path": "images/train2017/2017_85106133.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a59_sports", 
+        "a67_rel_competitors"
+    ], 
+    "openimages_id": "87ef33a8dfe3cddf", 
+    "source_url": "https://c8.staticflickr.com/9/8185/8118746318_0a6d336164_o.jpg"
+}

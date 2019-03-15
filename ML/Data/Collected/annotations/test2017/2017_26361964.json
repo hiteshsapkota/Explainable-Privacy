@@ -1,0 +1,10 @@
+{
+    "id": "2017_26361964", 
+    "image_path": "images/test2017/2017_26361964.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a46_occupation"
+    ], 
+    "openimages_id": "cec4658f9edeec56", 
+    "source_url": "https://farm7.staticflickr.com/8312/8027504147_652f8c6a0e_o.jpg"
+}

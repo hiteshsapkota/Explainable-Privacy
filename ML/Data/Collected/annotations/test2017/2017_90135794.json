@@ -1,0 +1,12 @@
+{
+    "id": "2017_90135794", 
+    "image_path": "images/test2017/2017_90135794.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a25_nationality", 
+        "a31_passport", 
+        "a35_mail"
+    ], 
+    "openimages_id": "8bfa100b8331b3b6", 
+    "source_url": "https://farm7.staticflickr.com/3353/4638389389_d63d95e119_o.jpg"
+}

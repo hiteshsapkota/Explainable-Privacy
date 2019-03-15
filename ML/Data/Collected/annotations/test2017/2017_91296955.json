@@ -1,0 +1,17 @@
+{
+    "id": "2017_91296955", 
+    "image_path": "images/test2017/2017_91296955.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "495711d0bb840b0a", 
+    "source_url": "https://c3.staticflickr.com/2/1104/618062331_b1b93fb980_o.jpg"
+}

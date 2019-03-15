@@ -1,0 +1,19 @@
+{
+    "id": "2017_32588019", 
+    "image_path": "images/train2017/2017_32588019.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a26_handwriting", 
+        "a33_student_id", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a8_signature", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "a35c01597fe598a8", 
+    "source_url": "https://c1.staticflickr.com/4/3142/2805229790_5b925296ed_o.jpg"
+}

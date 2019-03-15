@@ -1,0 +1,20 @@
+{
+    "id": "2017_96391168", 
+    "image_path": "images/train2017/2017_96391168.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a48_occassion_work", 
+        "a4_gender", 
+        "a66_rel_professional", 
+        "a6_hair_color", 
+        "a70_education_history", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "e78b7ce87a52208e", 
+    "source_url": "https://c7.staticflickr.com/4/3823/12202676534_c595c241dd_o.jpg"
+}

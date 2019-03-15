@@ -1,0 +1,20 @@
+{
+    "id": "2017_39834472", 
+    "image_path": "images/test2017/2017_39834472.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a27_marital_status", 
+        "a2_weight_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a59_sports", 
+        "a67_rel_competitors", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "1468d6430e991351", 
+    "source_url": "https://farm2.staticflickr.com/7003/13828351024_3dff627e40_o.jpg"
+}

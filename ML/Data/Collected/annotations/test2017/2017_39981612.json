@@ -1,0 +1,10 @@
+{
+    "id": "2017_39981612", 
+    "image_path": "images/test2017/2017_39981612.jpg", 
+    "labels": [
+        "a90_email", 
+        "a92_email_content"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

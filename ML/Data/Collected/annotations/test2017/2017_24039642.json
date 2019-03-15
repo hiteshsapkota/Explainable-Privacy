@@ -1,0 +1,15 @@
+{
+    "id": "2017_24039642", 
+    "image_path": "images/test2017/2017_24039642.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a17_color", 
+        "a4_gender", 
+        "a58_hobbies", 
+        "a65_rel_social", 
+        "a6_hair_color", 
+        "a75_address_current_partial"
+    ], 
+    "openimages_id": "fb91cc3c6b0785be", 
+    "source_url": "https://c7.staticflickr.com/2/1303/1182366594_b072161cde_o.jpg"
+}

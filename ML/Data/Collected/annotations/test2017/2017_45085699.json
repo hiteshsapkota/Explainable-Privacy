@@ -1,0 +1,13 @@
+{
+    "id": "2017_45085699", 
+    "image_path": "images/test2017/2017_45085699.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a23_birth_city", 
+        "a24_birth_date", 
+        "a26_handwriting", 
+        "a8_signature"
+    ], 
+    "openimages_id": "7b5b269597aee8bb", 
+    "source_url": "https://c4.staticflickr.com/7/6087/6133934259_bf7b36b6af_o.jpg"
+}

@@ -1,0 +1,14 @@
+{
+    "id": "2017_97425149", 
+    "image_path": "images/test2017/2017_97425149.jpg", 
+    "labels": [
+        "a17_color", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a59_sports", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "246627f38eae9fa9", 
+    "source_url": "https://c2.staticflickr.com/3/2720/5776554768_7e0c934043_o.jpg"
+}

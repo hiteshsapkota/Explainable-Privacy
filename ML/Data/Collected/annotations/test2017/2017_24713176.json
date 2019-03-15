@@ -1,0 +1,12 @@
+{
+    "id": "2017_24713176", 
+    "image_path": "images/test2017/2017_24713176.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a46_occupation", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "8108ff0e8def4f1d", 
+    "source_url": "https://c6.staticflickr.com/9/8148/7228881244_81eb721774_o.jpg"
+}

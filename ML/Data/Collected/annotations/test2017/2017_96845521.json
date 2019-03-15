@@ -1,0 +1,16 @@
+{
+    "id": "2017_96845521", 
+    "image_path": "images/test2017/2017_96845521.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a2_weight_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a59_sports", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "2a40ad1f7be109b1", 
+    "source_url": "https://farm2.staticflickr.com/3716/12272987494_3606186058_o.jpg"
+}

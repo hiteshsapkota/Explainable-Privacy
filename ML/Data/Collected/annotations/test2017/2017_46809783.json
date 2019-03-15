@@ -1,0 +1,18 @@
+{
+    "id": "2017_46809783", 
+    "image_path": "images/test2017/2017_46809783.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a11_tattoo", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a57_culture", 
+        "a65_rel_social", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "52e443a8e403e8f8", 
+    "source_url": "https://c1.staticflickr.com/3/2808/12956520363_84974c8b99_o.jpg"
+}

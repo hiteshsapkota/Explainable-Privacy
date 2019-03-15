@@ -1,0 +1,10 @@
+{
+    "id": "2017_50697153", 
+    "image_path": "images/test2017/2017_50697153.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a73_landmark"
+    ], 
+    "openimages_id": "433359d482e7b797", 
+    "source_url": "https://farm8.staticflickr.com/5443/9729298992_264f691f3a_o.jpg"
+}

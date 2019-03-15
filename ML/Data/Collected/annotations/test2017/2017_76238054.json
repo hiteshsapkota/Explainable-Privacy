@@ -1,0 +1,19 @@
+{
+    "id": "2017_76238054", 
+    "image_path": "images/test2017/2017_76238054.jpg", 
+    "labels": [
+        "a11_tattoo", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a65_rel_social", 
+        "a68_rel_spectators", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "67af145c87719b58", 
+    "source_url": "https://c1.staticflickr.com/3/2835/9389099426_1c15f8c517_o.jpg"
+}

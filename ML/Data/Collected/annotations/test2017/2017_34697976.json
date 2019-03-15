@@ -1,0 +1,11 @@
+{
+    "id": "2017_34697976", 
+    "image_path": "images/test2017/2017_34697976.jpg", 
+    "labels": [
+        "a26_handwriting", 
+        "a82_date_time", 
+        "a8_signature"
+    ], 
+    "openimages_id": "d112fa30e2a750d7", 
+    "source_url": "https://farm8.staticflickr.com/8296/7768603174_03ff510452_o.jpg"
+}

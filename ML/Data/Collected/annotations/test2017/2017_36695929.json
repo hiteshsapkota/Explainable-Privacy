@@ -1,0 +1,21 @@
+{
+    "id": "2017_36695929", 
+    "image_path": "images/test2017/2017_36695929.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "ec9ba70cef7030ca", 
+    "source_url": "https://c3.staticflickr.com/6/5577/14840156240_f4a5b54999_o.jpg"
+}

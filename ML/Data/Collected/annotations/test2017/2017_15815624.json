@@ -1,0 +1,11 @@
+{
+    "id": "2017_15815624", 
+    "image_path": "images/test2017/2017_15815624.jpg", 
+    "labels": [
+        "a49_phone", 
+        "a73_landmark", 
+        "a75_address_current_partial"
+    ], 
+    "openimages_id": "678dc484f227cd69", 
+    "source_url": "https://c2.staticflickr.com/4/3884/15188125512_04e841f045_o.jpg"
+}

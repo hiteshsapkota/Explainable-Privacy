@@ -1,0 +1,17 @@
+{
+    "id": "2017_50151058", 
+    "image_path": "images/train2017/2017_50151058.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a65_rel_social", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "31995cf80a5b5484", 
+    "source_url": "https://farm5.staticflickr.com/5588/14817551135_d72c1a03cf_o.jpg"
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2017_70076150", 
+    "image_path": "images/test2017/2017_70076150.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "192f7e5824e44869", 
+    "source_url": "https://c2.staticflickr.com/2/1267/544029068_fb3e882fe3_o.jpg"
+}

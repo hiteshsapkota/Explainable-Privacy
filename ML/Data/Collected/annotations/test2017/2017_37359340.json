@@ -1,0 +1,19 @@
+{
+    "id": "2017_37359340", 
+    "image_path": "images/test2017/2017_37359340.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a55_religion", 
+        "a5_eye_color", 
+        "a65_rel_social", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "1792c53cf55714c6", 
+    "source_url": "https://farm7.staticflickr.com/7004/6781420355_4ca13560b1_o.jpg"
+}

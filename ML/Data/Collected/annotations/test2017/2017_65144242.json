@@ -1,0 +1,13 @@
+{
+    "id": "2017_65144242", 
+    "image_path": "images/test2017/2017_65144242.jpg", 
+    "labels": [
+        "a17_color", 
+        "a4_gender", 
+        "a57_culture", 
+        "a68_rel_spectators", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "1feadda896149ed2", 
+    "source_url": "https://farm3.staticflickr.com/2847/11001062606_cf169182ac_o.jpg"
+}

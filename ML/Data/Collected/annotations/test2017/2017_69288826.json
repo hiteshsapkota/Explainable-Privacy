@@ -1,0 +1,14 @@
+{
+    "id": "2017_69288826", 
+    "image_path": "images/test2017/2017_69288826.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a24_birth_date", 
+        "a25_nationality", 
+        "a31_passport", 
+        "a75_address_current_partial", 
+        "a82_date_time"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

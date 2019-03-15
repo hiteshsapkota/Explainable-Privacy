@@ -1,0 +1,18 @@
+{
+    "id": "2017_40307084", 
+    "image_path": "images/test2017/2017_40307084.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a61_opinion_general", 
+        "a69_rel_views", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "ddefeb1f9c319789", 
+    "source_url": "https://c2.staticflickr.com/8/7311/9424180092_740a1d7342_o.jpg"
+}

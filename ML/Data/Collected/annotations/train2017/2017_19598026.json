@@ -1,0 +1,12 @@
+{
+    "id": "2017_19598026", 
+    "image_path": "images/train2017/2017_19598026.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a25_nationality", 
+        "a26_handwriting", 
+        "a31_passport"
+    ], 
+    "openimages_id": "faa33b09ad562d5e", 
+    "source_url": "https://c7.staticflickr.com/4/3327/3333453388_cee19a12d2_o.jpg"
+}

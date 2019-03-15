@@ -1,0 +1,10 @@
+{
+    "id": "2017_87537713", 
+    "image_path": "images/test2017/2017_87537713.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a4_gender"
+    ], 
+    "openimages_id": "0776780db2d9e961", 
+    "source_url": "https://farm2.staticflickr.com/13/14300355_e70b54b4a9_o.jpg"
+}

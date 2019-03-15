@@ -1,0 +1,11 @@
+{
+    "id": "2017_51527623", 
+    "image_path": "images/test2017/2017_51527623.jpg", 
+    "labels": [
+        "a17_color", 
+        "a69_rel_views", 
+        "a73_landmark"
+    ], 
+    "openimages_id": "fcd6e39301219368", 
+    "source_url": "https://c1.staticflickr.com/7/6176/6167978845_18687049b9_o.jpg"
+}

@@ -1,0 +1,12 @@
+{
+    "id": "2017_18950533", 
+    "image_path": "images/test2017/2017_18950533.jpg", 
+    "labels": [
+        "a21_name_last", 
+        "a26_handwriting", 
+        "a75_address_current_partial", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "e60a4ebee09074c5", 
+    "source_url": "https://farm6.staticflickr.com/8099/8572137648_098b05c240_o.jpg"
+}

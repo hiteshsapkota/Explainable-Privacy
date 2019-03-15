@@ -1,0 +1,10 @@
+{
+    "id": "2017_52863287", 
+    "image_path": "images/test2017/2017_52863287.jpg", 
+    "labels": [
+        "a25_nationality", 
+        "a31_passport"
+    ], 
+    "openimages_id": "e3e9ded94e7585d4", 
+    "source_url": "https://farm5.staticflickr.com/2576/3697206711_b95ebd8486_o.jpg"
+}

@@ -1,0 +1,12 @@
+{
+    "id": "2017_95706089", 
+    "image_path": "images/test2017/2017_95706089.jpg", 
+    "labels": [
+        "a17_color", 
+        "a4_gender", 
+        "a68_rel_spectators", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "802a3f02b56faefb", 
+    "source_url": "https://c4.staticflickr.com/1/138/318630135_7a47e3b45e_o.jpg"
+}

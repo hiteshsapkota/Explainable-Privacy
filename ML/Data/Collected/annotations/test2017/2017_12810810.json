@@ -1,0 +1,13 @@
+{
+    "id": "2017_12810810", 
+    "image_path": "images/test2017/2017_12810810.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender"
+    ], 
+    "openimages_id": "60dd2a0ddb2cd474", 
+    "source_url": "https://farm5.staticflickr.com/5023/5559433313_f5bcba30fc_o.jpg"
+}

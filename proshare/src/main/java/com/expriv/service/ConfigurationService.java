@@ -8,7 +8,7 @@ public class ConfigurationService {
     private String python_base_dir;
     private int train_batch_size;
     private int eval_batch_size;
-
+    private int trainingThreshold;
     public String getPython_base_dir() {
         return python_base_dir;
     }
@@ -27,6 +27,7 @@ public class ConfigurationService {
         this.python_base_dir =(String)prop.get("python_base_path");
         this.train_batch_size=Integer.parseInt((String)prop.get("train_batch_size"));
         this.eval_batch_size=Integer.parseInt((String)prop.get("eval_batch_size"));
+        this.trainingThreshold=Integer.parseInt((String)prop.get("training_threshold"));
 
 
     }
@@ -46,4 +47,12 @@ public class ConfigurationService {
     public void setEval_batch_size(int eval_batch_size) {
         this.eval_batch_size = eval_batch_size;
     }
+
+  public int getTrainingThreshold() {
+    return trainingThreshold;
+  }
+
+  public void setTrainingThreshold(int trainingThreshold) {
+    this.trainingThreshold = trainingThreshold;
+  }
 }

@@ -1,0 +1,11 @@
+{
+    "id": "2017_13475715", 
+    "image_path": "images/train2017/2017_13475715.jpg", 
+    "labels": [
+        "a0_safe", 
+        "a16_race", 
+        "a17_color"
+    ], 
+    "openimages_id": "93a2c63151c260ed", 
+    "source_url": "https://c6.staticflickr.com/4/3918/14478806901_0f0da541eb_o.jpg"
+}

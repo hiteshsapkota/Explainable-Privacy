@@ -1,0 +1,12 @@
+{
+    "id": "2017_79585832", 
+    "image_path": "images/test2017/2017_79585832.jpg", 
+    "labels": [
+        "a73_landmark", 
+        "a82_date_time", 
+        "a85_username", 
+        "a97_online_conversation"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

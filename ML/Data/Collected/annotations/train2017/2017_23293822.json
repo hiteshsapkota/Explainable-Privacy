@@ -1,0 +1,20 @@
+{
+    "id": "2017_23293822", 
+    "image_path": "images/train2017/2017_23293822.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a11_tattoo", 
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a27_marital_status", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a58_hobbies", 
+        "a65_rel_social", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "196c3bb3c74c1232", 
+    "source_url": "https://farm3.staticflickr.com/3833/12317181463_19ab83e2c9_o.jpg"
+}

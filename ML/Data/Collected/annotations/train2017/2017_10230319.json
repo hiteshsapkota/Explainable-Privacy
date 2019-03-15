@@ -1,0 +1,9 @@
+{
+    "id": "2017_10230319", 
+    "image_path": "images/train2017/2017_10230319.jpg", 
+    "labels": [
+        "a0_safe"
+    ], 
+    "openimages_id": "23af3a8b5ea4b9e2", 
+    "source_url": "https://farm3.staticflickr.com/4111/5206272055_38f3b6e6d1_o.jpg"
+}

@@ -1,0 +1,22 @@
+{
+    "id": "2017_85394702", 
+    "image_path": "images/train2017/2017_85394702.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a13_full_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a59_sports", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "54ed3aa9366cd62b", 
+    "source_url": "https://c4.staticflickr.com/8/7216/7355267192_a01c2ab9fb_o.jpg"
+}

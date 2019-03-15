@@ -1,0 +1,16 @@
+{
+    "id": "2017_78680764", 
+    "image_path": "images/test2017/2017_78680764.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a2_weight_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a66_rel_professional", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "1059dd3b6230e6af", 
+    "source_url": "https://c8.staticflickr.com/9/8884/16726309064_3731cd5047_o.jpg"
+}

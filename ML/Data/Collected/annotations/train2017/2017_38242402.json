@@ -1,0 +1,11 @@
+{
+    "id": "2017_38242402", 
+    "image_path": "images/train2017/2017_38242402.jpg", 
+    "labels": [
+        "a17_color", 
+        "a61_opinion_general", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

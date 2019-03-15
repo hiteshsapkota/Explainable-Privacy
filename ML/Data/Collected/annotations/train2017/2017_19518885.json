@@ -1,0 +1,12 @@
+{
+    "id": "2017_19518885", 
+    "image_path": "images/train2017/2017_19518885.jpg", 
+    "labels": [
+        "a2_weight_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a57_culture"
+    ], 
+    "openimages_id": "a3a081c235bfca6d", 
+    "source_url": "https://c6.staticflickr.com/4/3801/9320664225_d986a55746_o.jpg"
+}

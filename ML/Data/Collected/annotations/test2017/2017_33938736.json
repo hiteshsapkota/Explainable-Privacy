@@ -1,0 +1,18 @@
+{
+    "id": "2017_33938736", 
+    "image_path": "images/test2017/2017_33938736.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a61_opinion_general", 
+        "a69_rel_views", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "9335fa5e55ec3b3c", 
+    "source_url": "https://c5.staticflickr.com/1/36/94589151_1a23d43a71_o.jpg"
+}

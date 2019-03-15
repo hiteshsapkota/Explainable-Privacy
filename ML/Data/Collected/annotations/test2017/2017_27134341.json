@@ -1,0 +1,20 @@
+{
+    "id": "2017_27134341", 
+    "image_path": "images/test2017/2017_27134341.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "01b807b580d5b795", 
+    "source_url": "https://farm6.staticflickr.com/3876/14172703667_23e88e44cf_o.jpg"
+}

@@ -1,0 +1,12 @@
+{
+    "id": "2017_27538741", 
+    "image_path": "images/train2017/2017_27538741.jpg", 
+    "labels": [
+        "a20_name_first", 
+        "a26_handwriting", 
+        "a46_occupation", 
+        "a55_religion"
+    ], 
+    "openimages_id": "b1b4d1dfe675d419", 
+    "source_url": "https://c2.staticflickr.com/6/5327/9629583376_5bd8e34fc1_o.jpg"
+}

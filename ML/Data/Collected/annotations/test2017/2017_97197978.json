@@ -1,0 +1,20 @@
+{
+    "id": "2017_97197978", 
+    "image_path": "images/test2017/2017_97197978.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a61_opinion_general", 
+        "a64_rel_personal", 
+        "a65_rel_social", 
+        "a69_rel_views", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "e4ef3db195caa58b", 
+    "source_url": "https://c4.staticflickr.com/6/5458/8858176791_fc55cdffca_o.jpg"
+}

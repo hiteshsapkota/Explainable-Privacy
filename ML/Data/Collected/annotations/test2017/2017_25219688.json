@@ -1,0 +1,18 @@
+{
+    "id": "2017_25219688", 
+    "image_path": "images/test2017/2017_25219688.jpg", 
+    "labels": [
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "0182bd2e43596b71", 
+    "source_url": "https://farm2.staticflickr.com/80/274834098_25eea6a533_o.jpg"
+}

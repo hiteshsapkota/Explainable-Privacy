@@ -1,0 +1,13 @@
+{
+    "id": "2017_49801054", 
+    "image_path": "images/train2017/2017_49801054.jpg", 
+    "labels": [
+        "a26_handwriting", 
+        "a31_passport", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a8_signature"
+    ], 
+    "openimages_id": "48ce590505657c95", 
+    "source_url": "https://farm6.staticflickr.com/3197/2442329018_6bd4f67aa4_o.jpg"
+}

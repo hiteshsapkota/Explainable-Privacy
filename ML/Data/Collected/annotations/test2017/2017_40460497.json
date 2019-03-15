@@ -1,0 +1,17 @@
+{
+    "id": "2017_40460497", 
+    "image_path": "images/test2017/2017_40460497.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a66_rel_professional", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "dcd4ec35862c8a8f", 
+    "source_url": "https://c8.staticflickr.com/9/8110/8558765217_a610f435b7_o.jpg"
+}

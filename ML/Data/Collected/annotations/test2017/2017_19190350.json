@@ -1,0 +1,12 @@
+{
+    "id": "2017_19190350", 
+    "image_path": "images/test2017/2017_19190350.jpg", 
+    "labels": [
+        "a26_handwriting", 
+        "a35_mail", 
+        "a75_address_current_partial", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "c7285245d0de0aa6", 
+    "source_url": "https://farm7.staticflickr.com/8150/7643283798_841a8e9c24_o.jpg"
+}

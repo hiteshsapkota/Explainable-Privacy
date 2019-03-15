@@ -1,0 +1,10 @@
+{
+    "id": "2017_67682231", 
+    "image_path": "images/train2017/2017_67682231.jpg", 
+    "labels": [
+        "a17_color", 
+        "a7_fingerprint"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

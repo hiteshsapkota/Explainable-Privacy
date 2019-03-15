@@ -1,0 +1,11 @@
+{
+    "id": "2017_48614575", 
+    "image_path": "images/train2017/2017_48614575.jpg", 
+    "labels": [
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a99_legal_involvement"
+    ], 
+    "openimages_id": "84ac41b44ac05258", 
+    "source_url": "https://c1.staticflickr.com/9/8744/17304318839_9c9e9b8dcb_o.jpg"
+}

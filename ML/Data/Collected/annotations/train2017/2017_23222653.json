@@ -1,0 +1,21 @@
+{
+    "id": "2017_23222653", 
+    "image_path": "images/train2017/2017_23222653.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a10_face_partial", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a62_opinion_political", 
+        "a69_rel_views", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "d0c980e702b51c54", 
+    "source_url": "https://farm5.staticflickr.com/3930/15441369192_3c9ecdf041_o.jpg"
+}

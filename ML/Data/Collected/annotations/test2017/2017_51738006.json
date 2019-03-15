@@ -1,0 +1,11 @@
+{
+    "id": "2017_51738006", 
+    "image_path": "images/test2017/2017_51738006.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a38_ticket", 
+        "a75_address_current_partial"
+    ], 
+    "openimages_id": "b40337dbd504937a", 
+    "source_url": "https://c3.staticflickr.com/3/2068/1618051333_f0d30432ec_o.jpg"
+}

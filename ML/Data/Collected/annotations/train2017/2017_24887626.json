@@ -1,0 +1,10 @@
+{
+    "id": "2017_24887626", 
+    "image_path": "images/train2017/2017_24887626.jpg", 
+    "labels": [
+        "a25_nationality", 
+        "a31_passport"
+    ], 
+    "openimages_id": "d3ad5c0dc65dee6b", 
+    "source_url": "https://c4.staticflickr.com/9/8417/8700179587_fed9e94d25_o.jpg"
+}

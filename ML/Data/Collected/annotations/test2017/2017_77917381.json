@@ -1,0 +1,10 @@
+{
+    "id": "2017_77917381", 
+    "image_path": "images/test2017/2017_77917381.jpg", 
+    "labels": [
+        "a49_phone", 
+        "a73_landmark"
+    ], 
+    "openimages_id": "7e085ee68192f356", 
+    "source_url": "https://farm7.staticflickr.com/3942/15288818858_cd20effcbc_o.jpg"
+}
