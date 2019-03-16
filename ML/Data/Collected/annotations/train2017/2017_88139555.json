@@ -1,0 +1,10 @@
+{
+    "id": "2017_88139555", 
+    "image_path": "images/train2017/2017_88139555.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a4_gender"
+    ], 
+    "openimages_id": "db5ecd2f5ea55b79", 
+    "source_url": "https://c2.staticflickr.com/9/8469/8102742817_cfce386e7d_o.jpg"
+}

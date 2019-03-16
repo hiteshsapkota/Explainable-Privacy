@@ -1,0 +1,19 @@
+{
+    "id": "2017_20251204", 
+    "image_path": "images/test2017/2017_20251204.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a58_hobbies", 
+        "a65_rel_social", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "909f20de6df66258", 
+    "source_url": "https://c1.staticflickr.com/1/84/261544292_1f26d7cdb1_o.jpg"
+}

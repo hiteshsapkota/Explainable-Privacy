@@ -1,0 +1,14 @@
+{
+    "id": "2017_43661795", 
+    "image_path": "images/test2017/2017_43661795.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a37_receipt", 
+        "a46_occupation", 
+        "a73_landmark", 
+        "a74_address_current_complete", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "ec9a9f0383e3d9ab", 
+    "source_url": "https://c4.staticflickr.com/7/6231/6353737141_9b4da5182e_o.jpg"
+}

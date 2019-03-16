@@ -1,0 +1,13 @@
+{
+    "id": "2017_94100323", 
+    "image_path": "images/test2017/2017_94100323.jpg", 
+    "labels": [
+        "a17_color", 
+        "a37_receipt", 
+        "a49_phone", 
+        "a73_landmark", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "4c22da868c97b424", 
+    "source_url": "https://farm5.staticflickr.com/7001/6767266333_36f9855830_o.jpg"
+}

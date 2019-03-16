@@ -1,0 +1,14 @@
+{
+    "id": "2017_32895333", 
+    "image_path": "images/train2017/2017_32895333.jpg", 
+    "labels": [
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a41_injury", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "e81c4b786442a0b6", 
+    "source_url": "https://farm7.staticflickr.com/2397/2378775523_f2b4345c8d_o.jpg"
+}

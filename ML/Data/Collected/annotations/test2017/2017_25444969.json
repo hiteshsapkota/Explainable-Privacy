@@ -1,0 +1,13 @@
+{
+    "id": "2017_25444969", 
+    "image_path": "images/test2017/2017_25444969.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a57_culture", 
+        "a68_rel_spectators", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "5e0ead7fa84191b2", 
+    "source_url": "https://farm3.staticflickr.com/5080/14358421844_8460ab127d_o.jpg"
+}

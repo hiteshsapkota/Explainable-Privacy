@@ -1,0 +1,20 @@
+{
+    "id": "2017_83326250", 
+    "image_path": "images/test2017/2017_83326250.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a61_opinion_general", 
+        "a69_rel_views", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "0fbcaec5f444071a", 
+    "source_url": "https://c3.staticflickr.com/8/7234/6973836812_e40894d6a9_o.jpg"
+}

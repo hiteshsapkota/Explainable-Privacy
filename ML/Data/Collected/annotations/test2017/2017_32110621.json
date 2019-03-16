@@ -1,0 +1,11 @@
+{
+    "id": "2017_32110621", 
+    "image_path": "images/test2017/2017_32110621.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a82_date_time", 
+        "a8_signature"
+    ], 
+    "openimages_id": "759d3509ec8e5690", 
+    "source_url": "https://farm1.staticflickr.com/3035/2981092259_8181d37668_o.jpg"
+}

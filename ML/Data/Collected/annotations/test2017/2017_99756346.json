@@ -1,0 +1,10 @@
+{
+    "id": "2017_99756346", 
+    "image_path": "images/test2017/2017_99756346.jpg", 
+    "labels": [
+        "a17_color", 
+        "a5_eye_color"
+    ], 
+    "openimages_id": "8128588a52d538d9", 
+    "source_url": "https://c2.staticflickr.com/3/2163/2161748635_14e634c7f6_o.jpg"
+}

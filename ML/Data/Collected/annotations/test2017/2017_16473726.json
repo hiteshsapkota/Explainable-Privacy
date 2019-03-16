@@ -1,0 +1,18 @@
+{
+    "id": "2017_16473726", 
+    "image_path": "images/test2017/2017_16473726.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a32_drivers_license", 
+        "a4_gender", 
+        "a6_hair_color", 
+        "a79_address_home_partial", 
+        "a8_signature", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

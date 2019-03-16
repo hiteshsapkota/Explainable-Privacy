@@ -1,0 +1,18 @@
+{
+    "id": "2017_27240526", 
+    "image_path": "images/train2017/2017_27240526.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "9ee5f6d0d8726c37", 
+    "source_url": "https://farm8.staticflickr.com/3015/2973624737_e6a34c1aa9_o.jpg"
+}

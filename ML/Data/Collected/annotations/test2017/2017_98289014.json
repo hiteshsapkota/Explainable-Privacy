@@ -1,0 +1,10 @@
+{
+    "id": "2017_98289014", 
+    "image_path": "images/test2017/2017_98289014.jpg", 
+    "labels": [
+        "a17_color", 
+        "a38_ticket"
+    ], 
+    "openimages_id": "713e855f8067cf14", 
+    "source_url": "https://farm5.staticflickr.com/7311/9645220508_88d87e2976_o.jpg"
+}

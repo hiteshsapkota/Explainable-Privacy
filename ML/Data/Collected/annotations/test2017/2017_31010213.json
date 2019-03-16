@@ -1,0 +1,17 @@
+{
+    "id": "2017_31010213", 
+    "image_path": "images/test2017/2017_31010213.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a58_hobbies", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "11201e90b822e7ac", 
+    "source_url": "https://c5.staticflickr.com/6/5171/5489086701_9f6c372d29_o.jpg"
+}

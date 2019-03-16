@@ -1,0 +1,12 @@
+{
+    "id": "2017_91057954", 
+    "image_path": "images/test2017/2017_91057954.jpg", 
+    "labels": [
+        "a31_passport", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "4d1051feb12b3df7", 
+    "source_url": "https://farm8.staticflickr.com/2079/2441501249_7c8561a33e_o.jpg"
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2017_53342074", 
+    "image_path": "images/test2017/2017_53342074.jpg", 
+    "labels": [
+        "a104_license_plate_partial", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a69_rel_views", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "545fec88bfd4ba97", 
+    "source_url": "https://farm8.staticflickr.com/3348/3650566631_11d2cfc768_o.jpg"
+}

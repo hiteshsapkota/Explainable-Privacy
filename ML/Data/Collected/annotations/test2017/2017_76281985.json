@@ -1,0 +1,16 @@
+{
+    "id": "2017_76281985", 
+    "image_path": "images/test2017/2017_76281985.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a17_color", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a58_hobbies", 
+        "a5_eye_color", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "79ced2f77e0a8e2e", 
+    "source_url": "https://c7.staticflickr.com/7/6139/5972390255_674e432d83_o.jpg"
+}

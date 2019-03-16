@@ -1,0 +1,21 @@
+{
+    "id": "2017_94642594", 
+    "image_path": "images/train2017/2017_94642594.jpg", 
+    "labels": [
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a66_rel_professional", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "1d8449e07c8998c5", 
+    "source_url": "https://farm6.staticflickr.com/3881/14516239006_7f42501102_o.jpg"
+}

@@ -1,0 +1,11 @@
+{
+    "id": "2017_81112150", 
+    "image_path": "images/test2017/2017_81112150.jpg", 
+    "labels": [
+        "a37_receipt", 
+        "a49_phone", 
+        "a73_landmark"
+    ], 
+    "openimages_id": "8fa29a76315ffeb9", 
+    "source_url": "https://c2.staticflickr.com/9/8053/8099383361_d308d860d7_o.jpg"
+}

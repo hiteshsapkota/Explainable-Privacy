@@ -1,0 +1,22 @@
+{
+    "id": "2017_38627294", 
+    "image_path": "images/test2017/2017_38627294.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a39_disability_physical", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a59_sports", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a82_date_time", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "81b97ae9c42dafa4", 
+    "source_url": "https://farm5.staticflickr.com/7138/7143175369_3e262e1707_o.jpg"
+}

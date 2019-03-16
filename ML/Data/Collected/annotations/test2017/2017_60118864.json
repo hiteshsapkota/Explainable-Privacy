@@ -1,0 +1,11 @@
+{
+    "id": "2017_60118864", 
+    "image_path": "images/test2017/2017_60118864.jpg", 
+    "labels": [
+        "a17_color", 
+        "a46_occupation", 
+        "a4_gender"
+    ], 
+    "openimages_id": "516cad7017e3e07d", 
+    "source_url": "https://c6.staticflickr.com/8/7545/15991012910_847c0bab73_o.jpg"
+}

@@ -1,0 +1,11 @@
+{
+    "id": "2017_27862176", 
+    "image_path": "images/test2017/2017_27862176.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a46_occupation", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "b9c2c29fa3e5a24e", 
+    "source_url": "https://c7.staticflickr.com/4/3896/14775460088_434ef2fba9_o.jpg"
+}

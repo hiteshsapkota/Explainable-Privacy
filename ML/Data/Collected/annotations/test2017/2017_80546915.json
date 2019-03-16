@@ -1,0 +1,17 @@
+{
+    "id": "2017_80546915", 
+    "image_path": "images/test2017/2017_80546915.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "43589a94c5853fb2", 
+    "source_url": "https://farm3.staticflickr.com/2480/4155646667_98aec5e332_o.jpg"
+}

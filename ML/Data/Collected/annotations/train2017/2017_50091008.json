@@ -1,0 +1,18 @@
+{
+    "id": "2017_50091008", 
+    "image_path": "images/train2017/2017_50091008.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a29_ausweis", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a7_fingerprint", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "b5cb752cc39e8b52", 
+    "source_url": "https://farm3.staticflickr.com/3525/3217118226_cb4962d0ac_o.jpg"
+}

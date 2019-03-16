@@ -1,0 +1,10 @@
+{
+    "id": "2017_71881749", 
+    "image_path": "images/train2017/2017_71881749.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a75_address_current_partial"
+    ], 
+    "openimages_id": "46641de44444d35d", 
+    "source_url": "https://c6.staticflickr.com/3/2736/4352095059_9b32519d4b_o.jpg"
+}

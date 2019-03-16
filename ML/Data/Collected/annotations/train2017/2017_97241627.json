@@ -1,0 +1,11 @@
+{
+    "id": "2017_97241627", 
+    "image_path": "images/train2017/2017_97241627.jpg", 
+    "labels": [
+        "a17_color", 
+        "a3_height_approx", 
+        "a4_gender"
+    ], 
+    "openimages_id": "0c123e9723e92b5e", 
+    "source_url": "https://c7.staticflickr.com/1/36/80154412_d974523716_o.jpg"
+}

@@ -1,0 +1,16 @@
+{
+    "id": "2017_39830941", 
+    "image_path": "images/test2017/2017_39830941.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a48_occassion_work", 
+        "a4_gender", 
+        "a57_culture", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "72083c161b4149d7", 
+    "source_url": "https://farm8.staticflickr.com/5498/14428724205_b5ee38f8b5_o.jpg"
+}

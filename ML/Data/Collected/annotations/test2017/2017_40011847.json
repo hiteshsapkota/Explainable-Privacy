@@ -1,0 +1,12 @@
+{
+    "id": "2017_40011847", 
+    "image_path": "images/test2017/2017_40011847.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender"
+    ], 
+    "openimages_id": "410ba04a23347775", 
+    "source_url": "https://farm6.staticflickr.com/3800/20167590458_dae2502703_o.jpg"
+}

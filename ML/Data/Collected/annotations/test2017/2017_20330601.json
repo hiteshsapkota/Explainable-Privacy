@@ -1,0 +1,21 @@
+{
+    "id": "2017_20330601", 
+    "image_path": "images/test2017/2017_20330601.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a104_license_plate_partial", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a65_rel_social", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a75_address_current_partial"
+    ], 
+    "openimages_id": "202bfe0f0157637b", 
+    "source_url": "https://c4.staticflickr.com/9/8819/18197611678_7e8a14bef7_o.jpg"
+}

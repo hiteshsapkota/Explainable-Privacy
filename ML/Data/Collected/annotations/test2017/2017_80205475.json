@@ -1,0 +1,18 @@
+{
+    "id": "2017_80205475", 
+    "image_path": "images/test2017/2017_80205475.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a65_rel_social", 
+        "a66_rel_professional", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "4ece03b926bdce19", 
+    "source_url": "https://c2.staticflickr.com/4/3696/11296849105_cef7e805e4_o.jpg"
+}

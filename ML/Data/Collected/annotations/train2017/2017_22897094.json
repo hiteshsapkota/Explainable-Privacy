@@ -1,0 +1,19 @@
+{
+    "id": "2017_22897094", 
+    "image_path": "images/train2017/2017_22897094.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a11_tattoo", 
+        "a12_semi_nudity", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "b45b126b44a9c05a", 
+    "source_url": "https://c3.staticflickr.com/3/2509/4185486549_82a345cc00_o.jpg"
+}

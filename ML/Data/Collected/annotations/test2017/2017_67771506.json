@@ -1,0 +1,11 @@
+{
+    "id": "2017_67771506", 
+    "image_path": "images/test2017/2017_67771506.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a82_date_time", 
+        "a97_online_conversation"
+    ], 
+    "openimages_id": "a0ac133813c8bbbf", 
+    "source_url": "https://c8.staticflickr.com/3/2476/3909442432_856160b0f2_o.jpg"
+}

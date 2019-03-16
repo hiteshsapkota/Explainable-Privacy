@@ -1,0 +1,14 @@
+{
+    "id": "2017_53245542", 
+    "image_path": "images/train2017/2017_53245542.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a17_color", 
+        "a4_gender", 
+        "a58_hobbies", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "4502b3eb91593280", 
+    "source_url": "https://farm1.staticflickr.com/7076/7354443988_aac9c4f30b_o.jpg"
+}

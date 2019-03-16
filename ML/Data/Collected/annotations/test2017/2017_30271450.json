@@ -1,0 +1,17 @@
+{
+    "id": "2017_30271450", 
+    "image_path": "images/test2017/2017_30271450.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a55_religion"
+    ], 
+    "openimages_id": "70ef38e881f8534c", 
+    "source_url": "https://c5.staticflickr.com/6/5322/8962890994_0c2bb4b63e_o.jpg"
+}

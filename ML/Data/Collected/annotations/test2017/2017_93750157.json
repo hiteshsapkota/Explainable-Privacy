@@ -1,0 +1,16 @@
+{
+    "id": "2017_93750157", 
+    "image_path": "images/test2017/2017_93750157.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a4_gender", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a68_rel_spectators", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "8b8f4cc1cb96dccb", 
+    "source_url": "https://c4.staticflickr.com/5/4030/4537255292_a1bb08a8bf_o.jpg"
+}

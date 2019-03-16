@@ -1,0 +1,17 @@
+{
+    "id": "2017_19512549", 
+    "image_path": "images/test2017/2017_19512549.jpg", 
+    "labels": [
+        "a11_tattoo", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "04118622b74e97e5", 
+    "source_url": "https://farm6.staticflickr.com/4045/4582206089_f3d8e2ae57_o.jpg"
+}

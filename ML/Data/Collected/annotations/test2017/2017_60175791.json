@@ -1,0 +1,17 @@
+{
+    "id": "2017_60175791", 
+    "image_path": "images/test2017/2017_60175791.jpg", 
+    "labels": [
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a64_rel_personal", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "ed6483dc91d9e53f", 
+    "source_url": "https://c8.staticflickr.com/8/7318/13970780907_aa8267ce15_o.jpg"
+}

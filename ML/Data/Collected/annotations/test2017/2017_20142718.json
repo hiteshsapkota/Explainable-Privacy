@@ -1,0 +1,20 @@
+{
+    "id": "2017_20142718", 
+    "image_path": "images/test2017/2017_20142718.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "3a5b985a86f65ff1", 
+    "source_url": "https://farm2.staticflickr.com/8091/8501684606_a749f47008_o.jpg"
+}

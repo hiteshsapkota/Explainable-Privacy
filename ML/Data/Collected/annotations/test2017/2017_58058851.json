@@ -1,0 +1,18 @@
+{
+    "id": "2017_58058851", 
+    "image_path": "images/test2017/2017_58058851.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a61_opinion_general", 
+        "a69_rel_views", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "5afa5de2d8d7bb01", 
+    "source_url": "https://farm2.staticflickr.com/3712/8999934325_3cb6c73a71_o.jpg"
+}

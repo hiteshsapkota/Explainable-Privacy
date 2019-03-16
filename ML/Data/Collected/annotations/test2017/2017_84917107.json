@@ -1,0 +1,23 @@
+{
+    "id": "2017_84917107", 
+    "image_path": "images/test2017/2017_84917107.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a103_license_plate_complete", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "1338b5c410a549f2", 
+    "source_url": "https://farm3.staticflickr.com/3849/14562833782_006b79e354_o.jpg"
+}

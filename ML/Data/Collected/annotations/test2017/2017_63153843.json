@@ -1,0 +1,19 @@
+{
+    "id": "2017_63153843", 
+    "image_path": "images/test2017/2017_63153843.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a11_tattoo", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "1227ede8514a34b2", 
+    "source_url": "https://farm3.staticflickr.com/2865/9179154600_3d1783ac31_o.jpg"
+}

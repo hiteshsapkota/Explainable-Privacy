@@ -1,0 +1,21 @@
+{
+    "id": "2017_65262078", 
+    "image_path": "images/test2017/2017_65262078.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a61_opinion_general", 
+        "a68_rel_spectators", 
+        "a69_rel_views", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "7f269c3aacb089dd", 
+    "source_url": "https://c6.staticflickr.com/4/3282/2353278451_dd81f19724_o.jpg"
+}

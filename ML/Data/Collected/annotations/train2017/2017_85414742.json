@@ -1,0 +1,21 @@
+{
+    "id": "2017_85414742", 
+    "image_path": "images/train2017/2017_85414742.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a11_tattoo", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a58_hobbies", 
+        "a5_eye_color", 
+        "a65_rel_social", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "520c5d74f5336e9a", 
+    "source_url": "https://c3.staticflickr.com/6/5608/15354682757_2a93dda23b_o.jpg"
+}

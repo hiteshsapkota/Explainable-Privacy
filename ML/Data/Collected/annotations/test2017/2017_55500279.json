@@ -1,0 +1,11 @@
+{
+    "id": "2017_55500279", 
+    "image_path": "images/test2017/2017_55500279.jpg", 
+    "labels": [
+        "a17_color", 
+        "a2_weight_approx", 
+        "a4_gender"
+    ], 
+    "openimages_id": "263a3e60174f3967", 
+    "source_url": "https://farm8.staticflickr.com/8154/7111718131_931c3ef2e9_o.jpg"
+}

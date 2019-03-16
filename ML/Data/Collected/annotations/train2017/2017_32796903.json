@@ -1,0 +1,11 @@
+{
+    "id": "2017_32796903", 
+    "image_path": "images/train2017/2017_32796903.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a104_license_plate_partial", 
+        "a46_occupation"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

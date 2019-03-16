@@ -1,0 +1,14 @@
+{
+    "id": "2017_70885813", 
+    "image_path": "images/test2017/2017_70885813.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a29_ausweis", 
+        "a4_gender", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "f36ec3c7e1d91383", 
+    "source_url": "https://farm4.staticflickr.com/302/18193930003_3f26541eb4_o.jpg"
+}

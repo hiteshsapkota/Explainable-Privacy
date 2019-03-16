@@ -1,0 +1,18 @@
+{
+    "id": "2017_70681283", 
+    "image_path": "images/train2017/2017_70681283.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a26_handwriting", 
+        "a29_ausweis", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a8_signature", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "8b047e21c7bcf5a6", 
+    "source_url": "https://farm7.staticflickr.com/3083/2545864537_af65c90f38_o.jpg"
+}

@@ -1,0 +1,21 @@
+{
+    "id": "2017_11733853", 
+    "image_path": "images/test2017/2017_11733853.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "dd580fcdd2991bf2", 
+    "source_url": "https://farm3.staticflickr.com/158/437986929_e7443cc7f4_o.jpg"
+}

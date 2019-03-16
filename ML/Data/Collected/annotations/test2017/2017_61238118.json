@@ -1,0 +1,12 @@
+{
+    "id": "2017_61238118", 
+    "image_path": "images/test2017/2017_61238118.jpg", 
+    "labels": [
+        "a26_handwriting", 
+        "a37_receipt", 
+        "a73_landmark", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "2ccb0cd14fa45f57", 
+    "source_url": "https://farm8.staticflickr.com/8022/7614446268_6d3fbed8be_o.jpg"
+}

@@ -1,0 +1,19 @@
+{
+    "id": "2017_58247680", 
+    "image_path": "images/test2017/2017_58247680.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a1_age_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a55_religion", 
+        "a66_rel_professional", 
+        "a68_rel_spectators", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "6a91f23be48f0f5f", 
+    "source_url": "https://c8.staticflickr.com/2/1237/1414496432_24e17ac0f8_o.jpg"
+}

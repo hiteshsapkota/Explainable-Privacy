@@ -1,0 +1,10 @@
+{
+    "id": "2017_72343492", 
+    "image_path": "images/test2017/2017_72343492.jpg", 
+    "labels": [
+        "a17_color", 
+        "a2_weight_approx"
+    ], 
+    "openimages_id": "5fba41cb69006924", 
+    "source_url": "https://farm5.staticflickr.com/5035/5861376926_4b77a9c954_o.jpg"
+}

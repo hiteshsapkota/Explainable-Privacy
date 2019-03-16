@@ -1,0 +1,17 @@
+{
+    "id": "2017_59737610", 
+    "image_path": "images/train2017/2017_59737610.jpg", 
+    "labels": [
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "526a9e00eb86aa05", 
+    "source_url": "https://farm6.staticflickr.com/2606/4072931156_0a729e17c9_o.jpg"
+}

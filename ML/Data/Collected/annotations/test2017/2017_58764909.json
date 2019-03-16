@@ -1,0 +1,22 @@
+{
+    "id": "2017_58764909", 
+    "image_path": "images/test2017/2017_58764909.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a55_religion", 
+        "a5_eye_color", 
+        "a66_rel_professional", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "a118f8fe7913d875", 
+    "source_url": "https://farm6.staticflickr.com/5071/6907135728_891c53d3e4_o.jpg"
+}

@@ -1,0 +1,16 @@
+{
+    "id": "2017_72051770", 
+    "image_path": "images/test2017/2017_72051770.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a26_handwriting", 
+        "a35_mail", 
+        "a70_education_history", 
+        "a73_landmark", 
+        "a74_address_current_complete", 
+        "a82_date_time", 
+        "a8_signature"
+    ], 
+    "openimages_id": "c5518bed728e795b", 
+    "source_url": "https://c4.staticflickr.com/5/4058/4514912850_21ae352f8b_o.jpg"
+}

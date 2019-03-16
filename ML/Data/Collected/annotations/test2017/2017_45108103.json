@@ -1,0 +1,20 @@
+{
+    "id": "2017_45108103", 
+    "image_path": "images/test2017/2017_45108103.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a48_occassion_work", 
+        "a4_gender", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a82_date_time", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "ae725b2099159a66", 
+    "source_url": "https://farm7.staticflickr.com/6184/6059854170_054002010f_o.jpg"
+}

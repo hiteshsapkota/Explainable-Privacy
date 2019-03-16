@@ -1,0 +1,10 @@
+{
+    "id": "2017_58858997", 
+    "image_path": "images/train2017/2017_58858997.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a73_landmark"
+    ], 
+    "openimages_id": "17f06786f85baa0b", 
+    "source_url": "https://c4.staticflickr.com/3/2901/14708114552_7f70a7d492_o.jpg"
+}

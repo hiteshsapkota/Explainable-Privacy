@@ -1,0 +1,16 @@
+{
+    "id": "2017_95710534", 
+    "image_path": "images/test2017/2017_95710534.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a27_marital_status", 
+        "a48_occassion_work", 
+        "a4_gender", 
+        "a66_rel_professional"
+    ], 
+    "openimages_id": "a93db34a3be49f68", 
+    "source_url": "https://c1.staticflickr.com/4/3457/3386724888_6e26f550c9_o.jpg"
+}

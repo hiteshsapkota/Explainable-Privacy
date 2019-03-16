@@ -1,0 +1,8 @@
+
+{
+           "user": "dummy",
+           "password": "dummy",
+           "host": "127.0.0.1",
+           "database": "users_database",
+           "raise_on_warnings": true
+            }

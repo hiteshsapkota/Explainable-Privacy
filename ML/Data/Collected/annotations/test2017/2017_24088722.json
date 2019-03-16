@@ -1,0 +1,13 @@
+{
+    "id": "2017_24088722", 
+    "image_path": "images/test2017/2017_24088722.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a25_nationality", 
+        "a31_passport", 
+        "a38_ticket", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "aca3a17361dcf521", 
+    "source_url": "https://farm2.staticflickr.com/5102/5625782146_85356c1f11_o.jpg"
+}

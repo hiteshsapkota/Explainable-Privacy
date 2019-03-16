@@ -1,0 +1,11 @@
+{
+    "id": "2017_77006337", 
+    "image_path": "images/train2017/2017_77006337.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a26_handwriting", 
+        "a31_passport"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

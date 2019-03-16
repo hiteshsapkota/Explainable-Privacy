@@ -1,0 +1,10 @@
+{
+    "id": "2017_65272506", 
+    "image_path": "images/test2017/2017_65272506.jpg", 
+    "labels": [
+        "a4_gender", 
+        "a59_sports"
+    ], 
+    "openimages_id": "27f5b8525f0c3508", 
+    "source_url": "https://c1.staticflickr.com/9/8195/8099462168_68cf9c7fc4_o.jpg"
+}

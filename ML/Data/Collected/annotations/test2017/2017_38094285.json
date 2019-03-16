@@ -1,0 +1,11 @@
+{
+    "id": "2017_38094285", 
+    "image_path": "images/test2017/2017_38094285.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a26_handwriting", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "7258d361d96440f3", 
+    "source_url": "https://farm4.staticflickr.com/7019/6730786231_8b9c5d5ba4_o.jpg"
+}

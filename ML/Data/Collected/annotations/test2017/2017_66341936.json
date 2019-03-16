@@ -1,0 +1,20 @@
+{
+    "id": "2017_66341936", 
+    "image_path": "images/test2017/2017_66341936.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a11_tattoo", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a57_culture", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "b1bdd943468bbd74", 
+    "source_url": "https://farm5.staticflickr.com/2897/14538358422_a17a920e2b_o.jpg"
+}

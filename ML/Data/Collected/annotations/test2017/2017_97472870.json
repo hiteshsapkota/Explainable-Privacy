@@ -1,0 +1,20 @@
+{
+    "id": "2017_97472870", 
+    "image_path": "images/test2017/2017_97472870.jpg", 
+    "labels": [
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a65_rel_social", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "f71a4f0bcfb21ba5", 
+    "source_url": "https://farm6.staticflickr.com/21/30639860_10e66a9f59_o.jpg"
+}

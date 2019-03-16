@@ -1,0 +1,20 @@
+{
+    "id": "2017_25302305", 
+    "image_path": "images/test2017/2017_25302305.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a59_sports", 
+        "a67_rel_competitors", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "4f60efca444a8b71", 
+    "source_url": "https://farm2.staticflickr.com/8724/16635690384_2e44bd1102_o.jpg"
+}

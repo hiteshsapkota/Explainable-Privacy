@@ -1,0 +1,17 @@
+{
+    "id": "2017_51995241", 
+    "image_path": "images/test2017/2017_51995241.jpg", 
+    "labels": [
+        "a11_tattoo", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "7c6351cd84ae0f9a", 
+    "source_url": "https://c3.staticflickr.com/6/5543/14377028211_fbff34f216_o.jpg"
+}

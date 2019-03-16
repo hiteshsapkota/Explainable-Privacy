@@ -1,0 +1,17 @@
+{
+    "id": "2017_23777311", 
+    "image_path": "images/test2017/2017_23777311.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a26_handwriting", 
+        "a31_passport", 
+        "a4_gender", 
+        "a82_date_time", 
+        "a8_signature", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "08b555ac5b8b8be2", 
+    "source_url": "https://farm3.staticflickr.com/2165/2441510307_cae70ee1ed_o.jpg"
+}

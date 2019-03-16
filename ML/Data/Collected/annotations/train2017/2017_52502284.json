@@ -1,0 +1,16 @@
+{
+    "id": "2017_52502284", 
+    "image_path": "images/train2017/2017_52502284.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "b42dc515b5785cd4", 
+    "source_url": "https://farm5.staticflickr.com/8194/8096549627_f618397107_o.jpg"
+}

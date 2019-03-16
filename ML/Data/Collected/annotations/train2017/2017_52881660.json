@@ -1,0 +1,17 @@
+{
+    "id": "2017_52881660", 
+    "image_path": "images/train2017/2017_52881660.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a29_ausweis", 
+        "a4_gender", 
+        "a75_address_current_partial", 
+        "a8_signature", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "4a674466a8a90808", 
+    "source_url": "https://c1.staticflickr.com/3/2159/2478036898_21f6fe3343_o.jpg"
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2017_27232483", 
+    "image_path": "images/test2017/2017_27232483.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "533ac604f530da66", 
+    "source_url": "https://farm7.staticflickr.com/2658/3674899408_1279eaa915_o.jpg"
+}

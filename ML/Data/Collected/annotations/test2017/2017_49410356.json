@@ -1,0 +1,21 @@
+{
+    "id": "2017_49410356", 
+    "image_path": "images/test2017/2017_49410356.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "af9d43d68a6b3a80", 
+    "source_url": "https://farm1.staticflickr.com/3116/2900866506_96df15535a_o.jpg"
+}

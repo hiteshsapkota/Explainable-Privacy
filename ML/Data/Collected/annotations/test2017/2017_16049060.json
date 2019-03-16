@@ -1,0 +1,17 @@
+{
+    "id": "2017_16049060", 
+    "image_path": "images/test2017/2017_16049060.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a55_religion", 
+        "a66_rel_professional", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "a132aba7a3067ae0", 
+    "source_url": "https://farm1.staticflickr.com/3933/15590576092_d6b341dbc2_o.jpg"
+}

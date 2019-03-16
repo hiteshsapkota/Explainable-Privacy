@@ -1,0 +1,11 @@
+{
+    "id": "2017_87419964", 
+    "image_path": "images/train2017/2017_87419964.jpg", 
+    "labels": [
+        "a46_occupation", 
+        "a59_sports", 
+        "a67_rel_competitors"
+    ], 
+    "openimages_id": "7b387f529d0ec4ae", 
+    "source_url": "https://c7.staticflickr.com/8/7325/8726760766_5503021afa_o.jpg"
+}

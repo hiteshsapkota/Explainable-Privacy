@@ -1,0 +1,20 @@
+{
+    "id": "2017_95685602", 
+    "image_path": "images/test2017/2017_95685602.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a59_sports", 
+        "a5_eye_color", 
+        "a64_rel_personal", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "14e56249d65c4219", 
+    "source_url": "https://c2.staticflickr.com/3/2934/14286830408_21f5d6c872_o.jpg"
+}

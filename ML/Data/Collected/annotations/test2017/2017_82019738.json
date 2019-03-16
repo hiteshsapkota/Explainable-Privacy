@@ -1,0 +1,18 @@
+{
+    "id": "2017_82019738", 
+    "image_path": "images/test2017/2017_82019738.jpg", 
+    "labels": [
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a59_sports", 
+        "a5_eye_color", 
+        "a65_rel_social", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "b064580484bd666c", 
+    "source_url": "https://c5.staticflickr.com/4/3781/9425894926_70e04e2763_o.jpg"
+}

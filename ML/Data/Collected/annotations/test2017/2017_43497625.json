@@ -1,0 +1,11 @@
+{
+    "id": "2017_43497625", 
+    "image_path": "images/test2017/2017_43497625.jpg", 
+    "labels": [
+        "a20_name_first", 
+        "a25_nationality", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "4780a7ef73336b7b", 
+    "source_url": "https://c4.staticflickr.com/1/31/63054915_574224c1c9_o.jpg"
+}

@@ -1,0 +1,15 @@
+{
+    "id": "2017_15490802", 
+    "image_path": "images/train2017/2017_15490802.jpg", 
+    "labels": [
+        "a20_name_first", 
+        "a25_nationality", 
+        "a26_handwriting", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a58_hobbies", 
+        "a75_address_current_partial"
+    ], 
+    "openimages_id": "2497249e49636228", 
+    "source_url": "https://c1.staticflickr.com/6/5259/5481235157_cb6fa12705_o.jpg"
+}

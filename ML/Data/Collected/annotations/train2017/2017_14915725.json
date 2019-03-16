@@ -1,0 +1,16 @@
+{
+    "id": "2017_14915725", 
+    "image_path": "images/train2017/2017_14915725.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a6_hair_color", 
+        "a82_date_time", 
+        "a97_online_conversation", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

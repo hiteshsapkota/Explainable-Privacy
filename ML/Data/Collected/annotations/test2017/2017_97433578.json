@@ -1,0 +1,11 @@
+{
+    "id": "2017_97433578", 
+    "image_path": "images/test2017/2017_97433578.jpg", 
+    "labels": [
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a59_sports"
+    ], 
+    "openimages_id": "02163e90a6d594d2", 
+    "source_url": "https://farm3.staticflickr.com/5212/5397200483_1e4f48ac69_o.jpg"
+}

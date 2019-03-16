@@ -1,0 +1,12 @@
+{
+    "id": "2017_89095353", 
+    "image_path": "images/test2017/2017_89095353.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a5_eye_color"
+    ], 
+    "openimages_id": "18ffbce7cd850789", 
+    "source_url": "https://c2.staticflickr.com/9/8533/8603684181_77805c2729_o.jpg"
+}

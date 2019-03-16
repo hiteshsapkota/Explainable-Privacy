@@ -1,0 +1,15 @@
+{
+    "id": "2017_42586113", 
+    "image_path": "images/test2017/2017_42586113.jpg", 
+    "labels": [
+        "a17_color", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a59_sports", 
+        "a67_rel_competitors", 
+        "a68_rel_spectators", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "d9b5c34b9396b7e0", 
+    "source_url": "https://farm1.staticflickr.com/2306/2077184807_88be14821d_o.jpg"
+}

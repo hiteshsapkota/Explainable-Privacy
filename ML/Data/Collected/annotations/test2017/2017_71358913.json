@@ -1,0 +1,12 @@
+{
+    "id": "2017_71358913", 
+    "image_path": "images/test2017/2017_71358913.jpg", 
+    "labels": [
+        "a26_handwriting", 
+        "a31_passport", 
+        "a38_ticket", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "03c5513c37d668f4", 
+    "source_url": "https://farm5.staticflickr.com/7580/15662919250_86e90791ea_o.jpg"
+}

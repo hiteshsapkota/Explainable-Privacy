@@ -1,0 +1,19 @@
+{
+    "id": "2017_30680373", 
+    "image_path": "images/test2017/2017_30680373.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "4a0d8e3ecc893912", 
+    "source_url": "https://farm3.staticflickr.com/3032/2618793233_46a3d4612b_o.jpg"
+}

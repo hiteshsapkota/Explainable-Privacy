@@ -1,0 +1,15 @@
+{
+    "id": "2017_10620885", 
+    "image_path": "images/train2017/2017_10620885.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a26_handwriting", 
+        "a46_occupation", 
+        "a70_education_history", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a8_signature"
+    ], 
+    "openimages_id": "4d28da2467163a86", 
+    "source_url": "https://farm7.staticflickr.com/7405/14110165284_a5c282dff8_o.jpg"
+}

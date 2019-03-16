@@ -1,0 +1,16 @@
+{
+    "id": "2017_61447803", 
+    "image_path": "images/train2017/2017_61447803.jpg", 
+    "labels": [
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "841b6b59b254e242", 
+    "source_url": "https://farm3.staticflickr.com/150/404319521_e97612293d_o.jpg"
+}

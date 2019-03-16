@@ -1,0 +1,14 @@
+{
+    "id": "2017_22459822", 
+    "image_path": "images/test2017/2017_22459822.jpg", 
+    "labels": [
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a64_rel_personal", 
+        "a65_rel_social"
+    ], 
+    "openimages_id": "18d085dd88e78184", 
+    "source_url": "https://farm5.staticflickr.com/3021/3109505233_c97ab85421_o.jpg"
+}

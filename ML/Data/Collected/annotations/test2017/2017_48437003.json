@@ -1,0 +1,17 @@
+{
+    "id": "2017_48437003", 
+    "image_path": "images/test2017/2017_48437003.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a59_sports", 
+        "a67_rel_competitors", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "af4fafcb0e53b4f6", 
+    "source_url": "https://farm7.staticflickr.com/2844/9353432387_5bb0f9d84a_o.jpg"
+}

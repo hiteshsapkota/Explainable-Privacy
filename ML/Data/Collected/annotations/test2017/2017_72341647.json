@@ -1,0 +1,19 @@
+{
+    "id": "2017_72341647", 
+    "image_path": "images/test2017/2017_72341647.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a64_rel_personal", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "d3da1f4c617d27e8", 
+    "source_url": "https://c1.staticflickr.com/9/8282/7825970464_113d228119_o.jpg"
+}

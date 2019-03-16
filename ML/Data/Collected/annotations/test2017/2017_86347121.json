@@ -1,0 +1,11 @@
+{
+    "id": "2017_86347121", 
+    "image_path": "images/test2017/2017_86347121.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a104_license_plate_partial", 
+        "a73_landmark"
+    ], 
+    "openimages_id": "5c13a2d1ba935496", 
+    "source_url": "https://farm7.staticflickr.com/5505/10431017553_9415aca26f_o.jpg"
+}

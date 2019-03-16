@@ -1,0 +1,18 @@
+{
+    "id": "2017_83019148", 
+    "image_path": "images/train2017/2017_83019148.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a103_license_plate_complete", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "34321e117adafbe3", 
+    "source_url": "https://farm4.staticflickr.com/3361/3623136006_845b42a156_o.jpg"
+}

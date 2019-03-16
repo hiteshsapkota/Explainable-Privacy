@@ -1,0 +1,14 @@
+{
+    "id": "2017_30804178", 
+    "image_path": "images/train2017/2017_30804178.jpg", 
+    "labels": [
+        "a26_handwriting", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a8_signature", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "3ef36829f5e418bc", 
+    "source_url": "https://c5.staticflickr.com/3/2526/3908907841_8b290aa935_o.jpg"
+}

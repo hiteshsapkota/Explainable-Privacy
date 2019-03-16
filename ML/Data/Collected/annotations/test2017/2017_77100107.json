@@ -1,0 +1,14 @@
+{
+    "id": "2017_77100107", 
+    "image_path": "images/test2017/2017_77100107.jpg", 
+    "labels": [
+        "a17_color", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a59_sports", 
+        "a67_rel_competitors", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "d120eddb34e78da5", 
+    "source_url": "https://farm6.staticflickr.com/7110/13523762434_30f2bdbd92_o.jpg"
+}

@@ -1,0 +1,10 @@
+{
+    "id": "2017_70631387", 
+    "image_path": "images/train2017/2017_70631387.jpg", 
+    "labels": [
+        "a58_hobbies", 
+        "a75_address_current_partial"
+    ], 
+    "openimages_id": "5cf9b225501e967e", 
+    "source_url": "https://c7.staticflickr.com/5/4070/4717844616_3737272efb_o.jpg"
+}

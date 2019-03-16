@@ -1,0 +1,11 @@
+{
+    "id": "2017_74995954", 
+    "image_path": "images/test2017/2017_74995954.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a17_color", 
+        "a59_sports"
+    ], 
+    "openimages_id": "f1664cdd55ffc207", 
+    "source_url": "https://farm8.staticflickr.com/407/18192568413_9dec980cfd_o.jpg"
+}

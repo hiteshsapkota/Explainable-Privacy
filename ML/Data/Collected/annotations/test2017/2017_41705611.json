@@ -1,0 +1,13 @@
+{
+    "id": "2017_41705611", 
+    "image_path": "images/test2017/2017_41705611.jpg", 
+    "labels": [
+        "a17_color", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a57_culture", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "db5550686c4393a2", 
+    "source_url": "https://farm3.staticflickr.com/7457/9176342102_eff4dae5eb_o.jpg"
+}

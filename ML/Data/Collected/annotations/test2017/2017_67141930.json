@@ -1,0 +1,16 @@
+{
+    "id": "2017_67141930", 
+    "image_path": "images/test2017/2017_67141930.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "e0e7e6c9f57269ca", 
+    "source_url": "https://c3.staticflickr.com/4/3601/3474467228_21e9b009a7_o.jpg"
+}

@@ -1,0 +1,12 @@
+{
+    "id": "2017_76069263", 
+    "image_path": "images/train2017/2017_76069263.jpg", 
+    "labels": [
+        "a17_color", 
+        "a4_gender", 
+        "a59_sports", 
+        "a65_rel_social"
+    ], 
+    "openimages_id": "5751531bfcaed7a3", 
+    "source_url": "https://farm4.staticflickr.com/8453/7958611796_d68717914b_o.jpg"
+}

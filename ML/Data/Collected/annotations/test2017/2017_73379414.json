@@ -1,0 +1,13 @@
+{
+    "id": "2017_73379414", 
+    "image_path": "images/test2017/2017_73379414.jpg", 
+    "labels": [
+        "a17_color", 
+        "a21_name_last", 
+        "a25_nationality", 
+        "a31_passport", 
+        "a38_ticket"
+    ], 
+    "openimages_id": "e535f355293cdfcf", 
+    "source_url": "https://c8.staticflickr.com/8/7560/15935769350_65abe0dc0a_o.jpg"
+}

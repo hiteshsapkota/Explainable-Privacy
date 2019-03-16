@@ -1,0 +1,16 @@
+{
+    "id": "2017_77384020", 
+    "image_path": "images/train2017/2017_77384020.jpg", 
+    "labels": [
+        "a104_license_plate_partial", 
+        "a10_face_partial", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "fd4a127a40ec651f", 
+    "source_url": "https://c8.staticflickr.com/9/8020/7445158238_940376d12b_o.jpg"
+}

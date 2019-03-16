@@ -1,0 +1,15 @@
+{
+    "id": "2017_93023618", 
+    "image_path": "images/test2017/2017_93023618.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a4_gender", 
+        "a57_culture", 
+        "a6_hair_color", 
+        "a73_landmark"
+    ], 
+    "openimages_id": "4f18b0268987cf86", 
+    "source_url": "https://farm7.staticflickr.com/4097/4867777411_191b63a523_o.jpg"
+}

@@ -1,0 +1,12 @@
+{
+    "id": "2017_76362700", 
+    "image_path": "images/test2017/2017_76362700.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a46_occupation", 
+        "a73_landmark", 
+        "a8_signature"
+    ], 
+    "openimages_id": "ecd7c431b32c5647", 
+    "source_url": "https://farm8.staticflickr.com/7303/9440387026_97f0519f28_o.jpg"
+}

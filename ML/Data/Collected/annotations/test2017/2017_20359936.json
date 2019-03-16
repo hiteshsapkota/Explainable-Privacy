@@ -1,0 +1,11 @@
+{
+    "id": "2017_20359936", 
+    "image_path": "images/test2017/2017_20359936.jpg", 
+    "labels": [
+        "a31_passport", 
+        "a75_address_current_partial", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "9c4d6e1b1be4bd38", 
+    "source_url": "https://c1.staticflickr.com/4/3391/3408501848_53504fa7f4_o.jpg"
+}

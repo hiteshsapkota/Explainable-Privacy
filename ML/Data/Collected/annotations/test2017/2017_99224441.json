@@ -1,0 +1,13 @@
+{
+    "id": "2017_99224441", 
+    "image_path": "images/test2017/2017_99224441.png", 
+    "labels": [
+        "a24_birth_date", 
+        "a82_date_time", 
+        "a85_username", 
+        "a90_email", 
+        "a97_online_conversation"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

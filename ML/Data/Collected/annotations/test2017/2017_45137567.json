@@ -1,0 +1,15 @@
+{
+    "id": "2017_45137567", 
+    "image_path": "images/test2017/2017_45137567.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a61_opinion_general", 
+        "a6_hair_color", 
+        "a73_landmark"
+    ], 
+    "openimages_id": "56c1bb123fdce435", 
+    "source_url": "https://farm6.staticflickr.com/7335/11729709644_69bf1999f4_o.jpg"
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2017_80815915", 
+    "image_path": "images/test2017/2017_80815915.jpg", 
+    "labels": [
+        "a11_tattoo", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a57_culture", 
+        "a61_opinion_general", 
+        "a68_rel_spectators", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "4bff67760f199822", 
+    "source_url": "https://farm3.staticflickr.com/2939/14539190965_01b87dc639_o.jpg"
+}

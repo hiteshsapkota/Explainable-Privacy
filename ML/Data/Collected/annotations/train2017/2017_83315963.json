@@ -1,0 +1,11 @@
+{
+    "id": "2017_83315963", 
+    "image_path": "images/train2017/2017_83315963.jpg", 
+    "labels": [
+        "a26_handwriting", 
+        "a31_passport", 
+        "a75_address_current_partial"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

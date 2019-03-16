@@ -1,0 +1,13 @@
+{
+    "id": "2017_82933145", 
+    "image_path": "images/test2017/2017_82933145.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a35_mail", 
+        "a49_phone", 
+        "a74_address_current_complete", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "cd93fc4badf4d13f", 
+    "source_url": "https://c8.staticflickr.com/5/4031/4406046754_3a19541a00_o.jpg"
+}

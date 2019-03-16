@@ -1,0 +1,9 @@
+{
+    "id": "2017_12345044", 
+    "image_path": "images/test2017/2017_12345044.jpg", 
+    "labels": [
+        "a0_safe"
+    ], 
+    "openimages_id": "f1ac6db2d8ee4876", 
+    "source_url": "https://farm7.staticflickr.com/2346/2346355177_c551c13592_o.jpg"
+}

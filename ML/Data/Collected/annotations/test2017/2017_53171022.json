@@ -1,0 +1,15 @@
+{
+    "id": "2017_53171022", 
+    "image_path": "images/test2017/2017_53171022.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a61_opinion_general", 
+        "a69_rel_views", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "cfca41af51e8392e", 
+    "source_url": "https://c7.staticflickr.com/9/8025/7105115685_47a6603584_o.jpg"
+}

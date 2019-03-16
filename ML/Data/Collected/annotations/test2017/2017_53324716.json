@@ -1,0 +1,13 @@
+{
+    "id": "2017_53324716", 
+    "image_path": "images/test2017/2017_53324716.jpg", 
+    "labels": [
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a65_rel_social"
+    ], 
+    "openimages_id": "97c24980b6ba7095", 
+    "source_url": "https://farm6.staticflickr.com/3437/3368139450_690578c4ca_o.jpg"
+}

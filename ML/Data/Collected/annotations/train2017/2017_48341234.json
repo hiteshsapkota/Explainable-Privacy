@@ -1,0 +1,9 @@
+{
+    "id": "2017_48341234", 
+    "image_path": "images/train2017/2017_48341234.jpg", 
+    "labels": [
+        "a73_landmark"
+    ], 
+    "openimages_id": "4e9da4551fc8b6ba", 
+    "source_url": "https://c3.staticflickr.com/8/7320/9585351083_a5e11ca0b0_o.jpg"
+}

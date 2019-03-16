@@ -1,0 +1,14 @@
+{
+    "id": "2017_65874092", 
+    "image_path": "images/test2017/2017_65874092.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a17_color", 
+        "a46_occupation", 
+        "a5_eye_color", 
+        "a66_rel_professional", 
+        "a69_rel_views"
+    ], 
+    "openimages_id": "2d5c1ff3a5dfdd76", 
+    "source_url": "https://farm7.staticflickr.com/3076/4565428781_c09592e31f_o.jpg"
+}

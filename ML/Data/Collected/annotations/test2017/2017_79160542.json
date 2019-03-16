@@ -1,0 +1,22 @@
+{
+    "id": "2017_79160542", 
+    "image_path": "images/test2017/2017_79160542.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a41_injury", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a66_rel_professional", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "4d092546a0b9779c", 
+    "source_url": "https://c5.staticflickr.com/4/3913/14609373487_75a7b8eaf7_o.jpg"
+}

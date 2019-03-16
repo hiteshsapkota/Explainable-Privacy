@@ -1,0 +1,12 @@
+{
+    "id": "2017_44751911", 
+    "image_path": "images/test2017/2017_44751911.jpg", 
+    "labels": [
+        "a37_receipt", 
+        "a73_landmark", 
+        "a74_address_current_complete", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "cebb073aaa9b1d91", 
+    "source_url": "https://farm2.staticflickr.com/3340/3338657646_e208dcf94c_o.jpg"
+}

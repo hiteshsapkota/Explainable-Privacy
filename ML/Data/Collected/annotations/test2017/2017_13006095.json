@@ -1,0 +1,17 @@
+{
+    "id": "2017_13006095", 
+    "image_path": "images/test2017/2017_13006095.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a66_rel_professional", 
+        "a69_rel_views", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "d7bebc783a0195bf", 
+    "source_url": "https://c8.staticflickr.com/7/6222/6287831738_1a2952b5e8_o.jpg"
+}

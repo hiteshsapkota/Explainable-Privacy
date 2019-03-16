@@ -1,0 +1,19 @@
+{
+    "id": "2017_37912202", 
+    "image_path": "images/train2017/2017_37912202.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a59_sports", 
+        "a5_eye_color", 
+        "a67_rel_competitors", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "e932364d5a85504a", 
+    "source_url": "https://c3.staticflickr.com/8/7430/8755459344_f6c11befcd_o.jpg"
+}

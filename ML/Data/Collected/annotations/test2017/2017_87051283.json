@@ -1,0 +1,14 @@
+{
+    "id": "2017_87051283", 
+    "image_path": "images/test2017/2017_87051283.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a20_name_first", 
+        "a26_handwriting", 
+        "a35_mail", 
+        "a4_gender", 
+        "a8_signature"
+    ], 
+    "openimages_id": "ca370eeb05669771", 
+    "source_url": "https://farm2.staticflickr.com/3069/2868662034_ccbf852fa7_o.jpg"
+}

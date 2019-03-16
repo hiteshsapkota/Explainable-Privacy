@@ -1,0 +1,10 @@
+{
+    "id": "2017_80521106", 
+    "image_path": "images/test2017/2017_80521106.jpg", 
+    "labels": [
+        "a0_safe", 
+        "a4_gender"
+    ], 
+    "openimages_id": "363fb0cd812b0275", 
+    "source_url": "https://farm6.staticflickr.com/4008/4456936439_c562a2928b_o.jpg"
+}

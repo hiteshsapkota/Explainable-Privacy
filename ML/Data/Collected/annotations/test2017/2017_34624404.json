@@ -1,0 +1,11 @@
+{
+    "id": "2017_34624404", 
+    "image_path": "images/test2017/2017_34624404.jpg", 
+    "labels": [
+        "a21_name_last", 
+        "a46_occupation", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "441705e0f8a4351d", 
+    "source_url": "https://c6.staticflickr.com/8/7369/16342481490_bcc3d83990_o.jpg"
+}

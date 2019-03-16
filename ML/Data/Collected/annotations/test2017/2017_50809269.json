@@ -1,0 +1,12 @@
+{
+    "id": "2017_50809269", 
+    "image_path": "images/test2017/2017_50809269.jpg", 
+    "labels": [
+        "a25_nationality", 
+        "a31_passport", 
+        "a38_ticket", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "dbc112fc82e3d78d", 
+    "source_url": "https://c6.staticflickr.com/9/8172/7991552424_e09bfcd3c8_o.jpg"
+}

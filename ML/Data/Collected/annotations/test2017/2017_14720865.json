@@ -1,0 +1,13 @@
+{
+    "id": "2017_14720865", 
+    "image_path": "images/test2017/2017_14720865.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a26_handwriting", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "9cd7bea93b63aba5", 
+    "source_url": "https://farm6.staticflickr.com/3904/15084962030_ca35ebe832_o.jpg"
+}

@@ -1,0 +1,11 @@
+{
+    "id": "2017_32771532", 
+    "image_path": "images/test2017/2017_32771532.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a26_handwriting", 
+        "a35_mail"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

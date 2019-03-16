@@ -1,0 +1,17 @@
+{
+    "id": "2017_19387385", 
+    "image_path": "images/test2017/2017_19387385.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a11_tattoo", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "e27b762dac7a56c9", 
+    "source_url": "https://c2.staticflickr.com/1/185/482418885_396ee2050a_o.jpg"
+}

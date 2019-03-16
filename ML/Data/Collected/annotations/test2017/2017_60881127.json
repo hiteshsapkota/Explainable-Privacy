@@ -1,0 +1,15 @@
+{
+    "id": "2017_60881127", 
+    "image_path": "images/test2017/2017_60881127.jpg", 
+    "labels": [
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a49_phone", 
+        "a4_gender", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "3e726ee8a6013bd5", 
+    "source_url": "https://farm6.staticflickr.com/5517/10815992824_988ddd1304_o.jpg"
+}

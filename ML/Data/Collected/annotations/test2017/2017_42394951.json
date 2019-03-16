@@ -1,0 +1,12 @@
+{
+    "id": "2017_42394951", 
+    "image_path": "images/test2017/2017_42394951.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a58_hobbies"
+    ], 
+    "openimages_id": "1c0773a88137f8a8", 
+    "source_url": "https://c1.staticflickr.com/1/151/379526451_5e0627aa97_o.jpg"
+}

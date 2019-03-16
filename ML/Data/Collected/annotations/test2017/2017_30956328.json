@@ -1,0 +1,13 @@
+{
+    "id": "2017_30956328", 
+    "image_path": "images/test2017/2017_30956328.jpg", 
+    "labels": [
+        "a21_name_last", 
+        "a37_receipt", 
+        "a74_address_current_complete", 
+        "a82_date_time", 
+        "a8_signature"
+    ], 
+    "openimages_id": "eb2b9ff9d7001a9b", 
+    "source_url": "https://c4.staticflickr.com/6/5082/5299293398_a7238f833e_o.jpg"
+}

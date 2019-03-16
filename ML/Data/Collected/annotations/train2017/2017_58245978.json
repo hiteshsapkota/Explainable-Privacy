@@ -1,0 +1,14 @@
+{
+    "id": "2017_58245978", 
+    "image_path": "images/train2017/2017_58245978.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a26_handwriting", 
+        "a48_occassion_work", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "b8d7be50cdee402d", 
+    "source_url": "https://c6.staticflickr.com/5/4080/4877935657_c40a35af5c_o.jpg"
+}

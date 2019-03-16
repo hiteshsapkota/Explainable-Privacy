@@ -1,0 +1,12 @@
+{
+    "id": "2017_99913013", 
+    "image_path": "images/test2017/2017_99913013.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a20_name_first", 
+        "a26_handwriting", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "efd9c8e9e25a66a6", 
+    "source_url": "https://farm7.staticflickr.com/36/97720439_f87c830e75_o.jpg"
+}

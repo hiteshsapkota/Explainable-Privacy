@@ -1,0 +1,20 @@
+{
+    "id": "2017_44499306", 
+    "image_path": "images/train2017/2017_44499306.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a62_opinion_political", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "e6afdfad7b609ca5", 
+    "source_url": "https://farm6.staticflickr.com/5445/6905720416_7447586794_o.jpg"
+}

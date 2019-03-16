@@ -1,0 +1,18 @@
+{
+    "id": "2017_12445907", 
+    "image_path": "images/test2017/2017_12445907.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a57_culture", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "2b56575c7771901a", 
+    "source_url": "https://c3.staticflickr.com/2/1417/623537444_3ee2743cde_o.jpg"
+}

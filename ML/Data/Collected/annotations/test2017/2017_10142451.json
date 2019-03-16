@@ -1,0 +1,21 @@
+{
+    "id": "2017_10142451", 
+    "image_path": "images/test2017/2017_10142451.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a39_disability_physical", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a59_sports", 
+        "a5_eye_color", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "6e859b7e97b0d097", 
+    "source_url": "https://farm8.staticflickr.com/3803/9702109955_6d14bca1b1_o.jpg"
+}

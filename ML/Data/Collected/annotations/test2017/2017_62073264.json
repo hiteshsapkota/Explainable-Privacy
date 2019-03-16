@@ -1,0 +1,19 @@
+{
+    "id": "2017_62073264", 
+    "image_path": "images/test2017/2017_62073264.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a61_opinion_general", 
+        "a69_rel_views", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "23aab508249d672c", 
+    "source_url": "https://c5.staticflickr.com/4/3904/14427944476_93f1d7f9c2_o.jpg"
+}

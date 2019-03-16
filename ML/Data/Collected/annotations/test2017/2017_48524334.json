@@ -1,0 +1,17 @@
+{
+    "id": "2017_48524334", 
+    "image_path": "images/test2017/2017_48524334.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a65_rel_social", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "8340df1610126644", 
+    "source_url": "https://farm5.staticflickr.com/5489/10579711516_3e8affeebb_o.jpg"
+}

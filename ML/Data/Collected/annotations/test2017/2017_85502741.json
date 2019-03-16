@@ -1,0 +1,21 @@
+{
+    "id": "2017_85502741", 
+    "image_path": "images/test2017/2017_85502741.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a58_hobbies", 
+        "a5_eye_color", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "c05f55e183e65fa0", 
+    "source_url": "https://farm1.staticflickr.com/5545/12750135265_ed48fff8bd_o.jpg"
+}

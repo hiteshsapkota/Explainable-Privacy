@@ -1,0 +1,11 @@
+{
+    "id": "2017_11828746", 
+    "image_path": "images/test2017/2017_11828746.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a46_occupation", 
+        "a73_landmark"
+    ], 
+    "openimages_id": "b760cb59e527a720", 
+    "source_url": "https://farm1.staticflickr.com/2414/2469900018_13526371b8_o.jpg"
+}

@@ -1,0 +1,11 @@
+{
+    "id": "2017_62392448", 
+    "image_path": "images/test2017/2017_62392448.jpg", 
+    "labels": [
+        "a59_sports", 
+        "a68_rel_spectators", 
+        "a75_address_current_partial"
+    ], 
+    "openimages_id": "8324a602ed1c1a28", 
+    "source_url": "https://c1.staticflickr.com/2/1356/1362363551_7d5c4b9a52_o.jpg"
+}

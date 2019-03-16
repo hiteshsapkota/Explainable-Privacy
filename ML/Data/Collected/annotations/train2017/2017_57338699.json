@@ -1,0 +1,12 @@
+{
+    "id": "2017_57338699", 
+    "image_path": "images/train2017/2017_57338699.jpg", 
+    "labels": [
+        "a31_passport", 
+        "a75_address_current_partial", 
+        "a79_address_home_partial", 
+        "a82_date_time"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

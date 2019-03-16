@@ -1,0 +1,18 @@
+{
+    "id": "2017_79330208", 
+    "image_path": "images/test2017/2017_79330208.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a64_rel_personal", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "6963b41dd01c0567", 
+    "source_url": "https://farm8.staticflickr.com/3761/11110108233_5279029a7a_o.jpg"
+}

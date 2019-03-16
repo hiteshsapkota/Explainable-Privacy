@@ -1,0 +1,17 @@
+{
+    "id": "2017_13543740", 
+    "image_path": "images/test2017/2017_13543740.jpg", 
+    "labels": [
+        "a13_full_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "2cfc5bd31fb8ecc9", 
+    "source_url": "https://c2.staticflickr.com/9/8504/8330089975_5a05b4e857_o.jpg"
+}

@@ -1,0 +1,10 @@
+{
+    "id": "2017_96865793", 
+    "image_path": "images/test2017/2017_96865793.jpg", 
+    "labels": [
+        "a104_license_plate_partial", 
+        "a75_address_current_partial"
+    ], 
+    "openimages_id": "fc86d30e446e9f8b", 
+    "source_url": "https://c4.staticflickr.com/1/26/35403050_969e42e5d8_o.jpg"
+}

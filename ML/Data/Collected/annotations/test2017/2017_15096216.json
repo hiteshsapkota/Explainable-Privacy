@@ -1,0 +1,19 @@
+{
+    "id": "2017_15096216", 
+    "image_path": "images/test2017/2017_15096216.jpg", 
+    "labels": [
+        "a11_tattoo", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a57_culture", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "7fec2fb52dda6ffc", 
+    "source_url": "https://c5.staticflickr.com/4/3030/2622382678_dd9a07dd73_o.jpg"
+}

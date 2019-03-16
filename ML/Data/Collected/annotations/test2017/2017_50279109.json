@@ -1,0 +1,19 @@
+{
+    "id": "2017_50279109", 
+    "image_path": "images/test2017/2017_50279109.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a41_injury", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a64_rel_personal", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "c05bfbf539ae74a5", 
+    "source_url": "https://farm6.staticflickr.com/5602/15184630234_edc400501c_o.jpg"
+}

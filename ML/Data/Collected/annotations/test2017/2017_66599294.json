@@ -1,0 +1,10 @@
+{
+    "id": "2017_66599294", 
+    "image_path": "images/test2017/2017_66599294.jpg", 
+    "labels": [
+        "a75_address_current_partial", 
+        "a90_email"
+    ], 
+    "openimages_id": "6809255d12be97b9", 
+    "source_url": "https://c2.staticflickr.com/3/2878/9869244996_35840a54f8_o.jpg"
+}

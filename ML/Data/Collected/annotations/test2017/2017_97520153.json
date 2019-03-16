@@ -1,0 +1,21 @@
+{
+    "id": "2017_97520153", 
+    "image_path": "images/test2017/2017_97520153.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a59_sports", 
+        "a5_eye_color", 
+        "a61_opinion_general", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "a93c5292a38ed96c", 
+    "source_url": "https://c5.staticflickr.com/1/9/17187737_b0354d59e1_o.jpg"
+}

@@ -1,0 +1,12 @@
+{
+    "id": "2017_59006314", 
+    "image_path": "images/test2017/2017_59006314.jpg", 
+    "labels": [
+        "a31_passport", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a8_signature"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

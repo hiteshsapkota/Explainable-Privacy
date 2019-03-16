@@ -1,0 +1,19 @@
+{
+    "id": "2017_47091312", 
+    "image_path": "images/test2017/2017_47091312.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a61_opinion_general", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "f8dcf3cbd574309e", 
+    "source_url": "https://c7.staticflickr.com/7/6223/6343678112_609df44371_o.jpg"
+}

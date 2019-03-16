@@ -1,0 +1,18 @@
+{
+    "id": "2017_30292653", 
+    "image_path": "images/test2017/2017_30292653.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "62244f0bc3cb2f56", 
+    "source_url": "https://farm7.staticflickr.com/25/40115715_2420ac881d_o.jpg"
+}

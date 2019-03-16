@@ -1,0 +1,12 @@
+{
+    "id": "2017_86229640", 
+    "image_path": "images/test2017/2017_86229640.jpg", 
+    "labels": [
+        "a38_ticket", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "dc0967b5e61e8386", 
+    "source_url": "https://farm7.staticflickr.com/8253/8628042828_3bcab9007b_o.jpg"
+}

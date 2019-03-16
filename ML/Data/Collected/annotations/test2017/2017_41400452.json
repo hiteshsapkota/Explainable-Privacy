@@ -1,0 +1,13 @@
+{
+    "id": "2017_41400452", 
+    "image_path": "images/test2017/2017_41400452.jpg", 
+    "labels": [
+        "a49_phone", 
+        "a73_landmark", 
+        "a74_address_current_complete", 
+        "a82_date_time", 
+        "a8_signature"
+    ], 
+    "openimages_id": "8415329abcaf5ef7", 
+    "source_url": "https://farm8.staticflickr.com/4070/4290739444_29e428492e_o.jpg"
+}

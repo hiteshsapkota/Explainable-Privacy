@@ -1,0 +1,18 @@
+{
+    "id": "2017_89179011", 
+    "image_path": "images/test2017/2017_89179011.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a39_disability_physical", 
+        "a4_gender", 
+        "a59_sports", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "09cb95c776d4fc67", 
+    "source_url": "https://farm8.staticflickr.com/7433/12755528974_8d3d3633c8_o.jpg"
+}

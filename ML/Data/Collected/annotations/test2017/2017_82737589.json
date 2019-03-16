@@ -1,0 +1,14 @@
+{
+    "id": "2017_82737589", 
+    "image_path": "images/test2017/2017_82737589.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a104_license_plate_partial", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender"
+    ], 
+    "openimages_id": "c8f0750f92b74eab", 
+    "source_url": "https://c4.staticflickr.com/3/2279/2133290262_0db0ee7273_o.jpg"
+}

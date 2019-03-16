@@ -1,0 +1,20 @@
+{
+    "id": "2017_54767573", 
+    "image_path": "images/test2017/2017_54767573.jpg", 
+    "labels": [
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a75_address_current_partial"
+    ], 
+    "openimages_id": "0ea7a1f25177038a", 
+    "source_url": "https://c3.staticflickr.com/2/1355/1045812137_2d7e3c91fe_o.jpg"
+}

@@ -1,0 +1,12 @@
+{
+    "id": "2017_74608882", 
+    "image_path": "images/test2017/2017_74608882.jpg", 
+    "labels": [
+        "a26_handwriting", 
+        "a75_address_current_partial", 
+        "a7_fingerprint", 
+        "a8_signature"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

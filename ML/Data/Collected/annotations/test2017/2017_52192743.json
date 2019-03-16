@@ -1,0 +1,16 @@
+{
+    "id": "2017_52192743", 
+    "image_path": "images/test2017/2017_52192743.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a59_sports", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "8ee78e1ef1c4405f", 
+    "source_url": "https://c8.staticflickr.com/8/7257/7850623722_5425d7797e_o.jpg"
+}

@@ -1,0 +1,14 @@
+{
+    "id": "2017_22740652", 
+    "image_path": "images/train2017/2017_22740652.jpg", 
+    "labels": [
+        "a11_tattoo", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a57_culture", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "c444ca7cfa3c6ffb", 
+    "source_url": "https://c4.staticflickr.com/3/2912/14692159273_23a313c09c_o.jpg"
+}

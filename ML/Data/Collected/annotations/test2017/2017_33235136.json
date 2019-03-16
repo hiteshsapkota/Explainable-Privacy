@@ -1,0 +1,17 @@
+{
+    "id": "2017_33235136", 
+    "image_path": "images/test2017/2017_33235136.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a69_rel_views", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "e34c163b9a55b544", 
+    "source_url": "https://farm5.staticflickr.com/7537/15938382822_a62c37aabd_o.jpg"
+}

@@ -1,0 +1,21 @@
+{
+    "id": "2017_36776221", 
+    "image_path": "images/test2017/2017_36776221.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a11_tattoo", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "3ebbccc44f016bd1", 
+    "source_url": "https://farm2.staticflickr.com/5486/14540546406_6cc86c9abd_o.jpg"
+}

@@ -1,0 +1,13 @@
+{
+    "id": "2017_63796844", 
+    "image_path": "images/test2017/2017_63796844.jpg", 
+    "labels": [
+        "a18_ethnic_clothing", 
+        "a4_gender", 
+        "a57_culture", 
+        "a68_rel_spectators", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "1692ae1340eea1ce", 
+    "source_url": "https://c7.staticflickr.com/9/8579/16225091013_9031f3429a_o.jpg"
+}

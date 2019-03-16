@@ -1,0 +1,19 @@
+{
+    "id": "2017_82072201", 
+    "image_path": "images/test2017/2017_82072201.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a27_marital_status", 
+        "a2_weight_approx", 
+        "a48_occassion_work", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a66_rel_professional", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "e26d58997f66a2fc", 
+    "source_url": "https://c5.staticflickr.com/8/7500/15798891337_bfe01041b9_o.jpg"
+}

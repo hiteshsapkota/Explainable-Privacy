@@ -1,0 +1,13 @@
+{
+    "id": "2017_32843605", 
+    "image_path": "images/test2017/2017_32843605.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a26_handwriting", 
+        "a55_religion", 
+        "a75_address_current_partial", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "9942c8b82293765e", 
+    "source_url": "https://c7.staticflickr.com/8/7423/9677671517_9810580b3f_o.jpg"
+}

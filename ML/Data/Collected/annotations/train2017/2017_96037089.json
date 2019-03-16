@@ -1,0 +1,10 @@
+{
+    "id": "2017_96037089", 
+    "image_path": "images/train2017/2017_96037089.jpg", 
+    "labels": [
+        "a18_ethnic_clothing", 
+        "a4_gender"
+    ], 
+    "openimages_id": "d09333bf797787ac", 
+    "source_url": "https://c5.staticflickr.com/9/8020/7634705580_2db81134de_o.jpg"
+}

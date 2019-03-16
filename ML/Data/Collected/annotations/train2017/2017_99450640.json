@@ -1,0 +1,13 @@
+{
+    "id": "2017_99450640", 
+    "image_path": "images/train2017/2017_99450640.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "19641a91f0ebffd3", 
+    "source_url": "https://farm4.staticflickr.com/3735/8931909503_7b26ce1410_o.jpg"
+}

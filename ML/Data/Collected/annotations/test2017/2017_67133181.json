@@ -1,0 +1,12 @@
+{
+    "id": "2017_67133181", 
+    "image_path": "images/test2017/2017_67133181.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a78_address_home_complete", 
+        "a82_date_time", 
+        "a8_signature"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

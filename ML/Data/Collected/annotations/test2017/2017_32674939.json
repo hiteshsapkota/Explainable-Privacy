@@ -1,0 +1,18 @@
+{
+    "id": "2017_32674939", 
+    "image_path": "images/test2017/2017_32674939.jpg", 
+    "labels": [
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "aedf855ebd93e3fd", 
+    "source_url": "https://c6.staticflickr.com/9/8432/7803406670_fdefb93182_o.jpg"
+}

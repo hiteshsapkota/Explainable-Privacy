@@ -1,0 +1,17 @@
+{
+    "id": "2017_68590465", 
+    "image_path": "images/test2017/2017_68590465.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a27_marital_status", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a64_rel_personal", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "ccf5d871215ee903", 
+    "source_url": "https://farm4.staticflickr.com/2202/1810168314_2e90f450b7_o.jpg"
+}

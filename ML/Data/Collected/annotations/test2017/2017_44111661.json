@@ -1,0 +1,20 @@
+{
+    "id": "2017_44111661", 
+    "image_path": "images/test2017/2017_44111661.jpg", 
+    "labels": [
+        "a12_semi_nudity", 
+        "a13_full_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a59_sports", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "7574f9c995d4d2eb", 
+    "source_url": "https://c4.staticflickr.com/9/8027/7355250896_1bfa79deab_o.jpg"
+}

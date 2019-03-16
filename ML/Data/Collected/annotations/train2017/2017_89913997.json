@@ -1,0 +1,13 @@
+{
+    "id": "2017_89913997", 
+    "image_path": "images/train2017/2017_89913997.jpg", 
+    "labels": [
+        "a20_name_first", 
+        "a37_receipt", 
+        "a46_occupation", 
+        "a49_phone", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "3acdd1657f292def", 
+    "source_url": "https://c8.staticflickr.com/3/2504/3918690495_81db2309ef_o.jpg"
+}

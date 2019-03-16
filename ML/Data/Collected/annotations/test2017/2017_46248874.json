@@ -1,0 +1,19 @@
+{
+    "id": "2017_46248874", 
+    "image_path": "images/test2017/2017_46248874.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a55_religion", 
+        "a65_rel_social", 
+        "a66_rel_professional", 
+        "a68_rel_spectators", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "b2f37453d1ea5359", 
+    "source_url": "https://c2.staticflickr.com/8/7341/16400968151_3ef30575f9_o.jpg"
+}

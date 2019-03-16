@@ -1,0 +1,18 @@
+{
+    "id": "2017_95996570", 
+    "image_path": "images/train2017/2017_95996570.jpg", 
+    "labels": [
+        "a17_color", 
+        "a19_name_full", 
+        "a21_name_last", 
+        "a24_birth_date", 
+        "a25_nationality", 
+        "a26_handwriting", 
+        "a31_passport", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a8_signature"
+    ], 
+    "openimages_id": "a0d1a3efc49ee0fd", 
+    "source_url": "https://c6.staticflickr.com/4/3938/15420472437_4a46dd2e9f_o.jpg"
+}

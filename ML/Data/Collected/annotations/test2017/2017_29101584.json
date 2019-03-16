@@ -1,0 +1,19 @@
+{
+    "id": "2017_29101584", 
+    "image_path": "images/test2017/2017_29101584.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a61_opinion_general", 
+        "a69_rel_views", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "10aa07fd818d200a", 
+    "source_url": "https://c3.staticflickr.com/8/7299/9391819671_1c9fb10479_o.jpg"
+}

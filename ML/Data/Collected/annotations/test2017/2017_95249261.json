@@ -1,0 +1,11 @@
+{
+    "id": "2017_95249261", 
+    "image_path": "images/test2017/2017_95249261.jpg", 
+    "labels": [
+        "a46_occupation", 
+        "a66_rel_professional", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "c4785b8a8446caa2", 
+    "source_url": "https://farm3.staticflickr.com/117/310662283_c9a6f92662_o.jpg"
+}

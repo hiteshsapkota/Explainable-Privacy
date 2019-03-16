@@ -1,0 +1,25 @@
+{
+    "id": "2017_90189957", 
+    "image_path": "images/test2017/2017_90189957.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a46_occupation", 
+        "a48_occassion_work", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a66_rel_professional", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a85_username", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "88745760803a2e3b", 
+    "source_url": "https://c4.staticflickr.com/8/7765/17523502002_7593a33b39_o.jpg"
+}

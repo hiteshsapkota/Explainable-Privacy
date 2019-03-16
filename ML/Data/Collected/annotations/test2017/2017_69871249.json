@@ -1,0 +1,12 @@
+{
+    "id": "2017_69871249", 
+    "image_path": "images/test2017/2017_69871249.jpg", 
+    "labels": [
+        "a37_receipt", 
+        "a49_phone", 
+        "a73_landmark", 
+        "a75_address_current_partial"
+    ], 
+    "openimages_id": "97c5378b97a7ba5e", 
+    "source_url": "https://c7.staticflickr.com/6/5249/5288863002_28093ef8d6_o.jpg"
+}

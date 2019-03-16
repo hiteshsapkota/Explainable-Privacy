@@ -1,0 +1,17 @@
+{
+    "id": "2017_30227129", 
+    "image_path": "images/train2017/2017_30227129.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a58_hobbies", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "f0bf26e34801aba1", 
+    "source_url": "https://farm2.staticflickr.com/8141/7385989832_12feab5ffc_o.jpg"
+}

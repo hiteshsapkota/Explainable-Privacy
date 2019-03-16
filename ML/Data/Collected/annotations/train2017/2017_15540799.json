@@ -1,0 +1,10 @@
+{
+    "id": "2017_15540799", 
+    "image_path": "images/train2017/2017_15540799.jpg", 
+    "labels": [
+        "a17_color", 
+        "a30_credit_card"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

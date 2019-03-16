@@ -1,0 +1,18 @@
+{
+    "id": "2017_74293615", 
+    "image_path": "images/test2017/2017_74293615.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a11_tattoo", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a66_rel_professional", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "3dfeee9d8785edb6", 
+    "source_url": "https://farm7.staticflickr.com/174/475268766_e67a532b2c_o.jpg"
+}

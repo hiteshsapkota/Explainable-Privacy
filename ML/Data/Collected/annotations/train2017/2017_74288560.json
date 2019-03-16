@@ -1,0 +1,14 @@
+{
+    "id": "2017_74288560", 
+    "image_path": "images/train2017/2017_74288560.jpg", 
+    "labels": [
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a57_culture"
+    ], 
+    "openimages_id": "1dde631324a6d329", 
+    "source_url": "https://c2.staticflickr.com/8/7065/7138548495_86204b9937_o.jpg"
+}

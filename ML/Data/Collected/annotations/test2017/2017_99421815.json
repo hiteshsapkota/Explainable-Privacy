@@ -1,0 +1,18 @@
+{
+    "id": "2017_99421815", 
+    "image_path": "images/test2017/2017_99421815.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a64_rel_personal", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "c8e055bc12d8f9e4", 
+    "source_url": "https://farm5.staticflickr.com/6162/6197826464_ba9ef5e51f_o.jpg"
+}

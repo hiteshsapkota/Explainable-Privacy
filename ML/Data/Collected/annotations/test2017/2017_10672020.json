@@ -1,0 +1,17 @@
+{
+    "id": "2017_10672020", 
+    "image_path": "images/test2017/2017_10672020.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a41_injury", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "a46026d617702399", 
+    "source_url": "https://c2.staticflickr.com/6/5066/5568414500_2bacda62ae_o.jpg"
+}

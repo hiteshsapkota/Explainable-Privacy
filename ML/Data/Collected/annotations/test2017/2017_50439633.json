@@ -1,0 +1,15 @@
+{
+    "id": "2017_50439633", 
+    "image_path": "images/test2017/2017_50439633.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a20_name_first", 
+        "a21_name_last", 
+        "a92_email_content"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

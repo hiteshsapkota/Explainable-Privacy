@@ -1,0 +1,14 @@
+{
+    "id": "2017_36138156", 
+    "image_path": "images/test2017/2017_36138156.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a17_color", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a68_rel_spectators", 
+        "a73_landmark"
+    ], 
+    "openimages_id": "f6bad439b8db8f45", 
+    "source_url": "https://farm6.staticflickr.com/3885/19012777866_60be1320e9_o.jpg"
+}

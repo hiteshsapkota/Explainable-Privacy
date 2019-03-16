@@ -1,0 +1,11 @@
+{
+    "id": "2017_27406237", 
+    "image_path": "images/test2017/2017_27406237.jpg", 
+    "labels": [
+        "a37_receipt", 
+        "a49_phone", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "7df832d773946a6d", 
+    "source_url": "https://c6.staticflickr.com/5/4116/5449552010_120c537b3d_o.jpg"
+}

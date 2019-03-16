@@ -1,0 +1,15 @@
+{
+    "id": "2017_66570403", 
+    "image_path": "images/test2017/2017_66570403.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a6_hair_color", 
+        "a99_legal_involvement"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

@@ -1,0 +1,20 @@
+{
+    "id": "2017_82829921", 
+    "image_path": "images/test2017/2017_82829921.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a103_license_plate_complete", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a65_rel_social", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "abcf40f1f8178116", 
+    "source_url": "https://farm7.staticflickr.com/2929/14370809074_e6c92d4bd4_o.jpg"
+}

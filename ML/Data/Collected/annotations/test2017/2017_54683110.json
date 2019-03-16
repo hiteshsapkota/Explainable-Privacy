@@ -1,0 +1,12 @@
+{
+    "id": "2017_54683110", 
+    "image_path": "images/test2017/2017_54683110.jpg", 
+    "labels": [
+        "a26_handwriting", 
+        "a31_passport", 
+        "a75_address_current_partial", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "1af09f412a085e0b", 
+    "source_url": "https://c4.staticflickr.com/4/3364/3407689475_d6682a69ff_o.jpg"
+}

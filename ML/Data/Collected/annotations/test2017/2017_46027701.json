@@ -1,0 +1,14 @@
+{
+    "id": "2017_46027701", 
+    "image_path": "images/test2017/2017_46027701.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "07c1505c7432031a", 
+    "source_url": "https://c3.staticflickr.com/4/3675/11814467295_79550dffe0_o.jpg"
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2017_67789858", 
+    "image_path": "images/test2017/2017_67789858.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a48_occassion_work", 
+        "a4_gender", 
+        "a66_rel_professional", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "6db05622a7f3c77d", 
+    "source_url": "https://c6.staticflickr.com/3/2903/14203291691_32b6b0df79_o.jpg"
+}

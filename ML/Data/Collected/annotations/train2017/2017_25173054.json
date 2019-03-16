@@ -1,0 +1,17 @@
+{
+    "id": "2017_25173054", 
+    "image_path": "images/train2017/2017_25173054.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a1_age_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a57_culture", 
+        "a66_rel_professional", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "7820eb40422b2ed2", 
+    "source_url": "https://farm3.staticflickr.com/4108/5170734423_b5e77b91aa_o.jpg"
+}

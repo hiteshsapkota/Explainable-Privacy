@@ -1,0 +1,10 @@
+{
+    "id": "2017_79061521", 
+    "image_path": "images/test2017/2017_79061521.jpg", 
+    "labels": [
+        "a38_ticket", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "ad0145ce13bd98ce", 
+    "source_url": "https://c7.staticflickr.com/1/555/18915912668_e2e2a36495_o.jpg"
+}

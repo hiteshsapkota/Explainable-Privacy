@@ -1,0 +1,15 @@
+{
+    "id": "2017_42621405", 
+    "image_path": "images/test2017/2017_42621405.jpg", 
+    "labels": [
+        "a17_color", 
+        "a19_name_full", 
+        "a24_birth_date", 
+        "a25_nationality", 
+        "a31_passport", 
+        "a75_address_current_partial", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "1a2b28ca779a4827", 
+    "source_url": "https://farm8.staticflickr.com/4140/4787515454_cc18b1b1e5_o.jpg"
+}

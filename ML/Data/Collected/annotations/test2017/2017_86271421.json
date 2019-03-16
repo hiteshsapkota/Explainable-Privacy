@@ -1,0 +1,18 @@
+{
+    "id": "2017_86271421", 
+    "image_path": "images/test2017/2017_86271421.jpg", 
+    "labels": [
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a59_sports", 
+        "a67_rel_competitors", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "fcea9547bab146f5", 
+    "source_url": "https://farm6.staticflickr.com/8168/7647785482_c46e8bb692_o.jpg"
+}

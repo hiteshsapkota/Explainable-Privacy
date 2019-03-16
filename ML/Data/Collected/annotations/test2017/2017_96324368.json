@@ -1,0 +1,13 @@
+{
+    "id": "2017_96324368", 
+    "image_path": "images/test2017/2017_96324368.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a17_color", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a66_rel_professional"
+    ], 
+    "openimages_id": "95ff22c900e9b16b", 
+    "source_url": "https://c4.staticflickr.com/8/7417/9240269558_5723c35ff6_o.jpg"
+}

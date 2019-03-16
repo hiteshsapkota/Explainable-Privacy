@@ -1,0 +1,18 @@
+{
+    "id": "2017_67389740", 
+    "image_path": "images/test2017/2017_67389740.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a39_disability_physical", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a59_sports", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "fede41252f3e432e", 
+    "source_url": "https://c7.staticflickr.com/8/7516/15881475062_80deaf3a27_o.jpg"
+}

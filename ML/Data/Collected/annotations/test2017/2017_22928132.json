@@ -1,0 +1,14 @@
+{
+    "id": "2017_22928132", 
+    "image_path": "images/test2017/2017_22928132.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a26_handwriting", 
+        "a31_passport", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a8_signature"
+    ], 
+    "openimages_id": "c797a0fd1971db6b", 
+    "source_url": "https://c4.staticflickr.com/4/3377/3407692341_3056049963_o.jpg"
+}

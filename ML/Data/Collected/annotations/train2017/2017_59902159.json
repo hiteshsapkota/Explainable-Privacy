@@ -1,0 +1,13 @@
+{
+    "id": "2017_59902159", 
+    "image_path": "images/train2017/2017_59902159.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a29_ausweis", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a8_signature"
+    ], 
+    "openimages_id": "b4de08b10ae8353a", 
+    "source_url": "https://c3.staticflickr.com/6/5133/5402369638_d6bf1f628b_o.jpg"
+}

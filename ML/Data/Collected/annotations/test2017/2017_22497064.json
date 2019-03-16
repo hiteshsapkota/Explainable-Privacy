@@ -1,0 +1,14 @@
+{
+    "id": "2017_22497064", 
+    "image_path": "images/test2017/2017_22497064.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a10_face_partial", 
+        "a17_color", 
+        "a4_gender", 
+        "a59_sports", 
+        "a68_rel_spectators"
+    ], 
+    "openimages_id": "3962b63862526cc3", 
+    "source_url": "https://farm4.staticflickr.com/8521/8497638608_c8c0943189_o.jpg"
+}

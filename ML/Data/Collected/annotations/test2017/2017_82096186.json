@@ -1,0 +1,25 @@
+{
+    "id": "2017_82096186", 
+    "image_path": "images/test2017/2017_82096186.jpg", 
+    "labels": [
+        "a104_license_plate_partial", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a48_occassion_work", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "1a98ad2941fc1b52", 
+    "source_url": "https://farm3.staticflickr.com/7459/13921556937_9a6e99076b_o.jpg"
+}

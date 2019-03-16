@@ -1,0 +1,20 @@
+{
+    "id": "2017_56361201", 
+    "image_path": "images/test2017/2017_56361201.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a48_occassion_work", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a85_username", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "932f92920ead54a5", 
+    "source_url": "https://farm6.staticflickr.com/8347/8188231993_43e6ecefc5_o.jpg"
+}

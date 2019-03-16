@@ -1,0 +1,17 @@
+{
+    "id": "2017_74844046", 
+    "image_path": "images/test2017/2017_74844046.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a62_opinion_political", 
+        "a69_rel_views", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "a75dc9e5acd33064", 
+    "source_url": "https://farm5.staticflickr.com/5103/5692577455_d807cc29ec_o.jpg"
+}

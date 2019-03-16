@@ -1,0 +1,20 @@
+{
+    "id": "2017_34676253", 
+    "image_path": "images/test2017/2017_34676253.jpg", 
+    "labels": [
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a59_sports", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "496e96b41be4000d", 
+    "source_url": "https://c6.staticflickr.com/8/7108/6994714744_9e49feca83_o.jpg"
+}

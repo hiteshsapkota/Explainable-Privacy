@@ -1,0 +1,15 @@
+{
+    "id": "2017_12448340", 
+    "image_path": "images/test2017/2017_12448340.jpg", 
+    "labels": [
+        "a20_name_first", 
+        "a37_receipt", 
+        "a46_occupation", 
+        "a49_phone", 
+        "a73_landmark", 
+        "a74_address_current_complete", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "6d1d752b8283ecfc", 
+    "source_url": "https://c5.staticflickr.com/6/5011/5480290186_9b8e3be072_o.jpg"
+}

@@ -1,0 +1,19 @@
+{
+    "id": "2017_86038033", 
+    "image_path": "images/test2017/2017_86038033.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a65_rel_social", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "9de4bc78561dda9b", 
+    "source_url": "https://c4.staticflickr.com/4/3392/3344121351_a35acfd453_o.jpg"
+}

@@ -1,0 +1,12 @@
+{
+    "id": "2017_34057956", 
+    "image_path": "images/test2017/2017_34057956.jpg", 
+    "labels": [
+        "a37_receipt", 
+        "a73_landmark", 
+        "a82_date_time", 
+        "a8_signature"
+    ], 
+    "openimages_id": "64f993bddbad3eca", 
+    "source_url": "https://c3.staticflickr.com/1/134/391334597_46c78f550a_o.jpg"
+}

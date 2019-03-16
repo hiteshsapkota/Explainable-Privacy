@@ -1,0 +1,15 @@
+{
+    "id": "2017_78845691", 
+    "image_path": "images/train2017/2017_78845691.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a59_sports", 
+        "a67_rel_competitors"
+    ], 
+    "openimages_id": "d1462bcc397e2b79", 
+    "source_url": "https://c2.staticflickr.com/4/3759/12010617245_c802641e95_o.jpg"
+}

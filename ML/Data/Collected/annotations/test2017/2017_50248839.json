@@ -1,0 +1,18 @@
+{
+    "id": "2017_50248839", 
+    "image_path": "images/test2017/2017_50248839.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a55_religion", 
+        "a5_eye_color", 
+        "a65_rel_social", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "beae4dbca181c545", 
+    "source_url": "https://farm6.staticflickr.com/3523/3465364627_ae5cc00a1d_o.jpg"
+}

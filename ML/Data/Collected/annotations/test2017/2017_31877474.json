@@ -1,0 +1,22 @@
+{
+    "id": "2017_31877474", 
+    "image_path": "images/test2017/2017_31877474.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a66_rel_professional", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "ad1c4046f4bc2b46", 
+    "source_url": "https://farm7.staticflickr.com/2612/5834500154_289ac4ed2d_o.jpg"
+}

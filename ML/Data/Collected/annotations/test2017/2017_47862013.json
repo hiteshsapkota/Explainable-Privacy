@@ -1,0 +1,11 @@
+{
+    "id": "2017_47862013", 
+    "image_path": "images/test2017/2017_47862013.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a23_birth_city", 
+        "a24_birth_date"
+    ], 
+    "openimages_id": "6753f02286e79d6a", 
+    "source_url": "https://c3.staticflickr.com/7/6160/6134432624_d61a22aed6_o.jpg"
+}

@@ -1,0 +1,15 @@
+{
+    "id": "2017_54122419", 
+    "image_path": "images/test2017/2017_54122419.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "67a69cccf8342304", 
+    "source_url": "https://farm5.staticflickr.com/4137/4811702066_50b4c141bf_o.jpg"
+}

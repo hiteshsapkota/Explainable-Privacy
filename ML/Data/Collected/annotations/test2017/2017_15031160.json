@@ -1,0 +1,11 @@
+{
+    "id": "2017_15031160", 
+    "image_path": "images/test2017/2017_15031160.jpg", 
+    "labels": [
+        "a37_receipt", 
+        "a73_landmark", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "05f15dd18e065899", 
+    "source_url": "https://c2.staticflickr.com/8/7677/17490803205_9ac58f5192_o.jpg"
+}

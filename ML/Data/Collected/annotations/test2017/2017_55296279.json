@@ -1,0 +1,12 @@
+{
+    "id": "2017_55296279", 
+    "image_path": "images/test2017/2017_55296279.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a38_ticket", 
+        "a46_occupation", 
+        "a8_signature"
+    ], 
+    "openimages_id": "906258b4afc6d6bb", 
+    "source_url": "https://c4.staticflickr.com/7/6118/6341577627_60b08a93f7_o.jpg"
+}

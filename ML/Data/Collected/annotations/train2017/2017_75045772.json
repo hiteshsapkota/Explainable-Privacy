@@ -1,0 +1,13 @@
+{
+    "id": "2017_75045772", 
+    "image_path": "images/train2017/2017_75045772.jpg", 
+    "labels": [
+        "a17_color", 
+        "a27_marital_status", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a60_occassion_personal"
+    ], 
+    "openimages_id": "b16a470def1fdfa2", 
+    "source_url": "https://farm3.staticflickr.com/3735/11370127266_77235f72b8_o.jpg"
+}

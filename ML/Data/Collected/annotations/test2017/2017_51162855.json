@@ -1,0 +1,11 @@
+{
+    "id": "2017_51162855", 
+    "image_path": "images/test2017/2017_51162855.jpg", 
+    "labels": [
+        "a17_color", 
+        "a41_injury", 
+        "a46_occupation"
+    ], 
+    "openimages_id": "357bd3181d020acc", 
+    "source_url": "https://c5.staticflickr.com/9/8746/16978346378_f4eaa077bc_o.jpg"
+}

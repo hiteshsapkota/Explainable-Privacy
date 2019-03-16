@@ -1,0 +1,21 @@
+{
+    "id": "2017_26349139", 
+    "image_path": "images/test2017/2017_26349139.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a57_culture", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "e75064617be8b53e", 
+    "source_url": "https://c7.staticflickr.com/6/5153/14352845637_42af7fa088_o.jpg"
+}

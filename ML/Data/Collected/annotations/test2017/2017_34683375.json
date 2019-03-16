@@ -1,0 +1,15 @@
+{
+    "id": "2017_34683375", 
+    "image_path": "images/test2017/2017_34683375.jpg", 
+    "labels": [
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "00a7bbf5afbe5914", 
+    "source_url": "https://farm5.staticflickr.com/8233/8466872121_0d0754c8d5_o.jpg"
+}

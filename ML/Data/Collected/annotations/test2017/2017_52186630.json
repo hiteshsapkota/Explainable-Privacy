@@ -1,0 +1,14 @@
+{
+    "id": "2017_52186630", 
+    "image_path": "images/test2017/2017_52186630.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a26_handwriting", 
+        "a35_mail", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a8_signature"
+    ], 
+    "openimages_id": "ee17ecc2504b254f", 
+    "source_url": "https://c8.staticflickr.com/4/3287/3731738452_7ca61b1a88_o.jpg"
+}

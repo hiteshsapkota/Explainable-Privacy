@@ -1,0 +1,17 @@
+{
+    "id": "2017_68501004", 
+    "image_path": "images/test2017/2017_68501004.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a61_opinion_general", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "70fb4805bbd90264", 
+    "source_url": "https://farm5.staticflickr.com/49/108143844_475c22b235_o.jpg"
+}

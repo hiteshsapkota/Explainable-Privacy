@@ -1,0 +1,17 @@
+{
+    "id": "2017_29115727", 
+    "image_path": "images/test2017/2017_29115727.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a11_tattoo", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a59_sports", 
+        "a67_rel_competitors", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "488871ac2f80d9cf", 
+    "source_url": "https://c8.staticflickr.com/8/7601/16356514614_8359676530_o.jpg"
+}

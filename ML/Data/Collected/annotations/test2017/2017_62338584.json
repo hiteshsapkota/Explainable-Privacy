@@ -1,0 +1,16 @@
+{
+    "id": "2017_62338584", 
+    "image_path": "images/test2017/2017_62338584.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a65_rel_social", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "09ecea6de99d10e8", 
+    "source_url": "https://c1.staticflickr.com/4/3288/3072513011_ae7561d68f_o.jpg"
+}

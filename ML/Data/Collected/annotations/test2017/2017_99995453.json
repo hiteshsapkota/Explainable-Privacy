@@ -1,0 +1,13 @@
+{
+    "id": "2017_99995453", 
+    "image_path": "images/test2017/2017_99995453.jpg", 
+    "labels": [
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a65_rel_social", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "8d2f7f81137f27dd", 
+    "source_url": "https://c6.staticflickr.com/9/8153/7184573268_f5e1c55bfb_o.jpg"
+}

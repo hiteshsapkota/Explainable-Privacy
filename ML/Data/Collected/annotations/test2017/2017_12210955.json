@@ -1,0 +1,18 @@
+{
+    "id": "2017_12210955", 
+    "image_path": "images/test2017/2017_12210955.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a66_rel_professional", 
+        "a6_hair_color", 
+        "a73_landmark"
+    ], 
+    "openimages_id": "516f8f8dbedd4fc2", 
+    "source_url": "https://farm3.staticflickr.com/1375/1291062208_514b3fba6c_o.jpg"
+}

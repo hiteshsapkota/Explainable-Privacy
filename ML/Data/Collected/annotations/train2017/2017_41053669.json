@@ -1,0 +1,15 @@
+{
+    "id": "2017_41053669", 
+    "image_path": "images/train2017/2017_41053669.jpg", 
+    "labels": [
+        "a17_color", 
+        "a19_name_full", 
+        "a25_nationality", 
+        "a31_passport", 
+        "a38_ticket", 
+        "a75_address_current_partial", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "e4dc376ee2be689e", 
+    "source_url": "https://c7.staticflickr.com/6/5323/6918146914_3fb016fe02_o.jpg"
+}

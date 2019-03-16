@@ -1,0 +1,20 @@
+{
+    "id": "2017_39004420", 
+    "image_path": "images/test2017/2017_39004420.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a24_birth_date", 
+        "a33_student_id", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a82_date_time", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "83e3c72ba6c3eb51", 
+    "source_url": "https://farm2.staticflickr.com/8452/7997831204_d43bbabcc5_o.jpg"
+}

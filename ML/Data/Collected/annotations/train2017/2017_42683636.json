@@ -1,0 +1,12 @@
+{
+    "id": "2017_42683636", 
+    "image_path": "images/train2017/2017_42683636.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a39_disability_physical", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

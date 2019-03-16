@@ -1,0 +1,10 @@
+{
+    "id": "2017_37610154", 
+    "image_path": "images/test2017/2017_37610154.jpg", 
+    "labels": [
+        "a11_tattoo", 
+        "a17_color"
+    ], 
+    "openimages_id": "c26f4abeffe1dd5d", 
+    "source_url": "https://c6.staticflickr.com/7/6056/6329378398_3bfb945704_o.jpg"
+}

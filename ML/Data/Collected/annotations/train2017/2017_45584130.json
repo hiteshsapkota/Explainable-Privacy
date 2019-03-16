@@ -1,0 +1,16 @@
+{
+    "id": "2017_45584130", 
+    "image_path": "images/train2017/2017_45584130.jpg", 
+    "labels": [
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a61_opinion_general", 
+        "a69_rel_views", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "751cadb97f5534e8", 
+    "source_url": "https://c1.staticflickr.com/5/4022/4654665962_6760ca78e6_o.jpg"
+}

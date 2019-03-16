@@ -1,0 +1,22 @@
+{
+    "id": "2017_57197092", 
+    "image_path": "images/test2017/2017_57197092.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a58_hobbies", 
+        "a5_eye_color", 
+        "a65_rel_social", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "1e7c8aef121fea91", 
+    "source_url": "https://farm2.staticflickr.com/511/19757195491_2596c5cdae_o.jpg"
+}

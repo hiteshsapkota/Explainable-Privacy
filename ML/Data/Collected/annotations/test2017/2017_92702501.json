@@ -1,0 +1,14 @@
+{
+    "id": "2017_92702501", 
+    "image_path": "images/test2017/2017_92702501.jpg", 
+    "labels": [
+        "a1_age_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a65_rel_social", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "22e8e6e8bb7f39c9", 
+    "source_url": "https://c2.staticflickr.com/9/8335/8389775385_9863155caa_o.jpg"
+}

@@ -1,0 +1,19 @@
+{
+    "id": "2017_53283818", 
+    "image_path": "images/test2017/2017_53283818.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "040d01085592f48c", 
+    "source_url": "https://c5.staticflickr.com/3/2939/14302753962_ee6d39e828_o.jpg"
+}

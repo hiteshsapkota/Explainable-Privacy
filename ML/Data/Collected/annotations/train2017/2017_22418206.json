@@ -1,0 +1,16 @@
+{
+    "id": "2017_22418206", 
+    "image_path": "images/train2017/2017_22418206.jpg", 
+    "labels": [
+        "a26_handwriting", 
+        "a35_mail", 
+        "a37_receipt", 
+        "a38_ticket", 
+        "a49_phone", 
+        "a73_landmark", 
+        "a74_address_current_complete", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "1f8d7feed88ea982", 
+    "source_url": "https://farm3.staticflickr.com/2455/3814890683_8655c27d30_o.jpg"
+}

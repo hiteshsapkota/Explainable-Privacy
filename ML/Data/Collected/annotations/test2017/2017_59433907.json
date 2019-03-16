@@ -1,0 +1,17 @@
+{
+    "id": "2017_59433907", 
+    "image_path": "images/test2017/2017_59433907.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a65_rel_social", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "7395c58bc39ad213", 
+    "source_url": "https://farm4.staticflickr.com/4101/4901990402_4f7df1fffa_o.jpg"
+}

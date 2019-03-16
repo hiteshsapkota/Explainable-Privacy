@@ -1,0 +1,10 @@
+{
+    "id": "2017_45916803", 
+    "image_path": "images/test2017/2017_45916803.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a65_rel_social"
+    ], 
+    "openimages_id": "40d4185ef66d9891", 
+    "source_url": "https://farm2.staticflickr.com/7299/16181871898_95800febc9_o.jpg"
+}

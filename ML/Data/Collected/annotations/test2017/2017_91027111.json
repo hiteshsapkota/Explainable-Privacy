@@ -1,0 +1,16 @@
+{
+    "id": "2017_91027111", 
+    "image_path": "images/test2017/2017_91027111.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a61_opinion_general", 
+        "a69_rel_views", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "063de3dbd27862d2", 
+    "source_url": "https://farm3.staticflickr.com/7287/8744495607_7622943498_o.jpg"
+}

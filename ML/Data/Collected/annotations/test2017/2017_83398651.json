@@ -1,0 +1,14 @@
+{
+    "id": "2017_83398651", 
+    "image_path": "images/test2017/2017_83398651.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "278be90f13db34fe", 
+    "source_url": "https://c7.staticflickr.com/7/6198/6131312101_bca03844e1_o.jpg"
+}

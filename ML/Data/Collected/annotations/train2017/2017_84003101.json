@@ -1,0 +1,9 @@
+{
+    "id": "2017_84003101", 
+    "image_path": "images/train2017/2017_84003101.jpg", 
+    "labels": [
+        "a43_medicine"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

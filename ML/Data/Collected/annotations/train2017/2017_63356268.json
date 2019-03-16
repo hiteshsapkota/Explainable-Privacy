@@ -1,0 +1,22 @@
+{
+    "id": "2017_63356268", 
+    "image_path": "images/train2017/2017_63356268.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a1_age_approx", 
+        "a25_nationality", 
+        "a2_weight_approx", 
+        "a39_disability_physical", 
+        "a3_height_approx", 
+        "a48_occassion_work", 
+        "a4_gender", 
+        "a59_sports", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "4f7d6239c0e5cf67", 
+    "source_url": "https://farm8.staticflickr.com/8448/7913607744_3857be136c_o.jpg"
+}

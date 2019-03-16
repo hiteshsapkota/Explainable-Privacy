@@ -1,0 +1,13 @@
+{
+    "id": "2017_23927189", 
+    "image_path": "images/test2017/2017_23927189.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a104_license_plate_partial", 
+        "a10_face_partial", 
+        "a1_age_approx", 
+        "a4_gender"
+    ], 
+    "openimages_id": "14fb494ae286e102", 
+    "source_url": "https://farm3.staticflickr.com/7263/13340265064_178c8acd89_o.jpg"
+}

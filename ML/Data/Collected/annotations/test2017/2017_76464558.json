@@ -1,0 +1,11 @@
+{
+    "id": "2017_76464558", 
+    "image_path": "images/test2017/2017_76464558.jpg", 
+    "labels": [
+        "a20_name_first", 
+        "a59_sports", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "c8e3f79dac786abf", 
+    "source_url": "https://c8.staticflickr.com/3/2488/3980015178_c9e53a034d_o.jpg"
+}

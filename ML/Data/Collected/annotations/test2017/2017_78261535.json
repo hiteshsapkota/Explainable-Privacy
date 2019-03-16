@@ -1,0 +1,22 @@
+{
+    "id": "2017_78261535", 
+    "image_path": "images/test2017/2017_78261535.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a66_rel_professional", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "ec8cdf6340e6bf8b", 
+    "source_url": "https://c4.staticflickr.com/3/2904/13890053199_9b46dc59f9_o.jpg"
+}

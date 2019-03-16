@@ -1,0 +1,19 @@
+{
+    "id": "2017_22843672", 
+    "image_path": "images/test2017/2017_22843672.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a29_ausweis", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a66_rel_professional", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "ec7e7f814a8c3fe4", 
+    "source_url": "https://farm5.staticflickr.com/3920/14523032208_a97e072acf_o.jpg"
+}

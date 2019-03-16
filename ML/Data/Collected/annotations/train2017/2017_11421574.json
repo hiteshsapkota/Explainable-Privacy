@@ -1,0 +1,16 @@
+{
+    "id": "2017_11421574", 
+    "image_path": "images/train2017/2017_11421574.jpg", 
+    "labels": [
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "0e45e047e4151e5c", 
+    "source_url": "https://c5.staticflickr.com/4/3643/3645943719_058d85b9a9_o.jpg"
+}

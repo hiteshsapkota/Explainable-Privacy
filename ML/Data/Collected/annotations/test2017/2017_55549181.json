@@ -1,0 +1,12 @@
+{
+    "id": "2017_55549181", 
+    "image_path": "images/test2017/2017_55549181.jpg", 
+    "labels": [
+        "a17_color", 
+        "a4_gender", 
+        "a55_religion", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "566cd724d86bef67", 
+    "source_url": "https://farm8.staticflickr.com/7513/16083498841_6fc16247c6_o.jpg"
+}

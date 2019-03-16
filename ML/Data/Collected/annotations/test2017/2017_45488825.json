@@ -1,0 +1,16 @@
+{
+    "id": "2017_45488825", 
+    "image_path": "images/test2017/2017_45488825.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a104_license_plate_partial", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a6_hair_color", 
+        "a73_landmark"
+    ], 
+    "openimages_id": "e7dd27db91caed65", 
+    "source_url": "https://farm6.staticflickr.com/4058/4373137684_bf974caaa3_o.jpg"
+}

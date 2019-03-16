@@ -1,0 +1,14 @@
+{
+    "id": "2017_80700385", 
+    "image_path": "images/test2017/2017_80700385.jpg", 
+    "labels": [
+        "a17_color", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a64_rel_personal", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "922775c0cc5283b8", 
+    "source_url": "https://c1.staticflickr.com/3/2873/12237582306_d29984e353_o.jpg"
+}

@@ -1,0 +1,14 @@
+{
+    "id": "2017_98956834", 
+    "image_path": "images/test2017/2017_98956834.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a56_sexual_orientation", 
+        "a61_opinion_general", 
+        "a69_rel_views"
+    ], 
+    "openimages_id": "c066713a5bc5a7c3", 
+    "source_url": "https://farm4.staticflickr.com/3706/11655817465_4bd8cc0621_o.jpg"
+}

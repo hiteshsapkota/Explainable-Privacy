@@ -1,0 +1,11 @@
+{
+    "id": "2017_54189296", 
+    "image_path": "images/train2017/2017_54189296.jpg", 
+    "labels": [
+        "a104_license_plate_partial", 
+        "a4_gender", 
+        "a59_sports"
+    ], 
+    "openimages_id": "11bf6ae11966f7f7", 
+    "source_url": "https://farm8.staticflickr.com/5584/14169508276_8523670dd9_o.jpg"
+}

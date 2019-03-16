@@ -1,0 +1,19 @@
+{
+    "id": "2017_15155943", 
+    "image_path": "images/test2017/2017_15155943.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a73_landmark"
+    ], 
+    "openimages_id": "908fab4b18487e52", 
+    "source_url": "https://farm3.staticflickr.com/2898/14077574835_e4d321e7ff_o.jpg"
+}

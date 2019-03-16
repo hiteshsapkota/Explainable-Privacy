@@ -1,0 +1,16 @@
+{
+    "id": "2017_14046835", 
+    "image_path": "images/test2017/2017_14046835.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "fa8a61e60f22c41b", 
+    "source_url": "https://c4.staticflickr.com/4/3718/12212661394_1c685bd758_o.jpg"
+}

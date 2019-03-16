@@ -1,0 +1,12 @@
+{
+    "id": "2017_52022061", 
+    "image_path": "images/train2017/2017_52022061.jpg", 
+    "labels": [
+        "a35_mail", 
+        "a49_phone", 
+        "a75_address_current_partial", 
+        "a78_address_home_complete"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

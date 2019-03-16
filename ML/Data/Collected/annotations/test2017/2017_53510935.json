@@ -1,0 +1,13 @@
+{
+    "id": "2017_53510935", 
+    "image_path": "images/test2017/2017_53510935.jpg", 
+    "labels": [
+        "a21_name_last", 
+        "a25_nationality", 
+        "a29_ausweis", 
+        "a31_passport", 
+        "a4_gender"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

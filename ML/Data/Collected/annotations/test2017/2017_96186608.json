@@ -1,0 +1,12 @@
+{
+    "id": "2017_96186608", 
+    "image_path": "images/test2017/2017_96186608.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a26_handwriting", 
+        "a82_date_time", 
+        "a85_username"
+    ], 
+    "openimages_id": "85eda31f353a30fc", 
+    "source_url": "https://c5.staticflickr.com/4/3392/3588178145_82410a85e6_o.jpg"
+}

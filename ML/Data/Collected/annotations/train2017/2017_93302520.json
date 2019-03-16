@@ -1,0 +1,16 @@
+{
+    "id": "2017_93302520", 
+    "image_path": "images/train2017/2017_93302520.jpg", 
+    "labels": [
+        "a104_license_plate_partial", 
+        "a10_face_partial", 
+        "a17_color", 
+        "a4_gender", 
+        "a61_opinion_general", 
+        "a69_rel_views", 
+        "a6_hair_color", 
+        "a73_landmark"
+    ], 
+    "openimages_id": "0086af1d661c9659", 
+    "source_url": "https://c2.staticflickr.com/3/2277/2370808798_5218d8f4b8_o.jpg"
+}

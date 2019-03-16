@@ -1,0 +1,18 @@
+{
+    "id": "2017_64370191", 
+    "image_path": "images/test2017/2017_64370191.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "feda5decf4ecec5d", 
+    "source_url": "https://c6.staticflickr.com/8/7362/10909797874_2a4d516167_o.jpg"
+}

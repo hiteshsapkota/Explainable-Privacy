@@ -1,0 +1,17 @@
+{
+    "id": "2017_76412521", 
+    "image_path": "images/test2017/2017_76412521.jpg", 
+    "labels": [
+        "a11_tattoo", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "e13c574b2160d419", 
+    "source_url": "https://c2.staticflickr.com/7/6027/5878968735_507190c7e0_o.jpg"
+}

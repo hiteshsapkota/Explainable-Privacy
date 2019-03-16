@@ -1,0 +1,23 @@
+{
+    "id": "2017_62987756", 
+    "image_path": "images/test2017/2017_62987756.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a23_birth_city", 
+        "a24_birth_date", 
+        "a25_nationality", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a59_sports", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "5c19235eb473e10f", 
+    "source_url": "https://c8.staticflickr.com/7/6190/6134166763_6cdff6562e_o.jpg"
+}

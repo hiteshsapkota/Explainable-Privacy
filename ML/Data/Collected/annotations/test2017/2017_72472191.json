@@ -1,0 +1,11 @@
+{
+    "id": "2017_72472191", 
+    "image_path": "images/test2017/2017_72472191.jpg", 
+    "labels": [
+        "a49_phone", 
+        "a74_address_current_complete", 
+        "a90_email"
+    ], 
+    "openimages_id": "a2c608c34e69d1e6", 
+    "source_url": "https://farm7.staticflickr.com/5350/9424197944_774e92aeff_o.jpg"
+}

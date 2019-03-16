@@ -1,0 +1,19 @@
+{
+    "id": "2017_40750351", 
+    "image_path": "images/test2017/2017_40750351.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a11_tattoo", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a66_rel_professional", 
+        "a68_rel_spectators", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "7140d921f960df77", 
+    "source_url": "https://farm8.staticflickr.com/3362/3606399661_a92725863d_o.jpg"
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2017_95080775", 
+    "image_path": "images/train2017/2017_95080775.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "6f32c4a67804fefb", 
+    "source_url": "https://c4.staticflickr.com/4/3473/3887005760_6fb1c1daf1_o.jpg"
+}

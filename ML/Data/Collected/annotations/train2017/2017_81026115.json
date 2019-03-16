@@ -1,0 +1,12 @@
+{
+    "id": "2017_81026115", 
+    "image_path": "images/train2017/2017_81026115.jpg", 
+    "labels": [
+        "a21_name_last", 
+        "a30_credit_card", 
+        "a37_receipt", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "3db6b2691f9e6ca4", 
+    "source_url": "https://farm5.staticflickr.com/28/59278629_6f28ae5d68_o.jpg"
+}

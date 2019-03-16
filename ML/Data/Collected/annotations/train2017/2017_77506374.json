@@ -1,0 +1,19 @@
+{
+    "id": "2017_77506374", 
+    "image_path": "images/train2017/2017_77506374.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "fd3eaf0bb25f3e79", 
+    "source_url": "https://c2.staticflickr.com/2/1191/1186658174_ae872b7714_o.jpg"
+}

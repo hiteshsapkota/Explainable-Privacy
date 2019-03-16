@@ -1,0 +1,13 @@
+{
+    "id": "2017_20313842", 
+    "image_path": "images/test2017/2017_20313842.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a17_color", 
+        "a4_gender", 
+        "a6_hair_color", 
+        "a75_address_current_partial"
+    ], 
+    "openimages_id": "2d8bc88ac5b82d34", 
+    "source_url": "https://farm5.staticflickr.com/5103/5677221887_b2e8ded6ce_o.jpg"
+}

@@ -1,0 +1,17 @@
+{
+    "id": "2017_26905560", 
+    "image_path": "images/train2017/2017_26905560.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "d057c4fc97d3dc2f", 
+    "source_url": "https://c8.staticflickr.com/6/5569/14723163491_9276a1bd99_o.jpg"
+}

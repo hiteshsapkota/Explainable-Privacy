@@ -1,0 +1,19 @@
+{
+    "id": "2017_69252844", 
+    "image_path": "images/test2017/2017_69252844.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a39_disability_physical", 
+        "a4_gender", 
+        "a61_opinion_general", 
+        "a69_rel_views", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "45bb90033f568ca4", 
+    "source_url": "https://farm5.staticflickr.com/8464/8123447153_b2156fd89e_o.jpg"
+}

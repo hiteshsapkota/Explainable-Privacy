@@ -1,0 +1,21 @@
+{
+    "id": "2017_64831237", 
+    "image_path": "images/test2017/2017_64831237.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a19_name_full", 
+        "a1_age_approx", 
+        "a24_birth_date", 
+        "a25_nationality", 
+        "a33_student_id", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "f979125d7b51caf1", 
+    "source_url": "https://farm2.staticflickr.com/2513/4127494757_bda4758cb1_o.jpg"
+}

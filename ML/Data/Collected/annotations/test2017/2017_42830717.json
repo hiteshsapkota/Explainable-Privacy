@@ -1,0 +1,14 @@
+{
+    "id": "2017_42830717", 
+    "image_path": "images/test2017/2017_42830717.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a17_color", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a59_sports", 
+        "a67_rel_competitors"
+    ], 
+    "openimages_id": "b521f57de8e482ae", 
+    "source_url": "https://c7.staticflickr.com/2/1320/761299562_da5033df95_o.jpg"
+}

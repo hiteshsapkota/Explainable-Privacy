@@ -1,0 +1,19 @@
+{
+    "id": "2017_29522718", 
+    "image_path": "images/test2017/2017_29522718.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a57_culture", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "e7daf1290e85b898", 
+    "source_url": "https://c1.staticflickr.com/2/1285/1059829779_fe4fc7f838_o.jpg"
+}

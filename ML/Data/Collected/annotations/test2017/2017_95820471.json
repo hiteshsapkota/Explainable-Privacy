@@ -1,0 +1,22 @@
+{
+    "id": "2017_95820471", 
+    "image_path": "images/test2017/2017_95820471.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a61_opinion_general", 
+        "a62_opinion_political", 
+        "a69_rel_views", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "d747350decc7323e", 
+    "source_url": "https://c7.staticflickr.com/8/7621/16239275574_a766766e73_o.jpg"
+}

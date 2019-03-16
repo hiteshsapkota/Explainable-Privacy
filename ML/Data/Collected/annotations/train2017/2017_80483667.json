@@ -1,0 +1,13 @@
+{
+    "id": "2017_80483667", 
+    "image_path": "images/train2017/2017_80483667.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a25_nationality", 
+        "a26_handwriting", 
+        "a46_occupation", 
+        "a8_signature"
+    ], 
+    "openimages_id": "82875f9daee85cae", 
+    "source_url": "https://c7.staticflickr.com/6/5084/5303198983_b586a1cc1a_o.jpg"
+}

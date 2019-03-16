@@ -1,0 +1,10 @@
+{
+    "id": "2017_19800681", 
+    "image_path": "images/test2017/2017_19800681.jpg", 
+    "labels": [
+        "a73_landmark", 
+        "a75_address_current_partial"
+    ], 
+    "openimages_id": "3e352630900a3f7a", 
+    "source_url": "https://c3.staticflickr.com/2/1027/1397499262_cb1c6a2bae_o.jpg"
+}

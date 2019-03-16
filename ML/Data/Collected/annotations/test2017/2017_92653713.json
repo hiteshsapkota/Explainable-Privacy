@@ -1,0 +1,19 @@
+{
+    "id": "2017_92653713", 
+    "image_path": "images/test2017/2017_92653713.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a57_culture", 
+        "a66_rel_professional", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "3d33460dae2972f1", 
+    "source_url": "https://farm2.staticflickr.com/7151/6430108235_e31b7a6dac_o.jpg"
+}

@@ -1,0 +1,11 @@
+{
+    "id": "2017_42526330", 
+    "image_path": "images/test2017/2017_42526330.jpg", 
+    "labels": [
+        "a17_color", 
+        "a1_age_approx", 
+        "a60_occassion_personal"
+    ], 
+    "openimages_id": "75907b2c34a57841", 
+    "source_url": "https://farm2.staticflickr.com/4025/4448791573_c93586e1b0_o.jpg"
+}

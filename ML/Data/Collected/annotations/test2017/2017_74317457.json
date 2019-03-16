@@ -1,0 +1,15 @@
+{
+    "id": "2017_74317457", 
+    "image_path": "images/test2017/2017_74317457.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a10_face_partial", 
+        "a17_color", 
+        "a4_gender", 
+        "a59_sports", 
+        "a67_rel_competitors", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "201d12cefa4e6b56", 
+    "source_url": "https://farm7.staticflickr.com/3899/14951730935_d07414c028_o.jpg"
+}

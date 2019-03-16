@@ -1,0 +1,17 @@
+{
+    "id": "2017_74727044", 
+    "image_path": "images/test2017/2017_74727044.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a61_opinion_general", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "73c50728ec69dc38", 
+    "source_url": "https://c1.staticflickr.com/4/3811/13787276854_4f5e2f31d5_o.jpg"
+}

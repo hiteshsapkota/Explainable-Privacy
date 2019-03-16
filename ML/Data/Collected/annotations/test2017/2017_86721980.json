@@ -1,0 +1,17 @@
+{
+    "id": "2017_86721980", 
+    "image_path": "images/test2017/2017_86721980.jpg", 
+    "labels": [
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "0bb41e1d36a12996", 
+    "source_url": "https://farm7.staticflickr.com/3846/14689367482_e7a464ea9a_o.jpg"
+}

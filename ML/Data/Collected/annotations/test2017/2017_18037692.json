@@ -1,0 +1,14 @@
+{
+    "id": "2017_18037692", 
+    "image_path": "images/test2017/2017_18037692.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a17_color", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a64_rel_personal", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "02d7a9caa50da38f", 
+    "source_url": "https://c8.staticflickr.com/9/8866/17809954201_48c40e7b9e_o.jpg"
+}

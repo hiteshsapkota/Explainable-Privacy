@@ -1,0 +1,10 @@
+{
+    "id": "2017_94122314", 
+    "image_path": "images/test2017/2017_94122314.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a26_handwriting"
+    ], 
+    "openimages_id": "589d1d94ae9b06e0", 
+    "source_url": "https://farm1.staticflickr.com/5006/5217520224_d8d38e4b98_o.jpg"
+}

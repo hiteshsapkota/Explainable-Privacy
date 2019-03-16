@@ -1,0 +1,16 @@
+{
+    "id": "2017_35013317", 
+    "image_path": "images/train2017/2017_35013317.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a10_face_partial", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "0c72ad01cb53c9e5", 
+    "source_url": "https://farm6.staticflickr.com/1252/875187784_c17bcc5a48_o.jpg"
+}

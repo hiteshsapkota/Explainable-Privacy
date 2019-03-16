@@ -1,0 +1,16 @@
+{
+    "id": "2017_32067921", 
+    "image_path": "images/train2017/2017_32067921.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a17_color", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a65_rel_social", 
+        "a6_hair_color", 
+        "a73_landmark"
+    ], 
+    "openimages_id": "202b30220b7cf4a7", 
+    "source_url": "https://farm8.staticflickr.com/7480/15711460441_b9a0504c0c_o.jpg"
+}

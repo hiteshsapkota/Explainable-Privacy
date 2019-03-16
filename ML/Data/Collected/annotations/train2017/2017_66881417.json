@@ -1,0 +1,13 @@
+{
+    "id": "2017_66881417", 
+    "image_path": "images/train2017/2017_66881417.jpg", 
+    "labels": [
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a48_occassion_work", 
+        "a4_gender", 
+        "a66_rel_professional"
+    ], 
+    "openimages_id": "d7ea0471d0118f82", 
+    "source_url": "https://farm3.staticflickr.com/7185/6894170715_e96a479a72_o.jpg"
+}

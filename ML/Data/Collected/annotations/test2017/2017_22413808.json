@@ -1,0 +1,17 @@
+{
+    "id": "2017_22413808", 
+    "image_path": "images/test2017/2017_22413808.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "a472c103bb6f556b", 
+    "source_url": "https://c4.staticflickr.com/3/2921/14535812911_61c998322d_o.jpg"
+}

@@ -1,0 +1,9 @@
+{
+    "id": "2017_26211328", 
+    "image_path": "images/train2017/2017_26211328.jpg", 
+    "labels": [
+        "a104_license_plate_partial"
+    ], 
+    "openimages_id": "add1676b8fc0ef03", 
+    "source_url": "https://farm4.staticflickr.com/2609/4164024401_8f9b7d64c0_o.jpg"
+}

@@ -1,0 +1,19 @@
+{
+    "id": "2017_59363019", 
+    "image_path": "images/test2017/2017_59363019.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a61_opinion_general", 
+        "a69_rel_views", 
+        "a6_hair_color", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "af2f152d6717a187", 
+    "source_url": "https://farm8.staticflickr.com/7185/7091026277_bec6d8d6ff_o.jpg"
+}

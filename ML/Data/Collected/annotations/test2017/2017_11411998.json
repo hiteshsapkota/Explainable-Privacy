@@ -1,0 +1,16 @@
+{
+    "id": "2017_11411998", 
+    "image_path": "images/test2017/2017_11411998.jpg", 
+    "labels": [
+        "a103_license_plate_complete", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a6_hair_color", 
+        "a75_address_current_partial"
+    ], 
+    "openimages_id": "23764f6d0ddf59b6", 
+    "source_url": "https://farm7.staticflickr.com/8260/8642324551_b00591e1cc_o.jpg"
+}

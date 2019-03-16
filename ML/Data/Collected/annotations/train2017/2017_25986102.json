@@ -1,0 +1,17 @@
+{
+    "id": "2017_25986102", 
+    "image_path": "images/train2017/2017_25986102.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a4_gender", 
+        "a65_rel_social", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "a9cb22730188743c", 
+    "source_url": "https://c5.staticflickr.com/8/7442/9392531938_07386d5a06_o.jpg"
+}

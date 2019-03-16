@@ -1,0 +1,18 @@
+{
+    "id": "2017_40926920", 
+    "image_path": "images/test2017/2017_40926920.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a67_rel_competitors", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "c08ad995468f8f71", 
+    "source_url": "https://farm2.staticflickr.com/8126/8672779991_9695db8e2c_o.jpg"
+}

@@ -1,0 +1,20 @@
+{
+    "id": "2017_41720380", 
+    "image_path": "images/test2017/2017_41720380.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a27_marital_status", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a55_religion", 
+        "a68_rel_spectators", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "1d8f4267b3901154", 
+    "source_url": "https://farm5.staticflickr.com/7044/6837012378_24cd9634d8_o.jpg"
+}

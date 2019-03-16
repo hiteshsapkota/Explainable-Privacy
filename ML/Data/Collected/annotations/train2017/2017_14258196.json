@@ -1,0 +1,12 @@
+{
+    "id": "2017_14258196", 
+    "image_path": "images/train2017/2017_14258196.jpg", 
+    "labels": [
+        "a17_color", 
+        "a27_marital_status", 
+        "a41_injury", 
+        "a43_medicine"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

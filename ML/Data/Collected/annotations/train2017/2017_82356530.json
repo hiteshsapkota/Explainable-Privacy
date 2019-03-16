@@ -1,0 +1,13 @@
+{
+    "id": "2017_82356530", 
+    "image_path": "images/train2017/2017_82356530.jpg", 
+    "labels": [
+        "a102_vehicle_ownership", 
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender"
+    ], 
+    "openimages_id": "1acfb858a84aad96", 
+    "source_url": "https://farm7.staticflickr.com/7375/10561039785_ac1fcbc3ca_o.jpg"
+}

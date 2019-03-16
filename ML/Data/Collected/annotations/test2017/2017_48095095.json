@@ -1,0 +1,21 @@
+{
+    "id": "2017_48095095", 
+    "image_path": "images/test2017/2017_48095095.jpg", 
+    "labels": [
+        "a11_tattoo", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a26_handwriting", 
+        "a2_weight_approx", 
+        "a39_disability_physical", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a59_sports", 
+        "a5_eye_color", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "6241ff277f0c16f7", 
+    "source_url": "https://farm8.staticflickr.com/4137/4801215513_2fe9778fa2_o.jpg"
+}

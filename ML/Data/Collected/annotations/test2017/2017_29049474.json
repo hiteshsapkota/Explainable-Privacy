@@ -1,0 +1,16 @@
+{
+    "id": "2017_29049474", 
+    "image_path": "images/test2017/2017_29049474.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a55_religion", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "8a38d85984f58e1d", 
+    "source_url": "https://c6.staticflickr.com/6/5602/15790912426_3300ac20a7_o.jpg"
+}

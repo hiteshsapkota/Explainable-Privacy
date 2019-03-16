@@ -1,0 +1,14 @@
+{
+    "id": "2017_97851594", 
+    "image_path": "images/train2017/2017_97851594.jpg", 
+    "labels": [
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a55_religion", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "f589db0144964d4b", 
+    "source_url": "https://c4.staticflickr.com/1/79/244910903_5048cabd65_o.jpg"
+}

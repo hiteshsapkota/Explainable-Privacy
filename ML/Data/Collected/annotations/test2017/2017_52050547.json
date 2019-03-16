@@ -1,0 +1,10 @@
+{
+    "id": "2017_52050547", 
+    "image_path": "images/test2017/2017_52050547.jpg", 
+    "labels": [
+        "a17_color", 
+        "a43_medicine"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

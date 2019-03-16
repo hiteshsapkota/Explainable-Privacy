@@ -1,0 +1,13 @@
+{
+    "id": "2017_74508691", 
+    "image_path": "images/test2017/2017_74508691.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a46_occupation", 
+        "a73_landmark", 
+        "a82_date_time", 
+        "a8_signature"
+    ], 
+    "openimages_id": "d5f4bd0d09ccc66d", 
+    "source_url": "https://c6.staticflickr.com/1/20/72884874_1ebf52f90a_o.jpg"
+}

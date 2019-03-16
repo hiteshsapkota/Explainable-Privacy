@@ -1,0 +1,12 @@
+{
+    "id": "2017_64275825", 
+    "image_path": "images/test2017/2017_64275825.jpg", 
+    "labels": [
+        "a26_handwriting", 
+        "a43_medicine", 
+        "a74_address_current_complete", 
+        "a82_date_time"
+    ], 
+    "openimages_id": null, 
+    "source_url": null
+}

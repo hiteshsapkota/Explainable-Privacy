@@ -1,0 +1,16 @@
+{
+    "id": "2017_39041137", 
+    "image_path": "images/test2017/2017_39041137.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a18_ethnic_clothing", 
+        "a4_gender", 
+        "a55_religion", 
+        "a66_rel_professional", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "6046f1058b0221fc", 
+    "source_url": "https://c5.staticflickr.com/9/8677/16400535106_1a1f0bb96c_o.jpg"
+}

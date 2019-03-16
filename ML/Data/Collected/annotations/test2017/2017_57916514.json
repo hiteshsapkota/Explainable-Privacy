@@ -1,0 +1,18 @@
+{
+    "id": "2017_57916514", 
+    "image_path": "images/test2017/2017_57916514.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a57_culture", 
+        "a5_eye_color", 
+        "a69_rel_views", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "13ffa9b8c7a393db", 
+    "source_url": "https://c4.staticflickr.com/2/1155/1235963750_e6e24664e2_o.jpg"
+}

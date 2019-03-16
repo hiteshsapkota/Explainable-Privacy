@@ -1,0 +1,11 @@
+{
+    "id": "2017_96378915", 
+    "image_path": "images/train2017/2017_96378915.jpg", 
+    "labels": [
+        "a19_name_full", 
+        "a26_handwriting", 
+        "a75_address_current_partial"
+    ], 
+    "openimages_id": "bd206cdf26f26dcd", 
+    "source_url": "https://c6.staticflickr.com/9/8435/7822437934_5db2c39d09_o.jpg"
+}

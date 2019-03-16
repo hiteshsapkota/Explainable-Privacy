@@ -1,0 +1,15 @@
+{
+    "id": "2017_97846059", 
+    "image_path": "images/test2017/2017_97846059.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a4_gender", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "26318ac574848096", 
+    "source_url": "https://farm7.staticflickr.com/8671/16346390231_9d453d79f3_o.jpg"
+}

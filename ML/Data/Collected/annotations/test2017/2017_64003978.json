@@ -1,0 +1,17 @@
+{
+    "id": "2017_64003978", 
+    "image_path": "images/test2017/2017_64003978.jpg", 
+    "labels": [
+        "a11_tattoo", 
+        "a12_semi_nudity", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a3_height_approx", 
+        "a4_gender", 
+        "a57_culture", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "b3f36c25a134f10a", 
+    "source_url": "https://c3.staticflickr.com/8/7287/8733474621_cf62fca14d_o.jpg"
+}

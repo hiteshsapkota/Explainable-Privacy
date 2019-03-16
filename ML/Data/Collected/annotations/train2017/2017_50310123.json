@@ -1,0 +1,15 @@
+{
+    "id": "2017_50310123", 
+    "image_path": "images/train2017/2017_50310123.jpg", 
+    "labels": [
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a3_height_approx", 
+        "a41_injury", 
+        "a46_occupation", 
+        "a6_hair_color"
+    ], 
+    "openimages_id": "e55fa0fca0fa9097", 
+    "source_url": "https://farm8.staticflickr.com/8246/8616603578_fe1f26bb99_o.jpg"
+}

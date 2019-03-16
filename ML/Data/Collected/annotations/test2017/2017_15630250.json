@@ -1,0 +1,11 @@
+{
+    "id": "2017_15630250", 
+    "image_path": "images/test2017/2017_15630250.jpg", 
+    "labels": [
+        "a30_credit_card", 
+        "a37_receipt", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "fc976164523798c3", 
+    "source_url": "https://farm4.staticflickr.com/4015/4481926886_a71146416c_o.jpg"
+}

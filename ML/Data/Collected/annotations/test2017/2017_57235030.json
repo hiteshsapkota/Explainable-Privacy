@@ -1,0 +1,16 @@
+{
+    "id": "2017_57235030", 
+    "image_path": "images/test2017/2017_57235030.jpg", 
+    "labels": [
+        "a17_color", 
+        "a19_name_full", 
+        "a46_occupation", 
+        "a49_phone", 
+        "a73_landmark", 
+        "a75_address_current_partial", 
+        "a82_date_time", 
+        "a90_email"
+    ], 
+    "openimages_id": "644d6934be36b741", 
+    "source_url": "https://farm2.staticflickr.com/2790/4103126742_d574918249_o.jpg"
+}

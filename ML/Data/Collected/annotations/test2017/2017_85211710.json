@@ -1,0 +1,11 @@
+{
+    "id": "2017_85211710", 
+    "image_path": "images/test2017/2017_85211710.jpg", 
+    "labels": [
+        "a20_name_first", 
+        "a26_handwriting", 
+        "a75_address_current_partial"
+    ], 
+    "openimages_id": "dace01489973b72c", 
+    "source_url": "https://c5.staticflickr.com/8/7298/16578945971_b03bc8ce30_o.jpg"
+}

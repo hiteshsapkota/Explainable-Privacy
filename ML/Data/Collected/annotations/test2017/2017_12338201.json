@@ -1,0 +1,20 @@
+{
+    "id": "2017_12338201", 
+    "image_path": "images/test2017/2017_12338201.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a1_age_approx", 
+        "a2_weight_approx", 
+        "a46_occupation", 
+        "a4_gender", 
+        "a59_sports", 
+        "a5_eye_color", 
+        "a67_rel_competitors", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "d672b685ad2534d7", 
+    "source_url": "https://farm8.staticflickr.com/3939/15708923076_b6269591b5_o.jpg"
+}

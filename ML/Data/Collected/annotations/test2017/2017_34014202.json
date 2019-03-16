@@ -1,0 +1,11 @@
+{
+    "id": "2017_34014202", 
+    "image_path": "images/test2017/2017_34014202.jpg", 
+    "labels": [
+        "a4_gender", 
+        "a56_sexual_orientation", 
+        "a73_landmark"
+    ], 
+    "openimages_id": "afa7fe3684c63a00", 
+    "source_url": "https://farm1.staticflickr.com/8381/8524054617_4fcaa71dbb_o.jpg"
+}

@@ -1,0 +1,17 @@
+{
+    "id": "2017_47944187", 
+    "image_path": "images/train2017/2017_47944187.jpg", 
+    "labels": [
+        "a10_face_partial", 
+        "a16_race", 
+        "a17_color", 
+        "a4_gender", 
+        "a5_eye_color", 
+        "a61_opinion_general", 
+        "a69_rel_views", 
+        "a6_hair_color", 
+        "a9_face_complete"
+    ], 
+    "openimages_id": "97c2fea0dd02958b", 
+    "source_url": "https://c4.staticflickr.com/5/4060/4619158876_f261b71b76_o.jpg"
+}

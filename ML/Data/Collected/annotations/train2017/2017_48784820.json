@@ -1,0 +1,12 @@
+{
+    "id": "2017_48784820", 
+    "image_path": "images/train2017/2017_48784820.jpg", 
+    "labels": [
+        "a26_handwriting", 
+        "a30_credit_card", 
+        "a37_receipt", 
+        "a82_date_time"
+    ], 
+    "openimages_id": "f4ca430a886e872b", 
+    "source_url": "https://c4.staticflickr.com/8/7331/9506523198_fd66d381f4_o.jpg"
+}
