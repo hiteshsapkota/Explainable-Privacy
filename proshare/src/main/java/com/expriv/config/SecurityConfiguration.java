@@ -1,5 +1,6 @@
 package com.expriv.config;
 
+import com.expriv.service.ConfigurationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -11,6 +12,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 import com.expriv.service.UserService;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
@@ -21,11 +24,11 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
   @Override
   protected void configure(HttpSecurity http) throws Exception {
     http.authorizeRequests()
-        .antMatchers("/", "/home", "/registration**", "/js/**", "/css/**", "/img/**", "/webjars/**")
-        .permitAll().anyRequest().authenticated().and().formLogin().loginPage("/login")
-        .defaultSuccessUrl("/index").permitAll().and().logout().invalidateHttpSession(true)
-        .clearAuthentication(true).logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
-        .logoutSuccessUrl("/login?logout").permitAll();
+            .antMatchers("/", "/home", "/registration**", "/js/**", "/css/**", "/img/**", "/webjars/**")
+            .permitAll().anyRequest().authenticated().and().formLogin().loginPage("/login")
+            .defaultSuccessUrl("/index").permitAll().and().logout().invalidateHttpSession(true)
+            .clearAuthentication(true).logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
+            .logoutSuccessUrl("/login?logout").permitAll();
   }
 
   @Bean
@@ -46,4 +49,17 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     auth.authenticationProvider(authenticationProvider());
   }
 
+  @Configuration
+  public class WebMvcConfig implements WebMvcConfigurer {
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+
+      ConfigurationService configurationService = new ConfigurationService();
+      configurationService.setParams();
+      registry
+              .addResourceHandler("/images/train2017/", "/images/val2017/", "/images/test2017/")
+              .addResourceLocations("file:resources/", "file:uploads/", "file:"+configurationService.getPython_base_dir())
+              .setCachePeriod(0);
+    }
+  }
 }

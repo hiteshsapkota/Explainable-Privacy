@@ -1,5 +1,6 @@
 package com.expriv.model;
 
+import com.expriv.service.ConfigurationService;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Repository;
@@ -90,6 +91,8 @@ public class Training{
         {
 
             String username=this.username;
+            ConfigurationService configurationService=new ConfigurationService();
+            configurationService.setParams();
 
             String sql = "select * from training where display_status=0 and user_name=?";
             //String sql = "select * from users_image_record  where display_status=0 and user_name='hiteshsapkota@gmail.com'";

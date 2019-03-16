@@ -161,7 +161,7 @@ public class Evaluation {
                     Record record=records.get(0);
                     this.id = record.getId();
                     this.image_id = record.getImage_id();
-                    this.image_path=record.getImage_path();
+                    this.image_path= record.getImage_path();
                     this.user_name=record.getUser_name();
                     String update_query="update evaluation set display_status = 1  where id ="+Integer.toString(this.id);
                     jdbcTemplate.update(update_query);

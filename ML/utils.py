@@ -28,14 +28,14 @@ base_path = base_path_file['base_dir']
 test_image_anno_paths = []
 
 
-with open(base_path+"Data/Collected/test2017.txt") as anno_file:
+with open(base_path+"Data/Collected/test2017_subsample.txt") as anno_file:
     
     for line in anno_file:
         anno_path = osp.join('', line.strip())
         test_image_anno_paths.append(anno_path)
 
     
-with open(base_path+"Data/Generated/cluster_image.json") as outfile:
+with open(base_path+"Data/Generated/cluster_image_subsample.json") as outfile:
     cluster_image = json.load(outfile)
  
     
@@ -211,7 +211,7 @@ def generateImageID(user_name, study_mode ='training',num_images = 1):
             
             with open(base_path+"Data/Collected/"+image_id) as jsonfile:
                 file = json.load(jsonfile)
-                Image_Paths.append(file['image_path'])
+                Image_Paths.append('/'+file['image_path'])
                 
         for image_id, image_path in zip(Image_IDS, Image_Paths):
             values = (user_name, image_id, image_path, 0)
