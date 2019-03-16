@@ -55,10 +55,11 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
 
       ConfigurationService configurationService = new ConfigurationService();
+
       configurationService.setParams();
       registry
-              .addResourceHandler("/images/train2017/", "/images/val2017/", "/images/test2017/")
-              .addResourceLocations("file:resources/", "file:uploads/", "file:"+configurationService.getPython_base_dir())
+              .addResourceHandler("/images/**")
+              .addResourceLocations("file:resources/", "file:uploads/", "file:"+configurationService.getPython_base_dir()+"images/")
               .setCachePeriod(0);
     }
   }
