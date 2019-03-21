@@ -24,9 +24,6 @@ public class MainController {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-
-
-
     @GetMapping("/")
     public String root() {
         return "home";
@@ -45,9 +42,7 @@ public class MainController {
     @GetMapping("/training")
     public String trainingForm(Model model) {
 
-
         Training training= new Training();
-
         Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         training.setUsername(principal);
         training.setJdbcTemplate(jdbcTemplate);
@@ -61,6 +56,7 @@ public class MainController {
     public String trainingSubmit(@ModelAttribute Training training, Model model) {
 
         training.setJdbcTemplate(jdbcTemplate);
+
         if (training.getSharing_type().equals("invalid")) {
 
             model.addAttribute("training", training);
@@ -74,7 +70,6 @@ public class MainController {
             Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
             training.setUsername(principal);
             training.readId();
-
 
             if (training.getImage_path().equals("na")) {
                 ConfigurationService configurationService=new ConfigurationService();
@@ -119,8 +114,6 @@ public class MainController {
         evaluation.setJdbcTemplate(jdbcTemplate);
         Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         evaluation.setUsername(principal);
-
-
         evaluation.readId();
         if (evaluation.getImage_id().equals("undefined")||evaluation.getImage_id().equals("na"))
         {
@@ -138,30 +131,19 @@ public class MainController {
 
             ImageAttributeService imageAttributeService=new ImageAttributeService();
             imageAttributeService.setImage_id(evaluation.getImage_id());
+            imageAttributeService.setAttributes();
+            List<String> imageAttributes = imageAttributeService.getAttributes();
 
-
-                imageAttributeService.setAttributes();
-                List<String> imageAttributes = imageAttributeService.getAttributes();
-                for (String imageAttribute:imageAttributes) {
+            for (String imageAttribute:imageAttributes) {
                   Feedback feedback = new Feedback();
                   feedback.setAttributeName(imageAttribute);
-
-
-
-
-                feedbackDto.addFeedback(feedback);
-
-
+                  feedbackDto.addFeedback(feedback);
             }
 
-
-
             evaluation.setFeedbackDto(feedbackDto);
-
             evaluation.generateExplanation();
             evaluation.setAttributeValid(true);
             model.addAttribute("evaluation", evaluation);
-
 
 
         } catch (IOException e) {
@@ -180,26 +162,17 @@ public class MainController {
 
             if (evaluation.getFeedback()==null)
             {
-
-
                 evaluation.setFeedback("invalid");
                 evaluation.setDisagree_type("valid");
                 evaluation.setAttributeValid(true);
                 model.addAttribute( "evaluation", evaluation);
                 return "evaluation";
-
-
             }
-
-
-
 
             if (evaluation.getFeedback().equals("Agree"))
             {
                 evaluation.setDisagree_type("valid");
                 evaluation.setAttributeValid(true);
-
-
             }
 
             if (evaluation.getDisagree_type().equals("invalid"))
@@ -211,137 +184,101 @@ public class MainController {
             }
 
             if (evaluation.isAttributeValid()!=true) {
-                evaluation.setAttributeValid(true);
 
-                FeedbackDto feedbackDto = evaluation.getFeedbackDto();
-                for (Feedback feedback : feedbackDto.getFeedbacks()) {
-                    if (feedback.getAttributeValue() == 0) {
+              evaluation.setAttributeValid(true);
+              FeedbackDto feedbackDto = evaluation.getFeedbackDto();
+              for (Feedback feedback : feedbackDto.getFeedbacks()) {
+                if (feedback.getAttributeValue() == 0) {
 
+                  evaluation.setAttributeValid(false);
+                  break;
 
-                        evaluation.setAttributeValid(false);
-                        break;
                     }
-
 
                 }
             }
 
-
             if (evaluation.isAttributeValid()==false)
             {
-
-
 
                 model.addAttribute("evaluation", evaluation);
                 return "evaluation";
             }
 
-                evaluation.storeSharing_type();
+          evaluation.storeSharing_type();
           ImageAttributeService imageAttributeService;
-            if (!evaluation.getFeedback().equals("Agree")) {
-               imageAttributeService = new ImageAttributeService();
+          if (!evaluation.getFeedback().equals("Agree")) {
 
-              try {
+            imageAttributeService = new ImageAttributeService();
+            try {
+
                 imageAttributeService.transferValues(evaluation.getFeedbackDto());
-              } catch (IOException e) {
+              }
+            catch (IOException e) {
                 e.printStackTrace();
               }
             }
             evaluation= new Evaluation();
-                evaluation.setJdbcTemplate(jdbcTemplate);
-                Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-                evaluation.setUsername(principal);
+            evaluation.setJdbcTemplate(jdbcTemplate);
+            Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+            evaluation.setUsername(principal);
+            evaluation.readId();
+            if (evaluation.getImage_id().equals("na"))
 
-                evaluation.readId();
+            {
 
+              ConfigurationService configurationService=new ConfigurationService();
+              configurationService.setParams();
+              String python_root_dir=configurationService.getPython_base_dir();
+              int eval_batch_size = configurationService.getEval_batch_size();
+              try {
 
+                   String command = "python2.7"+" "+python_root_dir+"configuration.py update";
+                   Runtime.getRuntime().exec(command);
+                   command="python2.7"+" "+python_root_dir+"utils.py generateImageID"+" "+evaluation.getUsername()+" "+"evaluation"+" "+eval_batch_size;
+                   Runtime.getRuntime().exec(command);
 
-                if (evaluation.getImage_id().equals("na"))
-                {
+              }
 
+              catch (IOException e) {
 
-                    ConfigurationService configurationService=new ConfigurationService();
-                    configurationService.setParams();
-                    String python_root_dir=configurationService.getPython_base_dir();
-                    int eval_batch_size = configurationService.getEval_batch_size();
-
-                    try {
-
-                        String command = "python2.7"+" "+python_root_dir+"configuration.py update";
-                        Process p=Runtime.getRuntime().exec(command);
-                        command="python2.7"+" "+python_root_dir+"utils.py generateImageID"+" "+evaluation.getUsername()+" "+"evaluation"+" "+eval_batch_size;
-                        p=Runtime.getRuntime().exec(command);
-                    }
-                    catch (IOException e) {
                         e.printStackTrace();
                     }
-                    model.addAttribute("evaluation_complete", evaluation);
-                    return "evaluation_complete";
+
+              model.addAttribute("evaluation_complete", evaluation);
+              return "evaluation_complete";
 
                 }
 
-
-
-
-
-            try {
+            try
+            {
 
                 FeedbackDto feedbackDto=new FeedbackDto();
-
                 imageAttributeService=new ImageAttributeService();
                 imageAttributeService.setImage_id(evaluation.getImage_id());
-
-
                 imageAttributeService.setAttributes();
                 List<String> imageAttributes = imageAttributeService.getAttributes();
+
                 for (String imageAttribute:imageAttributes) {
                     Feedback feedback = new Feedback();
                     feedback.setAttributeName(imageAttribute);
-
-
-
-
                     feedbackDto.addFeedback(feedback);
-
 
                 }
 
-
-
                 evaluation.setFeedbackDto(feedbackDto);
-
                 evaluation.generateExplanation();
                 evaluation.setAttributeValid(true);
                 model.addAttribute("evaluation", evaluation);
 
-
-
-            } catch (IOException e) {
+            }
+            catch (IOException e) {
                 e.printStackTrace();
             }
 
-
-
-                    model.addAttribute("evaluation", evaluation);
-                    return "evaluation";
-
-
-
-
-
-
-
-
-
-
-
-            }
-
-
-    @PostMapping("/greeting")
-    public String greetingSubmit(Model model) {
-        return "result";
-    }
+          model.addAttribute("evaluation", evaluation);
+          return "evaluation";
+        }
 
 
 }

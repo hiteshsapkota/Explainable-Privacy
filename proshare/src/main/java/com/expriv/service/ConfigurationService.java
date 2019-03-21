@@ -15,6 +15,7 @@ public class ConfigurationService {
 
     public void setParams() {
         Properties prop = new Properties();
+
         try
         {
             prop.load(new FileInputStream("src/main/resources/application.properties"));
@@ -22,13 +23,10 @@ public class ConfigurationService {
             e.printStackTrace();
         }
 
-
-
         this.python_base_dir =(String)prop.get("python_base_path");
         this.train_batch_size=Integer.parseInt((String)prop.get("train_batch_size"));
         this.eval_batch_size=Integer.parseInt((String)prop.get("eval_batch_size"));
         this.trainingThreshold=Integer.parseInt((String)prop.get("training_threshold"));
-
 
     }
 
@@ -48,11 +46,12 @@ public class ConfigurationService {
         this.eval_batch_size = eval_batch_size;
     }
 
-  public int getTrainingThreshold() {
+    public int getTrainingThreshold() {
     return trainingThreshold;
   }
 
-  public void setTrainingThreshold(int trainingThreshold) {
+    public void setTrainingThreshold(int trainingThreshold) {
     this.trainingThreshold = trainingThreshold;
   }
+
 }

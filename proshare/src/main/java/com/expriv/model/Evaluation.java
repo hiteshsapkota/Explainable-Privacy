@@ -10,22 +10,17 @@ import java.util.List;
 
 public class Evaluation {
 
-
     private int id;
     private boolean attributeValid;
     private String image_id;
     private String image_path;
-    private String user_name;
     private String explanation;
     private String username;
     private String feedback;
     private String disagree_type;
     private String message;
     private FeedbackDto feedbackDto;
-
-
     private JdbcTemplate jdbcTemplate;
-
 
     public int getId() {
         return id;
@@ -43,24 +38,17 @@ public class Evaluation {
         this.image_id = image_id;
     }
 
-
     public String getExplanation() {
         return explanation;
     }
-
-
-
 
     public JdbcTemplate getJdbcTemplate() {
         return jdbcTemplate;
     }
 
-
-
     public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
-
 
     public String getUsername() {
         return username;
@@ -91,7 +79,6 @@ public class Evaluation {
         this.disagree_type = disagree_type;
     }
 
-
     public boolean isAttributeValid() {
         return attributeValid;
     }
@@ -120,7 +107,6 @@ public class Evaluation {
         this.message = message;
     }
 
-
     public FeedbackDto getFeedbackDto() {
         return feedbackDto;
     }
@@ -133,9 +119,6 @@ public class Evaluation {
         try
         {
             String username=this.username;
-
-
-
             String sql = "select * from evaluation where  user_name=?";
             List<Record> records=jdbcTemplate.query(sql, new Object[] { username }, new RecordRowMapper());
             if (records.isEmpty())
@@ -153,7 +136,7 @@ public class Evaluation {
                     this.id=0;
                     this.image_id="na";
                     this.image_path="na";
-                    this.user_name=username;
+
 
                 }
                 else
@@ -162,7 +145,7 @@ public class Evaluation {
                     this.id = record.getId();
                     this.image_id = record.getImage_id();
                     this.image_path= record.getImage_path();
-                    this.user_name=record.getUser_name();
+                    this.username=record.getUser_name();
                     String update_query="update evaluation set display_status = 1  where id ="+Integer.toString(this.id);
                     jdbcTemplate.update(update_query);
 
@@ -171,13 +154,6 @@ public class Evaluation {
                 }
 
             }
-
-
-
-
-
-
-
 
         } catch (Exception e)
         {
@@ -192,10 +168,7 @@ public class Evaluation {
         String username=this.username;
         String command="python2.7"+" "+configurationService.getPython_base_dir()+"models.py getExplanation"+" "+username+" "+this.image_id;
         Process p =Runtime.getRuntime().exec(command);
-
-
         StringBuilder output = new StringBuilder();
-
         BufferedReader reader = new BufferedReader(
                 new InputStreamReader(p.getInputStream()));
 
@@ -203,8 +176,8 @@ public class Evaluation {
         while ((line = reader.readLine()) != null) {
             output.append(line + "\n");
         }
-
         int exitVal = 0;
+
         try {
             exitVal = p.waitFor();
         } catch (InterruptedException e) {
@@ -217,26 +190,18 @@ public class Evaluation {
         } else {
 
             System.out.println("Abnormal");
-            //abnormal...
+
         }
 
     }
 
-
     public void storeSharing_type()
     {
-
-
-
         try
         {
 
-
             if (feedback.equals("Agree"))
             {
-                int id=this.id;
-
-
                 jdbcTemplate.update("update evaluation set sharing_decision = 1  where id ="+Integer.toString(this.id)+";");
 
             }
@@ -255,15 +220,12 @@ public class Evaluation {
 
             }
 
-
-
         } catch (Exception e)
         {
             System.out.println(e);
         }
 
     }
-
 
 }
 

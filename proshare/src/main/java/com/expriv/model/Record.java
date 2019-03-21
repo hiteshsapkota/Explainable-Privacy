@@ -12,10 +12,7 @@ public class Record {
         return id;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
-
-    }
+    public void setId(Integer id) { this.id = id;}
 
     public String getImage_id() {
         return image_id;
@@ -41,7 +38,6 @@ public class Record {
         this.sharing_decision = sharing_decision;
     }
 
-
     public int getDisplay_status() {
         return display_status;
     }
@@ -49,7 +45,6 @@ public class Record {
     public void setDisplay_status(int display_status) {
         this.display_status = display_status;
     }
-
 
     public String getImage_path() {
         return image_path;

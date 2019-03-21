@@ -11,28 +11,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ImageAttributeService{
+
     private String image_id;
     private List<String> attributes =new ArrayList<>();
-    private List<Integer> values = new ArrayList<>();
-
     public String getImage_id() {
       return image_id;
     }
-
     public void setImage_id(String image_id) {
       this.image_id = image_id;
     }
-
     public List<String> getAttributes() {
       return attributes;
     }
 
     public void setAttributes() throws IOException {
-
-      String program_path = "/Users/hiteshsapkota/Desktop/Explainable_privacy/user_study/python_backend/";
+      ConfigurationService configurationService=new ConfigurationService();
+      configurationService.setParams();
+      String program_path = configurationService.getPython_base_dir();
       String command="python2.7"+" "+program_path+"utils.py getImageAttributes"+" "+image_id;
       Process p = Runtime.getRuntime().exec(command);
-
       BufferedReader reader = new BufferedReader(
               new InputStreamReader(p.getInputStream()));
 
@@ -51,21 +48,12 @@ public class ImageAttributeService{
       if (exitVal == 0) {
         System.out.println("Success!");
 
-
-
-
-
-
-
-
-      } else {
+      }
+      else {
 
         System.out.println("Abnormal");
 
       }
-
-
-
 
     }
 
@@ -77,7 +65,6 @@ public class ImageAttributeService{
       String python_base_dir = configurationService.getPython_base_dir();
       File file = new File(python_base_dir+"instance_attribute_feedback.csv");
       FileWriter outputfile = new FileWriter(file);
-
       CSVWriter writer=new CSVWriter(outputfile);
       String[] header = { "Attribute", "Value"};
       writer.writeNext(header);
@@ -88,29 +75,14 @@ public class ImageAttributeService{
         String[] data1={feedback.getAttributeName(), Integer.toString(feedback.getAttributeValue())};
         writer.writeNext(data1);
 
-
-
-
       }
       writer.close();
-
-
-
-
-
       Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
       Evaluation evaluation=new Evaluation();
       evaluation.setUsername(principal);
-
       String command="python2.7"+" "+python_base_dir+"utils.py storeFeedback"+" "+evaluation.getUsername();
       Runtime.getRuntime().exec(command);
     }
-
-
-
-
-
-
 
 }
 

@@ -2,7 +2,6 @@ package com.expriv.model;
 
 public class Feedback {
 
-
   private String attributeName;
   private int attributeValue;
 
@@ -21,4 +20,5 @@ public class Feedback {
   public void setAttributeValue(int attributeValue) {
     this.attributeValue = attributeValue;
   }
+
 }
