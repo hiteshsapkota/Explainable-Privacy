@@ -1,9 +1,6 @@
 package com.expriv.web;
 
-import com.expriv.model.Evaluation;
-import com.expriv.model.Feedback;
-import com.expriv.model.FeedbackDto;
-import com.expriv.model.Training;
+import com.expriv.model.*;
 import com.expriv.service.ConfigurationService;
 import com.expriv.service.ImageAttributeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,6 +36,22 @@ public class MainController {
         return "index";
     }
 
+    @GetMapping("/index")
+    public String index(Model model)
+    {
+        Index index = new Index();
+        Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        ConfigurationService configurationService = new ConfigurationService();
+        configurationService.setParams();
+        index.setTrainBatchSize(configurationService.getTrain_batch_size());
+        index.setEvalBatchSize(configurationService.getEval_batch_size());
+        index.setUsername(principal);
+        index.setJdbcTemplate(jdbcTemplate);
+        index.setProgress();
+        model.addAttribute("index", index);
+        return "index";
+    }
+
     @GetMapping("/training")
     public String trainingForm(Model model) {
 
@@ -56,20 +69,42 @@ public class MainController {
     public String trainingSubmit(@ModelAttribute Training training, Model model) {
 
         training.setJdbcTemplate(jdbcTemplate);
+        training.updateDisplayStatus();
+        if (training.getButton_type().equals("Prev")) {
 
-        if (training.getSharing_type().equals("invalid")) {
-
+            int prev_id = training.getId();
+            training.getPrevious();
+            System.out.println(training.getId());
+            System.out.println(prev_id);
+            if (prev_id==training.getId())
+            {
+                return "training";
+            }
             model.addAttribute("training", training);
 
-        }
-        else {
 
-            training.storeSharing_type();
+
+
+        }
+
+        else
+        {
+
+
+
+
+        if (training.getButton_type().equals("Share") || training.getButton_type().equals("No Share")) {
+                training.storeSharing_type();
+            }
+
+
+
             training = new Training();
             training.setJdbcTemplate(jdbcTemplate);
             Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
             training.setUsername(principal);
-            training.readId();
+
+           training.readId();
 
             if (training.getImage_path().equals("na")) {
                 ConfigurationService configurationService=new ConfigurationService();
@@ -79,15 +114,15 @@ public class MainController {
                 int eval_batch_size = configurationService.getEval_batch_size();
 
                  try {
-                     String command="python2.7"+" "+python_root_dir+"utils.py generateImageID"+" "+training.getUsername()+" "+"training"+" "+train_batch_size;
+                     String command=configurationService.getPythonCommand()+" "+python_root_dir+"utils.py generateImageID"+" "+training.getUsername()+" "+"training"+" "+train_batch_size;
                      Process p = Runtime.getRuntime().exec(command);
-                     command = "python2.7"+" "+python_root_dir+"configuration.py update";
+                     command = configurationService.getPythonCommand()+" "+python_root_dir+"configuration.py update";
                      p=Runtime.getRuntime().exec(command);
                      training.setTrainingInstances();
                      System.out.println(training.getTrainingInstances());
                      System.out.println(configurationService.getTrainingThreshold());
                      if (training.getTrainingInstances()>configurationService.getTrainingThreshold()) {
-                         command = "python2.7" + " " + python_root_dir + "utils.py generateImageID" + " " + training.getUsername() + " " + "evaluation" + " " + eval_batch_size;
+                         command = configurationService.getPythonCommand() + " " + python_root_dir + "utils.py generateImageID" + " " + training.getUsername() + " " + "evaluation" + " " + eval_batch_size;
                          p = Runtime.getRuntime().exec(command);
                      }
                  }
@@ -115,6 +150,8 @@ public class MainController {
         Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         evaluation.setUsername(principal);
         evaluation.readId();
+        System.out.println("The image id for the evaluation");
+        System.out.println(evaluation.getImage_id());
         if (evaluation.getImage_id().equals("undefined")||evaluation.getImage_id().equals("na"))
         {
 
@@ -233,9 +270,9 @@ public class MainController {
               int eval_batch_size = configurationService.getEval_batch_size();
               try {
 
-                   String command = "python2.7"+" "+python_root_dir+"configuration.py update";
+                   String command = configurationService.getPythonCommand()+" "+python_root_dir+"configuration.py update";
                    Runtime.getRuntime().exec(command);
-                   command="python2.7"+" "+python_root_dir+"utils.py generateImageID"+" "+evaluation.getUsername()+" "+"evaluation"+" "+eval_batch_size;
+                   command=configurationService.getPythonCommand()+" "+python_root_dir+"utils.py generateImageID"+" "+evaluation.getUsername()+" "+"evaluation"+" "+eval_batch_size;
                    Runtime.getRuntime().exec(command);
 
               }

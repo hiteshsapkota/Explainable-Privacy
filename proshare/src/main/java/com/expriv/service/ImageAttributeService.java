@@ -28,7 +28,7 @@ public class ImageAttributeService{
       ConfigurationService configurationService=new ConfigurationService();
       configurationService.setParams();
       String program_path = configurationService.getPython_base_dir();
-      String command="python2.7"+" "+program_path+"utils.py getImageAttributes"+" "+image_id;
+      String command=configurationService.getPythonCommand()+" "+program_path+"utils.py getImageAttributes"+" "+image_id;
       Process p = Runtime.getRuntime().exec(command);
       BufferedReader reader = new BufferedReader(
               new InputStreamReader(p.getInputStream()));
@@ -80,7 +80,7 @@ public class ImageAttributeService{
       Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
       Evaluation evaluation=new Evaluation();
       evaluation.setUsername(principal);
-      String command="python2.7"+" "+python_base_dir+"utils.py storeFeedback"+" "+evaluation.getUsername();
+      String command=configurationService.getPythonCommand()+" "+python_base_dir+"utils.py storeFeedback"+" "+evaluation.getUsername();
       Runtime.getRuntime().exec(command);
     }
 

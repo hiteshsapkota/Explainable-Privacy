@@ -60,7 +60,24 @@ body {
 
 
 
+<div class="container">
+	<h2>Progress on Training and Evaluation Phase</h2>
+	<br>
+	<br>
+	<h3>Training</h3>
+	<div class="progress">
+		<div class="progress-bar progress-bar-successs progress-bar-striped" role="progressbar" aria-valuenow="${index.trainCompleted}" aria-valuemin="0" aria-valuemax="${index.trainBatchSize}" th:style="'width:'+${index.trainCompleted}+'%'">Completed</div>
 
+	</div>
+	<br>
+	<br>
+	<h3>Evaluation</h3>
+	<div class="progress">
+		<div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="${index.evalCompleted}" aria-valuemin="0" aria-valuemax="${index.evalBatchSize}" th:style="'width:'+${index.evalCompleted}+'%'">Completed</div>
+
+	</div>
+
+</div>
 
 
 

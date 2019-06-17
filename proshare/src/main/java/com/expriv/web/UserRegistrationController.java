@@ -55,8 +55,8 @@ public class UserRegistrationController {
 
         String python_root_dir = configurationService.getPython_base_dir();
 
-        String command1="python2.7"+" "+python_root_dir+"utils.py generateImageID"+" "+userDto.getEmail()+" "+"training"+" "+configurationService.getTrain_batch_size();
-        String command2 = "python2.7"+" "+python_root_dir+"configuration.py initialization"+" "+userDto.getEmail();
+        String command1=configurationService.getPythonCommand()+" "+python_root_dir+"utils.py generateImageID"+" "+userDto.getEmail()+" "+"training"+" "+configurationService.getTrain_batch_size();
+        String command2 = configurationService.getPythonCommand()+" "+python_root_dir+"configuration.py initialization"+" "+userDto.getEmail();
 
         try {
             Runtime.getRuntime().exec(command1);
@@ -65,7 +65,7 @@ public class UserRegistrationController {
             e.printStackTrace();
         }
 
-        return "redirect:/registration?success";
+        return "redirect:/register_success";
     }
 
 }

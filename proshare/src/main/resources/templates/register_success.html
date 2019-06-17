@@ -66,25 +66,14 @@ select{
 </head>
 <body>
 
-<div class="topnav" style="position: relative; ">
 
-    <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
 
-    <div style="position: absolute; top: 0; right: 100px; width: 100px; text-align:left;">
-        <i class="glyphicon glyphicon-user" style="font-size:30px;left: 50px;color:lightblue;text-shadow:2px 2px 4px #000000;"></i>
-        <font color="white"><span sec:authentication="principal.username"></span> </font>
-    </div>
-</div>
 
-    <br>
-    <center><h1> Congratulations!!! Your training phase is completed. </h1></center>
-<center><h2> You will be redirected to the index page in five seconds. </h2></center>
-        <center><h2> If you see this message more than 5 seconds, please <span><a href="/" th:href="@{/index}">Click here.</a></span></h2></center>
+<br>
+<div class="alert alert-danger">Successfully registered!!!</div>
+<center><h2> You will be redirected to the login page in five seconds. </h2></center>
+<center><h2> If you see this message more than 5 seconds, please <span><a href="/" th:href="@{/login}">Click here.</a></span></h2></center>
 
 
 </body>
 </html>
-
-
-
-

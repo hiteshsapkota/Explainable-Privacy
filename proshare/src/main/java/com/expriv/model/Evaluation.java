@@ -146,8 +146,7 @@ public class Evaluation {
                     this.image_id = record.getImage_id();
                     this.image_path= record.getImage_path();
                     this.username=record.getUser_name();
-                    String update_query="update evaluation set display_status = 1  where id ="+Integer.toString(this.id);
-                    jdbcTemplate.update(update_query);
+
 
 
 
@@ -166,7 +165,7 @@ public class Evaluation {
         ConfigurationService configurationService=new ConfigurationService();
         configurationService.setParams();
         String username=this.username;
-        String command="python2.7"+" "+configurationService.getPython_base_dir()+"models.py getExplanation"+" "+username+" "+this.image_id;
+        String command=configurationService.getPythonCommand()+" "+configurationService.getPython_base_dir()+"models.py getExplanation"+" "+username+" "+this.image_id;
         Process p =Runtime.getRuntime().exec(command);
         StringBuilder output = new StringBuilder();
         BufferedReader reader = new BufferedReader(
@@ -200,6 +199,7 @@ public class Evaluation {
         try
         {
 
+
             if (feedback.equals("Agree"))
             {
                 jdbcTemplate.update("update evaluation set sharing_decision = 1  where id ="+Integer.toString(this.id)+";");
@@ -219,6 +219,9 @@ public class Evaluation {
                     jdbcTemplate.update("update evaluation set disagree_type = 'Both'  where id ="+Integer.toString(this.id)+";");
 
             }
+
+            String update_query="update evaluation set display_status = 1  where id ="+Integer.toString(this.id);
+            jdbcTemplate.update(update_query);
 
         } catch (Exception e)
         {

@@ -13,7 +13,7 @@ public class Training{
     private String image_id;
     private String image_path;
     private int id;
-    private String sharing_type;
+    private String button_type;
     private JdbcTemplate jdbcTemplate;
     private String username;
     private int trainingInstances;
@@ -97,8 +97,7 @@ public class Training{
                 Record record=records.get(0);
                 this.id = record.getId();
                 this.image_path = record.getImage_path();
-                String update_query="update training set display_status = 1  where id ="+Integer.toString(this.id);
-                jdbcTemplate.update(update_query);
+
             }
 
         }
@@ -108,26 +107,76 @@ public class Training{
         }
     }
 
-    public String getSharing_type() {
-        return sharing_type;
-    }
 
-    public void setSharing_type(String sharing_type) {
-        this.sharing_type = sharing_type;
-
-    }
-    public void storeSharing_type()
+    public void getPrevious()
     {
         try
         {
-            if (sharing_type.equals("share"))
+            String username=this.username;
+            ConfigurationService configurationService=new ConfigurationService();
+            configurationService.setParams();
+            String sql = "select * from training where id=?";
+            List<Record> records=jdbcTemplate.query(sql, new Object[] { (this.id-1) },new RecordRowMapper());
+
+            if (!records.isEmpty()) {
+                System.out.println("The record is not empty");
+                Record record=records.get(0);
+                System.out.println(record.getUser_name());
+                System.out.println(username);
+                if (record.getUser_name().equals(this.username))
+                {
+                    System.out.println("I am here");
+                    this.id = record.getId();
+                    this.image_path = record.getImage_path();
+                }
+
+            }
+
+        }
+        catch (Exception e)
+        {
+            System.out.println(e);
+        }
+
+    }
+
+
+    public String getButton_type() {
+        return button_type;
+    }
+
+    public void setButton_type(String button_type) {
+        this.button_type = button_type;
+    }
+
+    public void updateDisplayStatus()
+    {
+        String update_query="update training set display_status = 1  where id ="+Integer.toString(this.id);
+        jdbcTemplate.update(update_query);
+    }
+
+    public void storeSharing_type()
+    {
+        System.out.println("Storing Sharing type");
+        System.out.println(jdbcTemplate);
+        try
+        {
+
+
+            if (button_type.equals("Share"))
             {
+                System.out.println("Updating record");
+                System.out.println(this.id);
                 jdbcTemplate.update("update training set sharing_decision = 1  where id ="+Integer.toString(this.id)+";");
             }
-            else if (sharing_type.equals("not_share"))
+            else if (button_type.equals("No Share"))
             {
                 jdbcTemplate.update("update training set sharing_decision = 0  where id ="+Integer.toString(this.id)+";");
             }
+            String update_query="update training set display_status = 1  where id ="+Integer.toString(this.id);
+            jdbcTemplate.update(update_query);
+
+
 
         } catch (Exception e)
         {

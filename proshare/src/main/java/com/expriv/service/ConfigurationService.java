@@ -9,6 +9,7 @@ public class ConfigurationService {
     private int train_batch_size;
     private int eval_batch_size;
     private int trainingThreshold;
+    private String pythonCommand;
     public String getPython_base_dir() {
         return python_base_dir;
     }
@@ -27,6 +28,7 @@ public class ConfigurationService {
         this.train_batch_size=Integer.parseInt((String)prop.get("train_batch_size"));
         this.eval_batch_size=Integer.parseInt((String)prop.get("eval_batch_size"));
         this.trainingThreshold=Integer.parseInt((String)prop.get("training_threshold"));
+        this.pythonCommand = (String)prop.get("pythonCommand");
 
     }
 
@@ -54,4 +56,11 @@ public class ConfigurationService {
     this.trainingThreshold = trainingThreshold;
   }
 
+    public String getPythonCommand() {
+        return pythonCommand;
+    }
+
+    public void setPythonCommand(String pythonCommand) {
+        this.pythonCommand = pythonCommand;
+    }
 }
