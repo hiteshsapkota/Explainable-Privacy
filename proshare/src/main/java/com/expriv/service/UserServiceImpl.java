@@ -39,6 +39,10 @@ public class UserServiceImpl implements UserService {
         user.setRoles(Arrays.asList(new Role("ROLE_USER")));
         return userRepository.save(user);
     }
+    @Override
+    public void updatePassword(String password, Long userId) {
+        userRepository.updatePassword(password, userId);
+    }
 
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {

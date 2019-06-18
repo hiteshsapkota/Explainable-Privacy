@@ -14,7 +14,7 @@ from utils import *
 import sys
 import pandas as pd
 from math import *
-import cPickle
+import pickle as cPickle
 from ALS import getUserMatrix
 from weighted_decision_tree import weighted_tree, getRules
 

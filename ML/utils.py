@@ -28,14 +28,14 @@ base_path = base_path_file['base_dir']
 test_image_anno_paths = []
 
 
-with open(base_path+"Data/Collected/test2017_subsample.txt") as anno_file:
+with open(base_path+"Data/Collected/test2017.txt") as anno_file:
     
     for line in anno_file:
         anno_path = osp.join('', line.strip())
         test_image_anno_paths.append(anno_path)
 
     
-with open(base_path+"Data/Generated/cluster_image_subsample.json") as outfile:
+with open(base_path+"Data/Generated/cluster_image.json") as outfile:
     cluster_image = json.load(outfile)
  
     

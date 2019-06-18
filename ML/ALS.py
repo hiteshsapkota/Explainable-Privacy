@@ -277,13 +277,8 @@ def getUserMatrix(ratings, item_vecs, feedback_vecs):
     iter_array = [1, 2, 5, 10, 25, 50, 100]
     best_params = {}
     best_params['reg'] = regularizations[0]
-    best_params['n_iter'] =0
-    best_params['train_mse'] = np.inf
-    best_params['test_mse'] = np.inf
-    best_params['model'] = None
     iter_array = [1, 2, 5, 10, 25, 50, 100, 200]
     learning_rates = [1e-5, 1e-4, 1e-3, 1e-2]
-    best_params = {}
     best_params['learning_rate'] = None
     best_params['n_iter'] = 0
     best_params['train_mse'] = np.inf
@@ -303,7 +298,6 @@ def getUserMatrix(ratings, item_vecs, feedback_vecs):
             best_params['model'] = MF_SGD
             print('New optimal hyperparameters')
             print(pd.Series(best_params))
-    plot_learning_curve(iter_array, best_params['model'])
     print("Best model statistics:", best_params)
     
     return best_params['model'].user_vecs

@@ -10,7 +10,7 @@ Created on Wed Jan 30 16:58:59 2019
 import numpy as np
 from math import *
 import json
-import cPickle
+import pickle as cPickle
 from utils import load_attributes, load_attribute_name
 from weighted_decision_tree import getRules
 import os.path
@@ -135,7 +135,6 @@ def combineexp(part1, present, absent):
 
             
 def getExplanation(user_name, image_id):
-    
     if not os.path.isfile(base_path+"Data/Generated/trees/"+user_name+".pkl"):
         explanation = "Explanation cannot be created. Please provide training data first"
         return explanation
@@ -148,7 +147,20 @@ def getExplanation(user_name, image_id):
     Decision = clf.predict(X_new.reshape(1, -1))[0]
     
     if clf.tree_.node_count==1:
-        print("Only one rule")
+        image_attributes = getImageAttributes(image_id)
+        if len(image_attributes)==1:
+                part1 = "it has attribute: "+ attribute_map_file[image_attributes[0]]
+        elif len(image_attributes)>1:
+             part1 = "it has attributes: "
+             for attribute in image_attributes:
+                if image_attributes[len(image_attributes)-1]==attribute:
+                    part1 += attribute_map_file[attribute]
+                    continue
+                part1 += attribute_map_file[attribute]+ " "
+        if Decision==0:
+          return "Looks like you do not want to share because "+part1
+        elif Decision==1:
+           return "Looks like you want to share because "+part1
         return 
     rules = getRules(clf, feature_names, X_new)
     present_attributes = [sub_rule[0] for sub_rule in rules if sub_rule[1]==1]
