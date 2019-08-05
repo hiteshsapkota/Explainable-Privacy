@@ -1,0 +1,40 @@
+,Attribute,Total Instances Pradeep,Total Instances Hitesh,Dissimilar Instances,Kappa Score
+0,Race,38,39,1,0.9435665914221218
+1,Color,39,40,1,0.9397590361445783
+2,Age Group,37,38,1,0.9466950959488273
+3,Weight Group,22,22,0,1.0
+4,Height Group,15,15,0,1.0
+5,Gender,38,39,1,0.9435665914221218
+6,Eye Color,26,22,6,0.7611464968152866
+7,Hair Color,37,34,5,0.758220502901354
+8,Face (Complete),27,30,5,0.7967479674796748
+9,Semi-nudity,8,6,2,0.8344370860927153
+10,Tattoo,1,1,0,1.0
+11,Culture,8,7,1,0.9216300940438872
+12,Landmark,9,9,0,1.0
+13,Face (Partial),11,8,5,0.6770025839793281
+14,Occupation,4,3,1,0.8466257668711656
+15,Work Occassion,5,5,0,1.0
+16,Professional Circle,6,5,1,0.8979591836734694
+17,Receipts,3,3,0,1.0
+18,Date/Time of Activity,9,9,0,1.0
+19,Personal Relationships,2,3,1,0.7899159663865546
+20,Social Circle,7,5,2,0.8113207547169812
+21,Handwriting,1,1,0,1.0
+22,Previous/Current Location (Partial),6,7,1,0.911660777385159
+23,Hobbies,1,1,0,1.0
+24,Spectators,5,2,3,0.5454545454545454
+25,Sports,5,6,1,0.8979591836734694
+26,Competitors,2,2,0,1.0
+27,Physical disability,1,1,0,1.0
+28,License Plate (Partial),1,1,0,1.0
+29,Tickets,3,3,0,1.0
+30,Medical Treatment,2,2,0,1.0
+31,General Opinion,2,0,2,0.0
+32,Sexual Orientation,2,0,2,0.0
+33,Name (Full),2,2,0,1.0
+34,Traditional clothing,1,1,0,1.0
+35,Political Opinion,1,1,0,1.0
+36,Similar view,1,1,0,1.0
+37,Previous/Current Location (Complete),1,1,0,1.0
+38,Education history,2,2,0,1.0

@@ -1,0 +1,22 @@
+,Image Id,Common Attributes,Hitesh Attributes,Pradeep Attribute
+0,annotations/train2017/2017_66105260.json,"Face (Complete),Hair Color,Color,Age Group,Culture,Race,Gender,Tattoo",Eye Color,
+1,annotations/test2017/2017_39517552.json,"Hair Color,Color,Occupation,Age Group,Face (Partial),Race,Gender,Weight Group,Work Occassion",,"Eye Color,Professional Circle"
+2,annotations/val2017/2017_23517443.json,"Hair Color,Color,Height Group,Age Group,Hobbies,Spectators,Race,Gender,Weight Group",Face (Complete),"Eye Color,Face (Partial)"
+3,annotations/train2017/2017_36424382.json,"Face (Complete),Hair Color,Color,Competitors,Age Group,Sports,Race,Gender",,Eye Color
+4,annotations/train2017/2017_95618257.json,"Social Circle,Color,Height Group,Age Group,Face (Partial),Race,Gender,Weight Group,License Plate (Partial)",,Hair Color
+5,annotations/test2017/2017_66978499.json,"Color,Height Group,Eye Color,Professional Circle,Occupation,Age Group,Race,Gender,Weight Group",Face (Complete),Face (Partial)
+6,annotations/train2017/2017_38225058.json,"Face (Complete),Color,Height Group,Age Group,Race,Gender,Medical Treatment,Weight Group",,"Eye Color,Hair Color,Occupation"
+7,annotations/test2017/2017_77170444.json,"Face (Complete),Previous/Current Location (Partial),Hair Color,Landmark,Eye Color,Color,Age Group,Personal Relationships,Race,Gender",,General Opinion
+8,annotations/test2017/2017_63238113.json,"Face (Complete),Previous/Current Location (Partial),Hair Color,Eye Color,Color,Age Group,Culture,Date/Time of Activity,Race,Gender",,"General Opinion,Semi-nudity,Sexual Orientation"
+9,annotations/train2017/2017_35051318.json,"Face (Complete),Hair Color,Color,Height Group,Eye Color,Age Group,Race,Gender,Weight Group,Traditional clothing",Personal Relationships,Social Circle
+10,annotations/train2017/2017_17746598.json,,"Previous/Current Location (Partial),Sports",
+11,annotations/test2017/2017_15418699.json,"Hair Color,Color,Eye Color,Professional Circle,Age Group,Date/Time of Activity,Name (Full),Race,Gender,Weight Group,Work Occassion",,Face (Complete)
+12,annotations/test2017/2017_75492676.json,"Hair Color,Landmark,Color,Height Group,Eye Color,Age Group,Race,Political Opinion,Gender,Weight Group",Face (Complete),Face (Partial)
+13,annotations/train2017/2017_36010867.json,"Hair Color,Color,Age Group,Sports,Face (Partial),Race,Gender,Weight Group",,Social Circle
+14,annotations/train2017/2017_64009958.json,"Color,Age Group,Face (Partial),Spectators,Race,Gender",,"Culture,Hair Color,Semi-nudity"
+15,annotations/train2017/2017_76585663.json,"Hair Color,Landmark,Color,Age Group,Culture,Race,Gender",,"Eye Color,Spectators"
+16,annotations/test2017/2017_83159160.json,"Face (Complete),Landmark,Color,Semi-nudity,Age Group,Culture,Race,Gender",,"Hair Color,Spectators"
+17,annotations/test2017/2017_17236350.json,"Face (Complete),Hair Color,Color,Height Group,Eye Color,Age Group,Race,Gender,Weight Group",,Sexual Orientation
+18,annotations/train2017/2017_26178836.json,"Hair Color,Color,Occupation,Age Group,Race,Gender",Face (Complete),Face (Partial)
+19,annotations/val2017/2017_53817726.json,"Face (Complete),Hair Color,Landmark,Eye Color,Color,Semi-nudity,Age Group,Culture,Race,Gender",,Spectators
+20,annotations/train2017/2017_72031038.json,"Sports,Previous/Current Location (Partial),Landmark,Culture","Age Group,Color,Face (Partial),Gender,Hair Color,Race",
