@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+
+    <title>Explainable Privacy: User Study</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+input[type=radio]{
+  transform:scale(1.5);
+  margin: 6px 0 0;
+}
+
+input[type=checkbox]
+{
+  margin: 6px 0 0;
+}
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+select.form-control{display:inline-block}
+.divider
+{
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+}
+.submit-progress-bg {
+    background-color: lightgray;
+    opacity: .5;
+    }
+
+
+  .submit-progress {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 10em;
+  padding-top: 2.3em;
+  /* The following rules are the
+     ones most likely to change */
+  width: 20em;
+  /* Set 'margin-left' to a negative number
+     that is 1/2 of 'width' */
+  margin-left: -10em;
+  padding-left: 2.1em;
+  background-color: blue;
+  color: white;
+  -webkit-border-radius: 0.4em;
+  -moz-border-radius: 0.4em;
+  border-radius: 0.4em;
+  box-shadow: 0.4em 0.4em rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0.4em 0.4em rgba(0,0,0,0.6);
+  -moz-box-shadow: 0.4em 0.4em rgba(0,0,0,0.6);
+}
+.submit-progress i {
+  margin-right: 0.5em;
+}
+
+
+</style>
+
+
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+
+$(function()
+{
+$("#popupevaluation").hide();
+$("#popuptraining").hide();
+$("#updatebox").hide();
+
+  $('a#evaluation-link').click(function()
+  {
+     $("#popupevaluation").show();
+     $("body").addClass("submit-progress-bg");
+
+    return true;
+  });
+  $('a#training-link').click(function()
+  {
+     $("#popuptraining").show();
+     $("body").addClass("submit-progress-bg");
+
+    return true;
+  });
+
+  $('#feedback-submit').on('click',function()
+  {
+     $("#updatebox").show();
+     $("body").addClass("submit-progress-bg");
+
+    $('#theform').submit();
+  });
+
+
+
+});
+
+	</script>
+
+
+    <link rel="stylesheet" type="text/css"
+          th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}" />
+
+</head>
+<body>
+
+<div class="topnav" style="position: relative; ">
+    <a href="/index">Home</a>
+    <a id = "training-link" href="/training">Training</a>
+    <a id = "evaluation-link" href="/evaluation">Evaluation</a>
+    <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
+
+    <div style="position: absolute; top: 0; right: 100px; width: 100px; text-align:left;">
+        <i class="glyphicon glyphicon-user" style="font-size:30px;left: 50px;color:lightblue;text-shadow:2px 2px 4px #000000;"></i>
+        <font color="white"><span sec:authentication="principal.username"></span> </font>
+    </div>
+
+
+
+
+</div>
+<center><h1>Welcome to the Feedback Page</h1></center>
+<div class="d-md-flex h-md-100 align-items-center">
+
+    <div class="col-md-6 p-0 bg-indigo h-md-100">
+        <div class="col-md-10 col-md-offset-2">
+            <h1 class="text-info">Feedback Instruction</h1>
+            <blockquote class="blockquote">
+                <p class="text-info">For the previously displayed image, please provide the disagreement type. If you disagree with the recommendation, check the recommendation button and if you disagree with the explanation, check the
+                    explanation button. If you disagree with both recommendation and explanation, please check both.</p>
+                <p class="text-info"> In addition to your disagreement, we would love to understand your sharing preference for different attributes. The presented attributes
+                    are the attributes for the shown image. You can select the sharing preference score for each attributes in the range 1-5. In our context, the preference score for particular attribute, reflects how sensitive the attribute you consider in making sharing or not sharing
+                    decision for the particular image. In one extreme case, if you think that the attribute is very sensitive toward not sharing decision, provide a sensitivity score of 5. However, in other extreme, if you think that the attribute is very sensitive toward sharing decision, provide a
+                sensitivity score of 1. </p>
+                <h3><a id = "evaluation-link" href="/evaluation" class="text-primary">Click here to skip the feedback section</a> </h3>
+
+
+            </blockquote>
+        </div>
+
+    </div>
+
+
+    <div class="col-md-6 p-0 bg-white h-md-100 loginarea">
+
+
+
+
+
+                            <div class="text-center">
+                                <h2 class="text-center">Feedback</h2>
+
+                                <h3 class="text-info ">Click on the disagreement type(s)</h3>
+                                    <form id = "theform" th:action="@{/feedback}" method="post" class="form-inline">
+                                       <div th:if = "${evaluation.disagree_type=='invalid'}">
+                                           <div class="alert alert-danger">Empty Disagreement field</div>
+                                       </div>
+
+                                        <label class="checkbox-inline">
+                                            <h3><input type="checkbox" name="disagreeRecomm" value="disagreeRecomm" class="btn btn-success btn-lg"> <label for="recommendation">Recommendation</label> &nbsp; &nbsp
+
+                                            <input type="checkbox" name="disagreeExp" value="disagreeExp" class="btn btn-danger btn-lg"><label for="explanation">Explanation</label></h3>
+                                        </label>
+                                        <br>
+                                        <h2 class="text-info">Provide Sensitivity score for the following attributes</h2>
+
+                                            <div th:if="${evaluation.attributeValid}==false">
+                                                <div class="alert alert-danger">At least one empty attribute field</div>
+                                            </div>
+
+
+
+
+                                             <div align="right">
+                                                 <center>
+                                        <tr th:each="feedback , itemStat : ${evaluation.feedbackDto.feedbacks}">
+
+
+
+                                            <span th:text="${feedback.attributeName}"></span>&nbsp;&nbsp;
+
+                                            <select class="custom-select" style="width:200px;" th:field="*{evaluation.feedbackDto.feedbacks[__${itemStat.index}__].attributeValue}" >
+                                                <option value=0 selected>Select</option>
+                                                <option value=1>1</option>
+                                                <option value=2>2</option>
+                                                <option value=3>3</option>
+                                                <option value=4>4</option>
+                                                <option value=5>5</option>
+
+
+                                            </select>
+
+                                            <div class="divider">
+
+                                            </div>
+
+                                                <br>
+                                            <td><input type="hidden" th:field="*{evaluation.feedbackDto.feedbacks[__${itemStat.index}__].attributeName}" /></td>
+
+
+
+                                        </tr>
+                                                     <br>
+
+
+
+
+                                                 </center>
+                                                 <div class="col-md-6 offset-md-2">
+                                                     . <input type="submit" name="feedback-submit" class=" btn-success btn-lg" id="feedback-submit" value="Submit"></input>
+
+
+
+                                                 </div>
+                                    </div>
+                                        <center>
+
+                                        </center>
+                                        <input type="hidden" th:field="*{evaluation.id}" />
+                                        <input type="hidden" th:field="*{evaluation.explanation}" />
+                                        <input type="hidden" th:field="*{evaluation.image_path}" />
+                                        <input type="hidden" th:field="*{evaluation.image_id}" />
+
+
+
+                                    </form>
+
+
+
+
+
+
+        </div>
+        </div>
+    </div>
+
+
+
+<div id="popuptraining" class="submit-progress">
+    <label>Generating Training Instance</label>
+</div>
+<div id="popupevaluation" class="submit-progress">
+    <label>Generating Image Recommendation and Explanation</label>
+</div>
+
+<div id="updatebox" class="submit-progress">
+    <label>Wait... Incorporating the user feedback data </label>
+</div>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

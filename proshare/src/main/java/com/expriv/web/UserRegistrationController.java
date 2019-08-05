@@ -1,5 +1,6 @@
 package com.expriv.web;
 
+import com.expriv.service.ImageAttributeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -49,21 +50,31 @@ public class UserRegistrationController {
 
         userService.save(userDto);
 
-
+        ImageAttributeService imageAttributeService = new ImageAttributeService();
         ConfigurationService configurationService=new ConfigurationService();
         configurationService.setParams();
-
         String python_root_dir = configurationService.getPython_base_dir();
-
         String command1=configurationService.getPythonCommand()+" "+python_root_dir+"utils.py generateImageID"+" "+userDto.getEmail()+" "+"training"+" "+configurationService.getTrain_batch_size();
         String command2 = configurationService.getPythonCommand()+" "+python_root_dir+"configuration.py initialization"+" "+userDto.getEmail();
 
         try {
-            Runtime.getRuntime().exec(command1);
             Runtime.getRuntime().exec(command2);
+
+
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        try {
+            System.out.println("Executing command here");
+            Process p = Runtime.getRuntime().exec(command1);
+            imageAttributeService.printUpdate(p, "imageread");
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
 
         return "redirect:/register_success";
     }

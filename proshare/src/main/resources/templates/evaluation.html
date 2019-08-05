@@ -50,9 +50,10 @@ body {
 }
 
 
-img {
-  width: 80%;
-  height: 80%;
+img
+{
+display: inline-block;
+width: 60%
 }
 .select{
     width: 300px;
@@ -92,7 +93,12 @@ label {
 
 
 
-
+.divider
+{
+    width: 200px;
+    height: auto;
+    display: inline-block;
+}
 
 .box{
         color: #000;
@@ -119,26 +125,57 @@ label {
 }
 
 
-</style>
 
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript">
-$(document).ready(function(){
-  if ($(this).attr("value")==='Agree' || 'Disagree')
-  {
-    $('input[type="radio"]').click(function(){
-        var inputValue = $(this).attr("value");
-        var targetBox = $("." + inputValue);
-        $(".box").not(targetBox).hide();
-        $(targetBox).show();
-    });
+.submit-progress-bg {
+    background-color: lightgray;
+    opacity: .5;
+    }
+
+
+  .submit-progress {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 10em;
+  padding-top: 2.3em;
+  /* The following rules are the
+     ones most likely to change */
+  width: 20em;
+  /* Set 'margin-left' to a negative number
+     that is 1/2 of 'width' */
+  margin-left: -10em;
+  padding-left: 2.1em;
+  background-color: blue;
+  color: white;
+  -webkit-border-radius: 0.4em;
+  -moz-border-radius: 0.4em;
+  border-radius: 0.4em;
+  box-shadow: 0.4em 0.4em rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0.4em 0.4em rgba(0,0,0,0.6);
+  -moz-box-shadow: 0.4em 0.4em rgba(0,0,0,0.6);
 }
-});
+.submit-progress i {
+  margin-right: 0.5em;
+}
+
+
+.clear {
+    clear: both;
+}
+input[type=checkbox]
+{
+  margin: 6px 0 0;
+}
+input[type=radio]
+{
+  margin: 6px 0 0;
+}
 
 
 
+
+</style>
 </script>
-
 
     <link rel="stylesheet" type="text/css"
           th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}" />
@@ -147,8 +184,293 @@ $(document).ready(function(){
 <body>
 
 
-<div class="topnav" style="position: relative; ">
+ <script src="https://code.jquery.com/jquery-3.0.0.js" th:inline="javascript"></script>
+    <script type="text/javascript" th:inline = "javascript">
 
+
+
+
+$(function()
+{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var wrapper = $(".input_fields_wrap");
+var add_button = $(".add_field_button");
+var x=1;
+$(add_button).click(function(e){
+e.preventDefault();
+$(wrapper).append('<div><input type="text" name="additionalAttributes" autofocus="autofocus"><a href="#" class="remove_field">Remove</a></div>');
+x++;
+
+});
+
+$(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+        e.preventDefault();
+		$(this).parent('div').remove();
+		x--;
+	})
+
+$("#popupevaluation").hide();
+$("#popuptraining").hide();
+$("#updatebox").hide();
+$("#attribute_feedback_form").hide();
+$("#additional_feedback_form").hide();
+$("#exp").hide();
+$("#recomm_Change").hide();
+$("#sensitive_List").hide();
+$("#additional_List").hide();
+$("#recomm_Reason").hide();
+$("#all_List").hide();
+
+  $('a#evaluation-link').click(function()
+  {
+     $("#popupevaluation").show();
+     $("body").addClass("submit-progress-bg");
+
+    return true;
+  });
+  $('a#training-link').click(function()
+  {
+     $("#popuptraining").show();
+     $("body").addClass("submit-progress-bg");
+
+    return true;
+  });
+  $('#login-submit1').on('click', function()
+  {
+     $("#popupevaluation").show();
+     $("body").addClass("submit-progress-bg");
+
+    return true;
+  });
+  $('#login-submit').on('click',function()
+  {
+     $("#updatebox").show();
+     $("body").addClass("submit-progress-bg");
+
+    $('#theform').submit();
+  });
+
+  $('input[type="radio"]').click(function()
+{
+var radioValRecomm = $("input[name='feedbackRecomm']:checked").val();
+
+
+var recommendation = document.getElementById('recommendation').value;
+var recommChange = "na";
+
+
+$("#sensitive_List").hide();
+$("#all_List").hide();
+$("#additional_List").hide();
+$("#recomm_Change").hide();
+$("#recomm_Reason").hide();
+
+if (radioValRecomm=='Agree' || radioValRecomm== 'Disagree')
+
+{
+var exp_type = document.getElementById('exp_type').value;
+// case1
+
+if (recommendation==0)
+{
+
+if (exp_type=='NotShare_OwnSensPresent')
+{
+
+if (radioValRecomm=='Agree')
+{
+$("#sensitive_List").show();
+$("#all_List").hide();
+$("#additional_List").show();
+$("#recomm_Change").hide();
+$("#recomm_Reason").hide();
+
+}
+
+if (radioValRecomm=='Disagree')
+{
+$("#sensitive_List").hide();
+$("#all_List").hide();
+$("#additional_List").hide();
+$("#recomm_Change").show();
+$("#recomm_Reason").show();
+
+recommChange = $("input[name='recommChange']:checked").val();
+
+if (recommChange=='Agree')
+{
+$("#sensitive_List").show();
+$("#all_List").hide();
+$("#additional_List").show();
+$("#recomm_Change").show();
+$("#recomm_Reason").hide();
+}
+if (recommChange=='Disagee')
+{
+$("#sensitive_List").hide();
+$("#all_List").hide();
+$("#additional_List").hide();
+$("#recomm_Change").show();
+$("#recomm_Reason").hide();
+
+}
+
+}
+
+}
+
+if (exp_type=='NotShare_Insufficient')
+{
+if (radioValRecomm=='Agree')
+{
+$("#sensitive_List").hide();
+$("#all_List").show();
+$("#additional_List").show();
+$("#recomm_Change").hide();
+$("#recomm_Reason").hide();
+}
+
+if (radioValRecomm=='Disagree')
+{
+$("#sensitive_List").hide();
+$("#all_List").hide();
+$("#additional_List").hide();
+$("#recomm_Change").hide();
+$("#recomm_Reason").hide();
+}
+}
+
+}
+
+if (recommendation==1)
+{
+if (exp_type=='Share_OwnSensAbsent')
+{
+if (radioValRecomm=='Agree')
+{
+$("#sensitive_List").hide();
+$("#all_List").hide();
+$("#additional_List").hide();
+$("#recomm_Change").hide();
+$("#recomm_Reason").hide();
+}
+if(radioValRecomm=='Disagree')
+{
+$("#sensitive_List").hide();
+$("#all_List").show();
+$("#additional_List").show();
+$("#recomm_Change").hide();
+$("#recomm_Reason").hide();
+}
+
+}
+
+if (exp_type=='Share_OwnSensPresent')
+{
+if (radioValRecomm=='Agree')
+{
+$("#sensitive_List").hide();
+$("#all_List").hide();
+$("#additional_List").hide();
+$("#recomm_Change").show();
+$("#recomm_Reason").hide();
+recommChange = $("input[name='recommChange']:checked").val();
+
+if (recommChange=='Agree')
+{
+$("#sensitive_List").show();
+$("#all_List").hide();
+$("#additional_List").show();
+$("#recomm_Change").show();
+$("#recomm_Reason").hide();
+}
+
+if (recommChange=='Disagree')
+{
+$("#sensitive_List").hide();
+$("#all_List").hide();
+$("#additional_List").hide();
+$("#recomm_Change").show();
+$("#recomm_Reason").hide();
+}
+}
+if (radioValRecomm=='Disagree')
+{
+$("#sensitive_List").hide();
+$("#all_List").hide();
+$("#additional_List").hide();
+$("#recomm_Change").hide();
+$("#recomm_Reason").show();
+recommChange = $("input[name='recommReason']:checked").val();
+if (recommChange=='Agree')
+{
+$("#sensitive_List").show();
+$("#all_List").hide();
+$("#additional_List").show();
+$("#recomm_Change").hide();
+$("#recomm_Reason").show();
+
+}
+if (recommChange=='Disagree')
+{
+$("#sensitive_List").hide();
+$("#all_List").show();
+$("#additional_List").show();
+$("#recomm_Change").hide();
+$("#recomm_Reason").show();
+
+}
+
+}
+}
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+});
+
+
+
+});
+
+	</script>
+
+
+
+
+
+<div class="topnav" style="position: relative; ">
+    <a href="/index">Home</a>
+    <a id = "training-link" href="/training">Training</a>
+    <a id = "evaluation-link" href="/evaluation">Evaluation</a>
     <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
 
     <div style="position: absolute; top: 0; right: 100px; width: 100px; text-align:left;">
@@ -168,129 +490,308 @@ $(document).ready(function(){
 
 </div>
 
+<div class="results"></div>
+<p class="listprice"></p>
 
 <div th:if="${evaluation.message!='train_first'}">
-<div class="row">
-    <div class="column">
-        <center><h1> Consider the following image </h1></center>
-        <center><img th:src="@{${evaluation.image_path}}" src = "'../'+${evaluation.image_path}" class = "center-fit" alt="Responsive image" width="5" height="5"></center>
+<div class="d-md-flex h-md-100 align-items-center">
+
+    <div class="col-md-6 p-0 bg-white h-md-100  col-md-offset-1">
+
+        <h2><span th:text="${evaluation.description}"></span></h2>
+
+
+
+            <img th:src="@{${evaluation.image_path}}" src = "'../'+${evaluation.image_path}" class = "center-fit" alt="Responsive image"  width = "200" height="550px">
+
+
+
+        </div>
+
+
+    <div class="col-md-5 p-0 bg-white h-md-100  ">
+
+
+
+        <div th:if="${evaluation.recommendation==1}">
+            <h2 class="text-info">Recommendation</h2><h2 class="text-success">Share</h2>
+
+        </div>
+        <div th:if="${evaluation.recommendation==0}">
+            <h2 class="text-info">Recommendation</h2><h2 class="text-danger"> Do not share</h2>
+
+        </div>
+        <br>
+      <h2 class="text-info">Explanation</h2>
+        <div class="boxed">
+            <tr th:each="part_explanation , itemStat : ${evaluation.explanationDto.explanations}">
+
+                <h3 class="text-info" th:text="${part_explanation.content}"></h3>
+
+
+            </tr>
+
+
+        </div>
+        </div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="d-md-flex h-md-100 align-items-center">
+
+    <div class="col-md-9 p-0 bg-white h-md-100">
+
+
+            <form id="theform" th:action="@{/evaluation}" method="post">
+
+                    <div id="popuptraining" class="submit-progress">
+                        <label>Generating Training Instance</label>
+                    </div>
+                    <div id="updatebox" class="submit-progress">
+                        <label>Wait... Incorporating Instances</label>
+                    </div>
+
+                    <div id="popupevaluation" class="submit-progress">
+                        <label>Generating Image Recommendation and Explanation</label>
+                    </div>
+
+
+
+                <div class="col-md-10 col-md-offset-3"  >
+                    <div class="col-md-10 col-md-offset-1">
+
+
+                        <h3>Do you agree with the Recommendation?</h3>
+
+                        <br>
+                    </div>
+                    <div class="col-md-3 col-md-offset-3" th:if="${evaluation.feedbackRecomm}=='invalid'">
+                    <div class="alert alert-danger">Select one of the two buttons</div>
+                </div>
+
+
+                        <div id="feedback_recomm" class="col-md-10 col-md-offset-3">
+
+
+
+
+
+                            <input type="radio" name="feedbackRecomm" value="Agree"> <label for="agree">Agree</label>&nbsp; &nbsp;
+
+                            <input type="radio" name="feedbackRecomm" value="Disagree"><label for="disagree">Disagree</label>
+
+
+
+                    </div>
+                </div>
+
+
+                <div id="recomm_Change" class="col-md-10 col-md-offset-3">
+                    <h3>After looking into explanation do you change your recommendation?</h3>
+                    <input type="radio" name="recommChange" value="Agree"> <label for="agree">Yes</label>&nbsp; &nbsp;
+
+                    <input type="radio" name="recommChange" value="Disagree"><label for="disagree">No</label>
+
+                </div>
+
+                <div id="recomm_Reason" class="col-md-10 col-md-offset-3">
+                    <h3>Does explanation the reason for your disagreement decision</h3>
+                    <input type="radio" name="recommReason" value="Agree"> <label for="agree">Yes</label>&nbsp; &nbsp;
+
+                    <input type="radio" name="recommReason" value="Disagree"><label for="disagree">No</label>
+
+                </div>
+
+                <div id="sensitive_List" class="col-md-10 col-md-offset-3">
+                    <h3>Check explanation that are not consider in making the decision</h3>
+                    <label class="checkbox-inline">
+                    <tr th:each="part_explanation , itemStat : ${evaluation.explanationDto.explanations}">
+
+                        <div th:if="${itemStat.index!=0}">
+                           <h3><input type="checkbox"  th:field="*{evaluation.explanationDto.explanations[__${itemStat.index}__].value}" th:name=${part_explanation.content}  th:value=${part_explanation.content} class="btn btn-success btn-lg" checked><span th:text="${part_explanation.content}"></span></h3>&nbsp;
+
+
+
+                        </div>
+                    </tr>
+                    </label>
+
+                </div>
+
+                <div id="all_List" class="col-md-10 col-md-offset-3">
+                    <h3>Check sentences not influencing the decision</h3>
+                    <label class="checkbox-inline">
+                        <tr th:each="feedback , itemStat : ${evaluation.feedbackDto.feedbacks}">
+
+
+
+
+                            <h3><input type="checkbox"   th:field="*{evaluation.feedbackDto.feedbacks[__${itemStat.index}__].attributeSensitivity}" th:name="${feedback.attributeId}"  th:value="${feedback.attributeId}" class="btn btn-success btn-lg"><span th:text="${feedback.attributeDescription}"></span></h3>&nbsp;
+
+
+                        </tr>
+
+
+                    </label>
+
+                </div>
+
+                <div id="additional_List" class="col-md-10 col-md-offset-3">
+                    <h3>Add additional reasons for the recommendation</h3>
+                    <div class="input_fields_wrap" id="additional_text">
+                        <input type="button" name="Add" class="add_field_button" value="Add">
+                        <button onclick="myFunction()">Try it</button>
+                        <input type="text" name="additionalAttributes" class="form-control" autofocus="autofocus" />
+
+                    </div>
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <br>
+
+                <br>
+
+
+                        <input id = "exp_type" type="hidden" th:field="*{evaluation.expType}" />
+                        <input id = "recommendation" type="hidden" th:field="*{evaluation.recommendation}" />
+                        <input id = "explanation" type="hidden" th:field="*{evaluation.explanation}" />
+
+
+
+
+                    <br>
+
+
+                                <tr th:each="feedback , itemStat : ${evaluation.feedbackDto.feedbacks}">
+
+
+
+
+
+                                    <td><input type="hidden" th:field="*{evaluation.feedbackDto.feedbacks[__${itemStat.index}__].attributeName}" /></td>
+                                </tr>
+
+
+
+
+                                <br>
+
+
+
+
+
+                            <br>
+
+
+
+
+
+
+
+
+                <div id="additional_feedback_form">
+                        <h3 class="text-info">Additional sensitive attributes present in the image</h3>
+                         <br>
+                        <div class="form-group col-md-4" >
+                            <input type="text" id="add_attr" name="addAttr" class="form-control" autofocus="autofocus" placeholder="Additional Attributes" />
+                        </div>
+
+                    </div>
+
+                <div class="clear"></div>
+                <h1></h1>
+
+                <div>
+                    <div class="col-md-3 col-md-offset-5">
+                        <div th:if="${evaluation.update==true}">
+
+
+                            <input type="submit" name="next-submit" id="login-submit"
+                                   class="form-control btn btn-primary" value="Next">
+                        </div>
+
+                        <div th:if="${evaluation.update==false}">
+
+
+                            <input type="submit" name="next-submit" id="login-submit1"
+                                   class="form-control btn btn-primary" value="Next">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                    <input type="hidden" th:field="*{evaluation.id}" />
+                    <input type="hidden" th:field="*{evaluation.explanation}" />
+                    <input type="hidden" th:field="*{evaluation.image_path}" />
+                    <input type="hidden" th:field="*{evaluation.image_id}" />
+                <input type="hidden" th:field="*{evaluation.description}" />
+                <input type="hidden" th:field="*{evaluation.username}" />
+
+
+
+
+
+
+
+
+
+
+
+
+            </form>
+
+
+
+
+
+
+
+        </div>
+
     </div>
-    <center><div class="column">
-        <center><h2>Explanation</h2></center>
-        <center><div class="boxed">
-
-            <center><p th:text="${evaluation.explanation}" /></center>
-
-        </div></center>
-
-    </div></center>
-
-</div>
-<br>
-
-<br>
 
 
+    <div class="col-md-3 p-0 bg-white h-md-100  ">
+        <div class="col-md-15">
+            <blockquote class="blockquote">
+                <h2 class="text-info">Evaluation Progress</h2>
+                <h3 class="text-success" th:text = "'Images Completed: '+${evaluation.index.evalCompleted}"></h3>
+                <h3 class="text-warning" th:text = "'Images Skipped: '+${evaluation.index.evalSkipped}"></h3>
+                <h3 class="text-secondary" th:text = "'Images Remaining: '+${evaluation.index.evalRemaining}"></h3>
+            </blockquote>
 
-
-
-
-
-<center><h2>Do you agree with the explanation?</h2></center>
-
-<div class="container">
-
-<center>
-
-    <form th:action="@{/evaluation}" method="post">
-
-        <div th:if="${evaluation.feedback=='invalid'}">
-            <div class="alert alert-danger">Empty agreement type</div>
         </div>
-<div id="feedback">
-
-
-    <input type="radio" name="feedback" value="Agree"> <label for="agree">Agree</label>&nbsp; &nbsp;
-
-    <input type="radio" name="feedback" value="Disagree"><label for="disagree">Disagree</label>
-
-</div>
-
-        <div th:if="${evaluation.disagree_type=='invalid'}">
-            <div class="alert alert-danger">Empty disagreement field</div>
-        </div>
-
-<div class="Disagree box">
-
-    <div class="row">
-        <div class="column">
-    <h3><font  color="black">Disagree with?</font></h3>
-    <div>
-
-
-
-            <div class="row">
-                <div class="col-sm-6 col-sm-offset-3">
-
-                    <select name="disagree_type" >
-                        <option value="invalid" selected>Select</option>
-                        <option value="recommendation">Recommendation</option>
-                        <option value="explanation">Explanation</option>
-                        <option value="both">Both</option>
-
-                    </select>
-
-                </div>
-                </div>
-            </div>
-
-
-
-
     </div>
+</div>
 
 
-        <div class="column">
-
-
-            <h3><font  color="black">Attributes</font></h3>
-            <div>
-                <div th:if="${evaluation.attributeValid}==false">
-                    <div class="alert alert-danger">At least one empty attribute field</div>
-                </div>
-
-
-
-                <tr th:each="feedback , itemStat : ${evaluation.feedbackDto.feedbacks}">
-
-
-                    <h4><span th:text="${feedback.attributeName}"></span></h4>
-
-
-
-                    <select th:field="*{evaluation.feedbackDto.feedbacks[__${itemStat.index}__].attributeValue}" >
-                        <option value=0 selected>Select</option>
-                        <option value=1>1</option>
-                        <option value=2>2</option>
-                        <option value=3>3</option>
-                        <option value=4>4</option>
-                        <option value=5>5</option>
-
-
-                    </select>
-
-
-                    <td><input type="hidden" th:field="*{evaluation.feedbackDto.feedbacks[__${itemStat.index}__].attributeName}" /></td>
-
-                </tr>
-
-
-
-
-
-            </div>
-
-        </div>
 
 
 
@@ -298,27 +799,8 @@ $(document).ready(function(){
 
 
 </div>
-        <input type="hidden" th:field="*{evaluation.id}" />
-        <input type="hidden" th:field="*{evaluation.explanation}" />
-        <input type="hidden" th:field="*{evaluation.image_path}" />
-        <input type="hidden" th:field="*{evaluation.image_id}" />
 
-<br>
-</div>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-sm-6 col-sm-offset-3">
-                    <input type="submit" name="next-submit" id="login-submit"
-                           class="form-control btn btn-primary" value="Next" />
-                </div>
-            </div>
-        </div>
 
-    </form>
-</center>
-</center>
-</div>
-</div>
 
 
 <script type="text/javascript"

@@ -17,7 +17,8 @@ from math import *
 import pickle as cPickle
 from ALS import getUserMatrix
 from weighted_decision_tree import weighted_tree, getRules
-
+import multiprocessing
+from multiprocessing import Pool
 
 """This gives current directory"""
 
@@ -29,33 +30,8 @@ base_path = base_path_file['base_dir']
 
 [attr_id_to_name, _]=load_attributes()
 feature_names = [k for k, v in attr_id_to_name.items()]
-
-
-def getImageAttributes(image_id):
-    
-    """image id will be in the form of annotations/image_type/id.json"""
-    
-    with open(base_path+"Data/Collected/"+image_id) as jf:
-         anno=json.load(jf)
-         labels = anno['labels']
-         
-    return labels
-
-
-def getfeatureStatus(image_id):
-    present_attributes = getImageAttributes(image_id)
-    featureStatus=[]
-    
-    for feature in feature_names:
-        
-        if feature in present_attributes:
-            featureStatus.append(1)
-            
-        else:
-            
-            featureStatus.append(0)
-            
-    return featureStatus
+#no_process =  multiprocessing.cpu_count()
+no_process = 32
 
 
 def square_rooted(x):
@@ -84,16 +60,18 @@ def cosineSimilarity(x, y):
  
     return round(numerator/float(denominator),3)
 
-def getFeedbackMatrix(n_users, len_features, selected_users):
+def getFeedbackMatrix(n_users, len_features, selected_users, user_charac_matrix):
     feedback_vecs=np.zeros((n_users, len(feature_names)))
-    
     with open(base_path+"Data/Generated/feedback.json") as outfile:
         feedback_file = json.load(outfile)
+        for user in selected_users:
+            for i in range(len(feedback_file[user])):
+                if len(feedback_file[user][i])==0:
+                    feedback_vecs[selected_users.index(user), i]=user_charac_matrix[selected_users.index(user)][i]
+                else:
+                    feedback_vecs[selected_users.index(user), i]=np.mean(feedback_file[selected_users.index(user)][i])
+            
         
-        for i, user in enumerate(feedback_file):
-            if user not in selected_users:
-                continue
-            feedback_vecs[i, :]=np.asarray(feedback_file[user])
             
     return feedback_vecs
         
@@ -137,23 +115,26 @@ def getSimilarityGD(users):
             else:
                 print("Serious problem")
             item_vecs[j, :]= image_record[0]
-    #Each value between 1-5, 1 most critical and 5 least critical
-    feedback_vecs = getFeedbackMatrix(n_users, len(feature_names), users)
-    user_charac_matrix = getUserMatrix(ratings, item_vecs, feedback_vecs)
+    #Each value between 1-5, 1 least critical and 5 most critical
+   
+    user_charac_matrix = getUserMatrix(ratings, item_vecs)
+    user_charac_matrix=(user_charac_matrix-np.amin(user_charac_matrix, axis=1)[:, np.newaxis])/((np.amax(user_charac_matrix, axis=1)-np.amin(user_charac_matrix, axis=1))[:, np.newaxis])
+    feedback_vecs = getFeedbackMatrix(n_users, len(feature_names), users, user_charac_matrix)
     
-    return user_charac_matrix
+    return [user_charac_matrix, feedback_vecs]
  
            
-def storeAttribute(user_matrix, users):
+def storeAttribute(user_matrix, feedback_matrix, users):
     
     users_attributes={}
-    #1 as most critical (sharing), 0 as least critical (not sharing)
-    scale_user_matrix=(user_matrix-np.amin(user_matrix, axis=1)[:, np.newaxis])/((np.amax(user_matrix, axis=1)-np.amin(user_matrix, axis=1))[:, np.newaxis])
-    scale_user_matrix=1-scale_user_matrix
+    #1 as most critical (not sharing), 0 as least critical (sharing)
+    
+   
     
     for i in range(0, len(users)):
-        user_score = scale_user_matrix[i].tolist()
-        users_attributes[users[i]]=user_score
+        user_latent_score = user_matrix[i]
+        user_feedback_score = feedback_matrix[i]
+        users_attributes[users[i]]=np.mean([user_latent_score, user_feedback_score], axis=0).tolist()
     
         
     with open(base_path+"Data/Generated/user_attributes.json", "w") as infile:
@@ -168,8 +149,8 @@ def updateUserSimilaritySGD():
     users = [k for k,v in similarity_file.items()]
     selected_users = getTrainedUsers(users)
     print("Updating similarity based on Collborative filtering")
-    user_matrix = getSimilarityGD(selected_users)
-    storeAttribute(user_matrix, selected_users)
+    [user_matrix, feedback_matrix] = getSimilarityGD(selected_users)
+    storeAttribute(user_matrix, feedback_matrix, selected_users)
     
     with open(base_path+"Data/Generated/user_similarity_sgd.json", "r+") as outfile:
         user_similarity = json.load(outfile)
@@ -225,7 +206,11 @@ def initialization(user_name):
             
             if user_name not in existing_users:
                 print("User is added to the similarity file")
-                feedback_file[user_name]=np.zeros(len(feature_names)).tolist()
+                feedback_file[user_name]=[]
+                for i in range(len(feature_names)):
+                    feedback_file[user_name].append([])
+               
+                
                 
             else:
                 print("User is already added to the similarity file")
@@ -259,46 +244,60 @@ def getPrefScore(pref_share, num_points, confidence, input_features, input_decis
     pref_share[conf1_index]= unmuted_pref_values
     
     return [pref_share, num_points]
+
+
+def storetree(args):
+    users,  user_similarity, feedback_factor,  i = args
+    train_data = getUserInstances(users[i])
+    feedback_data = getUserInstances(users[i], 'feedback')
+    frame = [train_data[feature_names], feedback_data[feature_names]]
+    X = pd.concat(frame)
+    Y = pd.concat([train_data['Decision'], feedback_data['Decision']])
+    W = np.ones(len(Y))
+    W[len(train_data['Decision']):] = feedback_factor
+    for j in range(0, len(users)):
+        if i==j:
+            continue
+        user2_train_data = getUserInstances(users[j])
+        user2_feedback_data = getUserInstances(users[j], 'feedback')
+        input_data = pd.concat([user2_train_data[feature_names], user2_feedback_data[feature_names]])
+        decision_data = pd.concat([user2_train_data['Decision'], user2_feedback_data['Decision']])
+        X_frame = [X, input_data]
+        X = pd.concat(X_frame)
+        Y_frame = [Y, decision_data]
+        Y = pd.concat(Y_frame)
+        simi_coeff = user_similarity[users[i]][users[j]]
+        W2 = np.repeat(simi_coeff, len(decision_data))
+        W = np.concatenate((W, W2))
+    W = W/sum(W)
+    Y = Y.astype(W)
+    model = weighted_tree(X, Y, W)
+    with open(base_path+'Data/Generated/trees/'+users[i]+'.pkl', 'wb') as fid:
+            cPickle.dump(model, fid)
+        
     
 
 def updateTree(user_similarity, feedback_factor=2):
     
     print("Updating Tree")
     users = [k for k,v in user_similarity.items()]
+    args = []
     
     for i in range(0, len(users)):
-        train_data = getUserInstances(users[i])
-        feedback_data = getUserInstances(users[i], 'feedback')
-        frame = [train_data[feature_names], feedback_data[feature_names]]
-        X = pd.concat(frame)
-        Y = pd.concat([train_data['Decision'], feedback_data['Decision']])
-        W = np.ones(len(Y))
-        W[len(train_data['Decision']):] = feedback_factor
-        
-        
-        for j in range(0, len(users)):
-            if i==j:
-                continue
-            
-            user2_train_data = getUserInstances(users[j])
-            user2_feedback_data = getUserInstances(users[j], 'feedback')
-            input_data = pd.concat([user2_train_data[feature_names], user2_feedback_data[feature_names]])
-            decision_data = pd.concat([user2_train_data['Decision'], user2_feedback_data['Decision']])
-            X_frame = [X, input_data]
-            X = pd.concat(X_frame)
-            Y_frame = [Y, decision_data]
-            Y = pd.concat(Y_frame)
-            simi_coeff = user_similarity[users[i]][users[j]]
-            W2 = np.repeat(simi_coeff, len(decision_data))
-         
-            W = np.concatenate((W, W2))
-        print(W)
-        W = W/sum(W)
-        Y=Y.astype(int)
-        model = weighted_tree(X, Y, W)
-        
-        with open(base_path+'Data/Generated/trees/'+users[i]+'.pkl', 'wb') as fid:
-            cPickle.dump(model, fid)
+        arg = (users, user_similarity, feedback_factor,  i)
+        args.append(arg)
+    
+    no_tasks = len(args)
+    no_iterations = int(np.ceil(no_tasks/no_process))
+    
+    for k in range (0, no_iterations):
+            if (k==(no_iterations-1)):
+                sub_args = args[k*no_process:no_tasks]
+                
+            else:
+                sub_args = args[k*no_process:(k+1)*no_process]
+            pol=Pool(no_process)
+            result = pol.map(storetree, sub_args)
                 
     print("Finished updating")
           
@@ -318,6 +317,7 @@ def update():
         
     updateTree(user_similarity)
     print("Update task completed")
+    return "Successful update"
            
     
 if __name__=="__main__":
@@ -326,7 +326,8 @@ if __name__=="__main__":
         initialization(sys.argv[2])
         
     elif sys.argv[1]=="update":
-        update()
+        message = update()
+        print(message)
         
     
         

@@ -18,6 +18,11 @@ public class RecordRowMapper implements RowMapper<Record>
         record.setImage_path(rs.getString("image_path"));
         record.setSharing_decision(rs.getInt("sharing_decision"));
         record.setDisplay_status(rs.getInt("display_status"));
+        record.setDescription(rs.getString("description"));
+        record.setRecommendation(rs.getInt("recommendation"));
+        record.setExplanation(rs.getString("explanation"));
+        record.setExpType(rs.getString("exp_type"));
+        record.setAttribute(rs.getString("attribute"));
         return record;
 
     }

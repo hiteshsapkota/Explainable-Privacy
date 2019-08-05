@@ -4,7 +4,7 @@
 <head>
 
     <title>Explainable Privacy: User Study</title>
-    <meta http-equiv="Refresh" content="5; index" >
+
 
     <style>
 body {
@@ -55,19 +55,86 @@ select{
   position: relative;
   display: inline-block;
 }
+.btn-xl {
+    padding: 15px 100px;
+    font-size: 30px;
+    border-radius: 50px;
+}
+.submit-progress-bg {
+    background-color: lightgray;
+    opacity: .5;
+    }
+
+
+  .submit-progress {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 10em;
+  padding-top: 2.3em;
+  /* The following rules are the
+     ones most likely to change */
+  width: 20em;
+  /* Set 'margin-left' to a negative number
+     that is 1/2 of 'width' */
+  margin-left: -10em;
+  padding-left: 2.1em;
+  background-color: blue;
+  color: white;
+  -webkit-border-radius: 0.4em;
+  -moz-border-radius: 0.4em;
+  border-radius: 0.4em;
+  box-shadow: 0.4em 0.4em rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0.4em 0.4em rgba(0,0,0,0.6);
+  -moz-box-shadow: 0.4em 0.4em rgba(0,0,0,0.6);
+}
+.submit-progress i {
+  margin-right: 0.5em;
+}
+
+
 
 
 
 </style>
+    </script>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+
+$(function()
+{
+$("#popupevaluation").hide();
+$("#popuptraining").hide();
+  $('a#evaluation-link').click(function()
+  {
+     $("#popupevaluation").show();
+     $("body").addClass("submit-progress-bg");
+
+    return true;
+  });
+  $('a#training-link').click(function()
+  {
+     $("#popuptraining").show();
+     $("body").addClass("submit-progress-bg");
+
+    return true;
+  });
+
+});
+
+	</script>
 
     <link rel="stylesheet" type="text/css"
+
           th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}" />
 
 </head>
 <body>
 
 <div class="topnav" style="position: relative; ">
-
+    <a href="/index">Home</a>
+    <a href="/training">Training</a>
+    <a href="/evaluation">Evaluation</a>
     <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
 
     <div style="position: absolute; top: 0; right: 100px; width: 100px; text-align:left;">
@@ -76,25 +143,86 @@ select{
     </div>
 </div>
 
-    <br>
+<div class="d-md-flex h-md-100 align-items-center">
 
-<div th:if="${evaluation.message=='train_first'}">
+    <div class="col-md-9 p-0 bg-white h-md-100">
 
-    <div class="alert alert-danger">Could not generate explanation without training!!!</div>
-    <center><h4> You will be redirected to the index page in five seconds. </h4></center>
-    <center><h4> If you see this message more than 5 seconds, please <span><a href="/" th:href="@{/index}">Click here.</a></span></h4></center>
+        <br>
+        <center><h1 class="text-info"> Congratulations!!! Your evaluation phase is completed</h1></center>
 
+
+        <br>
+        <br>
+
+
+
+
+
+
+        <center><a id="evaluation-link" href="/evaluation" role="button"  class="btn-success btn-xl">Continue Evaluation</a></center>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+
+
+
+
+        <center><a id="training-link" href="/training" role="button"  class="btn-info btn-xl">Start Training</a></center>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+
+
+        <center><a href="/index" role="button"  class="btn-danger btn-xl">Go to Homepage</a></center>
+
+
+    </div>
+    <div class="col-md-3 p-0 bg-white h-md-100">
+        <blockquote class="blockquote">
+            <h2 class="text-info">Evaluation Progress</h2>
+            <h3 class="text-success" th:text = "'Images Completed: '+${evaluation.index.evalCompleted}"></h3>
+            <h3 class="text-warning" th:text = "'Images Skipped: '+${evaluation.index.evalSkipped}"></h3>
+            <div th:if="${evaluation.index.evalRemaining}=='5'">
+                <h3 class="text-secondary" th:text = "'Images Remaining: '+0"></h3>
+            </div>
+            <div th:if="${evaluation.index.evalRemaining}!='5'">
+                <h3 class="text-secondary" th:text = "'Images Remaining: '+${evaluation.index.evalRemaining}"></h3>
+            </div>
+        </blockquote>
+    </div>
 
 </div>
 
-
-    <center><h1> Congratulations!!! Your evaluation phase is completed. </h1></center>
-<center><h2> You will be redirected to the index page in five seconds. </h2></center>
-        <center><h2> If you see this message more than 5 seconds, please <span><a href="/" th:href="@{/index}">Click here.</a></span></h2></center>
-
+<div id="popuptraining" class="submit-progress">
+    <label>Generating Training Instance</label>
+</div>
+<div id="popupevaluation" class="submit-progress">
+    <label>Generating Image Recommendation and Explanation</label>
+</div>
 
 </body>
-</html>>
+</html>
+
+
+
+
+
+
+
+
+
+
+
 
 
 

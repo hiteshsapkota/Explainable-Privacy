@@ -20,7 +20,7 @@ def weighted_tree(X, y, W, criteria='entropy'):
        
        
     """
-    clf = DecisionTreeClassifier(criterion=criteria)
+    clf = DecisionTreeClassifier(criterion=criteria, min_impurity_decrease=0.001)
     clf.fit(X, y, sample_weight=W)
     
     return clf

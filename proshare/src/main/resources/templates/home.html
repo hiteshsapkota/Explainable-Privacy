@@ -1,11 +1,15 @@
-
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
-    <head>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title>Explainable Privacy: User Study</title>
 
-        <style>
+
+    <title>Explainable Privacy: User Study</title>
+
+    <style>
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -34,26 +38,111 @@ body {
   background-color: #4CAF50;
   color: white;
 }
+
 </style>
 
-        <link rel="stylesheet" type="text/css"
-              th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}" />
+    <link rel="stylesheet" type="text/css"
+          th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}" />
+</head>
+<body>
+<div class="topnav">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="#contact">Contact</a>
 
-    </head>
-    <body>
-
-    <div class="topnav">
-        <a href="/">Home</a>
-        <a href="/login">Log In</a>
-        <a href="/about">About</a>
-
-
-        <a href="#contact">Contact</a>
-
+</div>
+<center><h1>Welcome to the user study in Explainable Privacy</h1></center>
+<div class="d-md-flex h-md-100 align-items-center">
+    <div class="col-md-6 p-0 bg-indigo h-md-100">
+        <h2 class="text-primary">Please read the instructions carefully before proceeding to the survey.</h2>
+        <blockquote class="blockquote">
+            <p class="text-info">This study will have following two phases: </p>
+            <h3 class="text-success">Training</h3>
+            <p class="text-info">In training phase, total twenty images will be shown and will be asked whether you want to share or not. Sharing decision should be made based on the assumption that you are one of the people in the picture. Also, if
+                you do not wish to answer, simply skip the image and go to next. You cannot start the evaluation phase without the completion of a training phase</p>
+            <h3 class="text-success">Evaluation</h3>
+            <p class="text-info">In the evaluation phase, an image will be shown along with suggestion regarding sharing decision. Suggestion will have two parts: Decision and Explanation. A decision will tell you whether you want to share or not
+                whereas, an explanation will tell you why you want to make the corresponding sharing decision. You need to decide whether you agree with either or both of the decision and explanation.
+                In case of disagree you are required to provide the disagreement type (Decision, Recommendation, Both). Also, you need to provide the sensitivity score for the listed attributes with 5 as a strongly sensitive and 1 as a
+                least sensitive to the sharing decision.</p>
+        </blockquote>
     </div>
+    <div class="col-md-6 p-0 bg-white h-md-100 loginarea">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="text-center">
+                                <h2 class="text-center">Log In</h2>
+                                <div class="panel-body">
 
-    <center><h1>Welcome to the User Study</h1></center>
-        
-    <center> <h2>Please Click on Log In button to start your session.</h2></center>
-    </body>
+
+
+                                    <form th:action="@{/login}" method="post">
+                                        <div class="imgcontainer">
+                                            <img th:src="@{/imgs/img_avatar2.png}" src="../imgs/img_avatar2.png" class = "center-fit" alt="Responsive image">
+                                        </div>
+                                        <div th:if="${param.resetSuccess}">
+                                            <div class="alert alert-danger">Successfully Reset</div>
+                                        </div>
+                                        <div th:if="${param.error}">
+                                            <div class="alert alert-danger">Invalid username or
+                                                password.</div>
+                                        </div>
+                                        <div th:if="${param.logout}">
+                                            <div class="alert alert-info">You have been logged out.</div>
+                                        </div>
+                                        <div class="form-group">
+
+
+                                            <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="glyphicon glyphicon-lock color-blue"></i>
+                                        </span>
+                                                <div class="form-group">
+                                                    <input type="text" id="username" name="username" class="form-control" autofocus="autofocus" placeholder="Username" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="password" id="password" name="password" class="form-control" placeholder="Password" />
+                                                </div>
+
+
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="submit" name="login-submit" id="login-submit"
+                                                    class="form-control btn btn-primary" value="Log In">Log In</input>
+
+                                        </div>
+                                    </form>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            New user? <a href="/" th:href="@{/registration}">Register</a>
+                                        </div>
+                                        <div class="col-md-12">
+                                            Forgot Password? <a href="/" th:href="@{/forgot-password}">Reset</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" th:src="@{/webjars/jquery/3.2.1/jquery.min.js/}"></script>
+<script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
+
+</body>
 </html>
+

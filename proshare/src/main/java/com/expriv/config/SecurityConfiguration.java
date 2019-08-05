@@ -23,7 +23,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
   @Override
   protected void configure(HttpSecurity http) throws Exception {
     http.authorizeRequests()
-            .antMatchers("/", "/home", "/registration**", "/register_success","/forgot-password","/reset-password","/js/**", "/css/**", "/img/**", "/webjars/**")
+            .antMatchers("/", "/registration**", "/register_success","/forgot-password","/reset-password", "/about", "/contact",  "/js/**", "/css/**", "/imgs/**", "/webjars/**")
             .permitAll().anyRequest().authenticated().and().formLogin().loginPage("/login")
             .defaultSuccessUrl("/index").permitAll().and().logout().invalidateHttpSession(true)
             .clearAuthentication(true).logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
@@ -58,7 +58,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
       configurationService.setParams();
       registry
               .addResourceHandler("/images/**")
-              .addResourceLocations("file:resources/", "file:uploads/", "file:"+configurationService.getPython_base_dir()+"images/")
+              .addResourceLocations("file:resources/", "file:uploads/", "file:"+configurationService.getPython_base_dir()+ "images/")
               .setCachePeriod(0);
     }
   }

@@ -34,7 +34,66 @@ body {
   background-color: #4CAF50;
   color: white;
 }
+.submit-progress-bg {
+    background-color: lightgray;
+    opacity: .5;
+    }
+
+
+  .submit-progress {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 10em;
+  padding-top: 2.3em;
+  /* The following rules are the
+     ones most likely to change */
+  width: 20em;
+  /* Set 'margin-left' to a negative number
+     that is 1/2 of 'width' */
+  margin-left: -10em;
+  padding-left: 2.1em;
+  background-color: blue;
+  color: white;
+  -webkit-border-radius: 0.4em;
+  -moz-border-radius: 0.4em;
+  border-radius: 0.4em;
+  box-shadow: 0.4em 0.4em rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0.4em 0.4em rgba(0,0,0,0.6);
+  -moz-box-shadow: 0.4em 0.4em rgba(0,0,0,0.6);
+}
+.submit-progress i {
+  margin-right: 0.5em;
+}
+
+
 </style>
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+
+$(function()
+{
+$("#popupevaluation").hide();
+$("#popuptraining").hide();
+  $('a#evaluation-link').click(function()
+  {
+     $("#popupevaluation").show();
+     $("body").addClass("submit-progress-bg");
+
+    return true;
+  });
+  $('a#training-link').click(function()
+  {
+     $("#popuptraining").show();
+     $("body").addClass("submit-progress-bg");
+
+    return true;
+  });
+
+});
+
+	</script>
 
 	<link rel="stylesheet" type="text/css"
 		  th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}" />
@@ -43,8 +102,9 @@ body {
 <body>
 
 <div class="topnav" style="position: relative; ">
-	<a href="/training">Training</a>
-	<a href="/evaluation">Evaluation</a>
+	<a href="/index">Home</a>
+	<a id="training-link" href="/training">Training</a>
+	<a id="evaluation-link" href="/evaluation">Evaluation</a>
 	<li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
 
 	<div style="position: absolute; top: 0; right: 100px; width: 100px; text-align:left;">
@@ -56,34 +116,92 @@ body {
 
 
 </div>
+<center><h1>Welcome to the Survey on Explainable Privacy</h1></center>
+<div class="d-md-flex h-md-100 align-items-center">
 
+		<div class="col-md-6 p-0 bg-indigo h-md-100">
+			<div class="col-md-10 col-md-offset-2">
+				<h1 class="text-info">Survey Instruction</h1>
+				<blockquote class="blockquote">
+			<h2 class="text-success">Training</h2>
+			<p class="text-info">In this survey you need to complete two steps: training followed by the evaluation. In either of steps, in each batch twenty images will be shown to you.
+				In the case of training phase, series of images will be shown and asked to provide the sharing decision. Sharing decision would be either share or not based on the
+				assumption that you are one of the persons in the images. If you do not wish to provide the decision, you can skip using Next button. Also, you if you want to change the decision, you can use Prev button.</p>
+			 <h3><a id="training-link" href="/training" class="text-primary">Click here to start training</a> </h3>
+					<div id="popuptraining" class="submit-progress">
+						<label>Generating Training Instance</label>
+					</div>
 
+				<h2 class="text-success">Evaluation</h2>
+				<p class="text-info">You can start the evaluation step after the completion of at least one training phase. In the evaluation phase, series of images will be shown along with the corresponding suggested sharing decision along with the explanation.
+				The sharing decision tells whether you want to share the image or not whereas, the explanation explains why you want to make the specified sharing decision. You can either agree or diagree with the generated decision, explanation or  both. If you disagree
+				then you need to specify your disagreement type as one of the decision, explanation or both. Also, in case of disagreement, you have to specify the sensitivity score for each of the attributes shown with 5 as strongly sensitive and 1 as
+				least sensitive.</p>
+					<h3><a id="evaluation-link" href="/evaluation" class="text-primary">Click here to start evaluation</a> </h3>
 
-
-<div class="container">
-	<h2>Progress on Training and Evaluation Phase</h2>
-	<br>
-	<br>
-	<h3>Training</h3>
-	<div class="progress">
-		<div class="progress-bar progress-bar-successs progress-bar-striped" role="progressbar" aria-valuenow="${index.trainCompleted}" aria-valuemin="0" aria-valuemax="${index.trainBatchSize}" th:style="'width:'+${index.trainCompleted}+'%'">Completed</div>
+					<div id="popupevaluation" class="submit-progress">
+						<label>Generating Image Recommendation and Explanation</label>
+					</div>
+				</blockquote>
+		</div>
 
 	</div>
-	<br>
-	<br>
-	<h3>Evaluation</h3>
-	<div class="progress">
-		<div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="${index.evalCompleted}" aria-valuemin="0" aria-valuemax="${index.evalBatchSize}" th:style="'width:'+${index.evalCompleted}+'%'">Completed</div>
 
-	</div>
+
+	<div class="col-md-6 p-0 bg-white h-md-100 loginarea">
+
+				<div class="col-md-10 col-md-offset-2">
+		<h1 class="text-info">Survey Progress Status</h1>
+		<blockquote class="blockquote">
+			<h2 class="text-info">Training</h2>
+			<h3 class="text-success" th:text = "'Images Labeled: '+${index.trainCompleted}"></h3>
+			<h3 class="text-warning" th:text = "'Images Skipped: '+${index.trainSkipped}"></h3>
+			<div th:if="${index.trainRemaining}=='20'">
+				<h3 class="text-secondary" th:text = "'Images Remaining: '+0"></h3>
+		</div>
+			<div th:if="${index.trainRemaining}!='20'">
+				<h3 class="text-secondary" th:text = "'Images Remaining: '+${index.trainRemaining}"></h3>
+			</div>
+
+
+		</blockquote>
+
+		<blockquote class="blockquote">
+			<h2 class="text-info">Evaluation</h2>
+			<h3 class="text-success" th:text = "'Images Labeled: '+${index.evalCompleted}"></h3>
+			<h3 class="text-warning" th:text = "'Images Skipped: '+${index.evalSkipped}"></h3>
+			<div th:if="${index.evalRemaining}=='20'">
+				<h3 class="text-secondary" th:text = "'Images Remaining: '+0"></h3>
+			</div>
+			<div th:if="${index.evalRemaining}!='20'">
+			<h3 class="text-secondary" th:text = "'Images Remaining: '+${index.evalRemaining}"></h3>
+			</div>
+		</blockquote>
+	</blockquote>
+			</div>
+		</div>
+
+
+</body>
 
 </div>
 
 
 
 
+
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
 
 
 

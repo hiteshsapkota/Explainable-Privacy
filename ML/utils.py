@@ -11,6 +11,10 @@ import numpy as np
 import mysql
 import mysql.connector
 from mysql.connector import errorcode
+from confidence_active_learning import getLabelInstances, findannotators
+import os
+import pickle as cPickle
+
 
 """This gives current directory"""
 
@@ -71,6 +75,9 @@ def load_attributes(attr_list_path=None):
 
     return attr_id_to_name, attr_id_to_idx
 
+[attr_id_to_name, _]=load_attributes()
+feature_names = [k for k, v in attr_id_to_name.items()]
+
 
 def load_attribute_name(file_name, file_path=base_path+"Data/Collected/user_studies"):
     
@@ -93,22 +100,24 @@ def load_attribute_name(file_name, file_path=base_path+"Data/Collected/user_stud
 [attr_id_to_name, _]=load_attributes()
 feature_names = [k for k, v in attr_id_to_name.items()]
 attribute_map_file = load_attribute_name("user_profiles.tsv")
+inv_attribute_map_file = {v:k for k,v in attribute_map_file.items()}
 
-
-def getImageAttributes(image_id):
+def getImageAttributes(image_id, cnx):
     
     """image id will be in the form of annotations/image_type/id.json"""
+    command = "select attributes from record where image_id=%s"
+    cursor = cnx.cursor()
+    cursor.execute(command, (image_id, ))
     
-    with open(base_path+"Data/Collected/"+image_id) as jf:
-         anno=json.load(jf)
-         labels = anno['labels']
-    
+    record = cursor.fetchall()
+    attributes = record[0][0].replace('\r', '').replace('\n', '').split(',')
+    labels =[inv_attribute_map_file[k].replace('\r', '').replace('\n', '') for k in attributes]
     return labels
 
 
-def getfeatureStatus(image_id):
+def getfeatureStatus(image_id, cnx):
     
-    present_attributes = getImageAttributes(image_id)
+    present_attributes = getImageAttributes(image_id, cnx)
     featureStatus=[]
     
     for feature in feature_names:
@@ -170,59 +179,6 @@ def load_tsv(file_name, file_path=base_path+"Data/Collected/user_studies"):
     return data
 
 
-def generateImageID(user_name, study_mode ='training',num_images = 1):
-    
-    """Generate Image ID and store it into the database"""
-    
-    cnx = get_Connection()
-    cursor = cnx.cursor()
-    
-    if study_mode=='training':
-        
-        clusters = random.sample(cluster_number , int(num_images))
-        Image_IDS=[]
-        Image_Paths = []
-        
-        for cluster in clusters:
-            images = cluster_image[cluster]
-            image_id = random.sample(images, 1)
-            Image_IDS.append(image_id[0])
-            
-        for image_id in Image_IDS:
-            with open(base_path+"Data/Collected/"+image_id) as jsonfile:
-                  file = json.load(jsonfile)
-                  Image_Paths.append(file['image_path'])
-                  
-        for image_id, image_path in zip(Image_IDS, Image_Paths):
-            image_path='/'+image_path
-            values = (user_name, image_id, image_path, 0)
-            sql = "INSERT INTO training (user_name, image_id, image_path, display_status) VALUES (%s, %s, %s, %s);"
-            cursor.execute(sql, values)
-            
-        cnx.commit()
-        
-        return [Image_IDS, Image_Paths]
-    
-    elif study_mode =='evaluation':
-        Image_IDS = random.sample(test_image_anno_paths, int(num_images))
-        Image_Paths= []
-        
-        for image_id in Image_IDS:
-            
-            with open(base_path+"Data/Collected/"+image_id) as jsonfile:
-                file = json.load(jsonfile)
-                Image_Paths.append('/'+file['image_path'])
-                
-        for image_id, image_path in zip(Image_IDS, Image_Paths):
-            values = (user_name, image_id, image_path, 0)
-            sql = "INSERT INTO evaluation (user_name, image_id, image_path, display_status) VALUES (%s, %s, %s, %s);"
-            
-            cursor.execute(sql, values)
-            
-        cnx.commit()
-        
-    cnx.close()
-
 
 def getUserInstances(user_name, table='training'):
     
@@ -243,16 +199,145 @@ def getUserInstances(user_name, table='training'):
     
     for i, row in enumerate(record):
         image_id = row[2]
-        features = getfeatureStatus(image_id)
-        
+        features = getfeatureStatus(image_id, cnx)
+       
         if table=="feedback":
              decision = row[5]
              
         else:
-            decision = row[4]
+            decision = row[5]
+        
+            
         df.loc[i]=features+[decision]+[image_id]
         
     return df
+
+def generateImageID(user_name, study_mode ='training',num_images = 1):
+    
+    """Generate Image ID and store it into the database"""
+    
+    cnx = get_Connection()
+    cursor = cnx.cursor()
+    
+    if study_mode=='training':
+        command = "select image_id, description from record  where image_type='train';"
+        cursor.execute(command)
+        all_image_info = cursor.fetchall()
+        all_image_ids = [row[0] for row in all_image_info]
+        id_description_map ={row[0]: row[1] for row in all_image_info}
+        
+        command = "select image_id from training where user_name=%s;"
+        cursor.execute(command, (user_name, ))
+        trained_image_ids = cursor.fetchall()
+        trained_image_ids = [row[0] for row in trained_image_ids]
+        candidate_image_ids=list(set(all_image_ids)-set(trained_image_ids))
+        
+        df = []
+        for candidate_image_id in candidate_image_ids:
+            features = getfeatureStatus(candidate_image_id, cnx)
+            df.append(features)
+        df =np.array(df)
+        
+        if os.path.isfile(base_path+"Data/Generated/user_similarity_sgd.json"):
+            with open(base_path+"Data/Generated/user_similarity_sgd.json") as outfile:
+                similarity_file = json.load(outfile)
+        else:
+            similarity_file = {}
+        
+        users = [k for k,v in similarity_file.items()]
+        if len(candidate_image_ids)<=5:
+            selected_image_ids = candidate_image_ids
+            
+        else:    
+            if os.path.isfile(base_path+'Data/Generated/trees/'+user_name+'.pkl'):
+                 with open(base_path+'Data/Generated/trees/'+user_name+'.pkl', 'rb') as fid:
+                     clf = cPickle.load(fid)  
+                 node_values = clf.tree_.value
+                 if len(node_values)==1:
+                     selected_image_ids = np.random.choice(candidate_image_ids, num_images)
+                 else:    
+                     selected_image_ids = getLabelInstances(clf, df, candidate_image_ids, node_values, cnx, users, len(trained_image_ids)+1, num_images)
+            else:
+                trees = [file  for file in os.listdir(base_path+'Data/Generated/trees') if file.endswith(".pkl")]
+                
+                if len(trees)==1:
+                    with open(base_path+'Data/Generated/trees/'+trees[0], 'rb') as fid:
+                         clf = cPickle.load(fid)  
+                    node_values = clf.tree_.value
+                    if len(node_values)==1:
+                        selected_image_ids = np.random.choice(candidate_image_ids, num_images)
+                    else:
+                        selected_image_ids = getLabelInstances(clf, df, candidate_image_ids, node_values, cnx, users, len(trained_image_ids)+1, num_images)
+                else:
+                    labelers = []
+                    for i, image_id in enumerate(candidate_image_ids):
+                        labelers.append(findannotators(df[i], image_id, users, cnx))
+                    labelers = np.array(labelers)
+                    labelers = np.exp(-labelers)/(sum(np.exp(-labelers)))
+                    
+                    selected_image_ids = np.random.choice(candidate_image_ids, num_images, replace=False, p=labelers)
+                     
+        
+        
+       
+        Image_Paths = []
+        
+       
+        for image_id in selected_image_ids:
+            with open(base_path+"Data/Collected/"+image_id) as jsonfile:
+                  file = json.load(jsonfile)
+                  Image_Paths.append(file['image_path'])
+                  
+        for image_id, image_path in zip(selected_image_ids, Image_Paths):
+            image_path='/'+image_path
+            description = id_description_map[image_id]
+            values = (user_name, image_id, image_path, 0, description)
+            sql = "INSERT INTO training (user_name, image_id, image_path, display_status, description) VALUES (%s, %s, %s, %s, %s);"
+            cursor.execute(sql, values)
+            
+        cnx.commit()
+        return [selected_image_ids, Image_Paths]
+    
+    elif study_mode =='evaluation':
+        command = "select image_id, description from record  where image_type='eval';"
+        cursor.execute(command)
+        all_image_info = cursor.fetchall()
+        all_image_ids = [row[0] for row in all_image_info]
+        id_description_map ={row[0]: row[1] for row in all_image_info}                    
+        command = "select image_id from evaluation where user_name=%s;"
+        cursor.execute(command, (user_name, ))
+        eval_image_ids = cursor.fetchall()
+        eval_image_ids = [row[0] for row in eval_image_ids]
+        candidate_image_ids =list(set(all_image_ids)-set(eval_image_ids)) 
+        if len(candidate_image_ids)<num_images:
+            if len(candidate_image_ids)==0:
+                Image_IDS = random.sample(all_image_ids, num_images)
+            else:
+                other_ids = [image_id for image_id in all_image_ids if image_id not in candidate_image_ids]
+                Image_IDS = candidate_image_ids+random.sample(other_ids, num_images)
+        else:
+            Image_IDS = random.sample(candidate_image_ids, num_images)
+            
+        Image_Paths= []
+        
+        for image_id in Image_IDS:
+            
+            with open(base_path+"Data/Collected/"+image_id) as jsonfile:
+                file = json.load(jsonfile)
+                Image_Paths.append('/'+file['image_path'])
+                
+        for image_id, image_path in zip(Image_IDS, Image_Paths):
+            description = id_description_map[image_id]
+            values = (user_name, image_id, image_path, 0, description)
+            sql = "INSERT INTO evaluation (user_name, image_id, image_path, display_status, description) VALUES (%s, %s, %s, %s, %s);"
+            
+            cursor.execute(sql, values)
+            
+        cnx.commit()
+        
+    cnx.close()
+
+
         
         
 def attributetoName(attributes, attribute_map_file):
@@ -291,7 +376,7 @@ def storeFeedback(user_name):
         
         for i, attribute in enumerate(attributes):
             
-            user_features[feature_names.index(attribute)]=(6-sensitivity_scores[i])
+            user_features[feature_names.index(attribute)].append(sensitivity_scores[i])
             
         feedback_file[user_name]=user_features
         iofile.seek(0)
@@ -299,7 +384,7 @@ def storeFeedback(user_name):
         iofile.truncate()
         
         
-def getTrainedUsers(users, th=4):
+def getTrainedUsers(users, th=5):
     cnx = get_Connection()
     cursor = cnx.cursor()
     trained_users=[]
@@ -321,12 +406,12 @@ def getTrainedUsers(users, th=4):
 if __name__=="__main__":
     
     if sys.argv[1]=="generateImageID":
-        
+        print("I am inside generateImageID section")
         generateImageID(sys.argv[2], sys.argv[3], int(sys.argv[4]))
         
     if sys.argv[1]=="getImageAttributes":
-        
-        attributes = getImageAttributes(sys.argv[2])
+        cnx = get_Connection()
+        attributes = getImageAttributes(sys.argv[2], cnx)
         attribute_map_file = load_attribute_name("user_profiles.tsv")
         attribute_name = attributetoName(attributes, attribute_map_file)
         for attribute in attribute_name:

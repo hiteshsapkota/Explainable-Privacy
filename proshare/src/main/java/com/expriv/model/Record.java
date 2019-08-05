@@ -5,8 +5,13 @@ public class Record {
     private String image_id;
     private String image_path;
     private String user_name;
+    private String description;
     private int sharing_decision;
     private int display_status;
+    private int recommendation;
+    private String explanation;
+    private String expType;
+    private String attribute;
 
     public Integer getId() {
         return id;
@@ -52,5 +57,46 @@ public class Record {
 
     public void setImage_path(String image_path) {
         this.image_path = image_path;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+
+    public int getRecommendation() {
+        return recommendation;
+    }
+
+    public void setRecommendation(int recommendation) {
+        this.recommendation = recommendation;
+    }
+
+    public String getExplanation() {
+        return explanation;
+    }
+
+    public void setExplanation(String explanation) {
+        this.explanation = explanation;
+    }
+
+    public String getExpType() {
+        return expType;
+    }
+
+    public void setExpType(String expType) {
+        this.expType = expType;
+    }
+
+    public String getAttribute() {
+        return attribute;
+    }
+
+    public void setAttribute(String attribute) {
+        this.attribute = attribute;
     }
 }

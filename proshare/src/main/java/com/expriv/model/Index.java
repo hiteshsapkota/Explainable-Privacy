@@ -9,8 +9,12 @@ public class Index {
     private int id;
     private String username;
     private JdbcTemplate jdbcTemplate;
-    private float trainCompleted;
-    private float evalCompleted;
+    private String trainCompleted;
+    private String evalCompleted;
+    private String trainSkipped;
+    private String evalSkipped;
+    private String trainRemaining;
+    private String evalRemaining;
     private int trainBatchSize;
     private int evalBatchSize;
 
@@ -47,19 +51,19 @@ public class Index {
         this.jdbcTemplate = jdbcTemplate;
     }
 
-    public float getTrainCompleted() {
+    public String getTrainCompleted() {
         return trainCompleted;
     }
 
-    public void setTrainCompleted(float trainCompleted) {
+    public void setTrainCompleted(String trainCompleted) {
         this.trainCompleted = trainCompleted;
     }
 
-    public float getEvalCompleted() {
+    public String getEvalCompleted() {
         return evalCompleted;
     }
 
-    public void setEvalCompleted(float evalCompleted) {
+    public void setEvalCompleted(String evalCompleted) {
         this.evalCompleted = evalCompleted;
     }
 
@@ -79,66 +83,87 @@ public class Index {
         this.evalBatchSize = evalBatchSize;
     }
 
+    public String getTrainSkipped() {
+        return trainSkipped;
+    }
 
+    public void setTrainSkipped(String trainSkipped) {
+        this.trainSkipped = trainSkipped;
+    }
+    public String getEvalSkipped() {
+        return evalSkipped;
+    }
+
+    public void setEvalSkipped(String evalSkipped) {
+        this.evalSkipped = evalSkipped;
+    }
+
+    public String getTrainRemaining() {
+        return trainRemaining;
+    }
+
+    public void setTrainRemaining(String trainRemaining) {
+        this.trainRemaining = trainRemaining;
+    }
+
+    public String getEvalRemaining() {
+        return evalRemaining;
+    }
+
+    public void setEvalRemaining(String  evalRemaining) {
+        this.evalRemaining = evalRemaining;
+    }
+
+    public int getInstances(String sql)
+    {
+        List <Record> records = jdbcTemplate.query(sql, new Object[] {username}, new RecordRowMapper());
+        if (records.isEmpty())
+            return 0;
+        else
+        return (int)records.size();
+    }
 
     public void setProgress()
     {
-        try
-        {
+        try {
 
             String sql = "select * from training where user_name=?";
-            List<Record> records = jdbcTemplate.query(sql, new Object[] {username}, new RecordRowMapper());
-            if (records.isEmpty())
-            {
+            int noInstances =50;
+            //int noInstances = getInstances(sql);
+            if (noInstances == 0) {
 
-                this.trainCompleted = 0;
+                this.trainCompleted = Integer.toString(0);
+                this.trainSkipped = Integer.toString(0);
+                this.trainRemaining = Integer.toString(0);
 
-            }
-            else
-            {
-                int trainRecord = records.size();
-                sql = "select * from training where display_status=0 and user_name=?";
-                records = jdbcTemplate.query(sql, new Object[] {username}, new RecordRowMapper());
-                if (records.isEmpty())
-                {
+            } else {
+                sql = "select * from training where display_status=1 and sharing_decision is not NULL and user_name=?";
+                this.trainCompleted = Integer.toString(getInstances(sql));
+                sql = "select * from training where display_status=1 and sharing_decision is NULL and user_name=?";
+                this.trainSkipped = Integer.toString(getInstances(sql));
+                this.trainRemaining = Integer.toString(((Integer.parseInt(this.trainCompleted)+Integer.parseInt(this.trainSkipped))/noInstances+1)*noInstances-Integer.parseInt(this.trainCompleted)-Integer.parseInt(this.trainSkipped));
 
-                    this.trainCompleted = 100;
-
-                }
-                else
-                {
-
-                    this.trainCompleted = ((float) (records.size()%this.trainBatchSize)/this.trainBatchSize)*100;
-
-                }
 
             }
 
             sql = "select * from evaluation where user_name=?";
-            records = jdbcTemplate.query(sql, new Object[] {username}, new RecordRowMapper());
-            if (records.isEmpty())
-            {
-                this.evalCompleted = 0;
+            noInstances = getInstances(sql);
+            if (noInstances == 0) {
+                this.evalCompleted = Integer.toString(0);
+                this.evalSkipped = Integer.toString(0);
+                this.evalRemaining = Integer.toString(0);
 
-            }
-            else
-            {
-                int evalRecord = records.size();
-                sql = "select * from evaluation where display_status=0 and user_name=?";
-                records = jdbcTemplate.query(sql, new Object[] {username}, new RecordRowMapper());
-                if (records.isEmpty())
-                {
-                    this.evalCompleted = 100;
-
-                }
-                else
-                {
-                    this.evalCompleted = ((float)(records.size()%this.evalBatchSize)/this.evalBatchSize)*100;
-                }
+            } else {
+                sql = "select * from evaluation where display_status=1 and sharing_decision is not NULL and user_name=?";
+                this.evalCompleted = Integer.toString(getInstances(sql));
+                sql = "select * from evaluation where display_status=1 and sharing_decision is NULL and user_name=?";
+                this.evalSkipped = Integer.toString(getInstances(sql));
+                this.evalRemaining = Integer.toString(noInstances-Integer.parseInt(this.evalCompleted)-Integer.parseInt(this.evalSkipped));
 
             }
 
-        } catch (Exception e)
+        }
+        catch (Exception e)
         {
             System.out.println(e);
         }

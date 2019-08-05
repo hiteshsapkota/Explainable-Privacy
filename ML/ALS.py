@@ -37,12 +37,10 @@ class ExplicitMF():
     def __init__(self, 
                  ratings,
                  item_vecs,
-                 feedback_vecs,
                  n_factors=68,
                  learning='sgd',
                  user_fact_reg=0.0,
                  user_bias_reg=0.0,
-                 feedback_scale = 5,
                  verbose=False):
         """
         Train a matrix factorization model to predict empty 
@@ -53,8 +51,6 @@ class ExplicitMF():
         ======
         ratings : (ndarray)
             User x Item matrix with corresponding ratings
-        feedback_vecs: (ndarray)
-           User*Feature matrix
         n_factors : (int)
             Number of latent factors to use in matrix 
             factorization model
@@ -85,10 +81,6 @@ class ExplicitMF():
         self.user_fact_reg = user_fact_reg
         self.user_bias_reg = user_bias_reg
         self.learning = learning
-        self.feedback_scale = feedback_scale
-        self.feedback_vecs= feedback_vecs
-        self.mask = copy.deepcopy(feedback_vecs)
-        self.mask[self.mask>0] = 1
         if self.learning == 'sgd':
             self.sample_row, self.sample_col = self.ratings.nonzero()
             self.n_samples = len(self.sample_row)
@@ -146,9 +138,6 @@ class ExplicitMF():
         """
         ctr = 1
         while ctr <= n_iter:
-            feedback_norm = (self.feedback_vecs-1)*(np.amax(self.user_vecs, axis=1)-np.amin(self.user_vecs, axis=1))[:, np.newaxis]/(self.feedback_scale-1)+np.amin(self.user_vecs, axis=1)[:, np.newaxis]
-            
-            self.user_vecs = self.user_vecs+(feedback_norm*self.mask-self.user_vecs)*self.mask
             if ctr % 10 == 0 and self._v:
                 print('\tcurrent iteration: {}'.format(ctr))
             if self.learning == 'als':
@@ -163,8 +152,7 @@ class ExplicitMF():
                 np.random.shuffle(self.training_indices)
                 self.sgd()
             ctr += 1
-        feedback_norm = (self.feedback_vecs-1)*(np.amax(self.user_vecs, axis=1)-np.amin(self.user_vecs, axis=1))[:, np.newaxis]/(self.feedback_scale-1)+np.amin(self.user_vecs, axis=1)[:, np.newaxis]
-        self.user_vecs = self.user_vecs+(feedback_norm*self.mask-self.user_vecs)*self.mask
+       
         
 
     def sgd(self):
@@ -269,7 +257,7 @@ def plot_learning_curve(iter_array, model):
 
 
 
-def getUserMatrix(ratings, item_vecs, feedback_vecs):
+def getUserMatrix(ratings, item_vecs):
     train, test = train_test_split(ratings)
     num_features = item_vecs.shape[1]
     regularizations = [0.01, 0.1, 1., 10., 100.]
@@ -287,7 +275,7 @@ def getUserMatrix(ratings, item_vecs, feedback_vecs):
     
     for rate in learning_rates:
         print('Rate: {}'.format(rate))
-        MF_SGD = ExplicitMF(train, item_vecs, feedback_vecs, n_factors=num_features, learning='sgd')
+        MF_SGD = ExplicitMF(train, item_vecs, n_factors=num_features, learning='sgd')
         MF_SGD.calculate_learning_curve(iter_array, test, learning_rate=rate)
         min_idx = np.argmin(MF_SGD.test_mse)
         if MF_SGD.test_mse[min_idx] < best_params['test_mse']:
