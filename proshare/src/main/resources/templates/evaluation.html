@@ -236,6 +236,8 @@ $("#sensitive_List").hide();
 $("#additional_List").hide();
 $("#recomm_Reason").hide();
 $("#all_List").hide();
+$("#attr_Understandability").hide();
+$("#exp_Understandability").hide();
 
   $('a#evaluation-link').click(function()
   {
@@ -280,6 +282,8 @@ $("#all_List").hide();
 $("#additional_List").hide();
 $("#recomm_Change").hide();
 $("#recomm_Reason").hide();
+$("#attr_Understandability").hide();
+$("#exp_Understandability").hide();
 
 if (radioValRecomm=='Agree' || radioValRecomm== 'Disagree')
 
@@ -300,6 +304,8 @@ $("#all_List").hide();
 $("#additional_List").show();
 $("#recomm_Change").hide();
 $("#recomm_Reason").hide();
+$("#attr_Understandability").hide();
+$("#exp_Understandability").show();
 
 }
 
@@ -309,7 +315,9 @@ $("#sensitive_List").hide();
 $("#all_List").hide();
 $("#additional_List").hide();
 $("#recomm_Change").show();
-$("#recomm_Reason").show();
+$("#recomm_Reason").hide();
+$("#attr_Understandability").hide();
+$("#exp_Understandability").show();
 
 recommChange = $("input[name='recommChange']:checked").val();
 
@@ -320,6 +328,8 @@ $("#all_List").hide();
 $("#additional_List").show();
 $("#recomm_Change").show();
 $("#recomm_Reason").hide();
+$("#attr_Understandability").hide();
+$("#exp_Understandability").show();
 }
 if (recommChange=='Disagee')
 {
@@ -328,6 +338,8 @@ $("#all_List").hide();
 $("#additional_List").hide();
 $("#recomm_Change").show();
 $("#recomm_Reason").hide();
+$("#attr_Understandability").show();
+$("#exp_Understandability").hide();
 
 }
 
@@ -344,6 +356,8 @@ $("#all_List").show();
 $("#additional_List").show();
 $("#recomm_Change").hide();
 $("#recomm_Reason").hide();
+$("#attr_Understandability").show();
+$("#exp_Understandability").hide();
 }
 
 if (radioValRecomm=='Disagree')
@@ -353,6 +367,8 @@ $("#all_List").hide();
 $("#additional_List").hide();
 $("#recomm_Change").hide();
 $("#recomm_Reason").hide();
+$("#attr_Understandability").hide();
+$("#exp_Understandability").hide();
 }
 }
 
@@ -369,6 +385,8 @@ $("#all_List").hide();
 $("#additional_List").hide();
 $("#recomm_Change").hide();
 $("#recomm_Reason").hide();
+$("#attr_Understandability").hide();
+$("#exp_Understandability").hide();
 }
 if(radioValRecomm=='Disagree')
 {
@@ -377,6 +395,9 @@ $("#all_List").show();
 $("#additional_List").show();
 $("#recomm_Change").hide();
 $("#recomm_Reason").hide();
+$("#attr_Understandability").show();
+$("#exp_Understandability").hide();
+
 }
 
 }
@@ -390,6 +411,8 @@ $("#all_List").hide();
 $("#additional_List").hide();
 $("#recomm_Change").show();
 $("#recomm_Reason").hide();
+$("#attr_Understandability").hide();
+$("#exp_Understandability").hide();
 recommChange = $("input[name='recommChange']:checked").val();
 
 if (recommChange=='Agree')
@@ -399,6 +422,8 @@ $("#all_List").hide();
 $("#additional_List").show();
 $("#recomm_Change").show();
 $("#recomm_Reason").hide();
+$("#attr_Understandability").hide();
+$("#exp_Understandability").show();
 }
 
 if (recommChange=='Disagree')
@@ -408,6 +433,8 @@ $("#all_List").hide();
 $("#additional_List").hide();
 $("#recomm_Change").show();
 $("#recomm_Reason").hide();
+$("#attr_Understandability").hide();
+$("#exp_Understandability").show();
 }
 }
 if (radioValRecomm=='Disagree')
@@ -417,6 +444,8 @@ $("#all_List").hide();
 $("#additional_List").hide();
 $("#recomm_Change").hide();
 $("#recomm_Reason").show();
+$("#attr_Understandability").hide();
+$("#exp_Understandability").hide();
 recommChange = $("input[name='recommReason']:checked").val();
 if (recommChange=='Agree')
 {
@@ -425,6 +454,8 @@ $("#all_List").hide();
 $("#additional_List").show();
 $("#recomm_Change").hide();
 $("#recomm_Reason").show();
+$("#attr_Understandability").hide();
+$("#exp_Understandability").show();
 
 }
 if (recommChange=='Disagree')
@@ -434,6 +465,8 @@ $("#all_List").show();
 $("#additional_List").show();
 $("#recomm_Change").hide();
 $("#recomm_Reason").show();
+$("#attr_Understandability").show();
+$("#exp_Understandability").hide();
 
 }
 
@@ -598,46 +631,60 @@ $("#recomm_Reason").show();
 
 
                 <div id="recomm_Change" class="col-md-10 col-md-offset-3">
+                    <div class="col-md-3 col-md-offset-3" th:if="${evaluation.recommChange}=='invalid'">
+                        <div class="alert alert-danger">Select one of the two buttons</div>
+                    </div>
                     <h3>After looking into explanation do you change your recommendation?</h3>
+                    <div class="col-md-10 col-md-offset-3">
                     <input type="radio" name="recommChange" value="Agree"> <label for="agree">Yes</label>&nbsp; &nbsp;
 
                     <input type="radio" name="recommChange" value="Disagree"><label for="disagree">No</label>
+                    </div>
 
                 </div>
 
                 <div id="recomm_Reason" class="col-md-10 col-md-offset-3">
+                    <div class="col-md-3 col-md-offset-3" th:if="${evaluation.recommReason}=='invalid'">
+                        <div class="alert alert-danger">Select one of the two buttons</div>
+                    </div>
                     <h3>Does explanation the reason for your disagreement decision</h3>
+                    <div class="col-md-10 col-md-offset-3">
                     <input type="radio" name="recommReason" value="Agree"> <label for="agree">Yes</label>&nbsp; &nbsp;
 
                     <input type="radio" name="recommReason" value="Disagree"><label for="disagree">No</label>
 
                 </div>
+                </div>
 
                 <div id="sensitive_List" class="col-md-10 col-md-offset-3">
                     <h3>Check explanation that are not consider in making the decision</h3>
+                    <div class="col-md-10 col-md-offset-3">
                     <label class="checkbox-inline">
                     <tr th:each="part_explanation , itemStat : ${evaluation.explanationDto.explanations}">
 
                         <div th:if="${itemStat.index!=0}">
-                           <h3><input type="checkbox"  th:field="*{evaluation.explanationDto.explanations[__${itemStat.index}__].value}" th:name=${part_explanation.content}  th:value=${part_explanation.content} class="btn btn-success btn-lg" checked><span th:text="${part_explanation.content}"></span></h3>&nbsp;
+                           <h3><input type="checkbox"  th:field="*{evaluation.explanationDto.explanations[__${itemStat.index}__].value}" th:name=${part_explanation.content}  th:value=1 class="btn btn-success btn-lg" checked><span th:text="${part_explanation.content}"></span></h3>&nbsp;
 
-
+                            <input id = "part_explanation" type="hidden" th:field="*{evaluation.explanationDto.explanations[__${itemStat.index}__].content}" />
 
                         </div>
+
                     </tr>
                     </label>
+                    </div>
 
                 </div>
 
                 <div id="all_List" class="col-md-10 col-md-offset-3">
                     <h3>Check sentences not influencing the decision</h3>
+                    <div class="col-md-10 col-md-offset-3">
                     <label class="checkbox-inline">
                         <tr th:each="feedback , itemStat : ${evaluation.feedbackDto.feedbacks}">
 
 
 
 
-                            <h3><input type="checkbox"   th:field="*{evaluation.feedbackDto.feedbacks[__${itemStat.index}__].attributeSensitivity}" th:name="${feedback.attributeId}"  th:value="${feedback.attributeId}" class="btn btn-success btn-lg"><span th:text="${feedback.attributeDescription}"></span></h3>&nbsp;
+                            <h3><input type="checkbox"   th:field="*{evaluation.feedbackDto.feedbacks[__${itemStat.index}__].attributeSensitivity}" th:name="${feedback.attributeId}"  th:value=1 class="btn btn-success btn-lg"><span th:text="${feedback.attributeDescription}"></span></h3>&nbsp;
 
 
                         </tr>
@@ -646,21 +693,77 @@ $("#recomm_Reason").show();
                     </label>
 
                 </div>
+                </div>
 
                 <div id="additional_List" class="col-md-10 col-md-offset-3">
                     <h3>Add additional reasons for the recommendation</h3>
+                    <div class="form-group col-md-4" >
                     <div class="input_fields_wrap" id="additional_text">
                         <input type="button" name="Add" class="add_field_button" value="Add">
-                        <button onclick="myFunction()">Try it</button>
-                        <input type="text" name="additionalAttributes" class="form-control" autofocus="autofocus" />
+                        <br>
+                        <input type="text" name="additionalAttributes"  autofocus="autofocus" />
 
                     </div>
 
 
-
+                    </div>
 
                 </div>
 
+
+
+                <div id="additional_remark" class="col-md-10 col-md-offset-3">
+                    <h3 class="text-info">Additional suggestion on Recommendation and Explanation</h3>
+                    <br>
+                    <div class="form-group col-md-4" >
+                        <input type="text" id="add_remark" name="addRemark" class="form-control" autofocus="autofocus" placeholder="Additional Attributes" />
+                    </div>
+                </div>
+
+                    <div id="exp_Understandability" class="col-md-10 col-md-offset-3">
+                        <div th:if="${not #lists.isEmpty(evaluation.expUnderstandability)}">
+                            <h3>Provide the Understandability score with 1 as not understood and 5 as completely understood</h3>
+                            <label class="checkbox-inline">
+                                <tr th:each="description , itemStat : ${evaluation.expUnderstandability}">
+                                    <h3 class="text-info" th:text="${description}"></h3>
+                                    <input type="radio" id="one"   th:field="*{evaluation.expUnderstandability[__${itemStat.index}__]}" name="description" value=1><label for="1">1</label>&nbsp; &nbsp; &nbsp;
+                                    <input type="radio" id="two"   th:field="*{evaluation.expUnderstandability[__${itemStat.index}__]}" name="description" value=2><label for="2">2</label>&nbsp; &nbsp; &nbsp;
+                                    <input type="radio" id="three" th:field="*{evaluation.expUnderstandability[__${itemStat.index}__]}" name="description" value=3><label for="3">3</label>&nbsp; &nbsp; &nbsp;
+                                    <input type="radio" id="four"  th:field="*{evaluation.expUnderstandability[__${itemStat.index}__]}" name="description" value=4><label for="4">4</label>&nbsp; &nbsp; &nbsp;
+                                    <input type="radio" id="five"  th:field="*{evaluation.expUnderstandability[__${itemStat.index}__]}" name="description" value=5><label for="5">5</label>&nbsp; &nbsp; &nbsp;
+
+
+
+                                </tr>
+                            </label>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div id="attr_Understandability" class="col-md-10 col-md-offset-3">
+                        <div th:if="${not #lists.isEmpty(evaluation.attrUnderstandability)}">
+                            <h3>Provide the Understandability score with 1 as not uncerstood and 5 as completely understood</h3>
+                            <label class="checkbox-inline">
+                                <tr th:each="description , itemStat : ${evaluation.expUnderstandability}">
+                                    <h3 class="text-info" th:text="${description}"></h3>
+                                    <input type="radio" id="one"   name="*{evaluation.attrUnderstandability[__${itemStat.index}__]}" value=1><label for="1">1</label>&nbsp; &nbsp; &nbsp;
+                                    <input type="radio" id="two"   name="*{evaluation.attrUnderstandability[__${itemStat.index}__]}" value=2><label for="2">2</label>&nbsp; &nbsp; &nbsp;
+                                    <input type="radio" id="three" name="*{evaluation.attrUnderstandability[__${itemStat.index}__]}" value=3><label for="3">3</label>&nbsp; &nbsp; &nbsp;
+                                    <input type="radio" id="four"  name="*{evaluation.attrUnderstandability[__${itemStat.index}__]}" value=4><label for="4">4</label>&nbsp; &nbsp; &nbsp;
+                                    <input type="radio" id="five"  name="*{evaluation.attrUnderstandability[__${itemStat.index}__]}" value=5><label for="5">5</label>&nbsp; &nbsp; &nbsp;
+
+
+
+                                </tr>
+                            </label>
+
+
+
+
+                    </div>
 
 
 
@@ -715,14 +818,10 @@ $("#recomm_Reason").show();
 
 
 
-                <div id="additional_feedback_form">
-                        <h3 class="text-info">Additional sensitive attributes present in the image</h3>
-                         <br>
-                        <div class="form-group col-md-4" >
-                            <input type="text" id="add_attr" name="addAttr" class="form-control" autofocus="autofocus" placeholder="Additional Attributes" />
-                        </div>
 
-                    </div>
+                </div>
+
+
 
                 <div class="clear"></div>
                 <h1></h1>

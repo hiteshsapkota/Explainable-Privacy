@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -285,6 +286,7 @@ public class MainController {
             }
 
             evaluation.setFeedbackDto(feedbackDto);
+            evaluation.readUndersatandability();
             evaluation.setAttributeValid(true);
             model.addAttribute("evaluation", evaluation);
 
@@ -292,6 +294,7 @@ public class MainController {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         return "evaluation";
 
 
@@ -301,66 +304,208 @@ public class MainController {
         public String evaluationSubmit(@ModelAttribute Evaluation evaluation, Model model)
         {
 
-            System.out.println("Additional Attributes"+evaluation.getAdditionalAttributes().get(0));
-            System.out.println("Additional Attributes"+evaluation.getAdditionalAttributes().get(1));
-
-
-
             evaluation.setJdbcTemplate(jdbcTemplate);
             Index index=evaluation.getIndex();
-            boolean insufficient = evaluation.getExpType().equals("NotShare_Insufficient")||  evaluation.getExpType().equals("Share_Insufficient") ||  evaluation.getExpType().equals("Share_OwnSensPresent");
+
             if (evaluation.getFeedbackRecomm()==null) {
 
                 evaluation.setFeedbackRecomm("invalid");
-                evaluation.setFeedbackExp("valid");
-                evaluation.setAttributeValid(true);
+                evaluation.setRecommChange("valid");
+                evaluation.setRecommReason("valid");
                 model.addAttribute("evaluation", evaluation);
 
                 return "evaluation";
             }
 
-
-            else if (evaluation.getFeedbackExp()==null && evaluation.getRecommendation()==0 && evaluation.getFeedbackRecomm().equals("Agree") && !insufficient)
-            {
-
-
-                    evaluation.setFeedbackRecomm("valid");
-                    evaluation.setFeedbackExp("invalid");
-                    evaluation.setAttributeValid(true);
-                    model.addAttribute("evaluation", evaluation);
-                    return "evaluation";
-
-            }
-
             else
             {
+                ImageAttributeService imageAttributeService=new ImageAttributeService();
 
-                evaluation.storeAgree_type(insufficient);
-                ImageAttributeService imageAttributeService = new ImageAttributeService();
-
-                try
+                if (evaluation.getRecommendation()==0)
                 {
+                    if (evaluation.getExpType().equals("NotShare_OwnSensPresent"))
+                    {
+                        if (evaluation.getFeedbackRecomm().equals("Agree"))
+                        {
+                            evaluation.storeRecommendation("yes", "NA");
+                            evaluation.storeFeedback(0);
+                            evaluation.storeSensitivity("selected");
+                            evaluation.storeAdditionalAttributes();
 
-                       imageAttributeService.transferValues(evaluation.getFeedbackDto(), jdbcTemplate, evaluation.getAddAttr(), evaluation.getId(), evaluation, insufficient);
 
-                    evaluation.storeFeedbackType();
+                            evaluation.transferSensitivity(imageAttributeService, "selected");
+                            evaluation.storeAdditionalRemark();
+                            System.out.println("Attributes");
+                            for (String attribute: evaluation.getExpUnderstandability())
+                            {
+                                System.out.println(attribute);
+                            }
+
+
+                        }
+                        else if (evaluation.getFeedbackRecomm().equals("Disagree"))
+                        {
+                            if (evaluation.getRecommChange()==null)
+                            {
+                                evaluation.setFeedbackRecomm("valid");
+                                evaluation.setRecommChange("invalid");
+                                evaluation.setRecommReason("valid");
+                                model.addAttribute("evaluation", evaluation);
+                                return "evaluation";
+                            }
+
+                            if (evaluation.getRecommChange().equals("Agree"))
+                            {
+                                evaluation.storeRecommendation("yes", "yes");
+                                evaluation.storeFeedback(0);
+                                evaluation.storeSensitivity("selected");
+                                evaluation.storeAdditionalAttributes();
+                                evaluation.transferSensitivity(imageAttributeService, "selected");
+                                evaluation.storeAdditionalRemark();
+
+                            }
+                            else if (evaluation.getRecommChange().equals("Disagree"))
+                            {
+                                evaluation.storeRecommendation("no", "no");
+                                evaluation.storeFeedback(1);
+                                evaluation.transferSensitivity(imageAttributeService, "other");
+                                evaluation.storeAdditionalRemark();
+
+
+                            }
+                        }
+                    }
+                    else if (evaluation.getExpType().equals("NotShare_Insufficient"))
+                    {
+                        if (evaluation.getFeedbackRecomm().equals("Agree"))
+                        {
+                            evaluation.storeRecommendation("yes", "NA");
+                            evaluation.storeFeedback(0);
+                            evaluation.storeSensitivity("all");
+                            evaluation.storeAdditionalAttributes();
+                            evaluation.transferSensitivity(imageAttributeService, "all");
+                            evaluation.storeAdditionalRemark();
+
+                        }
+                        else if (evaluation.getFeedbackRecomm().equals("Disagree"))
+                        {
+                            evaluation.storeRecommendation("no", "NA");
+                            evaluation.storeFeedback(1);
+                            evaluation.transferSensitivity(imageAttributeService, "other");
+                            evaluation.storeAdditionalRemark();
+
+
+                        }
+
+
+                    }
+
 
                 }
-                catch (IOException e)
+
+                else if (evaluation.getRecommendation()==1)
                 {
-                    e.printStackTrace();
+                    if (evaluation.getExpType().equals("Share_OwnSensAbsent"))
+                    {
+                        if (evaluation.getFeedbackRecomm().equals("Agree"))
+                        {
+                            evaluation.storeRecommendation("yes", "NA");
+                            evaluation.storeFeedback(1);
+                            evaluation.transferSensitivity(imageAttributeService, "other");
+                            evaluation.storeAdditionalRemark();
+
+
+                        }
+                        else if (evaluation.getFeedbackRecomm().equals("Disagree"))
+                        {
+                            evaluation.storeRecommendation("no", "NA");
+                            evaluation.storeFeedback(0);
+                            evaluation.storeSensitivity("all");
+                            evaluation.storeAdditionalAttributes();
+                            evaluation.transferSensitivity(imageAttributeService, "all");
+                            evaluation.storeAdditionalRemark();
+
+                        }
+                    }
+                    else if (evaluation.getExpType().equals("Share_OwnSensPresent"))
+                    {
+                        if (evaluation.getFeedbackRecomm().equals("Agree"))
+                        {
+                            if (evaluation.getRecommChange()==null)
+                            {
+                                evaluation.setFeedbackRecomm("valid");
+                                evaluation.setRecommChange("invalid");
+                                evaluation.setRecommReason("valid");
+                                model.addAttribute("evaluation", evaluation);
+                                return "evaluation";
+                            }
+                            if (evaluation.getRecommChange().equals("Agree"))
+                            {
+                                evaluation.storeRecommendation("no", "yes");
+                                evaluation.storeFeedback(0);
+                                evaluation.storeSensitivity("selected");
+                                evaluation.storeAdditionalAttributes();
+                                evaluation.transferSensitivity(imageAttributeService, "selected");
+                                evaluation.storeAdditionalRemark();
+
+                            }
+                            else if (evaluation.getRecommChange().equals("Disagree"))
+                            {
+                                evaluation.storeRecommendation("yes", "no");
+                                evaluation.storeFeedback(1);
+                                evaluation.transferSensitivity(imageAttributeService, "other");
+                                evaluation.storeAdditionalRemark();
+
+
+                            }
+                        }
+                        if (evaluation.getFeedbackRecomm().equals("Disagree"))
+                        {
+                            if (evaluation.getRecommReason()==null)
+                            {
+                                evaluation.setFeedbackRecomm("valid");
+                                evaluation.setRecommChange("valid");
+                                evaluation.setRecommReason("invalid");
+                                model.addAttribute("evaluation", evaluation);
+                                return "evaluation";
+                            }
+                            if (evaluation.getRecommReason().equals("Agree"))
+                            {
+                                evaluation.storeRecommendation("no", "yes");
+                                evaluation.storeFeedback(0);
+                                evaluation.storeSensitivity("selected");
+                                evaluation.storeAdditionalAttributes();
+                                evaluation.transferSensitivity(imageAttributeService, "selected");
+                                evaluation.storeAdditionalRemark();
+
+                            }
+                            else if (evaluation.getRecommReason().equals("Disagree"))
+                            {
+                                evaluation.storeRecommendation("no", "no");
+                                evaluation.storeFeedback(0);
+                                evaluation.storeSensitivity("all");
+                                evaluation.storeAdditionalAttributes();
+                                evaluation.transferSensitivity(imageAttributeService, "all");
+                                evaluation.storeAdditionalRemark();
+
+                            }
+                        }
+                    }
+
+
+
                 }
-
-
-
-
-
-
-
-
+                evaluation.storeAdditionalRemark();
                 EvaluationService evaluationService = new EvaluationService();
 
                 return evaluationService.getTemplate(jdbcTemplate, model);
+
+            }
+
+
+
+
+
 
 
 
@@ -382,4 +527,4 @@ public class MainController {
 
 
 
-}
+

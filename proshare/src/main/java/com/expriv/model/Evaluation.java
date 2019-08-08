@@ -1,9 +1,12 @@
 package com.expriv.model;
 
 import com.expriv.service.ConfigurationService;
+import com.expriv.service.ImageAttributeService;
+import com.opencsv.CSVWriter;
 import org.apache.commons.collections.FactoryUtils;
 import org.apache.commons.collections.list.LazyList;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -30,18 +33,42 @@ public class Evaluation {
     private String feedbackExp;
     private Index index;
     private boolean update;
-    private String addAttr;
+    private String addRemark;
     private String description;
     private String expType;
     private ExplanationDto explanationDto;
+    private String recommChange;
+    private String recommReason;
     private List<String> explanation = new ArrayList<String>();
     private List<String> additionalAttributes;
+
+    private List<String> expUnderstandability = new ArrayList<String>();
+    private List<String> attrUnderstandability = new ArrayList<String>();
+
     public List<String> getAdditionalAttributes() {
         return additionalAttributes;
+
     }
+
 
     public void setAdditionalAttributes(List<String> additionalAttributes) {
         this.additionalAttributes = additionalAttributes;
+    }
+
+    public List<String> getExpUnderstandability() {
+        return expUnderstandability;
+    }
+
+    public void setExpUnderstandability(List<String> expUnderstandability) {
+        this.expUnderstandability = expUnderstandability;
+    }
+
+    public List<String> getAttrUnderstandability() {
+        return attrUnderstandability;
+    }
+
+    public void setAttrUnderstandability(List<String> attrUnderstandability) {
+        this.attrUnderstandability = attrUnderstandability;
     }
 
     public int getId() {
@@ -67,6 +94,7 @@ public class Evaluation {
     public void setExplanation(List<String> explanation) {
         this.explanation = explanation;
     }
+
 
 
     public JdbcTemplate getJdbcTemplate() {
@@ -155,12 +183,12 @@ public class Evaluation {
     }
 
 
-    public String getAddAttr() {
-        return addAttr;
+    public String getAddRemark() {
+        return addRemark;
     }
 
-    public void setAddAttr(String addAttr) {
-        this.addAttr = addAttr;
+    public void setAddRemark(String addRemark) {
+        this.addRemark = addRemark;
     }
 
     public String getFeedbackRecomm() {
@@ -201,6 +229,22 @@ public class Evaluation {
 
     public void setExplanationDto(ExplanationDto explanationDto) {
         this.explanationDto = explanationDto;
+    }
+
+    public String getRecommChange() {
+        return recommChange;
+    }
+
+    public void setRecommChange(String recommChange) {
+        this.recommChange = recommChange;
+    }
+
+    public String getRecommReason() {
+        return recommReason;
+    }
+
+    public void setRecommReason(String recommReason) {
+        this.recommReason = recommReason;
     }
 
     public Index getIndex() {
@@ -285,95 +329,24 @@ public class Evaluation {
 
     }
 
-    public void storeAgree_type(boolean insufficient)
+
+
+    public void storeRecommendation(String agree_recommendation,String change_recommendation)
     {
-        try
-        {
-
-
-            if (feedbackRecomm.equals("Agree"))
-            {
-                jdbcTemplate.update("update evaluation set agree_recommendation = 'yes'  where id ="+Integer.toString(this.id)+";");
-                if (this.recommendation==1)
-                jdbcTemplate.update("update evaluation set sharing_decision = 1  where id ="+Integer.toString(this.id)+";");
-                else if (this.recommendation==0) {
-                    jdbcTemplate.update("update evaluation set sharing_decision = 0  where id =" + Integer.toString(this.id) + ";");
-                    if (!insufficient)
-                    {
-                        if (feedbackExp.equals("Agree"))
-                            jdbcTemplate.update("update evaluation set agree_explanation = 'yes'  where id =" + Integer.toString(this.id) + ";");
-                        else if (feedbackExp.equals("Disagree"))
-                            jdbcTemplate.update("update evaluation set agree_explanation = 'no'  where id =" + Integer.toString(this.id) + ";");
-
-                    }
-                }
-
-
-            }
-            else if (feedbackRecomm.equals("Disagree"))
-
-            {
-                jdbcTemplate.update("update evaluation set agree_recommendation = 'no'  where id ="+Integer.toString(this.id)+";");
-                if (this.recommendation==1)
-                    jdbcTemplate.update("update evaluation set sharing_decision = 0  where id ="+Integer.toString(this.id)+";");
-                else if (this.recommendation==0)
-                    jdbcTemplate.update("update evaluation set sharing_decision = 1  where id ="+Integer.toString(this.id)+";");
-
-
-
-
-            }
-
-
-
-            System.out.println("Storing Record");
-
-            String query="update evaluation set display_status = 1  where id ="+Integer.toString(this.id);
-            jdbcTemplate.update(query);
-
-
-            if (!(feedbackRecomm.equals("Disagree")&&feedbackExp.equals("Agree"))) {
-
-                query = "INSERT INTO feedback (user_name, image_id, image_path, display_status, sharing_decision, description) VALUES (?, ?, ?, ?, ?, ?)";
-
-                Object[] params;
-                if (feedbackRecomm.equals("Agree"))
-                {
-                    if (this.recommendation==1)
-                    {
-
-                        params = new Object[] {this.username, this.image_id, this.image_path, 1, 1, this.description};
-                    }
-                    else
-                    {
-                        params = new Object[] {this.username, this.image_id, this.image_path, 1, 0, this.description};
-                    }
-                }
-                else
-                {
-                    if (this.recommendation==1)
-                    {
-                        params = new Object[] {this.username, this.image_id, this.image_path, 1, 0, this.description};
-                    }
-                    else
-                    {
-                        params = new Object[] {this.username, this.image_id, this.image_path, 1, 1, this.description};
-                    }
-                }
-                int[] types = new int[] { Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.INTEGER, Types.INTEGER, Types.VARCHAR };
-
-                jdbcTemplate.update(query, params, types);
-
-            }
-
-        } catch (Exception e)
-        {
-            System.out.println(e);
-        }
+        jdbcTemplate.update("update evaluation set agree_recommendation="+"'"+agree_recommendation+"'"+" where id="+Integer.toString(this.id)+";");
+        jdbcTemplate.update("update evaluation set change_recommendation="+"'"+change_recommendation+"'"+" where id="+Integer.toString(this.id)+";");
+        jdbcTemplate.update("update evaluation set display_status = 1  where id ="+Integer.toString(this.id)+";");
 
     }
-    public void storeFeedbackType()
+
+
+    public void storeFeedback(int sharing_decision)
     {
+        Object[] params = new Object[] {this.username, this.image_id, this.image_path, 1, sharing_decision, this.description};
+        int[] types = new int[] { Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.INTEGER, Types.INTEGER, Types.VARCHAR };
+        String query = "INSERT INTO feedback (user_name, image_id, image_path, display_status, sharing_decision, description) VALUES (?, ?, ?, ?, ?, ?)";
+        jdbcTemplate.update(query, params, types);
+
 
         try
         {
@@ -401,7 +374,177 @@ public class Evaluation {
         }
     }
 
-}
+    public String getAttribute(String description)
+    {
+        List<Attribute> records;
+        String command = "select * from attribute where description=?";
+        records= jdbcTemplate.query(command, new Object[] { description }, new AttributeRowMapper());
+        Attribute record=records.get(0);
+        return record.getName();
+
+    }
+
+    public void storeSensitivity(String type)
+
+    {
+        List<String> sensitive = new ArrayList<>();
+        List<String> insensitive = new ArrayList<>();
+        if (type.equals("selected"))
+        {
+
+            for (Explanation explanation:this.getExplanationDto().getExplanations())
+            {
+                if (explanation.getContent()==null)
+                    continue;
+                String content = explanation.getContent();
+
+                if (explanation.getValue()==null)
+                    sensitive.add(this.getAttribute(content));
+                else
+                    insensitive.add(this.getAttribute(content));
+
+
+            }
+
+
+        }
+
+        else if (type.equals("all"))
+        {
+            for (Feedback feedback: this.getFeedbackDto().getFeedbacks())
+            {
+                if (feedback.getAttributeName()==null)
+                    continue;
+                String content = feedback.getAttributeName();
+                if (feedback.getAttributeSensitivity()==null)
+                    sensitive.add(content);
+                else
+                    insensitive.add(content);
+            }
+        }
+
+        jdbcTemplate.update("update evaluation set sensitive_attributes="+"'"+String.join(",", sensitive)+"'"+"where id ="+Integer.toString(this.getId())+";");
+        jdbcTemplate.update("update evaluation set insensitive_attributes="+"'"+String.join(",", insensitive)+"'"+"where id ="+Integer.toString(this.getId())+";");
+
+    }
+    public void storeAdditionalAttributes()
+    {
+        jdbcTemplate.update("update evaluation set other_sensitive_attributes="+"'"+String.join(",", this.additionalAttributes)+"'"+"where id ="+Integer.toString(this.getId())+";");
+    }
+    public void transferSensitivity(ImageAttributeService imageAttributeService, String type)
+    {
+        ConfigurationService configurationService=new ConfigurationService();
+        configurationService.setParams();
+        String pythonBasePath = configurationService.getPython_base_dir();
+        CSVWriter writer= imageAttributeService.createFile(pythonBasePath);
+        List<String> sensitive = new ArrayList<>();
+        List<String> insensitive = new ArrayList<>();
+        String[] data;
+        if (type.equals("selected"))
+        {
+            for (Explanation explanation:this.getExplanationDto().getExplanations())
+            {
+                if (explanation.getContent()==null)
+                    continue;
+                String content = explanation.getContent();
+
+                if (explanation.getValue()==null)
+                    data = new String[]{this.getAttribute(content), Integer.toString(1)};
+
+                else
+                    data = new String[]{this.getAttribute(content), Integer.toString(0)};
+                writer.writeNext(data);
+
+
+            }
+        }
+        else if (type.equals("all"))
+        {
+            for (Feedback feedback: this.getFeedbackDto().getFeedbacks())
+            {
+                if (feedback.getAttributeName()==null)
+                    continue;
+                String content = feedback.getAttributeName();
+                if (feedback.getAttributeSensitivity()==null)
+                    data = new String[]{content, Integer.toString(1)};
+                else
+                    data = new String[]{content, Integer.toString(0)};
+                writer.writeNext(data);
+            }
+        }
+        else if (type.equals("other"))
+        {
+            for (Feedback feedback: this.getFeedbackDto().getFeedbacks())
+            {
+                if (feedback.getAttributeName()==null)
+                    continue;
+                String content = feedback.getAttributeName();
+                data = new String[]{content, Integer.toString(0)};
+                writer.writeNext(data);
+            }
+
+        }
+        try {
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        this.setUsername(principal);
+        String command=configurationService.getPythonCommand()+" "+pythonBasePath+"utils.py storeFeedback"+" "+this.getUsername();
+        try {
+
+            Runtime.getRuntime().exec(command);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public void storeAdditionalRemark()
+    {
+        jdbcTemplate.update("update evaluation set remark="+"'"+this.addRemark+"'"+"where id ="+Integer.toString(this.getId())+";");
+    }
+
+    public void readUndersatandability()
+    {
+
+        String command = "select * from understandability where user_name=?";
+        List<Understandability> records= jdbcTemplate.query(command, new Object[] { this.username }, new UnderstandabilityRowMapper());
+        List<String> usedAttributes = new ArrayList<String>();
+        for (Understandability record: records)
+        {
+            if (record.getUsed()==1)
+                usedAttributes.add(record.getAttribute());
+
+        }
+        for (Feedback feedback: this.feedbackDto.getFeedbacks())
+        {
+            String attributeName = feedback.getAttributeName();
+            if (usedAttributes.contains(attributeName))
+              continue;
+            this.attrUnderstandability.add(feedback.getAttributeDescription());
+        }
+        int i=0;
+
+        for (Explanation explanation: this.explanationDto.getExplanations())
+        {
+
+            if (i==0) {
+                i += 1;
+                continue;
+            }
+            i+=1;
+            System.out.println("Content is"+explanation.getContent());
+            String attributeName = this.getAttribute(explanation.getContent());
+            if (usedAttributes.contains(attributeName))
+                continue;
+            this.expUnderstandability.add(explanation.getContent());
+        }
+        }
+
+    }
+
+
+
 
 
 
