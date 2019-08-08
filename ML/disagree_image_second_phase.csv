@@ -1,5 +1,0 @@
-,Image Id,Common Attributes,Hitesh Attributes,Pradeep Attribute
-0,annotations/val2017/2017_83650376.json,"Color,Height Group,Age Group,Face (Partial),Race,Gender,Weight Group",,Hair Color
-1,annotations/val2017/2017_45767497.json,"Hair Color,Color,Eye Color,Culture,Age Group,Race,Gender",Face (Complete),Face (Partial)
-2,annotations/train2017/2017_69495017.json,"Hair Color,Color,Age Group,Spectators,Race,Gender",Face (Partial),Face (Complete)
-3,annotations/test2017/2017_31328564.json,"Face (Complete),Hair Color,Color,Height Group,Eye Color,Sports,Age Group,Race,Gender,Weight Group",,Name (Last)
