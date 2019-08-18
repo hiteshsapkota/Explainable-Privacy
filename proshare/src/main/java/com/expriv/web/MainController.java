@@ -48,7 +48,9 @@ public class MainController {
 
 
         else {
-
+           Login login = new Login();
+           login.setSuccess(false);
+           model.addAttribute("login", login);
             return "login";
 
         }
@@ -58,6 +60,9 @@ public class MainController {
 
     @GetMapping("/login")
     public String login(Model model) {
+        Login login = new Login();
+        login.setSuccess(false);
+        model.addAttribute("login", login);
         return "login";
     }
 
@@ -66,66 +71,6 @@ public class MainController {
         return "index";
     }
 
-   /* @PostMapping("/feedback")
-    public String feedback(@ModelAttribute Evaluation evaluation, Model model)
-    {
-        evaluation.setJdbcTemplate(jdbcTemplate);
-
-        if ((evaluation.getDisagreeRecomm()==null && evaluation.getDisagreeExp()==null))
-        {
-
-
-            model.addAttribute("feedback", evaluation);
-            evaluation.setDisagree_type("invalid");
-            evaluation.setAttributeValid(true);
-            return "feedback";
-
-        }
-        else
-        {
-            evaluation.setDisagree_type("valid");
-            if (evaluation.isAttributeValid()!=true)
-            {
-                evaluation.setAttributeValid(true);
-                FeedbackDto feedbackDto = evaluation.getFeedbackDto();
-                for (Feedback feedback: feedbackDto.getFeedbacks())
-                {
-                    if (feedback.getAttributeValue()==0)
-                    {
-                        evaluation.setAttributeValid(false);
-                        break;
-                    }
-                }
-            }
-            if (evaluation.isAttributeValid()==false)
-            {
-                model.addAttribute("feedback", evaluation);
-                return "feedback";
-            }
-            ImageAttributeService imageAttributeService = new ImageAttributeService();
-            try
-            {
-                System.out.println(evaluation.getImage_id());
-                imageAttributeService.transferValues(evaluation.getFeedbackDto());
-                evaluation.storeFeedbackType();
-
-            }
-            catch (IOException e)
-            {
-                e.printStackTrace();
-            }
-            EvaluationService evaluationService = new EvaluationService();
-            return evaluationService.getTemplate(jdbcTemplate, model, true);
-
-
-
-
-
-        }
-
-
-
-    }*/
 
     @GetMapping("/index")
     public String index(Model model)
@@ -143,6 +88,51 @@ public class MainController {
         return "index";
     }
 
+    @GetMapping("/payment")
+    public String paymentForm(@ModelAttribute Payment payment, Model model)
+    {
+        Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        payment.setUsername(principal);
+        payment.setJdbcTemplate(jdbcTemplate);
+
+        String sql = "select * from training where user_name=? and sharing_decision is not null";
+        List<Record> records=jdbcTemplate.query(sql, new Object[] { payment.getUsername() },new RecordRowMapper());
+
+        if (records.size()>=30)
+        {
+
+            sql = "select * from payment where user_name=?";
+            String code = jdbcTemplate.query(sql, new Object[] {payment.getUsername()}, new PaymentRowMapper()).get(0).getCode();
+            if (code.equals("NA"))
+            {
+                payment.generateCode(5);
+                sql = "update payment set code= "+"'"+payment.getCode()+"'"+" where user_name= "+"'"+payment.getUsername()+"'";
+                jdbcTemplate.execute(sql);
+                payment.setGensuccess(true);
+            }
+            else {
+                payment.setCode(code);
+                payment.setGensuccess(true);
+            }
+
+        }
+        else if (records.size()<30)
+        {
+            payment.setGensuccess(false);
+            payment.setMessage("Could not generate payment code for less than 30 pictures");
+
+        }
+
+
+        model.addAttribute("payment", payment);
+
+        return "payment";
+    }
+
+
+
+
+
     @GetMapping("/training")
     public String trainingForm(Model model) {
 
@@ -152,6 +142,7 @@ public class MainController {
         training.setJdbcTemplate(jdbcTemplate);
         training.readId();
         training.setUpdate(false);
+        training.addUserPayment();
         Index index = training.getIndex();
         model.addAttribute("training", training);
 
@@ -162,8 +153,18 @@ public class MainController {
     public String trainingSubmit(@ModelAttribute Training training, Model model) {
 
         training.setJdbcTemplate(jdbcTemplate);
-        training.updateDisplayStatus();
-        if (training.getButton_type().equals("Prev"))
+        if (training.getOptions()==null) {
+            if (training.getSubmittype().equals("Next")) {
+                training.setInvalidInput(true);
+                model.addAttribute("training", training);
+                return "training";
+            }
+        }
+
+
+
+
+        if (training.getSubmittype().equals("Prev"))
         {
 
             int prev_id = training.getId();
@@ -178,14 +179,15 @@ public class MainController {
 
         }
 
-        else if (training.getButton_type().equals("Next"))
+        else if (training.getSubmittype().equals("Skip"))
         {
-
+            training.updateDisplayStatus();
             training.getNext();
         }
 
         else
         {
+            training.updateDisplayStatus();
             training.storeSharing_type();
             training = new Training();
             training.setUpdate(false);
@@ -512,6 +514,8 @@ public class MainController {
 
 
             }
+
+
 
 
 

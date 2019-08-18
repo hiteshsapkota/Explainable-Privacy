@@ -72,7 +72,7 @@ def load_attributes(attr_list_path=None):
         for row in rows:
             attr_id_to_name[row['attribute_id']] = row['description']
             attr_id_to_idx[row['attribute_id']] = int(row['idx'])
-
+    
     return attr_id_to_name, attr_id_to_idx
 
 [attr_id_to_name, _]=load_attributes()
@@ -105,7 +105,7 @@ inv_attribute_map_file = {v:k for k,v in attribute_map_file.items()}
 def getImageAttributes(image_id, cnx):
     
     """image id will be in the form of annotations/image_type/id.json"""
-    command = "select attributes from record where image_id=%s"
+    command = "select attributes from temporary where image_id=%s"
     cursor = cnx.cursor()
     cursor.execute(command, (image_id, ))
     
@@ -114,6 +114,16 @@ def getImageAttributes(image_id, cnx):
     labels =[inv_attribute_map_file[k].replace('\r', '').replace('\n', '') for k in attributes]
     return labels
 
+def getImageAttributesLabel(image_id):
+    attribute_map_file = load_attribute_name("user_profiles.tsv")
+    with open(base_path+"Data/Collected/"+image_id) as jf:
+        anno = json.load(jf)
+        labels = anno['labels']
+        attribute_name = attributetoName(labels, attribute_map_file)
+        return attribute_name
+        
+        
+    
 
 def getfeatureStatus(image_id, cnx):
     
@@ -414,6 +424,11 @@ if __name__=="__main__":
         attributes = getImageAttributes(sys.argv[2], cnx)
         attribute_map_file = load_attribute_name("user_profiles.tsv")
         attribute_name = attributetoName(attributes, attribute_map_file)
+        for attribute in attribute_name:
+            print(attribute)
+            
+    if sys.argv[1]=="getImageAttributesLabel":
+        attribute_name = getImageAttributesLabel(sys.argv[2])
         for attribute in attribute_name:
             print(attribute)
         

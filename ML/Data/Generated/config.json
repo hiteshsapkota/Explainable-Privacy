@@ -1,7 +1,7 @@
 
 {
-           "user": "dummy",
-           "password": "dummy",
+           "user": "hitesh",
+           "password": "Mathematics123@",
            "host": "127.0.0.1",
            "database": "exp_priv",
            "raise_on_warnings": true

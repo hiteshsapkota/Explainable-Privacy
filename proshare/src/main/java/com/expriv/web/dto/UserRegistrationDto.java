@@ -13,10 +13,22 @@ import com.expriv.constraint.FieldMatch;
 public class UserRegistrationDto {
 
     @NotEmpty
-    private String firstName;
+    private String mturkId;
 
     @NotEmpty
-    private String lastName;
+    private String gender;
+
+    @NotEmpty
+    private String age;
+
+    @NotEmpty
+    private String education;
+
+    @NotEmpty
+    private String socialmediaFrequency;
+
+    @NotEmpty
+    private String sharingFrequency;
 
     @NotEmpty
     private String password;
@@ -35,20 +47,13 @@ public class UserRegistrationDto {
     @AssertTrue
     private Boolean terms;
 
-    public String getFirstName() {
-        return firstName;
+
+    public String getMturkId() {
+        return mturkId;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setMturkId(String mturkId) {
+        this.mturkId = mturkId;
     }
 
     public String getPassword() {
@@ -91,4 +96,43 @@ public class UserRegistrationDto {
         this.terms = terms;
     }
 
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
+
+    public String getEducation() {
+        return education;
+    }
+
+    public void setEducation(String education) {
+        this.education = education;
+    }
+
+    public String getSocialmediaFrequency() {
+        return socialmediaFrequency;
+    }
+
+    public void setSocialmediaFrequency(String socialmediaFrequency) {
+        this.socialmediaFrequency = socialmediaFrequency;
+    }
+
+    public String getSharingFrequency() {
+        return sharingFrequency;
+    }
+
+    public void setSharingFrequency(String sharingFrequency) {
+        this.sharingFrequency = sharingFrequency;
+    }
 }

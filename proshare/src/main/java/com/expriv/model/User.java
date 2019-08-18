@@ -10,11 +10,14 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
-    private String firstName;
-    private String lastName;
+    private String mturkId;
     private String email;
     private String password;
+    private String gender;
+    private String age;
+    private String education;
+    private String socialmediaFrequency;
+    private String sharingFrequency;
 
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(
@@ -28,19 +31,27 @@ public class User {
     public User() {
     }
 
-    public User(String firstName, String lastName, String email, String password) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public User(String mturkId, String email, String password, String gender, String age, String education, String socialmediaFrequency, String sharingFrequency) {
+        this.mturkId=mturkId;
         this.email = email;
         this.password = password;
+        this.gender=gender;
+        this.age = age;
+        this.education = education;
+        this.socialmediaFrequency = socialmediaFrequency;
+        this.sharingFrequency = sharingFrequency;
     }
 
-    public User(String firstName, String lastName, String email, String password, Collection<Role> roles) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public User(String mturkId, String email, String password, String gender, String age, String education, String socialmediaFrequency, String sharingFrequency, Collection<Role> roles) {
+        this.mturkId = mturkId;
         this.email = email;
         this.password = password;
         this.roles = roles;
+        this.gender=gender;
+        this.age = age;
+        this.education = education;
+        this.socialmediaFrequency = socialmediaFrequency;
+        this.sharingFrequency = sharingFrequency;
     }
 
     public Long getId() {
@@ -51,23 +62,15 @@ public class User {
         this.id = id;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
+  public String getMturkId() {
+    return mturkId;
+  }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
+  public void setMturkId(String mturkId) {
+    this.mturkId = mturkId;
+  }
 
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public String getEmail() {
+  public String getEmail() {
         return email;
     }
 
@@ -83,7 +86,47 @@ public class User {
         this.password = password;
     }
 
-    public Collection<Role> getRoles() {
+  public String getGender() {
+    return gender;
+  }
+
+  public void setGender(String gender) {
+    this.gender = gender;
+  }
+
+  public String getAge() {
+    return age;
+  }
+
+  public void setAge(String age) {
+    this.age = age;
+  }
+
+  public String getEducation() {
+    return education;
+  }
+
+  public void setEducation(String education) {
+    this.education = education;
+  }
+
+  public String getSocialmediaFrequency() {
+    return socialmediaFrequency;
+  }
+
+  public void setSocialmediaFrequency(String socialmediaFrequency) {
+    this.socialmediaFrequency = socialmediaFrequency;
+  }
+
+  public String getSharingFrequency() {
+    return sharingFrequency;
+  }
+
+  public void setSharingFrequency(String sharingFrequency) {
+    this.sharingFrequency = sharingFrequency;
+  }
+
+  public Collection<Role> getRoles() {
         return roles;
     }
 
@@ -95,10 +138,14 @@ public class User {
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
+                ", mturkId='" + mturkId + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + "*********" + '\'' +
+                ", gender='" + gender + '\'' +
+                ", age='" + age + '\'' +
+                ", education='" + education + '\'' +
+                ", socialmediaFrequency='" + socialmediaFrequency + '\'' +
+                ", sharingFrequency='" + sharingFrequency + '\'' +
                 ", roles=" + roles +
                 '}';
     }

@@ -1,370 +1,239 @@
 <!DOCTYPE HTML>
 
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
-    <head>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
 
-        <title>Explainable Privacy: User Study</title>
+<title>Explainable Privacy: User Study</title>
 
-        <style>
+<style>
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
 .container {
-  position: relative;
+	position: relative;
 }
 
-
-
-select{
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-
+select {
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .dropdown {
-  position: relative;
-  display: inline-block;
+	position: relative;
+	display: inline-block;
 }
-.divider
-{
-    width: 200px;
-    height: auto;
-    display: inline-block;
+
+.divider {
+	width: 200px;
+	height: auto;
+	display: inline-block;
 }
-img
-{
-display: inline-block;
-width: 60%
+
+img {
+	display: inline-block;
+	width: 60%
 }
+
 .prev {
-   width: 80%;
-    height: auto;
-    display: inline-block;
+	width: 80%;
+	height: auto;
+	display: inline-block;
 }
+
 .btn-xl {
-    padding: 15px 50px;
-    font-size: 30px;
-    border-radius: 50px;
+	padding: 15px 50px;
+	font-size: 30px;
+	border-radius: 50px;
 }
-
-
 
 .submit-progress-bg {
-    background-color: lightgray;
-    opacity: .5;
-    }
+	background-color: lightgray;
+	opacity: .5;
+}
 
-
-  .submit-progress {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  height: 10em;
-  padding-top: 2.3em;
-  /* The following rules are the
+.submit-progress {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	height: 10em;
+	padding-top: 2.3em;
+	/* The following rules are the
      ones most likely to change */
-  width: 20em;
-  /* Set 'margin-left' to a negative number
+	width: 20em;
+	/* Set 'margin-left' to a negative number
      that is 1/2 of 'width' */
-  margin-left: -10em;
-  padding-left: 2.1em;
-  background-color: blue;
-  color: white;
-  -webkit-border-radius: 0.4em;
-  -moz-border-radius: 0.4em;
-  border-radius: 0.4em;
-  box-shadow: 0.4em 0.4em rgba(0,0,0,0.6);
-  -webkit-box-shadow: 0.4em 0.4em rgba(0,0,0,0.6);
-  -moz-box-shadow: 0.4em 0.4em rgba(0,0,0,0.6);
+	margin-left: -10em;
+	padding-left: 2.1em;
+	background-color: blue;
+	color: white;
+	-webkit-border-radius: 0.4em;
+	-moz-border-radius: 0.4em;
+	border-radius: 0.4em;
+	box-shadow: 0.4em 0.4em rgba(0, 0, 0, 0.6);
+	-webkit-box-shadow: 0.4em 0.4em rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0.4em 0.4em rgba(0, 0, 0, 0.6);
 }
+
 .submit-progress i {
-  margin-right: 0.5em;
+	margin-right: 0.5em;
 }
-
-
-
 </style>
 
-        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-        <script type="text/javascript">
-
-$(function()
-{
-$("#popupevaluation").hide();
-$("#popuptraining").hide();
-$("#updatebox").hide();
-$('a#evaluation-link').click(function()
-  {
-     $("#popupevaluation").show();
-     $("body").addClass("submit-progress-bg");
-
-    return true;
-  });
-  $('a#training-link').click(function()
-  {
-     $("#popuptraining").show();
-     $("body").addClass("submit-progress-bg");
-
-    return true;
-  });
-
-  $('#Next').on('click',function()
-  {
-     $("#updatebox").show();
-     $("body").addClass("submit-progress-bg");
-
-    $('#theform').submit();
-  });
-  $('#Prev').on('click',function()
-  {
-     $("#updatebox").show();
-     $("body").addClass("submit-progress-bg");
-
-    $('#theform').submit();
-  });
-  $('#Share').on('click',function()
-  {
-     $("#updatebox").show();
-     $("body").addClass("submit-progress-bg");
-
-    $('#theform').submit();
-  });
-   $('#DoNotShare').on('click',function()
-  {
-     $("#updatebox").show();
-     $("body").addClass("submit-progress-bg");
-
-    $('#theform').submit();
-  });
-
-   $('#Next1').on('click',function()
-  {
-     $("#popuptraining").show();
-     $("body").addClass("submit-progress-bg");
-
-    $('#theform').submit();
-  });
-  $('#Prev1').on('click',function()
-  {
-     $("#popuptraining").show();
-     $("body").addClass("submit-progress-bg");
-
-    $('#theform').submit();
-  });
-  $('#Share1').on('click',function()
-  {
-     $("#popuptraining").show();
-     $("body").addClass("submit-progress-bg");
-
-    $('#theform').submit();
-  });
-   $('#DoNotShare1').on('click',function()
-  {
-     $("#popuptraining").show();
-     $("body").addClass("submit-progress-bg");
-
-    $('#theform').submit();
-  });
-});
-
-	</script>
-
-        <link rel="stylesheet" type="text/css"
-              th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}" />
-
-    </head>
-    <body>
-
-    <div class="topnav" style="position: relative; ">
-        <a href="/index">Home</a>
-        <a id="training-link" href="/training">Training</a>
-        <a id="evaluation-link" href="/evaluation">Evaluation</a>
-        <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
-
-    	<div style="position: absolute; top: 0; right: 100px; width: 100px; text-align:left;">
-    		<i class="glyphicon glyphicon-user" style="font-size:30px;left: 50px;color:lightblue;text-shadow:2px 2px 4px #000000;"></i>
-    		<font color="white"><span sec:authentication="principal.username"></span> </font>
-    	</div>
-
-
-</div>
-
-<br>
-    <div class="d-md-flex h-md-100 align-items-center">
-
-        <div class="col-md-9 p-0 bg-white h-md-100">
-            <div class="col-md-10 col-md-offset-2"  >
-
-                    <h2><span th:text="${training.description}"></span></h2>
-
-
-
-                <img th:src="@{${training.image_path}}" src = "'../'+${training.image_path}" class = "center-fit" alt="Responsive image" width = "200" height="550px">
-
-
-
-
-
-
-
-                </div>
-
-            </div>
-
-
-    <div class="col-md-3 p-0 bg-white h-md-100  ">
-        <div class="col-md-15">
-            <blockquote class="blockquote">
-                <h2 class="text-info">Training Progress</h2>
-                <h3 class="text-success" th:text = "'Images Labeled: '+${training.index.trainCompleted}"></h3>
-                <h3 class="text-warning" th:text = "'Images Skipped: '+${training.index.trainSkipped}"></h3>
-                <h3 class="text-secondary" th:text = "'Images Remaining: '+${training.index.trainRemaining}"></h3>
-            </blockquote>
-
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-            </div>
-
-
-    <form id = "theform" action="#" th:action="@{/training}" th:object="${training}" method="post">
-        <input type="hidden" th:field="*{id}"/>
-        <input type="hidden" th:field="*{image_path}"/>
-        <input type="hidden" th:field="*{username}"/>
-
-
-
-
-        <div class="d-md-flex h-md-100 align-items-center">
-
-            <div class="col-md-10 col-md-offset-4">
-                <h2>Do you want to share this image?</h2>
-                <br>
-
-            </div>
-
-            <div id="popupevaluation" class="submit-progress">
-                <label>Generating Image Recommendation and Explanation</label>
-            </div>
-            <div id="updatebox" class="submit-progress">
-                <label>Wait... Incorporating Instances</label>
-            </div>
-
-            <div id="popuptraining" class="submit-progress">
-                <label>Generating Training Instance</label>
-            </div>
-
-
-
-
-
-            <div class="col-md-6 p-0 bg-white h-md-100">
-                <div class="col-md-10 col-md-offset-6" th:if="${training.update==true}">
-                    <input type="submit" name="button_type" id="Share" value="Share" class="btn-success btn-xl">
-                </div>
-
-                    <div class="col-md-10 col-md-offset-6" th:if="${training.update==false}">
-                        <input type="submit" name="button_type" id="Share1" value="Share" class="btn-success btn-xl">
-                    </div>
-
-            </div>
-
-
-            <div class="col-md-6 p-0 bg-white h-md-100 loginarea">
-
-                <div class="col-md-10" th:if="${training.update==true}">
-                        <input type="submit" name="button_type" id="DoNotShare" value="Do Not Share" class="btn-danger btn-xl">
-                </div>
-
-                    <div class="col-md-10" th:if="${training.update==false}">
-                        <input type="submit" name="button_type" id="DoNotShare1" value="Do Not Share" class="btn-danger btn-xl">
-                    </div>
-
-                </div>
-            </div>
-
-
-
-
-            <div class="d-md-flex h-md-100 align-items-center">
-
-                <div class="col-md-10 p-0 bg-white h-md-100">
-                    <div class="col-md-10" th:if="${training.update==true}">
-
-                        <input type="submit" name="button_type" id="Prev" value="Prev" class="btn-info btn-lg" >
-                    </div>
-                    <div class="col-md-10" th:if="${training.update==false}">
-
-                        <input type="submit" name="button_type" id="Prev1" value="Prev" class="btn-info btn-lg" >
-                    </div>
-
-                </div>
-
-
-                <div class="col-md-2 p-0 bg-white h-md-100 loginarea">
-
-                    <div class="col-md-10 col-md-offset-6" th:if="${training.update==true}">
-                        <input type="submit" name="button_type" id="Next" value="Next" class="btn-info btn-lg">
-                    </div>
-                    <div class="col-md-10 col-md-offset-6" th:if="${training.update==false}">
-                        <input type="submit" name="button_type" id="Next1" value="Next" class="btn-info btn-lg">
-                    </div>
-                </div>
-
-
-
-            </div>
-
-
-
-
-
-
-
-    </form>
-
-
-
-
-
-
-    <script type="text/javascript"
-    		th:src="@{/webjars/jquery/3.2.1/jquery.min.js/}"></script>
-    <script type="text/javascript"
-    		th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
+<link href="/css/topnav.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("#popupevaluation").hide();
+		$("#popuptraining").hide();
+		$("#updatebox").hide();
+		$('a#evaluation-link').click(function() {
+			$("#popupevaluation").show();
+			$("body").addClass("submit-progress-bg");
+
+			return true;
+		});
+		$('a#training-link').click(function() {
+			$("#popuptraining").show();
+			$("body").addClass("submit-progress-bg");
+
+			return true;
+		});
+
+		$('#Next').on('click', function() {
+			$("#updatebox").show();
+			$("body").addClass("submit-progress-bg");
+
+			$('#theform').submit();
+		});
+		$('#Prev').on('click', function() {
+			$("#updatebox").show();
+			$("body").addClass("submit-progress-bg");
+
+			$('#theform').submit();
+		});
+		$('#Share').on('click', function() {
+			$("#updatebox").show();
+			$("body").addClass("submit-progress-bg");
+
+			$('#theform').submit();
+		});
+		$('#DoNotShare').on('click', function() {
+			$("#updatebox").show();
+			$("body").addClass("submit-progress-bg");
+
+			$('#theform').submit();
+		});
+
+		$('#Next1').on('click', function() {
+			$("#popuptraining").show();
+			$("body").addClass("submit-progress-bg");
+
+			$('#theform').submit();
+		});
+		$('#Prev1').on('click', function() {
+			$("#popuptraining").show();
+			$("body").addClass("submit-progress-bg");
+
+			$('#theform').submit();
+		});
+		$('#Share1').on('click', function() {
+			$("#popuptraining").show();
+			$("body").addClass("submit-progress-bg");
+
+			$('#theform').submit();
+		});
+		$('#DoNotShare1').on('click', function() {
+			$("#popuptraining").show();
+			$("body").addClass("submit-progress-bg");
+
+			$('#theform').submit();
+		});
+	});
+</script>
+
+<link rel="stylesheet" type="text/css"
+	th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}" />
+
+</head>
+<body>
+
+	<div class="topnav" style="position: relative;">
+		<a href="/index">Home</a> <a id="training-link" href="/training">Training</a>
+		<a id="evaluation-link" href="/evaluation">Evaluation</a>
+		<div sec:authorize="isAuthenticated()">
+			<a th:href="@{/logout}">Logout</a>
+		</div>
+
+		<div
+			style="position: absolute; top: 0; right: 100px; width: 100px; text-align: left;">
+			<i class="glyphicon glyphicon-user"
+				style="font-size: 30px; left: 50px; color: lightblue; text-shadow: 2px 2px 4px #000000;"></i>
+			<font color="white"><span
+				sec:authentication="principal.username"></span> </font>
+		</div>
+	</div>
+
+	<div class="container">
+		<br>
+		<div
+			th:replace="fragments/training-progress.html :: training-progress(
+      completed = ${training.index.trainCompleted}, 
+      minRequired = 30, 
+      maxBonus = 20,  
+      skipped = ${training.index.trainSkipped})">
+		</div>
+
+		<div class="text-center">
+			<h3 th:text="${training.description}"></h3>
+
+			<img th:src="@{${training.image_path}}" class="img-fluid"
+				alt="Responsive image">
+
+			<h3>Do you want to share this image?</h3>
+         <form action ="#" th:action = "@{/training}" th:object = "${training}" method="post">
+
+			 <div class="row justify-content-center">
+				 <div class="col-sm-2">
+					 <button type="submit"  name="submittype" value="Prev" class="btn btn-info btn-lg btn-block">Prev</button>
+				 </div>
+				 <div class="col-sm-8">
+					 <div th:if="${training.invalidInput==true}">
+						 <div class="alert alert-danger">Invalid input type</div>
+					 </div>
+					 <div class="btn-group btn-group-toggle" data-toggle="buttons">
+						 <label class="btn btn-danger btn-lg active"> <input
+								 type="radio" name="options" value="donotshare" id="option1" autocomplete="off"
+								 > Do not share
+						 </label> <label class="btn btn-secondary btn-lg"> <input type="radio"
+																				  name="options" value="skip" id="option2" autocomplete="off"> Skip
+					 </label> <label class="btn btn-success btn-lg"> <input type="radio"
+																			name="options" value="share" id="option3" autocomplete="off"> Share
+					 </label>
+					 </div>
+				 </div>
+				 <div class="col-sm-2">
+					 <button type="submit" name="submittype" value="Next" class="btn btn-info btn-lg btn-block">Next</button>
+				 </div>
+			 </div>
+			 <input type="hidden" th:field="*{id}">
+			 <input type="hidden" th:field="*{image_path}">
+			 <input type="hidden" th:field="*{username}">
+
+		 </form>
+
+
+		</div>
+		<br>
+	</div>
+
+	<script type="text/javascript"
+		th:src="@{/webjars/jquery/3.2.1/jquery.min.js/}"></script>
+	<script type="text/javascript"
+		th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
 </body>
 </html>

@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+
+<div
+	th:fragment="training-progress (completed, minRequired, maxBonus, skipped)">
+	<div class="panel panel-info">
+		<div class="panel-heading">User Study Progress</div>
+		<div class="panel-body">
+			<div class="col">
+				<p class="text-info"
+					th:text="'Pictures Labeled = ' + ${completed} +
+						' (Minimum required = ' + ${minRequired} + 
+						', Maximum bonus = ' + ${maxBonus} + 
+						', Pictures skipped = ' + ${skipped} + ')'" />
+			</div>
+		</div>
+	</div>
+</div>
+</html>

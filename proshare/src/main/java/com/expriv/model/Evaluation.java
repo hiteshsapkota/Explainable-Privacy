@@ -44,6 +44,7 @@ public class Evaluation {
 
     private List<String> expUnderstandability = new ArrayList<String>();
     private List<String> attrUnderstandability = new ArrayList<String>();
+    private List<String> understandValue = new ArrayList<String>();
 
     public List<String> getAdditionalAttributes() {
         return additionalAttributes;

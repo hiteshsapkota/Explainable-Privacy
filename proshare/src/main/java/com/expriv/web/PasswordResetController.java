@@ -3,6 +3,7 @@ package com.expriv.web;
 
 
 
+import com.expriv.model.Login;
 import com.expriv.model.PasswordResetToken;
 import com.expriv.model.User;
 import com.expriv.repository.PasswordResetTokenRepository;
@@ -65,7 +66,8 @@ public class PasswordResetController {
         String updatedPassword = passwordEncoder.encode(form.getPassword());
         userService.updatePassword(updatedPassword, user.getId());
         tokenRepository.delete(token);
-
+        Login login = new Login();
+        login.setSuccess(false);
         return "redirect:/login";
     }
 

@@ -1,0 +1,9 @@
+proshare/src/main/resources/application.properties
+ML/Data/Generated/config.json
+ML/base_dir.json
+prodhare/base_dir.json
+.DS_Store
+ML/images/
+ML/Data/Generated/trees/
+ML/__pycache__/
+sqldumps/

@@ -11,14 +11,14 @@ idx	attribute_id	group	description
 9	a9_face_complete	Personal Description	Face (Complete)
 10	a10_face_partial	Personal Description	Face (Partial)
 11	a11_tattoo	Personal Description	Tattoo
-12	a12_semi_nudity	Personal Description	Semi-nudity
-13	a13_full_nudity	Personal Description	Complete nudity
+12	a12_semi_nudity_own	Personal Description	Semi-nudity-own
+13	a13_full_nudity_own	Personal Description	Complete-nudity-own
 14	a16_race	Personal Description	Race
-15	a17_color	Personal Description	Skin Color
+15	a17_color	Personal Description	Color
 16	a18_ethnic_clothing	Personal Description	Traditional clothing
-17	a19_name_full	Personal Description	Full Name
-18	a20_name_first	Personal Description	First Name
-19	a21_name_last	Personal Description	Last Name
+17	a19_name_full	Personal Description	Name (Full)
+18	a20_name_first	Personal Description	Name (First)
+19	a21_name_last	Personal Description	Name (Last)
 20	a23_birth_city	Personal Description	Place of Birth
 21	a24_birth_date	Personal Description	Date of Birth
 22	a25_nationality	Personal Description	Nationality
@@ -37,7 +37,7 @@ idx	attribute_id	group	description
 35	a43_medicine	Health	Medical History
 36	a46_occupation	Employment	Occupation
 37	a48_occassion_work	Employment	Work Occassion
-38	a49_phone	Personal Life	Phone number
+38	a49_phone	Personal Life	Phone no.
 39	a55_religion	Personal Life	Religion
 40	a56_sexual_orientation	Personal Life	Sexual Orientation
 41	a57_culture	Personal Life	Culture
@@ -52,11 +52,11 @@ idx	attribute_id	group	description
 50	a65_rel_social	Relationship	Social Circle
 51	a66_rel_professional	Relationship	Professional Circle
 52	a67_rel_competitors	Relationship	Competitors
-53	a68_rel_spectators	Relationship	Spectators
+53	a68_rel_spectators_own	Relationship	Spectators-own
 54	a69_rel_views	Relationship	Similar view
-55	a73_landmark	Whereabouts	Visited Landmark or Street Sign
-56	a74_address_current_complete	Whereabouts	Visited Location (Complete)
-57	a75_address_current_partial	Whereabouts	Visited Location (Partial)
+55	a73_landmark	Whereabouts	Landmark
+56	a74_address_current_complete	Whereabouts	Previous/Current Location (Complete)
+57	a75_address_current_partial	Whereabouts	Previous/Current Location (Partial)
 58	a78_address_home_complete	Whereabouts	Home address (Complete)
 59	a79_address_home_partial	Whereabouts	Home address (Partial)
 60	a82_date_time	Whereabouts	Date/Time of Activity
@@ -64,6 +64,9 @@ idx	attribute_id	group	description
 62	a90_email	Internet	Email address
 63	a92_email_content	Internet	Email content
 64	a97_online_conversation	Internet	Online conversations
-65	a102_vehicle_ownership	Automobile	Vehicle Ownership
+65	a102_vehicle_ownership	Automobile	Personal Vehicle Ownership
 66	a103_license_plate_complete	Automobile	License Plate (Complete)
 67	a104_license_plate_partial	Automobile	License Plate (Partial)
+68	a12_semi_nudity_other	Personal Description	Semi-nudity-other
+69	a13_full_nudity_other	Personal Description	Complete-nudity-other
+70	a107_rel_spectators_other	Relationship	Spectators-other

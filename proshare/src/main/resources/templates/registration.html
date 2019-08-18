@@ -38,7 +38,57 @@ body {
   background-color: #4CAF50;
   color: white;
 }
+
+.submit-progress-bg {
+    background-color: lightgray;
+    opacity: .5;
+    }
+
+
+  .submit-progress {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 6em;
+  padding-top: 2.3em;
+  /* The following rules are the
+     ones most likely to change */
+  width: 20em;
+  /* Set 'margin-left' to a negative number
+     that is 1/2 of 'width' */
+  margin-left: -10em;
+  padding-left: 2.1em;
+  background-color: blue;
+  color: white;
+  -webkit-border-radius: 0.4em;
+  -moz-border-radius: 0.4em;
+  border-radius: 0.4em;
+  box-shadow: 0.4em 0.4em rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0.4em 0.4em rgba(0,0,0,0.6);
+  -moz-box-shadow: 0.4em 0.4em rgba(0,0,0,0.6);
+}
+.submit-progress i {
+  margin-right: 0.5em;
+}
+
 </style>
+
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+$(function()
+{
+$("#popupbox").hide();
+  $('#register-submit').on('click',function()
+  {
+     $("#popupbox").show();
+     $("body").addClass("submit-progress-bg");
+
+    return true;
+  });
+
+});
+</script>
 
 	<link rel="stylesheet" type="text/css"
 		  th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}" />
@@ -67,26 +117,22 @@ body {
 				<h1>Registration</h1>
 				<form th:action="@{/registration}" th:object="${user}" method="post">
 
+					<div id="popupbox" class="submit-progress">
+						<i class="fa fa-2x fa-spinner fa-spin"></i>
+						<label>Please wait Storing Details...</label>
+					</div>
+					<div class="form-group">
+						<p class="error-message"
+						   th:each="error : ${#fields.errors('gender')}" th:text="${error}">Validation
+							error</p>
+					</div>
+
+
 					<p class="error-message" th:if="${#fields.hasGlobalErrors()}"
 						th:each="error : ${#fields.errors('global')}" th:text="${error}">Validation
 						error</p>
 
-					<div class="form-group"
-						th:classappend="${#fields.hasErrors('firstName')}? 'has-error':''">
-						<label for="firstName" class="control-label">First name</label> <input
-							id="firstName" class="form-control" th:field="*{firstName}" />
-						<p class="error-message"
-							th:each="error: ${#fields.errors('firstName')}"
-							th:text="${error}">Validation error</p>
-					</div>
-					<div class="form-group"
-						th:classappend="${#fields.hasErrors('lastName')}? 'has-error':''">
-						<label for="lastName" class="control-label">Last name</label> <input
-							id="lastName" class="form-control" th:field="*{lastName}" />
-						<p class="error-message"
-							th:each="error : ${#fields.errors('lastName')}"
-							th:text="${error}">Validation error</p>
-					</div>
+
 					<div class="form-group"
 						th:classappend="${#fields.hasErrors('email')}? 'has-error':''">
 						<label for="email" class="control-label">E-mail</label> <input
@@ -122,6 +168,107 @@ body {
 							th:each="error : ${#fields.errors('confirmPassword')}"
 							th:text="${error}">Validation error</p>
 					</div>
+
+					<div class="form-group">
+						<label for="mturkId" class="control-label">Mturk Id</label> <input
+							id="mturkId" class="form-control" th:field="*{mturkId}" required/>
+						<p class="error-message"
+						   th:each="error: ${#fields.errors('mturkId')}"
+						   th:text="${error}">Validation error</p>
+					</div>
+
+					<div class="form-group">
+
+					<h3>What is your gender?</h3>
+					<label class="radio-inline">
+						<input type="radio"  name="gender" value="male">Male
+					</label>
+					<label class="radio-inline">
+						<input type="radio"  name="gender"  value="female">Female
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="gender"  value="other">Other
+					</label>
+					<label class="radio-inline">
+						<input type="radio"  name="gender"  value="na">Prefer Not to Answer
+					</label>
+					</div>
+
+					<div class="form-group">
+
+					<h3>Which of the following categories includes your age?</h3>
+					<label class="radio-inline">
+						<input type="radio" name="age" value="1824">18&ndash;24
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="age" value="2534">25&ndash;34
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="age" value="3544">35&ndash;44
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="age" value="4554">45&ndash;54
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="age" value="55plus">55 or Older
+					</label>
+					</div>
+
+					<div class="form-group">
+
+					<h3>What is the highest level of school you have completed or
+						the highest degree you have received?</h3>
+					<label class="radio-inline">
+						<input type="radio" name="education" value="less_highschool">Less than high school degree
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="education" value="highschool">High school degree or equivalent (e.g., GED)
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="education" value="college_nodegree">Some college but no degree
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="education" value="bachelor_degree">Bachelor degree
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="education" value="graduate_degree">Graduate degree
+					</label>
+					</div>
+
+					<div class="form-group">
+
+					<h3>How often do you use social media (e.g., Facebook, Google
+						Plus, Flickr, Twitter, LinkedIn)?</h3>
+
+					<label class="radio-inline">
+						<input type="radio" name="socialmediaFrequency" value="daily">Daily
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="socialmediaFrequency" value="weekly">About once a week
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="socialmediaFrequency" value="monthly">About once a month or less often than that
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="socialmediaFrequency" value="never">Never used social media
+					</label>
+
+					</div>
+
+					<div class="form-group">
+					<h3>How many pictures showing you and others have you ever shared
+						via social media or email?</h3>
+					<label class="radio-inline">
+						<input type="radio" name="sharingFrequency" value="several">Several (&gt;10)
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="sharingFrequency" value="few">A few (1&ndash;10)
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="sharingFrequency" value="none">None (0)
+					</label>
+					</div>
+
 					<div class="form-group"
 						th:classappend="${#fields.hasErrors('terms')}? 'has-error':''">
 						<input id="terms" type="checkbox" th:field="*{terms}" />   <label
@@ -133,8 +280,10 @@ body {
 							error</p>
 					</div>
 
+
+
 					<div class="form-group">
-						<button type="submit" class="btn-success">Register</button>
+						<button type="submit" class="btn-success", id="register-submit">Register</button>
 					</div>
 
 

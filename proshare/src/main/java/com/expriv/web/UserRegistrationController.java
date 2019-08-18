@@ -1,5 +1,6 @@
 package com.expriv.web;
 
+import com.expriv.model.Login;
 import com.expriv.service.ImageAttributeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -37,12 +38,15 @@ public class UserRegistrationController {
 
     @PostMapping
     public String registerUserAccount(@ModelAttribute("user") @Valid UserRegistrationDto userDto,
-                                      BindingResult result){
+                                      BindingResult result, Model model){
 
         User existing = userService.findByEmail(userDto.getEmail());
         if (existing != null){
             result.rejectValue("email", null, "There is already an account registered with that email");
         }
+
+        if (userDto.getAge()==null || userDto.getGender()==null || userDto.getSharingFrequency()==null || userDto.getSocialmediaFrequency()==null || userDto.getEducation()==null)
+            result.rejectValue("gender", null, "At least one demographic field is empty");
 
         if (result.hasErrors()){
             return "registration";
@@ -74,9 +78,10 @@ public class UserRegistrationController {
             e.printStackTrace();
         }
 
-
-
-        return "redirect:/register_success";
+        Login login = new Login();
+        login.setSuccess(true);
+        model.addAttribute("login", login);
+        return "login";
     }
 
 }

@@ -4,6 +4,8 @@ import com.expriv.service.ConfigurationService;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Repository;
+
+import java.sql.Types;
 import java.util.List;
 
 
@@ -15,12 +17,15 @@ public class Training{
     private String description;
 
     private int id;
-    private String button_type;
+    private String options;
+    private String submittype;
     private JdbcTemplate jdbcTemplate;
     private String username;
     private int trainingInstances;
     private Index index;
     private boolean update;
+    private boolean invalidInput;
+
     public JdbcTemplate getJdbcTemplate() {
         return jdbcTemplate;
     }
@@ -101,6 +106,14 @@ public class Training{
 
     public void setUpdate(boolean update) {
         this.update = update;
+    }
+
+    public boolean isInvalidInput() {
+        return invalidInput;
+    }
+
+    public void setInvalidInput(boolean invalidInput) {
+        this.invalidInput = invalidInput;
     }
 
     public void setTrainingInstances() {
@@ -210,12 +223,20 @@ public class Training{
     }
 
 
-    public String getButton_type() {
-        return button_type;
+    public String getOptions() {
+        return options;
     }
 
-    public void setButton_type(String button_type) {
-        this.button_type = button_type;
+    public void setOptions(String options) {
+        this.options = options;
+    }
+
+    public String getSubmittype() {
+        return submittype;
+    }
+
+    public void setSubmittype(String submittype) {
+        this.submittype = submittype;
     }
 
     public void updateDisplayStatus()
@@ -234,13 +255,13 @@ public class Training{
         {
 
 
-            if (button_type.equals("Share"))
+            if (options.equals("share"))
             {
                 System.out.println("Updating sharing decision");
                 System.out.println(this.id);
                 jdbcTemplate.update("update training set sharing_decision = 1  where id ="+Integer.toString(this.id)+";");
             }
-            else if (button_type.equals("Do Not Share"))
+            else if (options.equals("donotshare"))
             {
                 System.out.println("Updating sharing decision");
                 jdbcTemplate.update("update training set sharing_decision = 0  where id ="+Integer.toString(this.id)+";");
@@ -254,6 +275,26 @@ public class Training{
         {
             System.out.println(e);
         }
+
+    }
+
+    public void addUserPayment()
+
+    {
+        System.out.println("Before getting query");
+        String sql = "select * from payment where user_name=?";
+        List<Payment> payments=jdbcTemplate.query(sql, new Object[] { username },new PaymentRowMapper());
+        System.out.println("After getting query");
+        if (payments.isEmpty())
+        {
+            Object[] params = new Object[] {this.username, 1, "NA"};
+            int[] types = new int[] { Types.VARCHAR, Types.INTEGER, Types.VARCHAR};
+            String query = "INSERT INTO payment (user_name, generate, code) VALUES (?, ?, ?)";
+            jdbcTemplate.update(query, params, types);
+
+        }
+
+
 
     }
 

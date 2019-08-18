@@ -12,7 +12,7 @@ import numpy as np
 
 cnx = get_Connection()
 cursor = cnx.cursor()
-sql = "select * from image_label where user_name=%s and display_status=1 and attributes is not null and description is not null;"
+sql = "select * from temporary where user_name=%s and display_status=1 and attributes is not null and description is not null;"
 cursor.execute(sql, ('hiteshsapkota@gmail.com', ))
 record_hitesh = cursor.fetchall()
 cursor.execute(sql, ('pradeep1@gmail.com', ))

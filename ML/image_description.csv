@@ -1,0 +1,215 @@
+ImageId,Description
+annotations/test2017/2017_64015194.json,Assume that you are the lady on the foreground in the picture facing away from the viewer
+annotations/train2017/2017_50968020.json,Assume that you are the person on the foreground in the picture facing away from the viewer
+annotations/test2017/2017_89525665.json,Assume that the kid in the picture facing toward the viewer is your family member
+annotations/train2017/2017_77704517.json,Assume that you are one of the persons on the front row in the picture
+annotations/train2017/2017_55917932.json,Assume that you are the army standing on the left vehicle in the picture
+annotations/test2017/2017_25592102.json,Assume that the girl on the foreground in the picture is your family member
+annotations/val2017/2017_23517443.json,Assume that the child holding the microphone in the picture is your family member
+annotations/test2017/2017_62574660.json,Assume that you are the girl clapping on the foreground of the picture
+annotations/test2017/2017_44485376.json,Assume that you are the girl jumping in the picture
+annotations/test2017/2017_58764909.json,Assume that the boy with the yellow cloth in the picture is your family member
+annotations/train2017/2017_32908440.json,Assume that you are the lady in the foreground of the picture on the right side of the viewer
+annotations/test2017/2017_93618472.json,Assume that you are the girl in the picture
+annotations/test2017/2017_28045356.json,Assume that the lady on the center of the picture on the foreground
+annotations/test2017/2017_64857802.json,Assume that you are the person on the foreground in the picture
+annotations/test2017/2017_84121233.json,Assume that you are the person second from the left in the picture from the viewer
+annotations/train2017/2017_58017894.json,Assume that you are the person singing on the microphone in the picture
+annotations/val2017/2017_55550248.json,Assume that you took the picture of your leg
+annotations/test2017/2017_28078101.json,Assume that you took the picture of your movie ticket
+annotations/test2017/2017_72716040.json,Assume that you are Brandi and you took the picture of your facebook page
+annotations/train2017/2017_32796903.json,Assume that you are the person driving the car on the foreground in the picture
+annotations/val2017/2017_39554370.json,Assume that you are the person driving the car in the picture
+annotations/test2017/2017_57085414.json,Assume that you are one of the persons  on the foreground in the picture
+annotations/test2017/2017_63796844.json,Assume that you are one of the persons fighting with the opponent in the picture
+annotations/test2017/2017_74317457.json,Assume that you are one of the persons in the ship in the picture
+annotations/train2017/2017_25391511.json,Assume that you are one of the persons in the ship in the picture
+annotations/train2017/2017_19378335.json,Assume that you are one of the persons looking into the presentation slide in the picture
+annotations/train2017/2017_89543606.json,Assume that you are one of the persons looking into the stage in the picture
+annotations/test2017/2017_91159929.json,Assume that you are one of the players in the picture
+annotations/train2017/2017_26136736.json,Assume that you are one of the players in the picture
+annotations/test2017/2017_20907811.json,Assume that you are one of the persons sitting on the stage in the picture
+annotations/test2017/2017_14329200.json,Assume that you are one of the persons looking toward the speaker in the picture
+annotations/test2017/2017_84629690.json,Assume that you are one of the persons looking toward the stage in the picture
+annotations/val2017/2017_57586280.json,Assume that you are one of the persons with the bike in the picture
+annotations/test2017/2017_93726557.json,Assume that you are the woman facing away from the viewer on the foreground in the picture
+annotations/test2017/2017_83167013.json,Assume that you are one of the players in the picture
+annotations/train2017/2017_71806845.json,Assume that you took the picture of the object showing your detail information
+annotations/val2017/2017_28951696.json,Assume that you are the person holding flag in th center of the picture
+annotations/train2017/2017_80496380.json,Assume that you are one of the persons with the gun in the picture
+annotations/train2017/2017_77452867.json,Assume that you are the person in the black uniform holding the placard in the picture
+annotations/val2017/2017_88662485.json,Assume that you are Greg and you took this picture
+annotations/val2017/2017_73958403.json,Assume that you are the girl in the center of the picture
+annotations/val2017/2017_76915782.json,Assume that you are the girl in the picture to the left side of the viewer
+annotations/train2017/2017_35659720.json,Assume that you are the girl in the white shirt holding the flag in the picture
+annotations/train2017/2017_22198603.json,Assume that you are the girl on the foreground in the picture
+annotations/train2017/2017_56361748.json,Assume that you are the girl in the center of the picture
+annotations/test2017/2017_49480213.json,Assume that you are the lady facing toward the viewer in the picture
+annotations/train2017/2017_37911018.json,Assume that you are the person  delivering a speech in the picture
+annotations/val2017/2017_25200612.json,Assume that you are the lady at the left side of the picture
+annotations/val2017/2017_32058638.json,Assume that you are the lady looking away from the viewer in the foreground of the picture
+annotations/train2017/2017_99542373.json,Assume that you are the lady looking toward the viewer in the picture
+annotations/train2017/2017_20626436.json,Assume that you are the lady with the black shirt holding the banner in the picture
+annotations/test2017/2017_74668011.json,Assume that you are the lady with the white gown at the center of the picture
+annotations/test2017/2017_32568835.json,Assume that you are the lady wih the blue shirt in the picture
+annotations/val2017/2017_91923541.json,Assume that you are the lady on the left side of the picture from the viewer
+annotations/test2017/2017_85865878.json,Assume that you are the lady on the right side of the picture from the viewer
+annotations/test2017/2017_99696774.json,Assume that you are the lady performing in the middle of the picture
+annotations/train2017/2017_70084574.json,Assume that you are the lady at the center of the picture
+annotations/test2017/2017_82488684.json,Assume that you are the lady wih the green uniform in the picture
+annotations/test2017/2017_89387684.json,Assume that you are the lady with the white shirt on the left side of the picture from the viewer
+annotations/train2017/2017_80884384.json,Assume that you are one of the persons in the picture
+annotations/train2017/2017_13527616.json,Assume that you are the lady with the identity card on the picture
+annotations/test2017/2017_62238305.json,Assume that you are the man holding the banner on the left side of the picture from the viewer
+annotations/test2017/2017_67117781.json,Assume that you are the person second from the left in the picture from the viewer
+annotations/val2017/2017_57988017.json,Assume that you took the picture of the certificate
+annotations/val2017/2017_80109479.json,Assume that you are the patient in the picture
+annotations/test2017/2017_63971431.json,Assume that you are the person looking toward the viewer in this picture
+annotations/train2017/2017_60566638.json,Assume that you are the person looking toward the viewer in the picture
+annotations/val2017/2017_83894788.json,Assume that you are the person looking toward viewer in the picture
+annotations/train2017/2017_12575040.json,Assume that you are the person looking toward viewer in the picture
+annotations/test2017/2017_51623679.json,Assume that you are the person holding the coffee cup on the foreground in the picture
+annotations/test2017/2017_84990119.json,Assume that you are the person near the center of the picture on the foreground
+annotations/train2017/2017_64437811.json,Assume that you are the person holding the stick on the foreground facing away the viewer
+annotations/train2017/2017_12369681.json,Assume that you are the person in the foreground with the hands to the cap in the picture
+annotations/train2017/2017_20426504.json,Assume that you are the person as the goalkeeper in the picture
+annotations/val2017/2017_92664048.json,Assume that you are the person looking toward the documents in the picture
+annotations/train2017/2017_20944921.json,Assume that you are the person facing toward the viewer in the picture
+annotations/val2017/2017_76241320.json,Assume that you are the person facing toward the viewer on the foreground in the picture
+annotations/test2017/2017_83035831.json,Assume that you are the person facing toward the viewer on the foreground in the picture
+annotations/val2017/2017_11873877.json,Assume that you are the person facing toward the viewer on the foreground in the picture
+annotations/train2017/2017_34078177.json,Assume that you are the person facing toward the viewer in the picture
+annotations/train2017/2017_83519639.json,Assume that you are the person on the foreground facing away from the viewer in the picture
+annotations/train2017/2017_98573279.json,Assume that you are the person facing away from the viewer on the foreground of the picture
+annotations/train2017/2017_25237028.json,Assume that you are the person in the center of the picture
+annotations/train2017/2017_65187844.json,Assume that you are the person with the ipad on the foreground of the picture
+annotations/train2017/2017_41354316.json,Assume that you are the person on the left from the viewer in the picture
+annotations/train2017/2017_77988718.json,Assume that you are the person on the left from the viewer in the foreground of the picture
+annotations/test2017/2017_53324716.json,Assume that you are the person on the left from the voewer in the picture
+annotations/train2017/2017_50799208.json,Assume that you are the person on the left side of the viewer in the picture 
+annotations/val2017/2017_13826714.json,Assume that you are the person on the left side of the viewer in the picture 
+annotations/test2017/2017_14757152.json,Assume that you are the person on the left side of the viewer in the picture 
+annotations/test2017/2017_53215035.json,Assume that you are the person on the left side of the viewer in the picture 
+annotations/train2017/2017_84882569.json,Assume that you are the person in the red in the picture
+annotations/train2017/2017_69795107.json,Assume that you are the person on the right side of the picture from the viewer
+annotations/test2017/2017_92669024.json,Assume that you are the person on the right side of the picture from the viewer
+annotations/test2017/2017_37455150.json,Assume that you are the person on the right side of the picture from the viewer
+annotations/test2017/2017_35004996.json,Assume that you are the person on the right side of the picture from the viewer
+annotations/test2017/2017_16921013.json,Assume that you are the person on the right side of the picture from the viewer
+annotations/test2017/2017_13152209.json,Assume that you are the person on the right side of the picture from the viewer
+annotations/val2017/2017_44349107.json,Assume that you are the person on the right side of the picture from the viewer
+annotations/train2017/2017_20237941.json,Assume that you are the person on the right side of the picture from the viewer
+annotations/test2017/2017_62338584.json,Assume that you are the person on the right side of the picture from the viewer
+annotations/test2017/2017_40280000.json,Assume that you are the person on the right side of the picture from the viewer
+annotations/val2017/2017_78427272.json,Assume that you are the person on the right side of the picture from the viewer with the laptop
+annotations/train2017/2017_18608860.json,Assume that you are the person on the foreground looking toward the board
+annotations/val2017/2017_61110006.json,Assume that you are the person with the white shirt in the picture on the foreground
+annotations/train2017/2017_71249203.json,Assume that you are the person playing a guitar on the foreground in the picture
+annotations/train2017/2017_14558280.json,Assume that you are the person on the foreground in the picture
+annotations/val2017/2017_59119603.json,Assume that you are the person with the white shirt in the picture
+annotations/val2017/2017_32049654.json,Assume that you are the person delivering a speech in the picture
+annotations/train2017/2017_91874571.json,Assume that you are the person with your wife riding on a motorcycle in the picture
+annotations/val2017/2017_54726540.json,Assume that you are the person riding on the bike with the flag in the picture 
+annotations/train2017/2017_69867555.json,Assume that you are the person with the black shirt in the picture
+annotations/train2017/2017_95358590.json,Assume that you are the person with the flag in the picture
+annotations/test2017/2017_58111290.json,Assume that you are the woman with the black shirt in the picture
+annotations/val2017/2017_21886308.json,Assume that you are the person walking on the street in  front side of the row of the picture
+annotations/train2017/2017_60175265.json,Assume that you are the person with the gun in the picture
+annotations/test2017/2017_15294296.json,Assume that you are the person with the black short on the foreground in the picture
+annotations/val2017/2017_10898250.json,Assume that you are the person with the black dress in the picture
+annotations/test2017/2017_78552141.json,Assume that you are the person with the black shirt on the left side of the picture from the viewer
+annotations/train2017/2017_47559569.json,Assume that you are the lady holding the mobile phone in the picture
+annotations/train2017/2017_99290112.json,Assume that you are the person with the blue shirt in the picture
+annotations/val2017/2017_96475837.json,Assume that you are the person with the blue short and black sunglass in the picture
+annotations/train2017/2017_52839747.json,Assume that you are the person with the trophy in the picture
+annotations/train2017/2017_87020994.json,Assume that you are the person in the orange dress holding placard in the picture
+annotations/train2017/2017_43076784.json,Assume that you are the person with the pink shirt in the picture
+annotations/train2017/2017_61709156.json,Assume that you are the person with the red shirt in the picture
+annotations/test2017/2017_51592072.json,Assume that you are the person with the red shirt on the foreground in the picture
+annotations/train2017/2017_10801689.json,Assume that you are the person with the white shirt in the picture
+annotations/train2017/2017_15573918.json,Assume that you are the person in the white uniform on the foreground in the picture
+annotations/val2017/2017_69791412.json,Assume that you are the lady with white shirt on the roof of the boat in the picture
+annotations/train2017/2017_94901434.json,Assume that you are the person in the picture
+annotations/val2017/2017_87668134.json,Assume that you are the person with the kid in the picture
+annotations/test2017/2017_82214255.json,Assume that you are the person with the yellow shirt in the picture
+annotations/test2017/2017_63238113.json,Assume that you are the person with the black sneakers in the picture
+annotations/train2017/2017_80758414.json,Assume that you are took the picture of your vehicle
+annotations/train2017/2017_16722104.json,Assume that you are the woman with the black shirt in the foreground of th picture
+annotations/train2017/2017_34109327.json,Assume that you are the woman on the right side of the picture from the viewer
+annotations/val2017/2017_10546138.json,Assume that you are the woman on the right side of the picture from the viewer
+annotations/val2017/2017_94815541.json,Assume that you are the woman with the family members in the picture
+annotations/test2017/2017_42634251.json,Assume that you are the woman with the lady in the picture
+annotations/train2017/2017_57607621.json,Assume that you took the picture of the handwritten mail that you have received
+annotations/train2017/2017_40117299.json,Assume that you are the person on the right side of the picture from the viewer
+annotations/train2017/2017_99670226.json,Assume that you took  a picture of your festival ticket
+annotations/train2017/2017_23358858.json,Assume that you took a picture of your meeting notice
+annotations/test2017/2017_18840824.json,Assume that you took a picture of your certificate
+annotations/test2017/2017_30234291.json,Assume that you took a picture of the your certificate
+annotations/train2017/2017_78211622.json,Assume that you took a picture of the ticket
+annotations/train2017/2017_39008859.json,Assume that you took a picture of the cash money
+annotations/train2017/2017_85737203.json,Assume that you took a picture of the football ticket
+annotations/test2017/2017_92681873.json,Assume that you took a picture of the your vaccination related document
+annotations/train2017/2017_26299989.json,Assume that you took a picture of your document
+annotations/train2017/2017_59902159.json,Assume that you took a picture of your pass ticket
+annotations/train2017/2017_48784820.json,Assume that you took a picture of your receipt
+annotations/test2017/2017_46655147.json,Assume that you took a picture of your receipt
+annotations/train2017/2017_25080761.json,Assume that you took a picture of your ticket
+annotations/train2017/2017_11743124.json,Assume that you took a picture of your child birth document
+annotations/train2017/2017_19000645.json,Assume that you took the map of the landmark
+annotations/train2017/2017_80715678.json,Assume that you are Staurt and you took this picture
+annotations/train2017/2017_11937467.json,Assume that you took the picture of your facebook page
+annotations/train2017/2017_85319340.json,Assume that you took the picture of your car ticket 
+annotations/train2017/2017_86254025.json,Assume that you took the picture of your concert ticket
+annotations/train2017/2017_35403424.json,Assume that you took the picture of your concert ticket
+annotations/train2017/2017_90478079.json,Assume that you took the picture of your event ticket
+annotations/test2017/2017_87427626.json,Assume that you took the picture of the food menu from the restaurant you recently visited
+annotations/test2017/2017_66045939.json,Assume that you took the picture of your food ticket
+annotations/train2017/2017_83801151.json,Assume that you took the picture of your handwritten text sheet
+annotations/val2017/2017_27736120.json,Assume that you took the picture of your handwritten text shet
+annotations/test2017/2017_78028468.json,Assume that you took the picture of the match you recently watched
+annotations/val2017/2017_77833342.json,Assume that you took the picture of the your meeting notice
+annotations/train2017/2017_52528885.json,Assume that you are the person with the back shirt in the picture
+annotations/train2017/2017_26657265.json,Assume that you took the picture of your hotel schedule
+annotations/train2017/2017_18272777.json,Assume that you took the picture of the plane ticket 
+annotations/val2017/2017_18841357.json,Assume that you took the picture of the award ceremony you are planning to attend
+annotations/train2017/2017_47351530.json,Assume that you took the picture of your received letter
+annotations/train2017/2017_97563445.json,Assume that you took the picture of your school progress report
+annotations/train2017/2017_49120107.json,Assume that you took this picture
+annotations/train2017/2017_69238414.json,Assume that you took the picture of your ticket
+annotations/val2017/2017_52985029.json,Assume that you took the picture of your ticket
+annotations/test2017/2017_21460993.json,Assume that you took the picture of your ticket
+annotations/train2017/2017_89736142.json,Assume that you took the picture of your ticket
+annotations/train2017/2017_40515985.json,Assume that you took the picture of your ticket
+annotations/test2017/2017_95668484.json,Assume that you took the picture of your ticket
+annotations/test2017/2017_11039899.json,Assume that you took the picture of your ticket
+annotations/train2017/2017_74227573.json,Assume that you took the picture of your ticket
+annotations/test2017/2017_74393088.json,Assume that you took the picture of your ticket
+annotations/test2017/2017_53476932.json,Assume that you took the picture of your ticket
+annotations/test2017/2017_35640812.json,Assume that you took the picture of your ticket
+annotations/train2017/2017_51548829.json,Assume that you took the picture of your ticket
+annotations/test2017/2017_85593013.json,Assume that you took the picture of your tickets
+annotations/train2017/2017_68034636.json,Assume that you took the picture of your tickets
+annotations/test2017/2017_95189442.json,Assume that you took the picture of your passport
+annotations/train2017/2017_75372741.json,Assume that you took the picture of your ticket
+annotations/test2017/2017_88413194.json,Assume that you took the picture of your batch
+annotations/test2017/2017_72219204.json,Assume that you took the picture of your birthday celebration venue
+annotations/train2017/2017_20071143.json,Assume that you took the picture of your cash money
+annotations/test2017/2017_14099045.json,Assume that you are the person in the picture
+annotations/test2017/2017_63930564.json,Assume that you took the picture of your document
+annotations/train2017/2017_53718038.json,Assume that you took the picture of your document
+annotations/train2017/2017_22971412.json,Assume that you took the picture of your fingerprint
+annotations/test2017/2017_39812542.json,Assume that you are Padooka and you took this picture
+annotations/val2017/2017_61207768.json,Assume that you took the picture of your theatre ticket
+annotations/train2017/2017_38642851.json,Assume that you took the picture of your theatre ticket
+annotations/train2017/2017_31596858.json,Assume that you took the picture of your handwritten  text sheet
+annotations/train2017/2017_66842351.json,Assume that you took the picture of your hndwritten text sheet
+annotations/train2017/2017_96378915.json,Assume that you took the picture of your handwritten text sheet
+annotations/train2017/2017_96666699.json,Assume that you took the picture of your handwritten text sheet
+annotations/val2017/2017_84591715.json,Assume that you took the picture of your handwritten text sheet
+annotations/val2017/2017_36650452.json,Assume that you took the screen shot of your handwritten text sheet
+annotations/train2017/2017_61334845.json,Assume that you took the screen shot of your handwritten text sheet
+annotations/test2017/2017_29277106.json,Assume that you took the picture of your ticket
+annotations/train2017/2017_58472976.json,Assume that you took the picture of the your liveshow ticket
+annotations/test2017/2017_82099455.json,Assume that you took this picture
+annotations/test2017/2017_89359188.json,Assume that you are the lady with the sunglass at the center of the picture 
+annotations/test2017/2017_55364399.json,Assume you are the person with the sunglass in the picture

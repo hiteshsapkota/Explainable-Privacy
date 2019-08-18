@@ -32,10 +32,14 @@ public class UserServiceImpl implements UserService {
 
     public User save(UserRegistrationDto registration){
         User user = new User();
-        user.setFirstName(registration.getFirstName());
-        user.setLastName(registration.getLastName());
+        user.setMturkId(registration.getMturkId());
         user.setEmail(registration.getEmail());
         user.setPassword(passwordEncoder.encode(registration.getPassword()));
+        user.setGender(registration.getGender());
+        user.setAge(registration.getAge());
+        user.setEducation(registration.getEducation());
+        user.setSharingFrequency(registration.getSharingFrequency());
+        user.setSocialmediaFrequency(registration.getSocialmediaFrequency());
         user.setRoles(Arrays.asList(new Role("ROLE_USER")));
         return userRepository.save(user);
     }

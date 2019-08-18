@@ -220,7 +220,9 @@ def initialization(user_name):
             rwfile.truncate()
     else:
        feedback_file = {}    
-       feedback_file[user_name]=np.zeros(len(feature_names)).tolist()
+       feedback_file[user_name]=[]
+       for i in range(len(feature_names)):
+           feedback_file[user_name].append([])
        with open(base_path+"Data/Generated/feedback.json", "w") as infile:
             json.dump(feedback_file, infile)
     

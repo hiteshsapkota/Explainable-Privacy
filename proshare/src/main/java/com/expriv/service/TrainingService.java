@@ -41,6 +41,8 @@ public class TrainingService {
                 String command=configurationService.getPythonCommand()+" "+python_root_dir+"utils.py generateImageID"+" "+training.getUsername()+" "+"training"+" "+train_batch_size;
                 System.out.println("Generating Images");
                 Process  p = Runtime.getRuntime().exec(command);
+                ImageAttributeService imageAttributeService = new ImageAttributeService();
+                imageAttributeService.printUpdate(p, " ");
 
 
                 if (Integer.parseInt(index.getTrainCompleted())>configurationService.getTrainingThreshold()) {
@@ -48,7 +50,7 @@ public class TrainingService {
 
                     command = configurationService.getPythonCommand() + " " + python_root_dir + "configuration.py update";
                     p = Runtime.getRuntime().exec(command);
-                    ImageAttributeService imageAttributeService = new ImageAttributeService();
+
                     imageAttributeService.printUpdate(p, "update");
                 }
 

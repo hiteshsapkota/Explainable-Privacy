@@ -7,64 +7,65 @@ a5_eye_color,Eye Color,It may disclose your eye color
 a6_hair_color,Hair Color,It may disclose your hair color
 a7_fingerprint,Fingerprint,It may disclose your fingerprint
 a8_signature,Signature,It may disclose your signature
-a9_face_complete,Face (Complete),It may disclose your face completely
-a10_face_partial,Face (Partial),It may disclose your face partially
+a9_face_complete,Face (Complete),It may disclose your complete face
+a10_face_partial,Face (Partial),It may disclose your partial face
 a11_tattoo,Tattoo,It may disclose your tattoo
-a12_semi_nudity,Semi-nudity,It may disclose your seminudity
-a12_semi_nudity_other,Semi-nudity (Other),It may disclose seminudity
-a13_full_nudity,Complete nudity,It may disclose your complete nudity
-a13_full_nudity_other,Complete nudity (Other),It may disclose complete nudity
+a12_semi_nudity_own,Semi-nudity-own,It may show you seminude
+a12_semi_nudity_other,Semi-nudity-other,It may include seminudity
+a13_full_nudity_own,Complete-nudity-own,It may show you nude
+a13_full_nudity_other,Complete-nudity-other,It may include nudity
 a16_race,Race,It may disclose your race
-a17_color,Color,It may disclose your skin color
-a18_ethnic_clothing,Traditional clothing,It may disclose your traditional cloth 
+a17_color,Skin Color,It may disclose your skin color
+a18_ethnic_clothing,Traditional clothing,It may show you in traditional clothing
 a19_name_full,Name (Full),It may disclose your full name
 a20_name_first,Name (First),It may disclose your first name
 a21_name_last,Name (Last),It may disclose your last name
 a23_birth_city,Place of Birth,It may disclose your place of birth
 a24_birth_date,Date of Birth,It may disclose your date of birth
-a25_nationality,Nationality,It may disclose your natinality
+a25_nationality,Nationality,It may disclose your nationality
 a26_handwriting,Handwriting,It may disclose your handwriting
 a27_marital_status,Marital status,It may disclose your marital status
-a29_ausweis,National Identification,It may disclose your national identification
+a29_ausweis,National Identification,It may disclose your national identity
 a30_credit_card,Credit Card,It may disclose your credit card information
 a31_passport,Passport,It may disclose your passport information
 a32_drivers_license,Drivers License,It may disclose your drivers license information
-a33_student_id,Student ID,It may disclose your student id information
-a35_mail,Mail,It may disclose the content of your mail
-a37_receipt,Receipts,It may disclose your receipt information
-a38_ticket,Tickets,It may disclose your tickets information
+a33_student_id,Student ID,It may disclose your student ID information
+a35_mail,Mail,It may disclose the contents of your mail
+a37_receipt,Receipts,"It may show one of your purchase receipts, showing the amount of purchase"
+a38_ticket,Tickets,"It may show one of your tickets (e.g., movie or concert) with travel or event details"
 a39_disability_physical,Physical disability,It may disclose your physical disability
-a41_injury,Medical Treatment,It may disclose your medical treatment
+a41_injury,Medical Treatment,It may disclose a medical treatment you received
 a43_medicine,Medical History,It may disclose your medical history
 a46_occupation,Occupation,It may disclose your occuptation
-a48_occassion_work,Work Occassion,It may disclose your work occassion
+a48_occassion_work,Work Occassion,"It may show you at a work occassion, revealing information about your employment"
 a49_phone,Phone no.,It may disclose your phone number
 a55_religion,Religion,It may disclose your religion
 a56_sexual_orientation,Sexual Orientation,It may disclose your sexual orientation
-a57_culture,Culture,It may disclose your culture
-a58_hobbies,Hobbies,It may disclose your hobbies
-a59_sports,Sports,It may disclose your favorite sport
-a60_occassion_personal,Personal Occassion,It may disclose your personal occassion
-a61_opinion_general,General Opinion,It may disclose your general opinion
+a57_culture,Culture,It may disclose your cultural identity
+a58_hobbies,Hobbies,It may disclose one of your hobbies
+a59_sports,Sports,It may disclose a sport activity you are interested in
+a60_occassion_personal,Personal Occassion,"It may show you at a personal occassion, revealing who you family or friends are"
+a61_opinion_general,General Opinion,"It may disclose your opinion on a general issue (e.g., wars, taxes, LGBT rights)"
 a62_opinion_political,Political Opinion,It may disclose your political opinion
 a70_education_history,Education history,It may disclose your education history
-a99_legal_involvement,Legal involvement,It may disclose your legal involvment
-a64_rel_personal,Personal Relationships,It may disclose your personal relationships
-a65_rel_social,Social Circle,It may disclose your social circle
-a66_rel_professional,Professional Circle,It may disclose your professional circle
-a67_rel_competitors,Competitors,It may disclose competitors
-a68_rel_spectators,Spectators,It may disclose the spectators
-a69_rel_views,Similar view,It may disclose the group with a similar view
-a73_landmark,Landmark,It may disclose the  visited landmark information
-a74_address_current_complete,Previous/Current Location (Complete),It may disclose the visited location completely
-a75_address_current_partial,Previous/Current Location (Partial),It may disclose the visited location partially
+a99_legal_involvement,Legal involvement,It may disclose your involvment in a law-related activity
+a64_rel_personal,Personal Relationships,"It may disclose your personal relationships (e.g., mother-son, husband-wife) with other people"
+a65_rel_social,Social Circle,It may disclose people in your social circles
+a66_rel_professional,Professional Circle,It may disclose people in your professional circles
+a67_rel_competitors,Competitors,It may disclose teammates or competitors in a sport
+a68_rel_spectators_own,Spectators-own,It may show you as a spectator at an event
+a68_rel_spectators_other,Spectators-other,It may show the spectators of an event you are performing in
+a69_rel_views,Similar view,It may show you with other people having a similar view as yours
+a73_landmark,Landmark,"It may disclose the a landmark you visited, revealing your whereabouts at the time the photo was taken"
+a74_address_current_complete,Previous/Current Location (Complete),"It may disclose you precise location (e.g., a restaurant address or GPS location), revealing your whereabouts at the time the photo was taken"
+a75_address_current_partial,Previous/Current Location (Partial),"It may disclose you partial location (e.g., a streed address or city name), revealing your whereabouts at the time the photo was taken"
 a78_address_home_complete,Home address (Complete),It may disclose your home address completely
 a79_address_home_partial,Home address (Partial),It may disclose your home address partially
-a82_date_time,Date/Time of Activity,It may disclose your date or time of an activity
-a85_username,Username,It may disclose your username
-a90_email,Email address,It may disclose your email address
-a92_email_content,Email content,It may disclose your email content
-a97_online_conversation,Online conversations,It may disclose your online conversations
-a102_vehicle_ownership,Personal Vehicle Ownership,It may disclose your vehicle ownership
-a103_license_plate_complete,License Plate (Complete),It may disclose your license plate completely
-a104_license_plate_partial,License Plate (Partial),It may disclose your license plate partially
+a82_date_time,Date/Time of Activity,It may disclose your date or time at which you participated in an activity
+a85_username,Username,It may disclose your username or internet handle for a website
+a90_email,Email address,It may disclose one of your email addresses
+a92_email_content,Email content,It may disclose the contents (subject or body) of one of your emails
+a97_online_conversation,Online conversations,"It may disclose the contents of one of your online conversations (e.g., tweet, post)"
+a102_vehicle_ownership,Personal Vehicle Ownership,It may disclose the details of a vehicle you own
+a103_license_plate_complete,License Plate (Complete),"It may disclose the license plate or registration number of your vehicle, completely"
+a104_license_plate_partial,License Plate (Partial),"It may disclose the license plate or registration number of your vehicle, partially"
