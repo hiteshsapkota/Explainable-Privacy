@@ -340,6 +340,10 @@ public class Training{
 
                 jdbcTemplate.update("update training set sharing_decision = 0  where id ="+Integer.toString(this.id)+";");
             }
+            else if(options.equals("skip"))
+            {
+                jdbcTemplate.update("update training set sharing_decision = null  where id ="+Integer.toString(this.id)+";");
+            }
 
             String update_query="update training set display_status = 1  where id ="+Integer.toString(this.id);
             jdbcTemplate.update(update_query);

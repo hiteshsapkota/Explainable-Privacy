@@ -212,8 +212,17 @@ public class MainController {
 
            if (training.getOptions()!=null) {
                if (training.getOptions().equals("skip")) {
-                   training.updateDisplayStatus();
-                   training.getNext();
+                   if (training.getDonotshare()=="" && training.getShare()=="" && training.getSkip()=="")
+                   {
+                       training.updateDisplayStatus();
+
+                   }
+                   else
+                   {
+                       training.updateDisplayStatus();
+                       training.storeSharing_type();
+                   }
+
                }
                else {
 
