@@ -20,20 +20,7 @@ body {
 
 <link href="/css/topnav.css" rel="stylesheet">
 
-<link href="/css/login-submit.css" rel="stylesheet">
-
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script type="text/javascript">
-	$(function() {
-		$("#popupbox").hide();
-		$('#login-submit').on('click', function() {
-			$("#popupbox").show();
-			$("body").addClass("submit-progress-bg");
-			return true;
-		});
-
-	});
-</script>
+<link href="/css/submit-progress.css" rel="stylesheet">
 
 <link rel="stylesheet" type="text/css"
 	th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}" />
@@ -78,7 +65,8 @@ body {
 								</div>
 
 								<div th:if="${login.success}">
-									<div class="alert alert-info">You've successfully registered</div>
+									<div class="alert alert-info">You've successfully
+										registered</div>
 								</div>
 								<div th:if="${param.resetSuccess}">
 									<div class="alert alert-danger">Successfully Reset</div>
@@ -130,6 +118,19 @@ body {
 		th:src="@{/webjars/jquery/3.2.1/jquery.min.js/}"></script>
 	<script type="text/javascript"
 		th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
+
+	<script type="text/javascript">
+		$(function() {
+			$("#popupbox").hide();
+			$('#login-submit').on('click', function() {
+				$("#popupbox").show();
+				$("body").addClass("submit-progress-bg");
+				return true;
+			});
+
+		});
+	</script>
+	
 </body>
 </html>
 
