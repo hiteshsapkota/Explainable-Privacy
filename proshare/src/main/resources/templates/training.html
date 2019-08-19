@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:th="http://www.thymeleaf.org"
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
 	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
 
@@ -83,8 +82,8 @@ img {
 	margin-right: 0.5em;
 }
 </style>
-	<link href="/css/submit-progress.css" rel="stylesheet">
-<link href="/css/topnav.css" rel="stylesheet">
+<link href="/css/submit-progress.css" rel="stylesheet">
+
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script type="text/javascript">
 	$(function() {
@@ -103,29 +102,13 @@ img {
 	});
 </script>
 
-<link rel="stylesheet" type="text/css"
-	th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}" />
 
 </head>
 <body>
 
-	<div class="topnav" style="position: relative;">
-		<a href="/index">Home</a>
-		<a id="training-link" href="/training">Training</a>
-		<a id="payment" href="/payment">Payment</a>
-		<div sec:authorize="isAuthenticated()">
-			<a th:href="@{/logout}">Logout</a>
-		</div>
-
-		<div
-			style="position: absolute; top: 0; right: 100px; width: 100px; text-align: left;">
-			<i class="glyphicon glyphicon-user"
-				style="font-size: 30px; left: 50px; color: lightblue; text-shadow: 2px 2px 4px #000000;"></i>
-			<font color="white"><span
-				sec:authentication="principal.username"></span> </font>
-		</div>
-	</div>
-
+  <div th:replace="fragments/navbar.html :: navbar-landingpage"></div>
+  
 	<div class="container">
 		<br>
 		<div
@@ -139,56 +122,52 @@ img {
 		<div class="text-center">
 			<h3 th:text="${training.description}"></h3>
 
-			<img th:src="@{${training.image_path}}" class="img-fluid"
-				alt="Responsive image">
+			<img th:src="@{${training.image_path}}" class="img-fluid" alt="Responsive image">
 
 			<h3>Do you want to share this image?</h3>
-         <form action ="#" th:action = "@{/training}" th:object = "${training}" method="post">
-			 <div id="popuptraining" class="submit-progress">
-				 <i class="fa fa-2x fa-spinner fa-spin"></i> <label>Image Generation may take a moment. Please wait...</label>
-			 </div>
-			 <div class="row justify-content-center">
-				 <div class="col-sm-2">
-					 <button type="submit"  name="submittype" value="Prev" class="btn btn-info btn-lg btn-block">Prev</button>
-				 </div>
-				 <div class="col-sm-8">
-					 <div th:if="${training.invalidInput==true}">
-						 <div class="alert alert-danger">Invalid input type</div>
-					 </div>
-					 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-						 <label th:class="'btn btn-danger btn-lg '+${training.donotshare}"> <input
-								 type="radio" name="options" value="donotshare" id="option1" autocomplete="off"
-								 > Do not share
-						 </label> <label th:class="'btn btn-secondary btn-lg '+${training.skip}"> <input type="radio"
-																				  name="options" value="skip" id="option2" autocomplete="off"> Skip
-					 </label> <label th:class="'btn btn-success btn-lg '+${training.share}"> <input type="radio"
-																			name="options" value="share" id="option3" autocomplete="off"> Share
-					 </label>
-					 </div>
-				 </div>
-				 <div class="col-sm-2">
-					 <button id="Next" type="submit" name="submittype" value="Next" class="btn btn-info btn-lg btn-block">Next</button>
-				 </div>
-			 </div>
-			 <input type="hidden" th:field="*{id}">
-			 <input type="hidden" th:field="*{image_path}">
-			 <input type="hidden" th:field="*{username}">
-			 <input type="hidden" th:field="*{share}">
-			 <input type="hidden" th:field="*{donotshare}">
-			 <input type="hidden" th:field="*{skip}">
+			<form action="#" th:action="@{/training}" th:object="${training}" method="post">
+				<div id="popuptraining" class="submit-progress">
+					<i class="fa fa-2x fa-spinner fa-spin"></i> <label>Image Generation may take a moment.
+						Please wait...</label>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-sm-2">
+						<button type="submit" name="submittype" value="Prev" class="btn btn-info btn-lg btn-block">Prev</button>
+					</div>
+					<div class="col-sm-8">
+						<div th:if="${training.invalidInput==true}">
+							<div class="alert alert-danger">Invalid input type</div>
+						</div>
+						<div class="btn-group btn-group-toggle" data-toggle="buttons">
+							<label th:class="'btn btn-danger btn-lg '+${training.donotshare}"> <input
+								type="radio" name="options" value="donotshare" id="option1" autocomplete="off">
+								Do not share
+							</label> <label th:class="'btn btn-secondary btn-lg '+${training.skip}"> <input type="radio"
+								name="options" value="skip" id="option2" autocomplete="off"> Skip
+							</label> <label th:class="'btn btn-success btn-lg '+${training.share}"> <input type="radio"
+								name="options" value="share" id="option3" autocomplete="off"> Share
+							</label>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<button id="Next" type="submit" name="submittype" value="Next"
+							class="btn btn-info btn-lg btn-block">Next</button>
+					</div>
+				</div>
+				<input type="hidden" th:field="*{id}"> <input type="hidden" th:field="*{image_path}">
+				<input type="hidden" th:field="*{username}"> <input type="hidden" th:field="*{share}">
+				<input type="hidden" th:field="*{donotshare}"> <input type="hidden" th:field="*{skip}">
 
 
 
-		 </form>
+			</form>
 
 
 		</div>
 		<br>
 	</div>
 
-	<script type="text/javascript"
-		th:src="@{/webjars/jquery/3.2.1/jquery.min.js/}"></script>
-	<script type="text/javascript"
-		th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
+	<script type="text/javascript" th:src="@{/webjars/jquery/3.2.1/jquery.min.js/}"></script>
+	<script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
 </body>
 </html>

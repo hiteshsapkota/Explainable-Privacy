@@ -15,8 +15,6 @@ body {
 }
 </style>
 
-<link href="/css/topnav.css" rel="stylesheet">
-
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script type="text/javascript">
 	$(function() {
@@ -44,22 +42,9 @@ body {
 </head>
 
 <body>
-
-	<div class="topnav" style="position: relative;">
-        <a href="/index">Home</a>
-		<a id="training-link" href="/training">Training</a>
-		<a id="payment" href="/payment">Payment</a>
-		<a th:href="@{/logout}">Logout</a>
-
-		<div
-			style="position: absolute; top: 0; right: 100px; width: 100px; text-align: left;">
-			<i class="glyphicon glyphicon-user"
-				style="font-size: 30px; left: 50px; color: lightblue; text-shadow: 2px 2px 4px #000000;"></i>
-			<font color="white"><span
-				sec:authentication="principal.username"></span> </font>
-		</div>
-	</div>
-
+  
+  <div th:replace="fragments/navbar.html :: navbar-landingpage"></div>
+  
 	<h2 style="text-align: center">Explainable Privacy User Study
 		Instructions</h2>
 

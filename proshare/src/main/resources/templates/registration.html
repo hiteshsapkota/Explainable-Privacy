@@ -18,41 +18,35 @@ body {
 }
 </style>
 
-<link href="/css/topnav.css" rel="stylesheet">
-
 <link href="/css/submit-progress.css" rel="stylesheet">
 
-<link rel="stylesheet" type="text/css"
-	th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}" />
 
 </head>
 
 <body>
-
+  <div th:replace="fragments/navbar.html :: navbar-loginpage"></div>
 
 	<div class="container">
 
-		<h2 style="text-align: center">Explainable Privacy User Study:
-			Registration</h2>
+		<h2 style="text-align: center">Explainable Privacy User Study: Registration</h2>
 
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
-				<p class="text-info">Please enter the following details for
-					registering to participate in the study. All fields are required.</p>
+				<p class="text-info">Please enter the following details for registering to participate in
+					the study. All fields are required.</p>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<ul class="text-info">
-					<li>Please enter a valid email ID. We will use your email ID
-						to communicate with you if necessary. We will delete this ID after
-						we complete the data analysis.</li>
-					<li>Please enter a valid Amazon Mechanical Turk ID. We will
-						use your Mechanical Turk ID for validating the payment. We will
-						delete this ID after data analysis.</li>
-					<li>We will not report your demographic data, individually. We
-						will only report aggregated data.</li>
+					<li>Please enter a valid email ID. We will use your email ID to communicate with you if
+						necessary. We will delete this ID after we complete the data analysis.</li>
+					<li>Please enter a valid Amazon Mechanical Turk ID. We will use your Mechanical Turk ID
+						for validating the payment. We will delete this ID after data analysis.</li>
+					<li>We will not report your demographic data, individually. We will only report aggregated
+						data.</li>
 				</ul>
 			</div>
 		</div>
@@ -63,8 +57,8 @@ body {
 			oninput='confirmPassword.setCustomValidity(confirmPassword.value != password.value ? "Passwords do not match." : "")'>
 
 			<div id="popupbox" class="submit-progress">
-				<i class="fa fa-2x fa-spinner fa-spin"></i> <label>Storing
-					details and initialization may take a moment. Please wait...</label>
+				<i class="fa fa-2x fa-spinner fa-spin"></i> <label>Storing details and initialization
+					may take a moment. Please wait...</label>
 			</div>
 
 			<div class="form-group">
@@ -73,11 +67,9 @@ body {
 						<label for="email" class="control-label">E-mail:</label>
 					</div>
 					<div class="col-md-4">
-						<input id="email" class="form-control" type="email"
-							th:field="*{email}" required />
+						<input id="email" class="form-control" type="email" th:field="*{email}" required />
 					</div>
-					<p class="text-danger"
-					   th:each="error : ${#fields.errors('email')}" th:text="${error}">Validation
+					<p class="text-danger" th:each="error : ${#fields.errors('email')}" th:text="${error}">Validation
 						error</p>
 				</div>
 			</div>
@@ -88,8 +80,7 @@ body {
 						<label for="password" class="control-label">Password:</label>
 					</div>
 					<div class="col-md-4">
-						<input id="password" class="form-control" type="password"
-							th:field="*{password}" required />
+						<input id="password" class="form-control" type="password" th:field="*{password}" required />
 					</div>
 				</div>
 			</div>
@@ -97,12 +88,10 @@ body {
 			<div class="form-group">
 				<div class="row">
 					<div class="col-md-2 col-md-offset-2">
-						<label for="confirmPassword" class="control-label">Confirm
-							password:</label>
+						<label for="confirmPassword" class="control-label">Confirm password:</label>
 					</div>
 					<div class="col-md-4">
-						<input id="confirmPassword" class="form-control" type="password"
-							th:field="*{confirmPassword}" />
+						<input id="confirmPassword" class="form-control" type="password" th:field="*{confirmPassword}" />
 					</div>
 				</div>
 			</div>
@@ -110,13 +99,11 @@ body {
 			<div class="form-group">
 				<div class="row">
 					<div class="col-md-2 col-md-offset-2">
-						<label for="mturkId" class="control-label">Amazon Mturk
-							Id:</label>
+						<label for="mturkId" class="control-label">Amazon Mturk Id:</label>
 
 					</div>
 					<div class="col-md-4">
-						<input id="mturkId" class="form-control" th:field="*{mturkId}"
-							required />
+						<input id="mturkId" class="form-control" th:field="*{mturkId}" required />
 					</div>
 				</div>
 			</div>
@@ -127,15 +114,15 @@ body {
 					<div class="form-group">
 						<h4>What is your gender?</h4>
 						<div id="gender">
-							<label class="radio-inline"> <input type="radio"
-																th:field="*{gender}" value="male" required>Male
-							</label> <label class="radio-inline"> <input type="radio"
-																		 th:field="*{gender}" value="female" required>Female
-						</label> <label class="radio-inline"> <input type="radio"
-																	 th:field="*{gender}" value="other" required>Other
-						</label> <label class="radio-inline"> <input type="radio"
-																	 th:field="*{gender}" value="na" required>Prefer Not to Answer
-						</label>
+							<label class="radio-inline"> <input type="radio" th:field="*{gender}" value="male"
+								required>Male
+							</label> <label class="radio-inline"> <input type="radio" th:field="*{gender}" value="female"
+								required>Female
+							</label> <label class="radio-inline"> <input type="radio" th:field="*{gender}" value="other"
+								required>Other
+							</label> <label class="radio-inline"> <input type="radio" th:field="*{gender}" value="na"
+								required>Prefer Not to Answer
+							</label>
 						</div>
 
 					</div>
@@ -143,79 +130,68 @@ body {
 					<div class="form-group" id="age">
 
 						<h4>Which of the following categories includes your age?</h4>
-						<label class="radio-inline"> <input type="radio"
-							th:field="*{age}" value="1824" required>18&ndash;24
-						</label> <label class="radio-inline"> <input type="radio"
-							th:field="*{age}" value="2534" required>25&ndash;34
-						</label> <label class="radio-inline"> <input type="radio"
-							th:field="*{age}" value="3544" required>35&ndash;44
-						</label> <label class="radio-inline"> <input type="radio"
-							th:field="*{age}" value="4554" required>45&ndash;54
-						</label> <label class="radio-inline"> <input type="radio"
-							th:field="*{age}" value="55plus" required>55 or Older
+						<label class="radio-inline"> <input type="radio" th:field="*{age}" value="1824"
+							required>18&ndash;24
+						</label> <label class="radio-inline"> <input type="radio" th:field="*{age}" value="2534"
+							required>25&ndash;34
+						</label> <label class="radio-inline"> <input type="radio" th:field="*{age}" value="3544"
+							required>35&ndash;44
+						</label> <label class="radio-inline"> <input type="radio" th:field="*{age}" value="4554"
+							required>45&ndash;54
+						</label> <label class="radio-inline"> <input type="radio" th:field="*{age}" value="55plus"
+							required>55 or Older
 						</label>
 					</div>
 
 					<div class="form-group" id="education">
 
-						<h4>What is the highest level of school you have completed or
-							the highest degree you have received?</h4>
-						<label class="radio-inline"> <input type="radio"
-							th:field="*{education}" value="less_highschool" required>Less
-							than high school degree
-						</label> <label class="radio-inline"> <input type="radio"
-							th:field="*{education}" value="highschool" required>High school
-							degree or equivalent (e.g., GED)
-						</label> <label class="radio-inline"> <input type="radio"
-							th:field="*{education}" value="college_nodegree" required>Some
-							college but no degree
-						</label> <label class="radio-inline"> <input type="radio"
-							th:field="*{education}" value="bachelor_degree" required>Bachelor
-							degree
-						</label> <label class="radio-inline"> <input type="radio"
-							th:field="*{education}" value="graduate_degree" required>Graduate
-							degree
+						<h4>What is the highest level of school you have completed or the highest degree you have
+							received?</h4>
+						<label class="radio-inline"> <input type="radio" th:field="*{education}"
+							value="less_highschool" required>Less than high school degree
+						</label> <label class="radio-inline"> <input type="radio" th:field="*{education}"
+							value="highschool" required>High school degree or equivalent (e.g., GED)
+						</label> <label class="radio-inline"> <input type="radio" th:field="*{education}"
+							value="college_nodegree" required>Some college but no degree
+						</label> <label class="radio-inline"> <input type="radio" th:field="*{education}"
+							value="bachelor_degree" required>Bachelor degree
+						</label> <label class="radio-inline"> <input type="radio" th:field="*{education}"
+							value="graduate_degree" required>Graduate degree
 						</label>
 					</div>
 
 					<div class="form-group" id="socialmediaFrequency">
 
-						<h4>How often do you use social media (e.g., Facebook, Google
-							Plus, Flickr, Twitter, LinkedIn)?</h4>
+						<h4>How often do you use social media (e.g., Facebook, Google Plus, Flickr, Twitter,
+							LinkedIn)?</h4>
 
-						<label class="radio-inline"> <input type="radio"
-							th:field="*{socialmediaFrequency}" value="daily" required>Daily
-						</label> <label class="radio-inline"> <input type="radio"
-							th:field="*{socialmediaFrequency}" value="weekly" required>About
-							once a week
-						</label> <label class="radio-inline"> <input type="radio"
-							th:field="*{socialmediaFrequency}" value="monthly" required>About
-							once a month or less often than that
-						</label> <label class="radio-inline"> <input type="radio"
-							th:field="*{socialmediaFrequency}" value="never" required>Never
-							used social media
+						<label class="radio-inline"> <input type="radio" th:field="*{socialmediaFrequency}"
+							value="daily" required>Daily
+						</label> <label class="radio-inline"> <input type="radio" th:field="*{socialmediaFrequency}"
+							value="weekly" required>About once a week
+						</label> <label class="radio-inline"> <input type="radio" th:field="*{socialmediaFrequency}"
+							value="monthly" required>About once a month or less often than that
+						</label> <label class="radio-inline"> <input type="radio" th:field="*{socialmediaFrequency}"
+							value="never" required>Never used social media
 						</label>
 
 					</div>
 
 					<div class="form-group" id="sharingFrequency">
-						<h4>How many pictures showing you and others have you ever
-							shared via social media or email?</h4>
-						<label class="radio-inline"> <input type="radio"
-							th:field="*{sharingFrequency}" value="several" required>Several
-							(&gt;10)
-						</label> <label class="radio-inline"> <input type="radio"
-							th:field="*{sharingFrequency}" value="few" required>A few
-							(1&ndash;10)
-						</label> <label class="radio-inline"> <input type="radio"
-							th:field="*{sharingFrequency}" value="none" required>None (0)
+						<h4>How many pictures showing you and others have you ever shared via social media or
+							email?</h4>
+						<label class="radio-inline"> <input type="radio" th:field="*{sharingFrequency}"
+							value="several" required>Several (&gt;10)
+						</label> <label class="radio-inline"> <input type="radio" th:field="*{sharingFrequency}"
+							value="few" required>A few (1&ndash;10)
+						</label> <label class="radio-inline"> <input type="radio" th:field="*{sharingFrequency}"
+							value="none" required>None (0)
 						</label>
 					</div>
 
 					<div class="form-group">
-						<input id="terms" type="checkbox" th:field="*{terms}" required />
-						 <label class="control-label" for="terms"> I consent to
-							participate in this user study. </label>
+						<input id="terms" type="checkbox" th:field="*{terms}" required />  <label
+							class="control-label" for="terms"> I consent to participate in this user study. </label>
 					</div>
 				</div>
 			</div>
@@ -223,48 +199,43 @@ body {
 			<div class="row">
 				<div class="col-md-4 col-md-offset-4">
 					<div class="form-group">
-						<button type="submit" class="btn-success btn-lg btn-block"
-								id="register-submit">Register</button>
+						<button type="submit" class="btn-success btn-lg btn-block" id="register-submit">Register</button>
 					</div>
 				</div>
 			</div>
 		</form>
 	</div>
 
-	<script type="text/javascript"
-		th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
-	<script type="text/javascript"
-		th:src="@{/webjars/jquery/3.2.1/jquery.min.js/}"></script>
+	<script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
+	<script type="text/javascript" th:src="@{/webjars/jquery/3.2.1/jquery.min.js/}"></script>
 	<script type="text/javascript">
 		$(function() {
 			$("#popupbox").hide();
 
-			$('#register-submit').on('click', function() {
-			   var email = document.getElementById('email').value;
-			   var password = document.getElementById('password').value;
-			   var confirmPassword = document.getElementById('confirmPassword').value;
-			   var mturkId = document.getElementById('mturkId').value;
-			   var gender = $("input[name='gender']:checked").val();
-			   var age = $("input[name='age']:checked").val();
-			   var education = $("input[name='education']:checked").val();
-			   var socialmediaFrequency = $("input[name='socialmediaFrequency']:checked").val();
-			   var sharingFrequency = $("input[name='sharingFrequency']:checked").val();
-			   var terms = $("input[name='terms']:checked").val();;
-			   if (!(email==""|| password == ""|| confirmPassword==""|| mturkId==""|| gender==undefined || age==undefined || education==undefined || socialmediaFrequency==undefined || sharingFrequency==undefined || terms==undefined ))
-			   {
-			   if (password==confirmPassword)
-			   {
-			   $("body").addClass("submit-progress-bg");
-			   $("#popupbox").show();
-				return true;
-				}
+			$('#register-submit').on('click',
+					function() {
+				    var email = document.getElementById('email').value;
+				    var password = document.getElementById('password').value;
+				    var confirmPassword = document.getElementById('confirmPassword').value;
+				    var mturkId = document.getElementById('mturkId').value;
+				    var gender = $("input[name='gender']:checked").val();
+						var age = $("input[name='age']:checked").val();
+						var education = $("input[name='education']:checked").val();
+						var socialmediaFrequency = $("input[name='socialmediaFrequency']:checked").val();
+						var sharingFrequency = $("input[name='sharingFrequency']:checked").val();
+						var terms = $("input[name='terms']:checked").val();
 
-			   	}
-
-
-
-			});
-
+						if (!(email == "" || password == "" || confirmPassword == "" || mturkId == "" 
+								|| gender == undefined || age == undefined || education == undefined
+								|| socialmediaFrequency == undefined || sharingFrequency == undefined 
+								|| terms == undefined)) {
+							if (password == confirmPassword) {
+								$("body").addClass("submit-progress-bg");
+								$("#popupbox").show();
+								return true;
+							}
+						}
+				});
 		});
 	</script>
 </body>
