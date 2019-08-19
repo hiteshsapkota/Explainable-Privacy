@@ -416,7 +416,7 @@ def getTrainedUsers(users, th=5):
 if __name__=="__main__":
     
     if sys.argv[1]=="generateImageID":
-        print("I am inside generateImageID section")
+     
         generateImageID(sys.argv[2], sys.argv[3], int(sys.argv[4]))
         
     if sys.argv[1]=="getImageAttributes":

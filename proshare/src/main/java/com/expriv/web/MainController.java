@@ -164,7 +164,6 @@ public class MainController {
                     training.setDonotshare("");
                     training.setShare("");
                     training.setSkip("");
-                    System.out.println("Image path"+training.getImage_path());
                     model.addAttribute("training", training);
                     return "training";
                 }
@@ -210,7 +209,7 @@ public class MainController {
 
 
 
-            System.out.println("I am inside next section");
+
            if (training.getOptions()!=null) {
                if (training.getOptions().equals("skip")) {
                    training.updateDisplayStatus();
@@ -374,11 +373,7 @@ public class MainController {
 
                             evaluation.transferSensitivity(imageAttributeService, "selected");
                             evaluation.storeAdditionalRemark();
-                            System.out.println("Attributes");
-                            for (String attribute: evaluation.getExpUnderstandability())
-                            {
-                                System.out.println(attribute);
-                            }
+
 
 
                         }

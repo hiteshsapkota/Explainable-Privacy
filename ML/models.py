@@ -153,7 +153,7 @@ def getExplanation(user_name, image_id, cnx, N=4, M=2):
         
     Decision = clf.predict(X_new.reshape(1, -1))[0]
     if clf.tree_.node_count==1:
-        print("Single node case:")
+       
         if Decision==0:
             explanation = generateExplanation([], 'NotShare_NoTree')
         elif Decision ==1:

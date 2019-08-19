@@ -50,7 +50,7 @@ public class ImageAttributeService{
             System.out.println("Unsuccess");
             e.printStackTrace();
         }
-        System.out.println("The message is:"+this.attributes);
+
         if (exitVal == 0) {
             if (message.equals("attribute"))
             {

@@ -83,76 +83,23 @@ img {
 	margin-right: 0.5em;
 }
 </style>
-
+	<link href="/css/submit-progress.css" rel="stylesheet">
 <link href="/css/topnav.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script type="text/javascript">
 	$(function() {
-		$("#popupevaluation").hide();
+
 		$("#popuptraining").hide();
-		$("#updatebox").hide();
-		$('a#evaluation-link').click(function() {
-			$("#popupevaluation").show();
-			$("body").addClass("submit-progress-bg");
 
-			return true;
-		});
-		$('a#training-link').click(function() {
-			$("#popuptraining").show();
-			$("body").addClass("submit-progress-bg");
 
-			return true;
-		});
 
 		$('#Next').on('click', function() {
-			$("#updatebox").show();
-			$("body").addClass("submit-progress-bg");
-
-			$('#theform').submit();
-		});
-		$('#Prev').on('click', function() {
-			$("#updatebox").show();
-			$("body").addClass("submit-progress-bg");
-
-			$('#theform').submit();
-		});
-		$('#Share').on('click', function() {
-			$("#updatebox").show();
-			$("body").addClass("submit-progress-bg");
-
-			$('#theform').submit();
-		});
-		$('#DoNotShare').on('click', function() {
-			$("#updatebox").show();
-			$("body").addClass("submit-progress-bg");
-
-			$('#theform').submit();
-		});
-
-		$('#Next1').on('click', function() {
 			$("#popuptraining").show();
 			$("body").addClass("submit-progress-bg");
 
-			$('#theform').submit();
+			return true;
 		});
-		$('#Prev1').on('click', function() {
-			$("#popuptraining").show();
-			$("body").addClass("submit-progress-bg");
 
-			$('#theform').submit();
-		});
-		$('#Share1').on('click', function() {
-			$("#popuptraining").show();
-			$("body").addClass("submit-progress-bg");
-
-			$('#theform').submit();
-		});
-		$('#DoNotShare1').on('click', function() {
-			$("#popuptraining").show();
-			$("body").addClass("submit-progress-bg");
-
-			$('#theform').submit();
-		});
 	});
 </script>
 
@@ -163,8 +110,9 @@ img {
 <body>
 
 	<div class="topnav" style="position: relative;">
-		<a href="/index">Home</a> <a id="training-link" href="/training">Training</a>
-		<a id="evaluation-link" href="/evaluation">Evaluation</a>
+		<a href="/index">Home</a>
+		<a id="training-link" href="/training">Training</a>
+		<a id="payment" href="/payment">Payment</a>
 		<div sec:authorize="isAuthenticated()">
 			<a th:href="@{/logout}">Logout</a>
 		</div>
@@ -196,7 +144,9 @@ img {
 
 			<h3>Do you want to share this image?</h3>
          <form action ="#" th:action = "@{/training}" th:object = "${training}" method="post">
-
+			 <div id="popuptraining" class="submit-progress">
+				 <i class="fa fa-2x fa-spinner fa-spin"></i> <label>Image Generation may take a moment. Please wait...</label>
+			 </div>
 			 <div class="row justify-content-center">
 				 <div class="col-sm-2">
 					 <button type="submit"  name="submittype" value="Prev" class="btn btn-info btn-lg btn-block">Prev</button>
@@ -217,7 +167,7 @@ img {
 					 </div>
 				 </div>
 				 <div class="col-sm-2">
-					 <button type="submit" name="submittype" value="Next" class="btn btn-info btn-lg btn-block">Next</button>
+					 <button id="Next" type="submit" name="submittype" value="Next" class="btn btn-info btn-lg btn-block">Next</button>
 				 </div>
 			 </div>
 			 <input type="hidden" th:field="*{id}">
@@ -226,6 +176,8 @@ img {
 			 <input type="hidden" th:field="*{share}">
 			 <input type="hidden" th:field="*{donotshare}">
 			 <input type="hidden" th:field="*{skip}">
+
+
 
 		 </form>
 

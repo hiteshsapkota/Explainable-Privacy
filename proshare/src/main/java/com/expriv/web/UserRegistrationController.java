@@ -23,65 +23,66 @@ import java.io.IOException;
 @RequestMapping("/registration")
 public class UserRegistrationController {
 
-    @Autowired
-    private UserService userService;
+  @Autowired
+  private UserService userService;
 
-    @ModelAttribute("user")
-    public UserRegistrationDto userRegistrationDto() {
-        return new UserRegistrationDto();
+  @ModelAttribute("user")
+  public UserRegistrationDto userRegistrationDto() {
+    return new UserRegistrationDto();
+  }
+
+  @GetMapping
+  public String showRegistrationForm(Model model) {
+    return "registration";
+  }
+
+  @PostMapping
+  public String registerUserAccount(@ModelAttribute("user") @Valid UserRegistrationDto userDto,
+      BindingResult result, Model model) {
+
+    User existing = userService.findByEmail(userDto.getEmail());
+    if (existing != null) {
+      result.rejectValue("email", null, "There is already an account registered with that email");
     }
 
-    @GetMapping
-    public String showRegistrationForm(Model model) {
-        return "registration";
+
+
+    if (result.hasErrors()) {
+      return "registration";
     }
 
-    @PostMapping
-    public String registerUserAccount(@ModelAttribute("user") @Valid UserRegistrationDto userDto,
-                                      BindingResult result, Model model){
+    userService.save(userDto);
 
-        User existing = userService.findByEmail(userDto.getEmail());
-        if (existing != null){
-            result.rejectValue("email", null, "There is already an account registered with that email");
-        }
+    ImageAttributeService imageAttributeService = new ImageAttributeService();
+    ConfigurationService configurationService = new ConfigurationService();
+    configurationService.setParams();
+    String python_root_dir = configurationService.getPython_base_dir();
+    String command1 = configurationService.getPythonCommand() + " " + python_root_dir
+        + "utils.py generateImageID" + " " + userDto.getEmail() + " " + "training" + " "
+        + configurationService.getTrain_batch_size();
+    String command2 = configurationService.getPythonCommand() + " " + python_root_dir
+        + "configuration.py initialization" + " " + userDto.getEmail();
 
-        if (userDto.getAge()==null || userDto.getGender()==null || userDto.getSharingFrequency()==null || userDto.getSocialmediaFrequency()==null || userDto.getEducation()==null)
-            result.rejectValue("gender", null, "At least one demographic field is empty");
+    try {
+      Runtime.getRuntime().exec(command2);
 
-        if (result.hasErrors()){
-            return "registration";
-        }
-
-        userService.save(userDto);
-
-        ImageAttributeService imageAttributeService = new ImageAttributeService();
-        ConfigurationService configurationService=new ConfigurationService();
-        configurationService.setParams();
-        String python_root_dir = configurationService.getPython_base_dir();
-        String command1=configurationService.getPythonCommand()+" "+python_root_dir+"utils.py generateImageID"+" "+userDto.getEmail()+" "+"training"+" "+configurationService.getTrain_batch_size();
-        String command2 = configurationService.getPythonCommand()+" "+python_root_dir+"configuration.py initialization"+" "+userDto.getEmail();
-
-        try {
-            Runtime.getRuntime().exec(command2);
-
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        try {
-            System.out.println("Executing command here");
-            Process p = Runtime.getRuntime().exec(command1);
-            imageAttributeService.printUpdate(p, "imageread");
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        Login login = new Login();
-        login.setSuccess(true);
-        model.addAttribute("login", login);
-        return "login";
+    } catch (IOException e) {
+      e.printStackTrace();
     }
+
+    try {
+
+      Process p = Runtime.getRuntime().exec(command1);
+      imageAttributeService.printUpdate(p, "imageread");
+
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+
+    Login login = new Login();
+    login.setSuccess(true);
+    model.addAttribute("login", login);
+    return "login";
+  }
 
 }

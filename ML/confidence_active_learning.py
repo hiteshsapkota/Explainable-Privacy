@@ -13,10 +13,8 @@ import numpy as np
 
 
 def isdeltaconsistent(lt, t):
-    print(lt)
 
     elc = np.sqrt(np.log(2*t**2)/(2*sum(lt)))
-    print(lt)
     y_lt = lt[1]/sum(lt)
     if np.abs(y_lt-1/2)>elc:
         return [True, y_lt, elc]

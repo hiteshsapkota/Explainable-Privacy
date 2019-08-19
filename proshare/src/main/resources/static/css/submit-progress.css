@@ -9,11 +9,9 @@
   left: 50%;
   height: 6em;
   padding-top: 2.3em;
-  /* The following rules are the
-     ones most likely to change */
+  /* The following rules are the ones most likely to change */
   width: 20em;
-  /* Set 'margin-left' to a negative number
-     that is 1/2 of 'width' */
+  /* Set 'margin-left' to a negative number that is 1/2 of 'width' */
   margin-left: -10em;
   padding-left: 2.1em;
   background-color: blue;

@@ -317,16 +317,15 @@ public class Training{
 
     public void updateDisplayStatus()
     {
-        System.out.println("Updating Display Status");
-        System.out.println(this.id);
+
         String update_query="update training set display_status = 1  where id ="+Integer.toString(this.id);
         jdbcTemplate.update(update_query);
     }
 
     public void storeSharing_type()
     {
-        System.out.println("Storing Sharing type");
-        System.out.println(jdbcTemplate);
+
+
         try
         {
 
@@ -357,10 +356,10 @@ public class Training{
     public void addUserPayment()
 
     {
-        System.out.println("Before getting query");
+
         String sql = "select * from payment where user_name=?";
         List<Payment> payments=jdbcTemplate.query(sql, new Object[] { username },new PaymentRowMapper());
-        System.out.println("After getting query");
+
         if (payments.isEmpty())
         {
             Object[] params = new Object[] {this.username, 1, "NA"};
