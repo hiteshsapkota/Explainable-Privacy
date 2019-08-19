@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import javax.jws.soap.SOAPBinding;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -143,6 +144,9 @@ public class MainController {
         training.readId();
         training.setUpdate(false);
         training.addUserPayment();
+        training.setDonotshare("");
+        training.setShare("");
+        training.setSkip("");
         Index index = training.getIndex();
         model.addAttribute("training", training);
 
@@ -155,9 +159,15 @@ public class MainController {
         training.setJdbcTemplate(jdbcTemplate);
         if (training.getOptions()==null) {
             if (training.getSubmittype().equals("Next")) {
-                training.setInvalidInput(true);
-                model.addAttribute("training", training);
-                return "training";
+                if (training.getShare().equals("") && training.getDonotshare().equals("") && training.getSkip().equals("")) {
+                    training.setInvalidInput(true);
+                    training.setDonotshare("");
+                    training.setShare("");
+                    training.setSkip("");
+                    System.out.println("Image path"+training.getImage_path());
+                    model.addAttribute("training", training);
+                    return "training";
+                }
             }
         }
 
@@ -168,27 +178,50 @@ public class MainController {
         {
 
             int prev_id = training.getId();
+
+
             training.getPrevious();
             if (prev_id==training.getId())
             {
+                if (training.getOptions()!=null) {
+
+
+                    if (training.getOptions().equals("share"))
+                        training.setShare("active focus");
+                    else if (training.getOptions().equals("donotshare"))
+                        training.setDonotshare("active focus");
+                    else if (training.getOptions().equals("skip"))
+                        training.setSkip("active focus");
+                }
+
+
+
+                model.addAttribute("training", training);
                 return "training";
             }
+
+
             model.addAttribute("training", training);
+
             return "training";
 
 
         }
 
-        else if (training.getSubmittype().equals("Skip"))
-        {
-            training.updateDisplayStatus();
-            training.getNext();
-        }
 
-        else
-        {
-            training.updateDisplayStatus();
-            training.storeSharing_type();
+
+            System.out.println("I am inside next section");
+           if (training.getOptions()!=null) {
+               if (training.getOptions().equals("skip")) {
+                   training.updateDisplayStatus();
+                   training.getNext();
+               }
+               else {
+
+                   training.updateDisplayStatus();
+                   training.storeSharing_type();
+               }
+           }
             training = new Training();
             training.setUpdate(false);
             training.setJdbcTemplate(jdbcTemplate);
@@ -196,7 +229,11 @@ public class MainController {
             training.setUsername(principal);
             training.readId();
 
-        }
+
+
+
+
+
         TrainingService trainingService = new TrainingService();
         return trainingService.getTemplate(jdbcTemplate, model, training);
 

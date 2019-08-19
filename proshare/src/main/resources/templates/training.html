@@ -206,12 +206,12 @@ img {
 						 <div class="alert alert-danger">Invalid input type</div>
 					 </div>
 					 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-						 <label class="btn btn-danger btn-lg active"> <input
+						 <label th:class="'btn btn-danger btn-lg '+${training.donotshare}"> <input
 								 type="radio" name="options" value="donotshare" id="option1" autocomplete="off"
 								 > Do not share
-						 </label> <label class="btn btn-secondary btn-lg"> <input type="radio"
+						 </label> <label th:class="'btn btn-secondary btn-lg '+${training.skip}"> <input type="radio"
 																				  name="options" value="skip" id="option2" autocomplete="off"> Skip
-					 </label> <label class="btn btn-success btn-lg"> <input type="radio"
+					 </label> <label th:class="'btn btn-success btn-lg '+${training.share}"> <input type="radio"
 																			name="options" value="share" id="option3" autocomplete="off"> Share
 					 </label>
 					 </div>
@@ -223,6 +223,9 @@ img {
 			 <input type="hidden" th:field="*{id}">
 			 <input type="hidden" th:field="*{image_path}">
 			 <input type="hidden" th:field="*{username}">
+			 <input type="hidden" th:field="*{share}">
+			 <input type="hidden" th:field="*{donotshare}">
+			 <input type="hidden" th:field="*{skip}">
 
 		 </form>
 

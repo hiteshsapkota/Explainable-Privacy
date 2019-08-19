@@ -21,13 +21,7 @@ if __name__=="__main__":
         image_id = row[1].replace("\r", "").replace("\n", "")
         attributes = getImageAttributes(image_id, cnx)
         image_path = row[2].replace("\r", "").replace("\n", "")
-        for attribute in attributes:
-            print("Attribute is", attribute)
-            if not os.path.isdir("Data/Generated/attribute_images/"+attribute):
-                os.mkdir("Data/Generated/attribute_images/"+attribute, 0o755)
-            src = image_path
-            image_name = image_path.split("/")[2]
-            dst = "Data/Generated/attribute_images/"+attribute+"/"+image_name
-            copyfile(src, dst)
-            
+        src = image_path
+        dst = "/Users/hxs1943/Desktop/"+image_path
+        copyfile(src, dst)
         

@@ -25,6 +25,10 @@ public class Training{
     private Index index;
     private boolean update;
     private boolean invalidInput;
+    private String donotshare;
+    private String share;
+    private String skip;
+    private int sharingDecision;
 
     public JdbcTemplate getJdbcTemplate() {
         return jdbcTemplate;
@@ -116,6 +120,40 @@ public class Training{
         this.invalidInput = invalidInput;
     }
 
+
+    public String getDonotshare() {
+        return donotshare;
+    }
+
+    public void setDonotshare(String donotshare) {
+        this.donotshare = donotshare;
+    }
+
+    public String getShare() {
+        return share;
+    }
+
+    public void setShare(String share) {
+        this.share = share;
+    }
+
+    public String getSkip() {
+        return skip;
+    }
+
+    public void setSkip(String skip) {
+        this.skip = skip;
+    }
+
+
+    public int getSharingDecision() {
+        return sharingDecision;
+    }
+
+    public void setSharingDecision(int sharingDecision) {
+        this.sharingDecision = sharingDecision;
+    }
+
     public void setTrainingInstances() {
 
         String username=this.username;
@@ -150,6 +188,7 @@ public class Training{
                 this.image_id=record.getImage_id();
 
 
+
             }
 
         }
@@ -164,23 +203,60 @@ public class Training{
     {
         try
         {
+            boolean success = false;
             String username=this.username;
             ConfigurationService configurationService=new ConfigurationService();
             configurationService.setParams();
             String sql = "select * from training where id=?";
-            List<Record> records=jdbcTemplate.query(sql, new Object[] { (this.id-1) },new RecordRowMapper());
+            int i=1;
+            while (true) {
 
-            if (!records.isEmpty()) {
-                System.out.println("The record is not empty");
-                Record record=records.get(0);
-                if (record.getUser_name().equals(this.username))
-                {
-                    System.out.println("I am here");
-                    this.id = record.getId();
-                    this.image_path = record.getImage_path();
-                    this.image_id=record.getImage_id();
-                    this.description=record.getDescription();
+                List<Record> records = jdbcTemplate.query(sql, new Object[]{(this.id - i)}, new RecordRowMapper());
+                if (!records.isEmpty()) {
+
+                    Record record = records.get(0);
+                    if (record.getUser_name().equals(this.username)) {
+                        sql = "select * from training where id=? and sharing_decision is not null";
+                        List<Record> r1 = jdbcTemplate.query(sql, new Object[]{(this.id - 1)}, new RecordRowMapper());
+                        sql = "select * from training where id=? and sharing_decision is null";
+                        List<Record> r2 = jdbcTemplate.query(sql, new Object[]{(this.id - 1)}, new RecordRowMapper());
+                        success = true;
+                        this.id = record.getId();
+                        this.image_path = record.getImage_path();
+                        this.image_id = record.getImage_id();
+                        this.description = record.getDescription();
+
+                        if (r1.isEmpty()) {
+                            this.skip = "active focus";
+                            this.share = "";
+                            this.donotshare = "";
+                        }
+                        else {
+
+
+                            if (record.getSharing_decision() == 1) {
+                                this.skip="";
+                                this.share = "active focus";
+                                this.donotshare = "";
+                            }
+                            else if (record.getSharing_decision() == 0) {
+                                this.skip="";
+                                this.share = "";
+                                this.donotshare = "active focus";
+                            }
+
+
+                        }
+
+                    }
+
                 }
+
+                if (success==true || (this.id-i)==0)
+                {
+                    break;
+                }
+                i=i+1;
 
             }
 
@@ -257,15 +333,15 @@ public class Training{
 
             if (options.equals("share"))
             {
-                System.out.println("Updating sharing decision");
-                System.out.println(this.id);
+
                 jdbcTemplate.update("update training set sharing_decision = 1  where id ="+Integer.toString(this.id)+";");
             }
             else if (options.equals("donotshare"))
             {
-                System.out.println("Updating sharing decision");
+
                 jdbcTemplate.update("update training set sharing_decision = 0  where id ="+Integer.toString(this.id)+";");
             }
+
             String update_query="update training set display_status = 1  where id ="+Integer.toString(this.id);
             jdbcTemplate.update(update_query);
 
