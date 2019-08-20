@@ -33,14 +33,14 @@ body {
 
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
-				<p class="text-info">Please enter the following details for registering to participate in
+				<p>Please enter the following details for registering to participate in
 					the study. All fields are required.</p>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
-				<ul class="text-info">
+				<ul>
 					<li>Please enter a valid email ID. We will use your email ID to communicate with you if
 						necessary. We will delete this ID after we complete the data analysis.</li>
 					<li>Please enter a valid Amazon Mechanical Turk ID. We will use your Mechanical Turk ID
@@ -66,7 +66,7 @@ body {
 					<div class="col-md-2 col-md-offset-2">
 						<label for="email" class="control-label">E-mail:</label>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-6">
 						<input id="email" class="form-control" type="email" th:field="*{email}" required />
 					</div>
 					<p class="text-danger" th:each="error : ${#fields.errors('email')}" th:text="${error}">Validation
@@ -79,7 +79,7 @@ body {
 					<div class="col-md-2 col-md-offset-2">
 						<label for="password" class="control-label">Password:</label>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-6">
 						<input id="password" class="form-control" type="password" th:field="*{password}" required />
 					</div>
 				</div>
@@ -90,7 +90,7 @@ body {
 					<div class="col-md-2 col-md-offset-2">
 						<label for="confirmPassword" class="control-label">Confirm password:</label>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-6">
 						<input id="confirmPassword" class="form-control" type="password" th:field="*{confirmPassword}" />
 					</div>
 				</div>
@@ -102,7 +102,7 @@ body {
 						<label for="mturkId" class="control-label">Amazon Mturk Id:</label>
 
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-6">
 						<input id="mturkId" class="form-control" th:field="*{mturkId}" required />
 					</div>
 				</div>

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:th="http://www.thymeleaf.org"
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
 	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+
 <head>
 
 <title>Explainable Privacy: User Study</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <style>
 body {
 	margin: 0;
@@ -15,41 +14,18 @@ body {
 }
 </style>
 
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script type="text/javascript">
-	$(function() {
-		$("#popupevaluation").hide();
-		$("#popuptraining").hide();
-		$('a#evaluation-link').click(function() {
-			$("#popupevaluation").show();
-			$("body").addClass("submit-progress-bg");
-
-			return true;
-		});
-		$('a#training-link').click(function() {
-			$("#popuptraining").show();
-			$("body").addClass("submit-progress-bg");
-
-			return true;
-		});
-
-	});
-</script>
-
-<link rel="stylesheet" type="text/css"
-	th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}" />
 
 </head>
 
 <body>
-  
-  <div th:replace="fragments/navbar.html :: navbar-landingpage"></div>
-  
-	<h2 style="text-align: center">Explainable Privacy User Study
-		Instructions</h2>
+
+	<div th:replace="fragments/navbar.html :: navbar-landingpage"></div>
+
+	<h2 style="text-align: center">Explainable Privacy User Study Instructions</h2>
 
 	<div class="container">
-	  
+
 		<div
 			th:replace="fragments/training-progress.html :: training-progress(
 			completed = ${index.trainCompleted}, 
@@ -58,131 +34,85 @@ body {
 			skipped = ${index.trainSkipped})">
 		</div>
 
-		<p class="text-info">
-			Suppose that you are a user of a photo-sharing website called <b>Proshare</b>.
-			On Proshare, you also have several friends.
+		<p>
+			Suppose that you are a user of a photo-sharing website called <b>ProShare</b>. On ProShare, you
+			also have several friends.
 		</p>
 
-		<p class="text-info">In the following pages, we will show you a
-			series of photos. Suppose that each of those photos belongs to you.
-			We will provide a context for each photo, indicating whether you or
-			your family members are in it or when you took that photo.</p>
+		<p>In the following pages, we will show you a series of photos. Suppose that these photos
+			belong to you. We will provide a context for each photo, indicating whether you or your family
+			members are in it or when you took that photo.</p>
 
-		<p class="text-info">For each photo, you need to select one of the
-			following options.</p>
+		<p>For each photo, you need to select one of the following options.</p>
 
-		<ul class="text-info">
-			<li>Share: If you press the "Share" button, all your friends on
-				Proshare will be able see your photo.</li>
-			<li>Do not share: If you press the "Do not share" button, your
-				photo will remain private&mdash;only you will be able to view your
-				photo.</li>
-			<li>Skip: Press the "Skip" button if the context of the photo is
-				not clear to you. Please do NOT use this option frequently.</li>
+		<ul>
+			<li>If you select the <b>Share</b> option, all your friends on Proshare will be able see the
+				corresponding photo.
+			</li>
+			<li>If you select the <b>Do not share</b> option, your photo will remain private&mdash;only
+				you will be able to view your photo.
+			</li>
+			<li>Select the <b>Skip</b> option if the context of the photo is not clear to you. Please do
+				NOT use this option frequently.
+			</li>
 		</ul>
 
-		<p class="text-info">Thanks again for choosing to participate in
-			this user study.</p>
+		<p>
+			Once you select one of the above options, click the <b>Next</b> button to go to the next photo.
+			(If need be, you can click the <b>Prev</b> button to to revisit a previous photo and change your
+			decision about it.)
+		</p>
+
+		<ul>
+			<li>You are required to select a sharing decision for a minimum 30 photos to receive the
+				reward (USD 3) for the HIT.</li>
+			<li>After making sharing decision for 30 photos, you can make decisions for additional
+				photos for a bonus reward. You will receive a bonus of five cents for each additional photo you
+				label. You can get bonus for a maximum of 20 photos.</li>
+			<li>Skipped photos do not count for the minimum requirement or bonus.</li>
+			<li>The <b>User Study Progress</b> panel at the top of the page (like the one shown in this
+				page) shows your progress.
+			</li>
+		</ul>
+
+		<p>
+			After you make decisions for 30 photos, you can get the completion code from the <a
+				href="/payment">Payment</a> tab above.
+		</p>
+
+		<p>
+			If you have any questions about this study, please contact the researchers&mdash;Hitesh Sapkota (<a
+				href="mailto:hxs1943@rit.edu">hxs1943@rit.edu</a>) and Dr. Pradeep Murukannaiah (<a
+				href="mailto:pkmvse@rit.edu">pkmvse@rit.edu</a>). Please copy both researchers in your email.
+		</p>
+
+		<h4 class="text-center">
+			Click the <a href="/training">Training</a> tab to start labeling photos...
+		</h4>
+
 	</div>
 
+	<script type="text/javascript" th:src="@{/webjars/jquery/3.2.1/jquery.min.js/}"></script>
+	<script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
+	<script type="text/javascript">
+		$(function() {
+			$("#popupevaluation").hide();
+			$("#popuptraining").hide();
+			$('a#evaluation-link').click(function() {
+				$("#popupevaluation").show();
+				$("body").addClass("submit-progress-bg");
 
-	<div class="d-md-flex h-md-100 align-items-center">
+				return true;
+			});
+			$('a#training-link').click(function() {
+				$("#popuptraining").show();
+				$("body").addClass("submit-progress-bg");
 
-		<div class="col-md-6 p-0 bg-indigo h-md-100">
-			<div class="col-md-10 col-md-offset-2">
-				<h1 class="text-info">Survey Instruction</h1>
-				<blockquote class="blockquote">
-					<h2 class="text-success">Training</h2>
-					<p class="text-info">In this survey you need to complete two
-						steps: training followed by the evaluation. In either of steps, in
-						each batch twenty images will be shown to you. In the case of
-						training phase, series of images will be shown and asked to
-						provide the sharing decision. Sharing decision would be either
-						share or not based on the assumption that you are one of the
-						persons in the images. If you do not wish to provide the decision,
-						you can skip using Next button. Also, you if you want to change
-						the decision, you can use Prev button.</p>
-					<h3>
-						<a id="training-link" href="/training" class="text-primary">Click
-							here to start training</a>
-					</h3>
-					<div id="popuptraining" class="submit-progress">
-						<label>Generating Training Instance</label>
-					</div>
+				return true;
+			});
 
-					<h2 class="text-success">Evaluation</h2>
-					<p class="text-info">You can start the evaluation step after
-						the completion of at least one training phase. In the evaluation
-						phase, series of images will be shown along with the corresponding
-						suggested sharing decision along with the explanation. The sharing
-						decision tells whether you want to share the image or not whereas,
-						the explanation explains why you want to make the specified
-						sharing decision. You can either agree or diagree with the
-						generated decision, explanation or both. If you disagree then you
-						need to specify your disagreement type as one of the decision,
-						explanation or both. Also, in case of disagreement, you have to
-						specify the sensitivity score for each of the attributes shown
-						with 5 as strongly sensitive and 1 as least sensitive.</p>
-					<h3>
-						<a id="evaluation-link" href="/evaluation" class="text-primary">Click
-							here to start evaluation</a>
-					</h3>
-
-					<div id="popupevaluation" class="submit-progress">
-						<label>Generating Image Recommendation and Explanation</label>
-					</div>
-				</blockquote>
-			</div>
-
-		</div>
-
-
-		<div class="col-md-6 p-0 bg-white h-md-100 loginarea">
-
-			<div class="col-md-10 col-md-offset-2">
-				<h1 class="text-info">Survey Progress Status</h1>
-				<blockquote class="blockquote">
-					<h2 class="text-info">Training</h2>
-					<h3 class="text-success"
-						th:text="'Images Labeled: '+${index.trainCompleted}"></h3>
-					<h3 class="text-warning"
-						th:text="'Images Skipped: '+${index.trainSkipped}"></h3>
-					<div th:if="${index.trainRemaining}=='20'">
-						<h3 class="text-secondary" th:text="'Images Remaining: '+0"></h3>
-					</div>
-					<div th:if="${index.trainRemaining}!='20'">
-						<h3 class="text-secondary"
-							th:text="'Images Remaining: '+${index.trainRemaining}"></h3>
-					</div>
-
-
-				</blockquote>
-
-				<blockquote class="blockquote">
-					<h2 class="text-info">Evaluation</h2>
-					<h3 class="text-success"
-						th:text="'Images Labeled: '+${index.evalCompleted}"></h3>
-					<h3 class="text-warning"
-						th:text="'Images Skipped: '+${index.evalSkipped}"></h3>
-					<div th:if="${index.evalRemaining}=='20'">
-						<h3 class="text-secondary" th:text="'Images Remaining: '+0"></h3>
-					</div>
-					<div th:if="${index.evalRemaining}!='20'">
-						<h3 class="text-secondary"
-							th:text="'Images Remaining: '+${index.evalRemaining}"></h3>
-					</div>
-				</blockquote>
-				</blockquote>
-			</div>
-		</div>
-</body>
-
-</div>
-
-
-
-
-
+		});
+	</script>
 
 </body>
 </html>
