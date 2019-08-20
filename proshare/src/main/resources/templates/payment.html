@@ -27,10 +27,10 @@ body {
 	<div class="container">
 		<div
 			th:replace="fragments/training-progress.html :: training-progress(
-      completed = 0, 
+      completed = ${payment.index.trainCompleted},
       minRequired = 30, 
       maxBonus = 20,  
-      skipped = 0)">
+      skipped = ${payment.index.trainSkipped})">
 		</div>
 
 		<p>Congratulations! You have successfully completed the user study. Please enter the following

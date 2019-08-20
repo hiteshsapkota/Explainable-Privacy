@@ -1,5 +1,6 @@
 package com.expriv.model;
 
+import com.expriv.service.ConfigurationService;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -11,6 +12,7 @@ public class Payment {
     private int id;
     private String message;
     private boolean gensuccess;
+    private Index index;
 
 
     public String getCode() {
@@ -72,6 +74,23 @@ public class Payment {
 
     public void setGensuccess(boolean gensuccess) {
         this.gensuccess = gensuccess;
+    }
+
+    public Index getIndex() {
+
+            Index index = new Index();
+            ConfigurationService configurationService = new ConfigurationService();
+            configurationService.setParams();
+            index.setTrainBatchSize(configurationService.getTrain_batch_size());
+            index.setUsername(this.username);
+            index.setJdbcTemplate(jdbcTemplate);
+            index.setProgress();
+            return index;
+
+    }
+
+    public void setIndex(Index index) {
+        this.index = index;
     }
 
     public void generateCode(int n)
