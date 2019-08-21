@@ -105,7 +105,7 @@ inv_attribute_map_file = {v:k for k,v in attribute_map_file.items()}
 def getImageAttributes(image_id, cnx):
     
     """image id will be in the form of annotations/image_type/id.json"""
-    command = "select attributes from temporary where image_id=%s"
+    command = "select attributes from record where image_id=%s"
     cursor = cnx.cursor()
     cursor.execute(command, (image_id, ))
     
@@ -119,8 +119,8 @@ def getImageAttributesLabel(image_id):
     with open(base_path+"Data/Collected/"+image_id) as jf:
         anno = json.load(jf)
         labels = anno['labels']
-        attribute_name = attributetoName(labels, attribute_map_file)
-        return attribute_name
+        
+        return labels
         
         
     

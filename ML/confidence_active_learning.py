@@ -29,7 +29,6 @@ def query_search(T, xt, nodes, t, B=0.2):
     if not delta_consistent:
         return ['inconsistent', True]
     else:
-        print("Consistent")
         prob = (elc)/(elc+np.abs(y_lt-1/2))
         return ['consistent', random.random()<prob]
     

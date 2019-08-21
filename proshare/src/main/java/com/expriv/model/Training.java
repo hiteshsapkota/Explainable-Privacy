@@ -184,7 +184,7 @@ public class Training{
                 Record record=records.get(0);
                 this.id = record.getId();
                 this.image_path = record.getImage_path();
-                this.description=record.getDescription();
+                this.description=record.getDescription().replaceAll("viewer", "<a href='#' data-toggle='tooltip' title='The viewer refers to the person who took the picture' >viewer</a>");
                 this.image_id=record.getImage_id();
 
 

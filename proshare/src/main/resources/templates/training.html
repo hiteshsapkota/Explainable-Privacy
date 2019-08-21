@@ -42,7 +42,8 @@ img {
 		</div>
 
 		<div class="text-center">
-			<h3 th:text="${training.description}"></h3>
+			<h3 th:utext=${training.description}></h3>
+
 
 			<img th:src="@{${training.image_path}}" class="img-fluid" alt="Responsive image">
 
@@ -93,6 +94,7 @@ img {
 	<script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
 	<script type="text/javascript">
 		$(function() {
+		$('[data-toggle="tooltip"]').tooltip();
 
 			$("#popuptraining").hide();
 

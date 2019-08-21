@@ -32,12 +32,20 @@ body {
       maxBonus = 20,  
       skipped = ${payment.index.trainSkipped})">
 		</div>
+		<div th:if="${payment.gensuccess!=true}">
+			<p>You have not completed the study yet. You must label at least 30 pictures (excluding the one you skipped) to generate a completion code. Please check the <a href="/index">Home</a> page for more details.
+			The panel at the top of the page shows your progress so far.</p>
+		</div>
 
-		<p>Congratulations! You have successfully completed the user study. Please enter the following
-			completion code on the Amazon Mechanical Turk website to complete the HIT. We will verify the
-			code and approve your reward shortly after that.</p>
+		<div th:if="${payment.gensuccess==true}">
+			<p>Congratulations! You have successfully completed the user study. Please enter the following
+				completion code on the Amazon Mechanical Turk website to complete the HIT. We will verify the
+				code and approve your reward shortly after that.</p>
 
-		<h4 class="text-info text-center" th:text="'Completion Code: '+${payment.code}"></h4>
+			<h4 class="text-info text-center" th:text="'Completion Code: '+${payment.code}"></h4>
+
+
+		</div>
 
 		<p>
 			If you have any questions, please contact the researchers&mdash;Hitesh Sapkota (<a
