@@ -33,18 +33,35 @@ body {
       skipped = ${payment.index.trainSkipped})">
 		</div>
 		<div th:if="${payment.gensuccess!=true}">
-			<p>You have not completed the study yet. You must label at least 30 pictures (excluding the one you skipped) to generate a completion code. Please check the <a href="/index">Home</a> page for more details.
-			The panel at the top of the page shows your progress so far.</p>
+			<p>
+				You have not completed the study yet. You must label at least 30 pictures (excluding the one you
+				skipped) to generate a completion code. Please check the <a href="/index">Home</a> page for more
+				details. The panel at the top of the page shows your progress so far.
+			</p>
 		</div>
 
 		<div th:if="${payment.gensuccess==true}">
-			<p>Congratulations! You have successfully completed the user study. Please enter the following
-				completion code on the Amazon Mechanical Turk website to complete the HIT. We will verify the
-				code and approve your reward shortly after that.</p>
+			<h4 class="text-center">Congratulations and Thank You!</h4>
+			<p>You have successfully completed the user study. Please enter the following completion code
+				on the Amazon Mechanical Turk website to complete the HIT. We will verify the code and approve
+				your reward shortly after that.</p>
 
 			<h4 class="text-info text-center" th:text="'Completion Code: '+${payment.code}"></h4>
-
-
+			<p>If you have any comments, please provide them in the space below and press the submit
+				button.</p>
+			<form id='commentform' th:action="@{/comment}" method="post">
+				<div class="form-group">
+					<textarea class="form-control" id="generalComments" rows="3"></textarea>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 col-sm-offset-4">
+						<div class="form-group">
+							<button type="submit" class="btn-info btn-lg btn-block" id="comment-submit">Submit
+								Comments</button>
+						</div>
+					</div>
+				</div>
+			</form>
 		</div>
 
 		<p>
@@ -52,6 +69,7 @@ body {
 				href="mailto:hxs1943@rit.edu">hxs1943@rit.edu</a>) and Dr. Pradeep Murukannaiah (<a
 				href="mailto:pkmvse@rit.edu">pkmvse@rit.edu</a>). Please copy both researchers in your email.
 		</p>
+
 	</div>
 
 	<script type="text/javascript" th:src="@{/webjars/jquery/3.2.1/jquery.min.js/}"></script>
