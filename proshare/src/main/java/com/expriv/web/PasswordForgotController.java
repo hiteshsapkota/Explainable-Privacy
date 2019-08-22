@@ -63,8 +63,8 @@ public class PasswordForgotController {
 
         Mail mail = new Mail();
         mail.setFrom("no-reply@memorynotfound.com");
-        mail.setTo(user.getEmail());
-        mail.setSubject("Password reset request");
+        mail.setTo("proshare2019@gmail.com");
+        mail.setSubject("Password reset request for the user "+user.getEmail());
 
         Map<String, Object> model = new HashMap<>();
         model.put("token", token);

@@ -5,7 +5,6 @@ import javax.validation.constraints.NotEmpty;
 
 public class PasswordForgotDto {
 
-    @Email
     @NotEmpty
     private String email;
 
