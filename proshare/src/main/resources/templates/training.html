@@ -48,14 +48,14 @@ img {
 			<img th:src="@{${training.image_path}}" class="img-fluid" alt="Responsive image">
 
 			<h3>Do you want to share this image?</h3>
-			<form action="#" th:action="@{/training}" th:object="${training}" method="post">
+			<form id="form" action="#" th:action="@{/training}" th:object="${training}" method="post">
 				<div id="popuptraining" class="submit-progress">
-					<i class="fa fa-2x fa-spinner fa-spin"></i> <label>Image Generation may take a moment.
-						Please wait...</label>
+					<i class="fa fa-2x fa-spinner fa-spin"></i> <label>Please wait.... Generating next photo. This may take a moment.
+						 Do not click any buttons in the meantime.</label>
 				</div>
 				<div class="row justify-content-center">
 					<div class="col-sm-2">
-						<button type="submit" name="submittype" value="Prev" class="btn btn-info btn-lg btn-block">Prev</button>
+						<button id="prev" type="submit" name="submittype" value="Prev" class="btn btn-info btn-lg btn-block">Prev</button>
 					</div>
 					<div class="col-sm-8">
 						<div th:if="${training.invalidInput==true}">
@@ -99,6 +99,7 @@ img {
 			$("#popuptraining").hide();
 
 			$('#Next').on('click', function() {
+
 				$("#popuptraining").show();
 				$("body").addClass("submit-progress-bg");
 				return true;

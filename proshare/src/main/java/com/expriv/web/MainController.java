@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import javax.jws.soap.SOAPBinding;
 import java.io.IOException;
+import java.sql.Types;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -128,6 +129,54 @@ public class MainController {
         model.addAttribute("payment", payment);
 
         return "payment";
+    }
+    @PostMapping("/payment")
+    public String paymentSubmit(@ModelAttribute Payment payment, Model model)
+    {
+        Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        payment.setUsername(principal);
+        Object[] params = new Object[] {payment.getUsername(), payment.getComment()};
+        int[] types = new int[] { Types.VARCHAR, Types.VARCHAR};
+        String query = "INSERT INTO comment (user_name, content) VALUES (?, ?)";
+        jdbcTemplate.update(query, params, types);
+        payment.setJdbcTemplate(jdbcTemplate);
+
+        String sql = "select * from training where user_name=? and sharing_decision is not null";
+        List<Record> records=jdbcTemplate.query(sql, new Object[] { payment.getUsername() },new RecordRowMapper());
+
+        if (records.size()>=30)
+        {
+
+            sql = "select * from payment where user_name=?";
+            String code = jdbcTemplate.query(sql, new Object[] {payment.getUsername()}, new PaymentRowMapper()).get(0).getCode();
+            if (code.equals("NA"))
+            {
+                payment.generateCode(5);
+                sql = "update payment set code= "+"'"+payment.getCode()+"'"+" where user_name= "+"'"+payment.getUsername()+"'";
+                jdbcTemplate.execute(sql);
+                payment.setGensuccess(true);
+            }
+            else {
+                payment.setCode(code);
+                payment.setGensuccess(true);
+            }
+
+        }
+        else if (records.size()<30)
+        {
+            payment.setGensuccess(false);
+            payment.setMessage("Could not generate payment code for less than 30 pictures");
+
+        }
+
+
+        model.addAttribute("payment", payment);
+
+        return "payment";
+
+
+
+
     }
 
 

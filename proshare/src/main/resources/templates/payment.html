@@ -49,9 +49,10 @@ body {
 			<h4 class="text-info text-center" th:text="'Completion Code: '+${payment.code}"></h4>
 			<p>If you have any comments, please provide them in the space below and press the submit
 				button.</p>
-			<form id='commentform' th:action="@{/comment}" method="post">
+			<form id='commentform' th:action="@{/payment}" method="post">
 				<div class="form-group">
-					<textarea class="form-control" id="generalComments" rows="3"></textarea>
+
+					<input class="form-control" id="comment" name="comment" rows="3">
 				</div>
 				<div class="row">
 					<div class="col-sm-4 col-sm-offset-4">

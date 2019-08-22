@@ -13,7 +13,7 @@ public class Payment {
     private String message;
     private boolean gensuccess;
     private Index index;
-
+    private String comment;
 
     public String getCode() {
         return code;
@@ -74,6 +74,14 @@ public class Payment {
 
     public void setGensuccess(boolean gensuccess) {
         this.gensuccess = gensuccess;
+    }
+
+    public String getComment() {
+        return comment;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
     }
 
     public Index getIndex() {
