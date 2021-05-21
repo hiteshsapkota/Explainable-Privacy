@@ -113,7 +113,7 @@ stanford-corenlp==3.8.0
 stanfordcorenlp==3.7.0.2
 subprocess32==3.5.2
 tensorboard==1.8.0
-tensorflow==1.8.0
+tensorflow==2.5.0
 termcolor==1.1.0
 text-unidecode==1.0
 Theano==1.0.2
